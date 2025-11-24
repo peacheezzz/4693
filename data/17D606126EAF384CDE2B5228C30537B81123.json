@@ -1,0 +1,131 @@
+{
+    "uid": "17D606126EAF384CDE2B5228C30537B81123",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "gs.RotateScreen",
+        "group": "$$0620EF3CK3406A4B70SA1ACE3750D5C17E57",
+        "displayName": "$$3F586F569C312147CD48C980F59A088FD2B3",
+        "subGroup": "$$9D2A7D706E347140081B6629FF18DCD11405",
+        "defaultValue": {
+            "duration": 0,
+            "waitForCompletion": 1,
+            "speed": 0,
+            "direction": 0,
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$3B6E3A17K6F8EA4293SA0DEE5AB73AC51CB8",
+                "valueFormula": "return p.direction == 0 ? lcs('DFD1F6A5K298FA4C0FS8F99EF8859547030F') : lcs('C72927BFK8864A4808S8BF6EF445B0B6FEC9');",
+                "type": "GSQPopupField",
+                "attribute": "direction",
+                "dataSource": [
+                    "$$DFD1F6A5K298FA4C0FS8F99EF8859547030F",
+                    "$$C72927BFK8864A4808S8BF6EF445B0B6FEC9"
+                ]
+            },
+            {
+                "label": "$$D61D429627E27449B86881C3DE0446316091",
+                "type": "GSQStepper",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "attribute": "speed",
+                "minimum": -10000,
+                "maximum": 10000
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n    \"id\": \"gs.RotateScreen\",\n    \"group\": \"$$0620EF3CK3406A4B70SA1ACE3750D5C17E57\",\n    \"displayName\": \"$$3F586F569C312147CD48C980F59A088FD2B3\",\n    \"subGroup\": \"$$9D2A7D706E347140081B6629FF18DCD11405\",\n    \"defaultValue\": { \"duration\": 0, \"waitForCompletion\": 1, \"speed\": 0,  \"direction\": 0, \"easing\": GS.CONST.DEFAULT_EASING_DATA },\n    \"quickItems\": [\n        {\n            \"label\": \"$$3B6E3A17K6F8EA4293SA0DEE5AB73AC51CB8\",\n            \"valueFormula\": \"return p.direction == 0 ? lcs('DFD1F6A5K298FA4C0FS8F99EF8859547030F') : lcs('C72927BFK8864A4808S8BF6EF445B0B6FEC9');\",\n            \"type\": \"GSQPopupField\",\n            \"attribute\": \"direction\",\n            \"dataSource\": [\"$$DFD1F6A5K298FA4C0FS8F99EF8859547030F\", \"$$C72927BFK8864A4808S8BF6EF445B0B6FEC9\"]\n        },\n        {\n            \"label\": \"$$D61D429627E27449B86881C3DE0446316091\",\n            \"type\": \"GSQStepper\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"attribute\": \"speed\",\n            \"minimum\": -10000,\n            \"maximum\": 10000\n        },\n        GSQ.CONTROLS.DURATION,\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    }\n}",
+        "name": "Rotate Screen",
+        "type": "event_command",
+        "parentId": "85446216KA82AA4A7DS8F25E541AB7EFA66A",
+        "order": 8
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

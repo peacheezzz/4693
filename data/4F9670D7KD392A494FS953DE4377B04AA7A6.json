@@ -1,0 +1,19 @@
+{
+    "uid": "4F9670D7KD392A494FS953DE4377B04AA7A6",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "UI",
+        "type": "game_script",
+        "order": 12,
+        "content": "",
+        "parentId": "A05E7029K45DBA459BSADF4EEC07A526241A",
+        "folder": true,
+        "compiledContent": "\n\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VzQ29udGVudCI6WyIiXX0=\n//# sourceURL=UI_153.js"
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ]
+}

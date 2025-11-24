@@ -1,0 +1,70 @@
+{
+    "uid": "90C8B7576670324A7B195FF6F70F99480ACE",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "gs.ListFromText",
+        "displayName": "$$8598B97443835347F259F2D44ED8A45F1300",
+        "group": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+        "subGroup": "$$1F61FF138D26A248296A90D6385BA256EF31",
+        "defaultValue": {
+            "separator": ",",
+            "textVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "type": "GSQPopupField",
+                "valueFormula": "return fmtStrVar(p.textVariable)",
+                "label": "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                "attribute": "textVariable",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                }
+            },
+            {
+                "label": "$$279A870082643340194815582532E3A95B7F",
+                "valueFormula": "return fmtListVar(p.targetVariable)",
+                "attribute": "targetVariable",
+                "identifier": "list",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            },
+            {
+                "type": "GSQTextArea",
+                "multiline": false,
+                "valueFormula": "return fmtStrVar(p.separator)",
+                "label": "$$ABA86DA776CB164D894A994661709D6E46A0",
+                "attribute": "separator",
+                "variableButton": {
+                    "dataSource": "strings"
+                }
+            }
+        ],
+        "rawContent": "{\n    \"id\": \"gs.ListFromText\",\n    \"displayName\": \"$$8598B97443835347F259F2D44ED8A45F1300\",\n    \"group\": \"$$C9C23A6E5A74F84FE07940677A0C2E37E13D\",\n    \"subGroup\": \"$$1F61FF138D26A248296A90D6385BA256EF31\",\n    \"defaultValue\": { \"separator\": \",\", \"textVariable\": GS.CONST.DEFAULT_VARIABLE_DATA, \"targetVariable\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"quickItems\": [\n        {\n            \"type\": \"GSQPopupField\",\n            \"valueFormula\": \"return fmtStrVar(p.textVariable)\",\n            \"label\": \"$$CEA96B0BK6FBBA416BSB00FEDF96A1248489\",\n            \"attribute\": \"textVariable\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" }}\n        },\n        GSQ.CONTROLS.CREATE_LIST_VARIABLE_SELECTION(\"$$279A870082643340194815582532E3A95B7F\", \"targetVariable\"),\n        {\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false,\n            \"valueFormula\": \"return fmtStrVar(p.separator)\",\n            \"label\": \"$$ABA86DA776CB164D894A994661709D6E46A0\",\n            \"attribute\": \"separator\",\n            \"variableButton\": { \"dataSource\": \"strings\" }\n        }\n    ]\n}",
+        "name": "Text to List",
+        "type": "event_command",
+        "parentId": "39568CDEK37BDA4AF4SB2BCEC53E3EBBE419",
+        "order": 14
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

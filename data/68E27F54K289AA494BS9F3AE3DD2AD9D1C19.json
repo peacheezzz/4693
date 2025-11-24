@@ -1,0 +1,60 @@
+{
+    "uid": "68E27F54K289AA494BS9F3AE3DD2AD9D1C19",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "displayName": "$$8EC56C296E32E84E3459CD61EAB52A6F3B90",
+        "id": "gs.CheckSwitch",
+        "group": "$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24",
+        "subGroup": "$$0982629273001344698BD7512598CADED0B4",
+        "defaultValue": {
+            "targetVariable": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "value": 1,
+            "label": ""
+        },
+        "quickItems": [
+            {
+                "label": "$$20D5BD5B6410514E2579E7889435F395AFF2",
+                "valueFormula": "return fmtBoolVar(p.targetVariable)",
+                "attribute": "targetVariable",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "booleans"
+                    }
+                }
+            },
+            {
+                "label": "$$C5EB04527677A744804A8F85744C8BE285F3",
+                "valueFormula": "return GS.CONST.SWITCH_STATES[p.value]",
+                "attribute": "value",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$DA1F7042K631AA464BSA0F8E78BB13F6C242",
+                    "$$B958FADFKE38BA4BC2SAFC0E8B2CC6722744"
+                ]
+            },
+            {
+                "label": "$$A28F7E4D5EB8774F7178B5A7157571D193FB",
+                "valueFormula": "return p.label || lcs('DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C')",
+                "attribute": "label",
+                "type": "GSQTextArea",
+                "multiline": false
+            }
+        ],
+        "rawContent": "{\n    \"displayName\": \"$$8EC56C296E32E84E3459CD61EAB52A6F3B90\",\n    \"id\": \"gs.CheckSwitch\",\n    \"group\": \"$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24\",\n    \"subGroup\": \"$$0982629273001344698BD7512598CADED0B4\",\n    \"defaultValue\": { \"targetVariable\": { \"scope\": 1, \"index\": 0, \"domain\": GS.CONST.DEFAULT_DOMAIN }, \"value\": 1, \"label\": \"\" },\n    \"quickItems\": [\n        {\n            \"label\": \"$$20D5BD5B6410514E2579E7889435F395AFF2\",\n            \"valueFormula\": \"return fmtBoolVar(p.targetVariable)\",\n            \"attribute\": \"targetVariable\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"booleans\" }}\n        },\n        {\n            \"label\": \"$$C5EB04527677A744804A8F85744C8BE285F3\",\n            \"valueFormula\": \"return GS.CONST.SWITCH_STATES[p.value]\",\n            \"attribute\": \"value\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.SWITCH_STATES\n        },\n        {\n            \"label\": \"$$A28F7E4D5EB8774F7178B5A7157571D193FB\",\n            \"valueFormula\": \"return p.label || lcs('DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C')\",\n            \"attribute\": \"label\",\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false\n        }\n    ]\n}",
+        "name": "Check Switch",
+        "type": "event_command",
+        "parentId": "97163D89K8F9DA45ADSA51CE47DE4ECE311C",
+        "order": 11
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

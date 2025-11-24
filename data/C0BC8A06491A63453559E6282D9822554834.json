@@ -1,0 +1,21 @@
+{
+    "uid": "C0BC8A06491A63453559E6282D9822554834",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "Style_New",
+        "type": "game_script",
+        "order": 0,
+        "content": "",
+        "parentId": "C17DE94B3FCDD844A8985578AC3B254FDE9C",
+        "folder": false,
+        "scriptType": 0,
+        "compiledContent": "\n\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VzQ29udGVudCI6WyIiXX0=\n//# sourceURL=Style_New_18.js"
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

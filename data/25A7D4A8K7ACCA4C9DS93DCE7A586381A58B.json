@@ -1,0 +1,66 @@
+{
+    "uid": "25A7D4A8K7ACCA4C9DS93DCE7A586381A58B",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "39568CDEK37BDA4AF4SB2BCEC53E3EBBE419",
+        "displayName": "$$AC1F43A41D67F4434D6B4564626D5F155E3A",
+        "windowTitle": "$$67B3604CK927EA4C25S9433EDD54150ADEB0",
+        "type": "event_command",
+        "id": "gs.ListCopy",
+        "group": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+        "subGroup": "$$E110CF2C3DE4154BFD586BB8FB2210EFBBE6",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [],
+        "defaultValue": {
+            "listVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+                "valueFormula": "return fmtListVar(p.listVariable)",
+                "attribute": "listVariable",
+                "identifier": "list",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            },
+            {
+                "label": "$$AF9001C88ABF244F4E79BEC4B7CDD938C2C5",
+                "valueFormula": "return fmtListVar(p.targetVariable)",
+                "attribute": "targetVariable",
+                "identifier": "targetList",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$AC1F43A41D67F4434D6B4564626D5F155E3A\",\n    \"windowTitle\": \"$$67B3604CK927EA4C25S9433EDD54150ADEB0\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.ListCopy\",\n    \"group\": \"$$C9C23A6E5A74F84FE07940677A0C2E37E13D\",\n    \"subGroup\": \"$$E110CF2C3DE4154BFD586BB8FB2210EFBBE6\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"listVariable\": GS.CONST.DEFAULT_VARIABLE_DATA, \"targetVariable\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"quickItems\": [\n        GSQ.CONTROLS.LIST_VARIABLE_SELECTION,\n        {\n            \"label\": \"$$AF9001C88ABF244F4E79BEC4B7CDD938C2C5\",\n            \"valueFormula\": \"return fmtListVar(p.targetVariable)\",\n            \"attribute\": \"targetVariable\",\n            \"identifier\": \"targetList\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"lists\" }}\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Copy List",
+        "order": 11
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

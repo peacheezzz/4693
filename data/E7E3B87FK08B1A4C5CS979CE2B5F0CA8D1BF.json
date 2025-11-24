@@ -1,0 +1,384 @@
+{
+    "uid": "E7E3B87FK08B1A4C5CS979CE2B5F0CA8D1BF",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "gs.MessageSettings",
+        "group": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "displayName": "$$9E830ABC32354949021B7B35DA7225109E77",
+        "subGroup": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "defaultValue": {
+            "useCharacterColor": 0,
+            "paragraphSpacing": 0,
+            "backlog": 1,
+            "bold": 0,
+            "italic": 0,
+            "linePadding": 6,
+            "lineHeight": 0,
+            "lineSpacing": 0,
+            "smallCaps": 0,
+            "underline": 0,
+            "strikeThrough": 0,
+            "autoErase": 1,
+            "waitAtEnd": 1,
+            "font": "Verdana",
+            "size": 40,
+            "outline": 0,
+            "outlineSize": 4,
+            "shadow": 0,
+            "shadowOffsetX": 1,
+            "shadowOffsetY": 1,
+            "color": {
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "alpha": 255
+            },
+            "outlineColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0,
+                "alpha": 255
+            },
+            "shadowColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0,
+                "alpha": 255
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$1297B0618FEDA8411D1AE9E41E403B4FCAA1",
+                "type": "GSQCheckBox",
+                "lockable": true,
+                "attribute": "autoErase",
+                "identifier": "autoErase",
+                "enableItems": null,
+                "valueFormula": "return GS.CONST.YES_NO[p.autoErase]"
+            },
+            {
+                "label": "$$8ECF5221359D2444029945114715F69A52C6",
+                "type": "GSQCheckBox",
+                "lockable": true,
+                "attribute": "waitAtEnd",
+                "identifier": "waitAtEnd",
+                "enableItems": null,
+                "valueFormula": "return GS.CONST.YES_NO[p.waitAtEnd]"
+            },
+            {
+                "label": "$$B67AD5A777D39842F95B5EA622E4F4A4792E",
+                "type": "GSQCheckBox",
+                "lockable": true,
+                "attribute": "backlog",
+                "identifier": "backlog",
+                "enableItems": null,
+                "valueFormula": "return GS.CONST.YES_NO[p.backlog]"
+            },
+            {
+                "label": "$$5E0D20EA477EB14323884BD171CB75EF8D66",
+                "lockable": true,
+                "valueFormula": "return fmtStrVar(p.font)",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "font",
+                "type": "GSQTextArea",
+                "multiline": false
+            },
+            {
+                "label": "$$2BFCB38471EC754E301910E61CB9E9E930FC",
+                "lockable": true,
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.size) + lcs('4CB1B96948F4B447E119F7829BD93C0D90AF')",
+                "attribute": "size",
+                "type": "GSQStepper",
+                "minimum": 1,
+                "maximum": 1000
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$5DFAC3F9842F404696394AD3C46DED3C5DF4",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$CE4922C3K0381A4335S898CEFEBA22825F89",
+                                            "valueFormula": "return fmtColor(p.color);",
+                                            "attribute": "color",
+                                            "type": "GSQPopupField",
+                                            "lockable": true,
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        },
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "useCharacterColor",
+                                            "label": "$$7BEF6F866AB46246D829DE67FB78924B40EB",
+                                            "disableItems": [
+                                                "color"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "bold",
+                                            "label": "$$22CA6F8BK6967A4B13S80C4EBE73D23267EE"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "italic",
+                                            "label": "$$56DFDC1CK48A9A4B3DSB5BEEF528856D1AFA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "smallCaps",
+                                            "label": "$$2F786E0037B3684307780746FF079D38FED0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "underline",
+                                            "label": "$$51E89D03K534DA492FSA76DEDC4D4284B4EB"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "strikeThrough",
+                                            "label": "$$6BC927E074D6D5444789F8C2CD10EB878CB6"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "Line Alignment",
+                                            "type": "GSQPopupField",
+                                            "lockable": true,
+                                            "dataSource": [
+                                                {
+                                                    "name": "Left",
+                                                    "alias": "l"
+                                                },
+                                                {
+                                                    "name": "Centered",
+                                                    "alias": "m"
+                                                },
+                                                {
+                                                    "name": "Right",
+                                                    "alias": "r"
+                                                }
+                                            ],
+                                            "valueFormula": "return GS.CONST.MESSAGE_LINE_ALIGNMENTS[p.lineAlignment] ? GS.CONST.MESSAGE_LINE_ALIGNMENTS[p.lineAlignment].name : 'Left'",
+                                            "multiline": false,
+                                            "attribute": "lineAlignment"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "valueFormula": "return p.lineHeight ? p.lineHeight+'px' : lcs('3CB124F3KFE8DA4EC8SB3ADED03F6CA18763')",
+                                            "lockable": true,
+                                            "attribute": "lineHeight",
+                                            "label": "$$CE85A6DF5E89E7408F88ADA170EACC37597F"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "valueFormula": "return p.lineSpacing + 'px'",
+                                            "attribute": "lineSpacing",
+                                            "label": "$$11FE738E780BF34E4D8BD23850B9AF9B0A56"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "valueFormula": "return p.linePadding + 'px'",
+                                            "attribute": "linePadding",
+                                            "label": "$$545347F2128B744B499AF0A4572AE835CC2B"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "valueFormula": "return p.paragraphSpacing + 'px'",
+                                            "attribute": "paragraphSpacing",
+                                            "label": "$$25C73FA61E1E554CCF4A21E7949AAA95CDBE"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "sections": [
+                        {
+                            "label": "$$A2EAC842K1241A483FS91FDEA944A16669ED",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "valueFormula": "return GS.CONST.YES_NO[p.outline];",
+                                            "attribute": "outline",
+                                            "label": "$$A2EAC842K1241A483FS91FDEA944A16669ED",
+                                            "enableItems": [
+                                                "outlineColor",
+                                                "outlineSize"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$CE4922C3K0381A4335S898CEFEBA22825F89",
+                                            "valueFormula": "return fmtColor(p.outlineColor);",
+                                            "attribute": "outlineColor",
+                                            "type": "GSQPopupField",
+                                            "lockable": true,
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "minimum": 1,
+                                            "maximum": 10,
+                                            "attribute": "outlineSize",
+                                            "label": "$$2BFCB38471EC754E301910E61CB9E9E930FC"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "sections": [
+                        {
+                            "label": "$$8EE9F3B2K7B8AA4B74SB016E38A4779C5955",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "valueFormula": "return GS.CONST.YES_NO[p.shadow];",
+                                            "attribute": "shadow",
+                                            "label": "$$8EE9F3B2K7B8AA4B74SB016E38A4779C5955",
+                                            "enableItems": [
+                                                "shadowColor",
+                                                "shadowOffsetX",
+                                                "shadowOffsetY"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$CE4922C3K0381A4335S898CEFEBA22825F89",
+                                            "valueFormula": "return fmtColor(p.shadowColor);",
+                                            "attribute": "shadowColor",
+                                            "type": "GSQPopupField",
+                                            "lockable": true,
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "attribute": "shadowOffsetX",
+                                            "label": "$$68FB7C8F2A39144FAB3AC4D08FC63E65BEED"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "attribute": "shadowOffsetY",
+                                            "label": "$$1649C7C95814084C5A89FF92313C8C60021D"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n    \"id\": \"gs.MessageSettings\",\n    \"group\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"displayName\": \"$$9E830ABC32354949021B7B35DA7225109E77\",\n    \"subGroup\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"defaultValue\": { \"useCharacterColor\": 0, \"paragraphSpacing\": 0, \"backlog\": 1, \"bold\": 0, \"italic\": 0, \"linePadding\": 6, \"lineHeight\": 0, \"lineSpacing\": 0, \"smallCaps\": 0, \"underline\": 0, \"strikeThrough\": 0, \"autoErase\": 1, \"waitAtEnd\": 1, \"font\": \"Verdana\", \"size\": 40, \"outline\": 0, \"outlineSize\": 4, \"shadow\": 0, \"shadowOffsetX\": 1, \"shadowOffsetY\": 1, \"color\": { \"red\": 255, \"green\": 255, \"blue\": 255, \"alpha\": 255 }, \"outlineColor\": { \"red\": 0, \"green\": 0, \"blue\": 0, \"alpha\": 255 }, \"shadowColor\": { \"red\": 0, \"green\": 0, \"blue\": 0, \"alpha\": 255 } },\n    \"quickItems\": [\n        GSQ.CONTROLS.CHECK_BOX(\"$$1297B0618FEDA8411D1AE9E41E403B4FCAA1\", \"autoErase\", null, true),\n        GSQ.CONTROLS.CHECK_BOX(\"$$8ECF5221359D2444029945114715F69A52C6\", \"waitAtEnd\", null, true),\n        GSQ.CONTROLS.CHECK_BOX(\"$$B67AD5A777D39842F95B5EA622E4F4A4792E\", \"backlog\", null, true),\n        {\n            \"label\": \"$$5E0D20EA477EB14323884BD171CB75EF8D66\",\n            \"lockable\": true,\n            \"valueFormula\": \"return fmtStrVar(p.font)\",\n            \"variableButton\": {\"dataSource\": \"strings\"},\n            \"attribute\": \"font\",\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false\n        },\n        {\n            \"label\": \"$$2BFCB38471EC754E301910E61CB9E9E930FC\",\n            \"lockable\": true,\n            \"variableButton\": {\"dataSource\": \"numbers\"},\n            \"valueFormula\": \"return fmtNumVar(p.size) + lcs('4CB1B96948F4B447E119F7829BD93C0D90AF')\",\n            \"attribute\": \"size\",\n            \"type\": \"GSQStepper\",\n            \"minimum\": 1,\n            \"maximum\": 1000\n        }\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [ \n                    {\n                        \"label\": \"$$5DFAC3F9842F404696394AD3C46DED3C5DF4\",\n                        \"rows\": [\n                            { \"items\": [\n                                Object.override(GSQ.CONTROLS.COLOR, { \"attribute\": \"color\", \"lockable\": true, \"valueFormula\": \"return fmtColor(p.color);\" }),\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"useCharacterColor\", \"label\": \"$$7BEF6F866AB46246D829DE67FB78924B40EB\", \"disableItems\": [\"color\"] }\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"bold\", \"label\": \"$$22CA6F8BK6967A4B13S80C4EBE73D23267EE\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"italic\", \"label\": \"$$56DFDC1CK48A9A4B3DSB5BEEF528856D1AFA\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"smallCaps\", \"label\": \"$$2F786E0037B3684307780746FF079D38FED0\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"underline\", \"label\": \"$$51E89D03K534DA492FSA76DEDC4D4284B4EB\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"strikeThrough\", \"label\": \"$$6BC927E074D6D5444789F8C2CD10EB878CB6\" }\n                            ] },\n                            { \"items\": [\n                                {\n                                    \"label\": \"Line Alignment\",\n                                    \"type\": \"GSQPopupField\",\n                                    \"lockable\": true,\n                                    \"dataSource\": Object.keys(GS.CONST.MESSAGE_LINE_ALIGNMENTS).map(k => GS.CONST.MESSAGE_LINE_ALIGNMENTS[k]),\n                                    \"valueFormula\": \"return GS.CONST.MESSAGE_LINE_ALIGNMENTS[p.lineAlignment] ? GS.CONST.MESSAGE_LINE_ALIGNMENTS[p.lineAlignment].name : 'Left'\",\n                                    \"multiline\": false,\n                                    \"attribute\": \"lineAlignment\"    \n                                },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"valueFormula\": \"return p.lineHeight ? p.lineHeight+'px' : lcs('3CB124F3KFE8DA4EC8SB3ADED03F6CA18763')\", \"lockable\": true, \"attribute\": \"lineHeight\", \"label\": \"$$CE85A6DF5E89E7408F88ADA170EACC37597F\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"valueFormula\": \"return p.lineSpacing + 'px'\", \"attribute\": \"lineSpacing\", \"label\": \"$$11FE738E780BF34E4D8BD23850B9AF9B0A56\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"valueFormula\": \"return p.linePadding + 'px'\", \"attribute\": \"linePadding\", \"label\": \"$$545347F2128B744B499AF0A4572AE835CC2B\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"valueFormula\": \"return p.paragraphSpacing + 'px'\", \"attribute\": \"paragraphSpacing\", \"label\": \"$$25C73FA61E1E554CCF4A21E7949AAA95CDBE\" },\n                            ] }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$A2EAC842K1241A483FS91FDEA944A16669ED\",\n                        \"rows\": [\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"valueFormula\": \"return GS.CONST.YES_NO[p.outline];\", \"attribute\": \"outline\", \"label\": \"$$A2EAC842K1241A483FS91FDEA944A16669ED\", \"enableItems\": [\"outlineColor\", \"outlineSize\"] },\n                            ] },\n                            { \"items\": [\n                                Object.override(GSQ.CONTROLS.COLOR, { \"attribute\": \"outlineColor\", \"lockable\": true, \"valueFormula\": \"return fmtColor(p.outlineColor);\" }),\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"minimum\": 1, \"maximum\": 10, \"attribute\": \"outlineSize\", \"label\": \"$$2BFCB38471EC754E301910E61CB9E9E930FC\" },\n                            ] }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$8EE9F3B2K7B8AA4B74SB016E38A4779C5955\",\n                        \"rows\": [\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"valueFormula\": \"return GS.CONST.YES_NO[p.shadow];\", \"attribute\": \"shadow\", \"label\": \"$$8EE9F3B2K7B8AA4B74SB016E38A4779C5955\", \"enableItems\": [\"shadowColor\", \"shadowOffsetX\", \"shadowOffsetY\"] },\n                            ] },\n                            { \"items\": [\n                                Object.override(GSQ.CONTROLS.COLOR, { \"lockable\": true, \"attribute\": \"shadowColor\", \"valueFormula\": \"return fmtColor(p.shadowColor);\" })\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"attribute\": \"shadowOffsetX\", \"label\": \"$$68FB7C8F2A39144FAB3AC4D08FC63E65BEED\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"attribute\": \"shadowOffsetY\", \"label\": \"$$1649C7C95814084C5A89FF92313C8C60021D\" },\n                            ] }\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    }\n}",
+        "name": "Message Settings",
+        "type": "event_command",
+        "parentId": "8CC0A736KF347A454AS899FE4F42878D912C",
+        "order": 3
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

@@ -1,0 +1,63 @@
+{
+    "uid": "19DBD19A7FDAC6428A1AB0C222255FA4D580",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "idle",
+        "type": "data_record",
+        "category": "characterExpressions",
+        "id": "19DBD19A7FDAC6428A1AB0C222255FA4D580",
+        "isFolder": false,
+        "parentId": "0015F9254E14D54655598944235C47E4532A",
+        "data": {
+            "idleTime": {
+                "start": 0.06,
+                "end": 240
+            },
+            "name": "idle",
+            "idleSpeed": 500,
+            "idle": [
+                {
+                    "resource": {
+                        "name": "kidvale_blink1.png",
+                        "folderPath": "Graphics/Characters/kid",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": null
+                    }
+                },
+                {
+                    "resource": {
+                        "name": "kidvale_blink2.png",
+                        "folderPath": "Graphics/Characters/kid",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": null
+                    }
+                },
+                {
+                    "resource": {
+                        "name": "kidvale_blink3.png",
+                        "folderPath": "Graphics/Characters/kid",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": null
+                    }
+                }
+            ],
+            "talkingSpeed": 100,
+            "talking": [],
+            "index": "19DBD19A7FDAC6428A1AB0C222255FA4D580"
+        },
+        "order": 0
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

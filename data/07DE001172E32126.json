@@ -1,0 +1,61 @@
+{
+    "uid": "07DE001172E32126",
+    "isLoaded": true,
+    "lastModificationTime": 1424023486130,
+    "items": {
+        "parentId": "8CC0A736KF347A454AS899FE4F42878D912C",
+        "displayName": "$$495B79F9K76E4A44DCS8DD9E2E53387CD432",
+        "windowTitle": "$$495B79F9K76E4A44DCS8DD9E2E53387CD432",
+        "type": "event_command",
+        "id": "gs.InputText",
+        "group": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "subGroup": "$$AEB0463C403244454D5838451B328881EFFA",
+        "windowSize": {
+            "w": 500
+        },
+        "nodes": [
+            {
+                "name": "return fmt(lcs('E1A1D9F0K4C06A455ASABEEEB4B1D59CE642')+' %s, %s '+lcs('332E4981K2B83A4F07SB9DCEEDC3049B67BE'), fmtStrVar(p.variable), fmtNumVar(p.letters));",
+                "id": "gs.InputText"
+            }
+        ],
+        "defaultValue": {
+            "variable": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "letters": 6
+        },
+        "quickItems": [
+            {
+                "label": "$$90C18A623282F243D468F7C639279B8BB3EC",
+                "valueFormula": "return p.letters",
+                "attribute": "letters",
+                "type": "GSQStepper",
+                "minimum": 1,
+                "maximum": 12
+            },
+            {
+                "label": "$$C5CA931C375453479C886940F61A8BF9F1B8",
+                "valueFormula": "return fmtStrVar(p.variable)",
+                "attribute": "variable",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                }
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$495B79F9K76E4A44DCS8DD9E2E53387CD432\",\n    \"windowTitle\": \"$$495B79F9K76E4A44DCS8DD9E2E53387CD432\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.InputText\",\n    \"group\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"subGroup\": \"$$AEB0463C403244454D5838451B328881EFFA\",\n    \"windowSize\": {\n        \"w\": 500\n    },\n    \"nodes\": [\n        {\n            \"name\": \"return fmt(lcs('E1A1D9F0K4C06A455ASABEEEB4B1D59CE642')+' %s, %s '+lcs('332E4981K2B83A4F07SB9DCEEDC3049B67BE'), fmtStrVar(p.variable), fmtNumVar(p.letters));\",\n            \"id\": \"gs.InputText\"\n        }\n    ],\n    \"defaultValue\": { \"variable\": { \"scope\": 1, \"index\": 0, \"domain\": GS.CONST.DEFAULT_DOMAIN }, \"letters\": 6 },\n    \"quickItems\": [\n        {\n            \"label\": \"$$90C18A623282F243D468F7C639279B8BB3EC\",\n            \"valueFormula\": \"return p.letters\",\n            \"attribute\": \"letters\",\n            \"type\": \"GSQStepper\",\n            \"minimum\": 1,\n            \"maximum\": 12\n        },\n        {\n            \"label\": \"$$C5CA931C375453479C886940F61A8BF9F1B8\",\n            \"valueFormula\": \"return fmtStrVar(p.variable)\",\n            \"attribute\": \"variable\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" }}\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Input Text",
+        "order": 9
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

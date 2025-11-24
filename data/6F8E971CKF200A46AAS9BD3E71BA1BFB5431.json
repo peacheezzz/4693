@@ -1,0 +1,59 @@
+{
+    "uid": "6F8E971CKF200A46AAS9BD3E71BA1BFB5431",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "8CC0A736KF347A454AS899FE4F42878D912C",
+        "displayName": "$$F0A477DC3EAA664ECF2B7EB68678AB24921B",
+        "windowTitle": "$$67B3604CK927EA4C25S9433EDD54150ADEB0",
+        "type": "event_command",
+        "id": "vn.ChoiceTimer",
+        "group": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "subGroup": "$$AEB0463C403244454D5838451B328881EFFA",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [],
+        "defaultValue": {
+            "enabled": 1,
+            "minutes": 0,
+            "seconds": 10,
+            "visible": 1
+        },
+        "quickItems": [
+            {
+                "label": "$$575FB27FK7F1FA4BA3SBEDFE639DCC170DED",
+                "valueFormula": "return GS.CONST.YES_NO[p.enabled]",
+                "attribute": "enabled",
+                "type": "GSQCheckBox",
+                "enableItems": [
+                    "minutes",
+                    "seconds",
+                    "visible"
+                ]
+            },
+            {
+                "label": "$$23DC7F65KD249A4E52S9CEBE863E5FFF6BDD",
+                "attribute": "minutes",
+                "type": "GSQStepper",
+                "minimum": 0,
+                "maximum": 59
+            },
+            {
+                "label": "$$50F96794K6CCFA45ACSA934E944D1B625699",
+                "attribute": "seconds",
+                "type": "GSQStepper",
+                "minimum": 0,
+                "maximum": 59
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$F0A477DC3EAA664ECF2B7EB68678AB24921B\",\n    \"windowTitle\": \"$$67B3604CK927EA4C25S9433EDD54150ADEB0\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.ChoiceTimer\",\n    \"group\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"subGroup\": \"$$AEB0463C403244454D5838451B328881EFFA\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"enabled\": 1, \"minutes\": 0, \"seconds\": 10, \"visible\": 1 },\n    \"quickItems\": [\n        {\n            \"label\": \"$$575FB27FK7F1FA4BA3SBEDFE639DCC170DED\",\n            \"valueFormula\": \"return GS.CONST.YES_NO[p.enabled]\",\n            \"attribute\": \"enabled\",\n            \"type\": \"GSQCheckBox\",\n            \"enableItems\": [\"minutes\", \"seconds\", \"visible\"]\n        },\n        {\n            \"label\": \"$$23DC7F65KD249A4E52S9CEBE863E5FFF6BDD\",\n            \"attribute\": \"minutes\",\n            \"type\": \"GSQStepper\",\n            \"minimum\": 0,\n            \"maximum\": 59\n        },\n        {\n            \"label\": \"$$50F96794K6CCFA45ACSA934E944D1B625699\",\n            \"attribute\": \"seconds\",\n            \"type\": \"GSQStepper\",\n            \"minimum\": 0,\n            \"maximum\": 59\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Choice Timer",
+        "order": 11
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

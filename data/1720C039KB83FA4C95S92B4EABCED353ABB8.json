@@ -1,0 +1,82 @@
+{
+    "uid": "1720C039KB83FA4C95S92B4EABCED353ABB8",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "AC1ABDCBK050BA4863S9964E3DC378247DAD",
+        "name": "Database Parameter Section",
+        "type": "custom_view",
+        "windowSize": {
+            "w": 400
+        },
+        "sectionSpacing": [
+            0,
+            0
+        ],
+        "sections": [
+            {
+                "name": "$$745DA28CKEA60A477AS9B58EA60AF06FC9BF",
+                "layout": {
+                    "type": "dynamicGrid",
+                    "spacing": [
+                        0,
+                        0
+                    ]
+                },
+                "items": [
+                    {
+                        "type": "GSTable",
+                        "attribute": "params",
+                        "identifier": "params",
+                        "border": false,
+                        "emptyItem": true,
+                        "dialog": {
+                            "uid": "7806395DK239DA4EB8S8127E69080DE8ED85"
+                        },
+                        "contextMenu": [
+                            {
+                                "name": "$$6679473022042043F64B6300B002D51638F9",
+                                "selector": "addItemUsingDialog"
+                            },
+                            {
+                                "separator": true
+                            },
+                            {
+                                "name": "$$P49",
+                                "selector": "deleteItem:"
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "identifier": "name",
+                                "attribute": "name",
+                                "text": "$$P55",
+                                "width": 200,
+                                "content": "return d.name"
+                            },
+                            {
+                                "identifier": "value",
+                                "attribute": "value",
+                                "text": "$$D67B1AFB543C28405D7A1DD78E09EA015F8C",
+                                "width": 50,
+                                "content": "return d.type == 1 ? GS.CONST.SWITCH_STATES[d.value] : d.value"
+                            }
+                        ],
+                        "frame": [
+                            0,
+                            0,
+                            -1,
+                            300
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rawContent": "{\n    \"parentId\": \"AC1ABDCBK050BA4863S9964E3DC378247DAD\",\n    \"name\": \"Database Parameter Section\",\n    \"type\": \"custom_view\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"sectionSpacing\": [\n        0,\n        0\n    ],\n    \"sections\": [\n      {\n            \"name\": \"$$745DA28CKEA60A477AS9B58EA60AF06FC9BF\",\n            \"layout\": { \"type\": \"dynamicGrid\", \"spacing\": [0, 0] },\n            \"items\": [\n                {\n                    \"type\": \"GSTable\",\n                    \"attribute\": \"params\",\n                    \"identifier\": \"params\",\n                    \"border\": false,\n                    \"emptyItem\": true,\n                    \"dialog\": { \"uid\": \"7806395DK239DA4EB8S8127E69080DE8ED85\" },\n                    \"contextMenu\": [\n                        {\n                            \"name\": \"$$6679473022042043F64B6300B002D51638F9\", \"selector\": \"addItemUsingDialog\"\n                        },\n                        {\n                            \"separator\": true\n                        },\n                        {\n                            \"name\": \"$$P49\", \"selector\": \"deleteItem:\" \n                        }\n                    ],\n                    \"columns\": [\n                        {\n                            \"identifier\": \"name\",\n                            \"attribute\": \"name\",\n                            \"text\": \"$$P55\",\n                            \"width\": 200,\n                            \"content\": \"return d.name\"\n                        },\n                        {\n                            \"identifier\": \"value\",\n                            \"attribute\": \"value\",\n                            \"text\": \"$$D67B1AFB543C28405D7A1DD78E09EA015F8C\",\n                            \"width\": 50,\n                            \"content\": \"return d.type == 1 ? GS.CONST.SWITCH_STATES[d.value] : d.value\"\n                        }\n                    ],\n                    \"frame\": [0, 0, -1, 300]\n                }\n            ]\n        }\n    ]\n}",
+        "order": 29
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "uid": "49AC8EB363463447047ABD168C33CC395696",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "vn.CallScene",
+        "displayName": "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026",
+        "group": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+        "subGroup": "$$3821D5611242A9442D597146E7D807708DE1",
+        "defaultValue": {
+            "scene": null
+        },
+        "quickItems": [
+            {
+                "type": "GSQPopupField",
+                "label": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+                "attribute": "scene",
+                "dataAttribute": "scene",
+                "dialog": {
+                    "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                },
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "valueFormula": "return isVar(p.scene) ? fmtStrVar(p.scene) : (p.scene ? fmtDocument(p.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+            }
+        ],
+        "rawContent": "{\n    \"id\": \"vn.CallScene\",\n    \"displayName\": \"$$C1E5CEAE0D38F74D664B84A1E19EA9B66026\",\n    \"group\": \"$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA\",\n    \"subGroup\": \"$$3821D5611242A9442D597146E7D807708DE1\",\n    \"defaultValue\": { \"scene\": null },\n    \"quickItems\": [\n        {\n            \"type\": \"GSQPopupField\",\n            \"label\": \"$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA\",\n            \"attribute\": \"scene\",\n            \"dataAttribute\": \"scene\",\n            \"dialog\": { \"uid\": \"0E620E08KED4CA4E7CS8514E5B2BF2657DA5\" },\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"valueFormula\": \"return isVar(p.scene) ? fmtStrVar(p.scene) : (p.scene ? fmtDocument(p.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));\"\n        }\n    ]\n}",
+        "name": "Call Scene",
+        "type": "event_command",
+        "parentId": "3E57923EKA72FA43ECSB6ACE60B387513294",
+        "order": 3
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

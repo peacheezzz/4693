@@ -1,0 +1,104 @@
+{
+    "uid": "8A87F241399A58443D8AD795FFB2FCB81D72",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "id": "gs.LoopForInList",
+        "group": "$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24",
+        "defaultValue": {
+            "elementType": 0,
+            "elementVariable": {
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "indexVariable": {
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "listVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "isContainer": true,
+        "isMainNode": true,
+        "quickItems": [
+            {
+                "label": "",
+                "valueFormula": "return GS.CONST.LIST_VARIABLE_VALUE_TYPES[p.elementType]",
+                "attribute": "elementType",
+                "identifier": "elementType",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                    "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                    "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                    "$$C9C23A6E5A74F84FE07940677A0C2E37E13D"
+                ],
+                "showItems": [
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "stringValue"
+                    ],
+                    [
+                        "listValue"
+                    ]
+                ]
+            },
+            {
+                "label": "Element",
+                "valueFormula": "return fmtStrVar(p.elementVariable)",
+                "attribute": "elementVariable",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                }
+            },
+            {
+                "label": "With Index",
+                "valueFormula": "return fmtNumVar(p.indexVariable)",
+                "attribute": "indexVariable",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                }
+            },
+            {
+                "label": "In List",
+                "valueFormula": "return fmtListVar(p.listVariable)",
+                "attribute": "listVariable",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            }
+        ],
+        "rawContent": "{\n    \"id\": \"gs.LoopForInList\",\n    \"group\": \"$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24\",\n    \"defaultValue\": { \"elementType\": 0, \"elementVariable\": GS.CONST.DEFAULT_LOCAL_VARIABLE_DATA, \"indexVariable\": GS.CONST.DEFAULT_LOCAL_VARIABLE_DATA, \"listVariable\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"isContainer\": true,\n    \"isMainNode\": true,\n    \"quickItems\": [\n        GSQ.CONTROLS.CREATE_VARIABLE_VALUE_TYPE(\"elementType\", \"\"),\n        {\n            \"label\": \"Element\",\n            \"valueFormula\": \"return fmtStrVar(p.elementVariable)\",\n            \"attribute\": \"elementVariable\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" }}\n        },\n        {\n            \"label\": \"With Index\",\n            \"valueFormula\": \"return fmtNumVar(p.indexVariable)\",\n            \"attribute\": \"indexVariable\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" }}\n        },\n        {\n            \"label\": \"In List\",\n            \"valueFormula\": \"return fmtListVar(p.listVariable)\",\n            \"attribute\": \"listVariable\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"lists\" }}\n        }\n    ]\n}",
+        "name": "Loop For",
+        "type": "event_command",
+        "parentId": "97163D89K8F9DA45ADSA51CE47DE4ECE311C",
+        "order": 2
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

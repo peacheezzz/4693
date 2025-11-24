@@ -1,0 +1,23 @@
+{
+    "uid": "17F6DB5B5F453440D848BA88C88641758EFE",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "cg",
+        "type": "data_record",
+        "category": "animations",
+        "isFolder": true,
+        "parentId": "ROOT",
+        "data": {
+            "name": "cg",
+            "isFolder": true
+        },
+        "order": 1
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

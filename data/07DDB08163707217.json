@@ -1,0 +1,183 @@
+{
+    "uid": "07DDB08163707217",
+    "isLoaded": true,
+    "lastModificationTime": 1424023483421,
+    "items": {
+        "displayName": "$$CD6273FD0A71E547C46AFA4232B1079E96FB",
+        "id": "gs.ChangeStringVariables",
+        "group": "$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24",
+        "subGroup": "$$P235",
+        "order": 3,
+        "expanded": true,
+        "defaultValue": {
+            "source": 0,
+            "target": 0,
+            "sourceVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetReferenceDomain": "com.degica.vnm.default",
+            "targetReference": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetRangeScope": 0,
+            "rangeStart": 0,
+            "rangeEnd": 0,
+            "operation": 0,
+            "valueType": 0,
+            "textValue": ""
+        },
+        "quickItems": [
+            {
+                "label": "$$30A49AB7K99E9A4E59SAA85EAA161A0E1836",
+                "valueFormula": "return GS.CONST.TEXT_VARIABLE_TARGETS[p.target]",
+                "attribute": "target",
+                "identifier": "target",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                    "$$0985523CK3F07A46FFSA058E0688B86AE3F0",
+                    "$$E9D43A91K0788A42D6SB1BEECB5798FF9691"
+                ],
+                "showItems": [
+                    [
+                        "targetVariable"
+                    ],
+                    [
+                        "targetRangeScope",
+                        "rangeStart",
+                        "rangeEnd"
+                    ],
+                    [
+                        "targetRangeScope",
+                        "targetReference"
+                    ]
+                ]
+            },
+            {
+                "label": "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                "valueFormula": "return fmtStrVar(p.targetVariable)",
+                "attribute": "targetVariable",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                }
+            },
+            {
+                "label": "$$8F52A5EE89E7E948CD5805E9FD34F6392535",
+                "valueFormula": "return GS.CONST.VARIABLE_SCOPES[p.targetRangeScope]",
+                "attribute": "targetRangeScope",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$P240",
+                    "$$P241",
+                    "$$64D4ABA05552D44C542B22239362DF2E6D2D"
+                ]
+            },
+            {
+                "label": "$$CA1904C34CB8A64AEE891DD1784948E737C4",
+                "valueFormula": "return p.rangeStart;",
+                "type": "GSQStepper",
+                "attribute": "rangeStart",
+                "minimum": 1,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                "valueFormula": "return p.rangeEnd;",
+                "type": "GSQStepper",
+                "attribute": "rangeEnd",
+                "minimum": 1,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$E9D43A91K0788A42D6SB1BEECB5798FF9691",
+                "identifier": "targetReference",
+                "valueFormula": "return fmtNumVar(p.targetReference)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                },
+                "attribute": "targetReference",
+                "domainButton": true
+            },
+            {
+                "label": "$$2900A383K89C0A4833SB25FE5DE87EB43DD7",
+                "valueFormula": "return GS.CONST.TEXT_VARIABLE_OPERATIONS[p.operation]",
+                "attribute": "operation",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$1D0DB574K2BF9A4582SA57BE4AAC9420853B",
+                    "$$88DC6827KEC9CA46E8S92E8EFCB66507A6F9",
+                    "$$523D4D2A7F888949DB38A2C3AD9D75D92944",
+                    "$$8D0C4F2E982EC2451B3B29F4FD2E0A78AC54"
+                ]
+            },
+            {
+                "label": "$$78F4DB01K876EA43F7S97A0EC7758C04B58A",
+                "valueFormula": "return GS.CONST.TEXT_VARIABLE_SOURCES[p.source]",
+                "attribute": "source",
+                "identifier": "source",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$89ECAECDK4610A4BF8SA019E8444CA45FAB6",
+                    "$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF"
+                ],
+                "showItems": [
+                    [
+                        "text"
+                    ],
+                    [
+                        "sourceVariable"
+                    ]
+                ]
+            },
+            {
+                "label": "",
+                "valueFormula": "return fmtStrVar(p.sourceVariable)",
+                "attribute": "sourceVariable",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                }
+            }
+        ],
+        "fullSizeItems": [
+            {
+                "identifier": "text",
+                "valueFormula": "return lcsg(p.textValue) || lcs('01287A7825B6604DB689B762A33E73E024D4')",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "textValue",
+                "type": "GSQTextArea",
+                "localizable": true
+            }
+        ],
+        "rawContent": "{\n    \"displayName\": \"$$CD6273FD0A71E547C46AFA4232B1079E96FB\",\n    \"id\": \"gs.ChangeStringVariables\",\n    \"group\": \"$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24\",\n    \"subGroup\": \"$$P235\",\n    \"order\": 2,\n    \"expanded\": true,\n    \"defaultValue\": { \"source\": 0, \"target\": 0, \"sourceVariable\": GS.CONST.DEFAULT_VARIABLE_DATA, \"targetReferenceDomain\": GS.CONST.DEFAULT_DOMAIN, \"targetReference\": GS.CONST.DEFAULT_VARIABLE_DATA, \"targetVariable\": GS.CONST.DEFAULT_VARIABLE_DATA, \"targetRangeScope\": 0, \"rangeStart\": 0, \"rangeEnd\": 0, \"operation\": 0, \"valueType\": 0, \"textValue\": \"\" },\n    \"quickItems\": [\n        {\n            \"label\": \"$$30A49AB7K99E9A4E59SAA85EAA161A0E1836\",\n            \"valueFormula\": \"return GS.CONST.TEXT_VARIABLE_TARGETS[p.target]\",\n            \"attribute\": \"target\",\n            \"identifier\": \"target\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.TEXT_VARIABLE_TARGETS,\n            \"showItems\": [[\"targetVariable\"], [\"targetRangeScope\", \"rangeStart\", \"rangeEnd\"], [\"targetRangeScope\", \"targetReference\"]]\n        },\n        {\n            \"label\": \"$$CEA96B0BK6FBBA416BSB00FEDF96A1248489\",\n            \"valueFormula\": \"return fmtStrVar(p.targetVariable)\",\n            \"attribute\": \"targetVariable\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" }}\n        },\n        {\n            \"label\": \"$$8F52A5EE89E7E948CD5805E9FD34F6392535\",\n            \"valueFormula\": \"return GS.CONST.VARIABLE_SCOPES[p.targetRangeScope]\",\n            \"attribute\": \"targetRangeScope\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VARIABLE_SCOPES\n        },\n        {\n            \"label\": \"$$CA1904C34CB8A64AEE891DD1784948E737C4\",\n            \"valueFormula\": \"return p.rangeStart;\",\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"rangeStart\",\n            \"minimum\": 1,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$DC1A41265CECC346098B4931B5874A2AF62A\",\n            \"valueFormula\": \"return p.rangeEnd;\",\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"rangeEnd\",\n            \"minimum\": 1,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$E9D43A91K0788A42D6SB1BEECB5798FF9691\",\n            \"identifier\": \"targetReference\",\n            \"valueFormula\": \"return fmtNumVar(p.targetReference)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" } },\n            \"attribute\": \"targetReference\",\n            \"domainButton\": true\n        },\n        {\n            \"label\": \"$$2900A383K89C0A4833SB25FE5DE87EB43DD7\",\n            \"valueFormula\": \"return GS.CONST.TEXT_VARIABLE_OPERATIONS[p.operation]\",\n            \"attribute\": \"operation\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.TEXT_VARIABLE_OPERATIONS\n        },\n        {\n            \"label\": \"$$78F4DB01K876EA43F7S97A0EC7758C04B58A\",\n            \"valueFormula\": \"return GS.CONST.TEXT_VARIABLE_SOURCES[p.source]\",\n            \"attribute\": \"source\",\n            \"identifier\": \"source\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.TEXT_VARIABLE_SOURCES,\n            \"showItems\": [[\"text\"], [\"sourceVariable\"]]\n        },\n        {\n            \"label\": \"\",\n            \"valueFormula\": \"return fmtStrVar(p.sourceVariable)\",\n            \"attribute\": \"sourceVariable\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" }}\n        }\n    ],\n    \"fullSizeItems\": [\n        {\n            \"identifier\": \"text\",\n            \"valueFormula\": \"return lcsg(p.textValue) || lcs('01287A7825B6604DB689B762A33E73E024D4')\",\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"attribute\": \"textValue\",\n            \"type\": \"GSQTextArea\",\n            \"localizable\": true\n        }\n    ]\n}",
+        "name": "Text Variable",
+        "type": "event_command",
+        "parentId": "97163D89K8F9DA45ADSA51CE47DE4ECE311C"
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

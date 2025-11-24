@@ -1,0 +1,69 @@
+{
+    "uid": "B5FDE804K902FA47B5SAE11E7B84B306C6C0",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "3E57923EKA72FA43ECSB6ACE60B387513294",
+        "displayName": "$$3A05BEBC745F8841B61BAF390D12608F6539",
+        "windowTitle": "Switch to Layout",
+        "type": "event_command",
+        "id": "vn.SwitchToLayout",
+        "group": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+        "subGroup": "$$3821D5611242A9442D597146E7D807708DE1",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [],
+        "defaultValue": {
+            "layout": {
+                "name": ""
+            },
+            "savePrevious": 0,
+            "duration": 20
+        },
+        "quickItems": [
+            {
+                "type": "GSQTextArea",
+                "multiline": false,
+                "label": "$$P55",
+                "attribute": "layout.name",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "valueFormula": "return p.layout.name ? fmtStrVar(p.layout.name) : 'layoutName'"
+            },
+            {
+                "label": "$$80ABB339558BB14DD31B2E353D5AB51D792D",
+                "type": "GSQCheckBox",
+                "attribute": "savePrevious",
+                "identifier": "savePrevious",
+                "valueFormula": "return GS.CONST.YES_NO[p.savePrevious]"
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999,
+                "lockable": true
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$3A05BEBC745F8841B61BAF390D12608F6539\",\n    \"windowTitle\": \"Switch to Layout\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.SwitchToLayout\",\n    \"group\": \"$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA\",\n    \"subGroup\": \"$$3821D5611242A9442D597146E7D807708DE1\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"layout\": { \"name\": \"\" }, \"savePrevious\": 0, \"duration\": 20 },\n    \"quickItems\": [\n        {\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false,\n            \"label\": \"$$P55\",\n            \"attribute\": \"layout.name\",\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"valueFormula\": \"return p.layout.name ? fmtStrVar(p.layout.name) : 'layoutName'\"\n        },\n        GSQ.CONTROLS.CHECK_BOX(\"$$80ABB339558BB14DD31B2E353D5AB51D792D\", \"savePrevious\"),\n        Object.override(GSQ.CONTROLS.DURATION, {\"lockable\": true})\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Switch to Layout",
+        "order": 2
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

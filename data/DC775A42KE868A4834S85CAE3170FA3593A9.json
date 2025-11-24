@@ -1,0 +1,430 @@
+{
+    "uid": "DC775A42KE868A4834S85CAE3170FA3593A9",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "162D231FKB332A48FCS9A94E205403CA352B",
+        "name": "Animations",
+        "type": "DataRecordView",
+        "order": 3,
+        "category": "animations",
+        "descriptor": {
+            "name": "$$E38A7520KAB4EA4606SAFC2E8FB24F6AD84D",
+            "attribute": "animations",
+            "sections": [
+                {
+                    "name": "$$P25",
+                    "layout": {
+                        "type": "grid",
+                        "rows": 1,
+                        "columns": [
+                            50,
+                            -1
+                        ]
+                    },
+                    "items": [
+                        {
+                            "type": "GSLabel",
+                            "text": "$$P119",
+                            "location": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSTextField",
+                            "attribute": "name",
+                            "location": {
+                                "x": 1,
+                                "y": 0
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            },
+                            "delegates": []
+                        }
+                    ]
+                },
+                {
+                    "name": "$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5",
+                    "layout": {
+                        "type": "dynamicGrid",
+                        "fixedRowHeight": true
+                    },
+                    "items": [
+                        {
+                            "type": "GSLabel",
+                            "text": "$$8A8E1DB2K7A6DA4D4FSB393EBC507D1C2839",
+                            "location": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "size": {
+                                "w": 150,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSResourcePopupField",
+                            "folder": "Graphics/Pictures",
+                            "identifier": "graphic",
+                            "attribute": "graphic",
+                            "delegates": [
+                                {
+                                    "identifiers": [
+                                        "preview"
+                                    ],
+                                    "selector": "setImageFromResource:resource:"
+                                }
+                            ],
+                            "location": {
+                                "x": 1,
+                                "y": 0
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSLabel",
+                            "text": "$$348F00C8K5E53A4F0BSB962EE8E009B1E900",
+                            "location": {
+                                "x": 0,
+                                "y": 1
+                            },
+                            "size": {
+                                "w": 150,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSStepper",
+                            "identifier": "framesX",
+                            "defaultValue": 1,
+                            "minimum": 1,
+                            "attribute": "framesX",
+                            "bindings": [
+                                {
+                                    "source": "value",
+                                    "to": "preview",
+                                    "target": "frameGridWidth"
+                                }
+                            ],
+                            "location": {
+                                "x": 1,
+                                "y": 1
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            },
+                            "delegates": []
+                        },
+                        {
+                            "type": "GSLabel",
+                            "text": "$$01881FE3K3F07A4D8AS950CEEEC91191933A",
+                            "location": {
+                                "x": 2,
+                                "y": 1
+                            },
+                            "size": {
+                                "w": 10,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSStepper",
+                            "defaultValue": 1,
+                            "identifier": "framesY",
+                            "minimum": 1,
+                            "attribute": "framesY",
+                            "bindings": [
+                                {
+                                    "source": "value",
+                                    "to": "preview",
+                                    "target": "frameGridHeight"
+                                }
+                            ],
+                            "location": {
+                                "x": 3,
+                                "y": 1
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            },
+                            "delegates": []
+                        },
+                        {
+                            "type": "GSLabel",
+                            "defaultValue": false,
+                            "text": "$$61B471A7K71B9A4D0ASA485E08F334B735F7",
+                            "identifier": "useFrameRange",
+                            "delegates": [
+                                {
+                                    "identifiers": [
+                                        "frameRangeStart",
+                                        "frameRangeEnd",
+                                        "frameRangeLabel"
+                                    ],
+                                    "selector": "setEnabled:enabled:"
+                                }
+                            ],
+                            "location": {
+                                "x": 0,
+                                "y": 2
+                            },
+                            "size": {
+                                "w": 150,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSStepper",
+                            "minimum": 1,
+                            "maximum": 200,
+                            "identifier": "frameRangeStart",
+                            "attribute": "frameRange.start",
+                            "bindings": [
+                                {
+                                    "source": "value",
+                                    "to": "preview",
+                                    "target": "frameRangeStart"
+                                }
+                            ],
+                            "location": {
+                                "x": 1,
+                                "y": 2
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            },
+                            "delegates": []
+                        },
+                        {
+                            "type": "GSLabel",
+                            "identifier": "frameRangeLabel",
+                            "text": "$$P187",
+                            "location": {
+                                "x": 2,
+                                "y": 2
+                            },
+                            "size": {
+                                "w": 10,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSStepper",
+                            "minimum": 0,
+                            "maximum": 200,
+                            "attribute": "frameRange.end",
+                            "identifier": "frameRangeEnd",
+                            "bindings": [
+                                {
+                                    "source": "value",
+                                    "to": "preview",
+                                    "target": "frameRangeEnd"
+                                }
+                            ],
+                            "location": {
+                                "x": 3,
+                                "y": 2
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            },
+                            "delegates": []
+                        },
+                        {
+                            "type": "GSCheckBox",
+                            "defaultValue": false,
+                            "text": "$$FD67BB60K5FE6A4627S859DEA9F5A7C91B51",
+                            "identifier": "useRepetitionFrameRange",
+                            "attribute": "useRepetitionFrameRange",
+                            "delegates": [
+                                {
+                                    "identifiers": [
+                                        "repetitionFrameRangeStart",
+                                        "repetitionFrameRangeEnd",
+                                        "repetitionFrameRangeLabel"
+                                    ],
+                                    "selector": "setEnabled:enabled:"
+                                }
+                            ],
+                            "location": {
+                                "x": 0,
+                                "y": 3
+                            },
+                            "size": {
+                                "w": 150,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSStepper",
+                            "minimum": 1,
+                            "maximum": 200,
+                            "identifier": "repetitionFrameRangeStart",
+                            "attribute": "repetitionFrameRange.start",
+                            "bindings": [
+                                {
+                                    "source": "value",
+                                    "to": "preview",
+                                    "target": "repetitionFrameRangeStart"
+                                }
+                            ],
+                            "location": {
+                                "x": 1,
+                                "y": 3
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            },
+                            "delegates": []
+                        },
+                        {
+                            "type": "GSLabel",
+                            "identifier": "repetitionFrameRangeLabel",
+                            "text": "$$P187",
+                            "location": {
+                                "x": 2,
+                                "y": 3
+                            },
+                            "size": {
+                                "w": 10,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSStepper",
+                            "minimum": 0,
+                            "maximum": 200,
+                            "attribute": "repetitionFrameRange.end",
+                            "identifier": "repetitionFrameRangeEnd",
+                            "bindings": [
+                                {
+                                    "source": "value",
+                                    "to": "preview",
+                                    "target": "repetitionFrameRangeEnd"
+                                }
+                            ],
+                            "location": {
+                                "x": 3,
+                                "y": 3
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            },
+                            "delegates": []
+                        },
+                        {
+                            "type": "GSLabel",
+                            "identifier": "durationLabel",
+                            "text": "$$P7",
+                            "location": {
+                                "x": 0,
+                                "y": 5
+                            },
+                            "size": {
+                                "w": 150,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSStepper",
+                            "minimum": 0,
+                            "maximum": 9999999,
+                            "attribute": "duration",
+                            "identifier": "duration",
+                            "valueTranslator": {
+                                "write": "return (v||0) / 1000 * GS.CONST.GAME_FRAME_RATE",
+                                "read": "return ROUND((v||0) / GS.CONST.GAME_FRAME_RATE * 1000)"
+                            },
+                            "bindings": [
+                                {
+                                    "source": "value",
+                                    "to": "preview",
+                                    "valueTranslator": {
+                                        "write": "return (v||0) / 1000 * GS.CONST.GAME_FRAME_RATE",
+                                        "read": "return ROUND((v||0) / GS.CONST.GAME_FRAME_RATE * 1000)"
+                                    },
+                                    "target": "duration"
+                                }
+                            ],
+                            "location": {
+                                "x": 1,
+                                "y": 5
+                            },
+                            "size": {
+                                "w": -1,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSLabel",
+                            "text": "$$0C0FFFB48D0001433E7A4057070263A79F59",
+                            "location": {
+                                "x": 2,
+                                "y": 5
+                            },
+                            "size": {
+                                "w": 60,
+                                "h": -1
+                            }
+                        },
+                        {
+                            "type": "GSCheckBox",
+                            "text": "$$0E41DFB1K80E3A4E33S8433E7F49B439D996",
+                            "attribute": "repeat",
+                            "defaultValue": false,
+                            "identifier": "repeat",
+                            "frame": [
+                                3,
+                                5,
+                                100,
+                                -1
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "$$P117",
+                    "layout": {
+                        "type": "dynamicGrid"
+                    },
+                    "items": [
+                        {
+                            "type": "GSSimpleAnimationPreview",
+                            "identifier": "preview",
+                            "folder": "Graphics/Pictures",
+                            "repeat": true,
+                            "frame": [
+                                0,
+                                0,
+                                500,
+                                400
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n  \"parentId\": \"162D231FKB332A48FCS9A94E205403CA352B\",\n\"name\": \"Animations\",\n  \"type\": \"DataRecordView\",\n  \"order\": 3,\n  \"category\": \"animations\",\n  \"descriptor\": {\n    \"name\": \"$$E38A7520KAB4EA4606SAFC2E8FB24F6AD84D\",\n    \"attribute\": \"animations\",\n    \"sections\": [\n      {\n        \"name\": \"$$P25\",\n        \"layout\": {\n          \"type\": \"grid\",\n          \"rows\": 1,\n          \"columns\": [\n            50,\n            -1\n          ]\n        },\n        \"items\": [\n          {\n            \"type\": \"GSLabel\",\n            \"text\": \"$$P119\",\n            \"location\": {\n              \"x\": 0,\n              \"y\": 0\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSTextField\",\n            \"attribute\": \"name\",\n            \"location\": {\n              \"x\": 1,\n              \"y\": 0\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            },\n            \"delegates\": []\n          }\n        ]\n      },\n      {\n        \"name\": \"$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5\",\n        \"layout\": {\n          \"type\": \"dynamicGrid\",\n          \"fixedRowHeight\": true\n        },\n        \"items\": [\n          {\n            \"type\": \"GSLabel\",\n            \"text\": \"$$8A8E1DB2K7A6DA4D4FSB393EBC507D1C2839\",\n            \"location\": {\n              \"x\": 0,\n              \"y\": 0\n            },\n            \"size\": {\n              \"w\": 150,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSResourcePopupField\",\n            \"folder\": \"Graphics/Pictures\",\n            \"identifier\": \"graphic\",\n            \"attribute\": \"graphic\",\n            \"delegates\": [\n              {\n                \"identifiers\": [\n                  \"preview\"\n                ],\n                \"selector\": \"setImageFromResource:resource:\"\n              }\n            ],\n            \"location\": {\n              \"x\": 1,\n              \"y\": 0\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSLabel\",\n            \"text\": \"$$348F00C8K5E53A4F0BSB962EE8E009B1E900\",\n            \"location\": {\n              \"x\": 0,\n              \"y\": 1\n            },\n            \"size\": {\n              \"w\": 150,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSStepper\",\n            \"identifier\": \"framesX\",\n            \"defaultValue\": 1,\n            \"minimum\": 1,\n            \"attribute\": \"framesX\",\n            \"bindings\": [\n              {\n                \"source\": \"value\",\n                \"to\": \"preview\",\n                \"target\": \"frameGridWidth\"\n              }\n            ],\n            \"location\": {\n              \"x\": 1,\n              \"y\": 1\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            },\n            \"delegates\": []\n          },\n          {\n            \"type\": \"GSLabel\",\n            \"text\": \"$$01881FE3K3F07A4D8AS950CEEEC91191933A\",\n            \"location\": {\n              \"x\": 2,\n              \"y\": 1\n            },\n            \"size\": {\n              \"w\": 10,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSStepper\",\n            \"defaultValue\": 1,\n            \"identifier\": \"framesY\",\n            \"minimum\": 1,\n            \"attribute\": \"framesY\",\n            \"bindings\": [\n              {\n                \"source\": \"value\",\n                \"to\": \"preview\",\n                \"target\": \"frameGridHeight\"\n              }\n            ],\n            \"location\": {\n              \"x\": 3,\n              \"y\": 1\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            },\n            \"delegates\": []\n          },\n          {\n            \"type\": \"GSLabel\",\n            \"defaultValue\": false,\n            \"text\": \"$$61B471A7K71B9A4D0ASA485E08F334B735F7\",\n            \"identifier\": \"useFrameRange\",\n            \"delegates\": [\n              {\n                \"identifiers\": [\n                  \"frameRangeStart\",\n                  \"frameRangeEnd\",\n                  \"frameRangeLabel\"\n                ],\n                \"selector\": \"setEnabled:enabled:\"\n              }\n            ],\n            \"location\": {\n              \"x\": 0,\n              \"y\": 2\n            },\n            \"size\": {\n              \"w\": 150,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSStepper\",\n            \"minimum\": 1,\n            \"maximum\": 200,\n            \"identifier\": \"frameRangeStart\",\n            \"attribute\": \"frameRange.start\",\n            \"bindings\": [\n              {\n                \"source\": \"value\",\n                \"to\": \"preview\",\n                \"target\": \"frameRangeStart\"\n              }\n            ],\n            \"location\": {\n              \"x\": 1,\n              \"y\": 2\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            },\n            \"delegates\": []\n          },\n          {\n            \"type\": \"GSLabel\",\n            \"identifier\": \"frameRangeLabel\",\n            \"text\": \"$$P187\",\n            \"location\": {\n              \"x\": 2,\n              \"y\": 2\n            },\n            \"size\": {\n              \"w\": 10,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSStepper\",\n            \"minimum\": 0,\n            \"maximum\": 200,\n            \"attribute\": \"frameRange.end\",\n            \"identifier\": \"frameRangeEnd\",\n            \"bindings\": [\n              {\n                \"source\": \"value\",\n                \"to\": \"preview\",\n                \"target\": \"frameRangeEnd\"\n              }\n            ],\n            \"location\": {\n              \"x\": 3,\n              \"y\": 2\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            },\n            \"delegates\": []\n          },\n          {\n            \"type\": \"GSCheckBox\",\n            \"defaultValue\": false,\n            \"text\": \"$$FD67BB60K5FE6A4627S859DEA9F5A7C91B51\",\n            \"identifier\": \"useRepetitionFrameRange\",\n            \"attribute\": \"useRepetitionFrameRange\",\n            \"delegates\": [\n              {\n                \"identifiers\": [\n                  \"repetitionFrameRangeStart\",\n                  \"repetitionFrameRangeEnd\",\n                  \"repetitionFrameRangeLabel\"\n                ],\n                \"selector\": \"setEnabled:enabled:\"\n              }\n            ],\n            \"location\": {\n              \"x\": 0,\n              \"y\": 3\n            },\n            \"size\": {\n              \"w\": 150,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSStepper\",\n            \"minimum\": 1,\n            \"maximum\": 200,\n            \"identifier\": \"repetitionFrameRangeStart\",\n            \"attribute\": \"repetitionFrameRange.start\",\n            \"bindings\": [\n              {\n                \"source\": \"value\",\n                \"to\": \"preview\",\n                \"target\": \"repetitionFrameRangeStart\"\n              }\n            ],\n            \"location\": {\n              \"x\": 1,\n              \"y\": 3\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            },\n            \"delegates\": []\n          },\n          {\n            \"type\": \"GSLabel\",\n            \"identifier\": \"repetitionFrameRangeLabel\",\n            \"text\": \"$$P187\",\n            \"location\": {\n              \"x\": 2,\n              \"y\": 3\n            },\n            \"size\": {\n              \"w\": 10,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSStepper\",\n            \"minimum\": 0,\n            \"maximum\": 200,\n            \"attribute\": \"repetitionFrameRange.end\",\n            \"identifier\": \"repetitionFrameRangeEnd\",\n            \"bindings\": [\n              {\n                \"source\": \"value\",\n                \"to\": \"preview\",\n                \"target\": \"repetitionFrameRangeEnd\"\n              }\n            ],\n            \"location\": {\n              \"x\": 3,\n              \"y\": 3\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            },\n            \"delegates\": []\n          },\n          {\n            \"type\": \"GSLabel\",\n            \"identifier\": \"durationLabel\",\n            \"text\": \"$$P7\",\n            \"location\": {\n              \"x\": 0,\n              \"y\": 5\n            },\n            \"size\": {\n              \"w\": 150,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSStepper\",\n            \"minimum\": 0,\n            \"maximum\": 9999999,\n            \"attribute\": \"duration\",\n            \"identifier\": \"duration\",\n            \"valueTranslator\": GSO.HELPERS.TIME_VALUE_TRANSLATOR(),\n            \"bindings\": [\n              {\n                \"source\": \"value\",\n                \"to\": \"preview\",\n                \"valueTranslator\": GSO.HELPERS.TIME_VALUE_TRANSLATOR(),\n                \"target\": \"duration\"\n              }\n            ],\n            \"location\": {\n              \"x\": 1,\n              \"y\": 5\n            },\n            \"size\": {\n              \"w\": -1,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSLabel\",\n            \"text\": \"$$0C0FFFB48D0001433E7A4057070263A79F59\",\n            \"location\": {\n              \"x\": 2,\n              \"y\": 5\n            },\n            \"size\": {\n              \"w\": 60,\n              \"h\": -1\n            }\n          },\n          {\n            \"type\": \"GSCheckBox\",\n            \"text\": \"$$0E41DFB1K80E3A4E33S8433E7F49B439D996\",\n            \"attribute\": \"repeat\",\n            \"defaultValue\": false,\n            \"identifier\": \"repeat\",\n            \"frame\": [\n              3,\n              5,\n              100,\n              -1\n            ]\n          }\n        ]\n      },\n      {\n        \"name\": \"$$P117\",\n        \"layout\": {\n          \"type\": \"dynamicGrid\"\n        },\n        \"items\": [\n          {\n            \"type\": \"GSSimpleAnimationPreview\",\n            \"identifier\": \"preview\",\n            \"folder\": \"Graphics/Pictures\",\n            \"repeat\": true,\n            \"frame\": [\n              0,\n              0,\n              500,\n              400\n            ]\n          }\n        ]\n      }\n    ]\n  }\n}"
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

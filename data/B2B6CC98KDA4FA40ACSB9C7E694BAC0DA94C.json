@@ -1,0 +1,153 @@
+{
+    "uid": "B2B6CC98KDA4FA40ACSB9C7E694BAC0DA94C",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "type": "event_command",
+        "title": "Shake Screen",
+        "displayName": "$$P12",
+        "id": "gs.ShakeScreen",
+        "group": "$$0620EF3CK3406A4B70SA1ACE3750D5C17E57",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "windowSize": {
+            "w": 380
+        },
+        "nodes": [],
+        "defaultValue": {
+            "duration": 0,
+            "waitForCompletion": 0,
+            "range": {
+                "y": 5,
+                "x": 0
+            },
+            "speed": 5,
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$2AA1FF5A1F93584F8F585F9663B9498D3026",
+                "type": "GSQStepper",
+                "attribute": "range.x",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "defaultValue": 0,
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$4CCA364F5644674BFA1AC0E973871C292D40",
+                "type": "GSQStepper",
+                "attribute": "range.y",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "defaultValue": 0,
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$D61D429627E27449B86881C3DE0446316091",
+                "valueFormula": "return p.speed",
+                "type": "GSQStepper",
+                "attribute": "speed",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "sections": [],
+        "rawContent": "{\n    \"type\": \"event_command\",\n    \"title\": \"Shake Screen\",\n    \"displayName\": \"$$P12\",\n    \"id\": \"gs.ShakeScreen\",\n    \"group\": \"$$0620EF3CK3406A4B70SA1ACE3750D5C17E57\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"windowSize\": {\n        \"w\": 380\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"duration\": 0, \"waitForCompletion\": 0, \"range\": { \"y\": 5, \"x\": 0 }, \"speed\": 5, \"easing\": { \"type\": 0, \"inOut\": 1 } },\n    \"quickItems\": GSQ.CONTROLS.SHAKING.concat(GSQ.CONTROLS.TIMING),\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    },\n    \"sections\": [\n    ]\n}",
+        "name": "Shake Screen",
+        "parentId": "85446216KA82AA4A7DS8F25E541AB7EFA66A",
+        "order": 2
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

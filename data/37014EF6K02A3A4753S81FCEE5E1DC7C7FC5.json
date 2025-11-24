@@ -1,0 +1,133 @@
+{
+    "uid": "37014EF6K02A3A4753S81FCEE5E1DC7C7FC5",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "displayName": "$$FC6D5BD93DE6E84CEE4BF0768110E5367492",
+        "id": "gs.ListAdd",
+        "group": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+        "subGroup": "$$499F821A3A6E764627192618B66F3B07368F",
+        "defaultValue": {
+            "valueType": 0,
+            "listVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "numberValue": 0,
+            "switchValue": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "stringValue": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "listValue": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+                "valueFormula": "return fmtListVar(p.listVariable)",
+                "attribute": "listVariable",
+                "identifier": "list",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            },
+            {
+                "label": "$$89ECAECDK4610A4BF8SA019E8444CA45FAB6",
+                "valueFormula": "return GS.CONST.LIST_VARIABLE_VALUE_TYPES[p.valueType]",
+                "attribute": "valueType",
+                "identifier": "valueType",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                    "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                    "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                    "$$C9C23A6E5A74F84FE07940677A0C2E37E13D"
+                ],
+                "showItems": [
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "stringValue"
+                    ],
+                    [
+                        "listValue"
+                    ]
+                ]
+            },
+            {
+                "label": "",
+                "attribute": "numberValue",
+                "valueFormula": "return fmtNumVar(p.numberValue)",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "",
+                "attribute": "switchValue",
+                "valueFormula": "return fmtBoolVar(p.switchValue)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "booleans"
+                    }
+                }
+            },
+            {
+                "label": "",
+                "attribute": "stringValue",
+                "valueFormula": "return fmtStrVar(p.stringValue)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                }
+            },
+            {
+                "label": "",
+                "attribute": "listValue",
+                "valueFormula": "return fmtListVar(p.listValue)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            }
+        ],
+        "rawContent": "{\n    \"displayName\": \"$$FC6D5BD93DE6E84CEE4BF0768110E5367492\",\n    \"id\": \"gs.ListAdd\",\n    \"group\": \"$$C9C23A6E5A74F84FE07940677A0C2E37E13D\",\n    \"subGroup\": \"$$499F821A3A6E764627192618B66F3B07368F\",\n    \"defaultValue\": { \"valueType\": 0, \"listVariable\": GS.CONST.DEFAULT_VARIABLE_DATA, \"numberValue\": 0, \"switchValue\": GS.CONST.DEFAULT_VARIABLE_DATA, \"stringValue\": GS.CONST.DEFAULT_VARIABLE_DATA, \"listValue\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"quickItems\": [\n        GSQ.CONTROLS.LIST_VARIABLE_SELECTION\n    ].concat(GSQ.CONTROLS.LIST_VARIABLE_VALUE_SELECTION)\n}",
+        "name": "Add to List",
+        "type": "event_command",
+        "parentId": "39568CDEK37BDA4AF4SB2BCEC53E3EBBE419",
+        "order": 0
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

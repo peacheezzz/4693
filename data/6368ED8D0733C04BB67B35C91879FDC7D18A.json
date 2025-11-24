@@ -1,0 +1,44 @@
+{
+    "uid": "6368ED8D0733C04BB67B35C91879FDC7D18A",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "vn.BacklogVisibility",
+        "group": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "subGroup": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "displayName": "$$68CA476A74186848E7592192A62C8DF9C35F",
+        "defaultValue": {
+            "visible": 1,
+            "backgroundVisible": 1
+        },
+        "quickItems": [
+            {
+                "label": "$$8FC3C1F0K7714A494AS8514EB17C32F29FC3",
+                "type": "GSQCheckBox",
+                "attribute": "visible",
+                "valueFormula": "return GS.CONST.YES_NO[p.visible]",
+                "enableItems": [
+                    [],
+                    [
+                        "backgroundVisible"
+                    ]
+                ]
+            },
+            {
+                "label": "$$4D1C5E445B50184FAC59D4554EB1F06ACBEC",
+                "type": "GSQCheckBox",
+                "attribute": "backgroundVisible",
+                "valueFormula": "return GS.CONST.YES_NO[p.backgroundVisible]"
+            }
+        ],
+        "rawContent": "{\n    \"id\": \"vn.BacklogVisibility\",\n    \"group\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"subGroup\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"displayName\": \"$$68CA476A74186848E7592192A62C8DF9C35F\",\n    \"defaultValue\": { \"visible\": 1, \"backgroundVisible\": 1 },\n    \"quickItems\": [\n        {\n            \"label\": \"$$8FC3C1F0K7714A494AS8514EB17C32F29FC3\",\n            \"type\": \"GSQCheckBox\",\n            \"attribute\": \"visible\",\n            \"valueFormula\": \"return GS.CONST.YES_NO[p.visible]\",\n            \"enableItems\": [[], [\"backgroundVisible\"]]\n        },\n        {\n            \"label\": \"$$4D1C5E445B50184FAC59D4554EB1F06ACBEC\",\n            \"type\": \"GSQCheckBox\",\n            \"attribute\": \"backgroundVisible\",\n            \"valueFormula\": \"return GS.CONST.YES_NO[p.backgroundVisible]\"\n        }\n    ]\n}",
+        "name": "Backlog Visibility",
+        "type": "event_command",
+        "parentId": "8CC0A736KF347A454AS899FE4F42878D912C",
+        "order": 15
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

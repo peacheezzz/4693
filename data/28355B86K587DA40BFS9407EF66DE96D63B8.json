@@ -1,0 +1,48 @@
+{
+    "uid": "28355B86K587DA40BFS9407EF66DE96D63B8",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "39568CDEK37BDA4AF4SB2BCEC53E3EBBE419",
+        "displayName": "$$A95D1BE01269E44E1E7961F8286ED66B7D5F",
+        "windowTitle": "$$67B3604CK927EA4C25S9433EDD54150ADEB0",
+        "type": "event_command",
+        "id": "gs.ListShuffle",
+        "group": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+        "subGroup": "$$499F821A3A6E764627192618B66F3B07368F",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [],
+        "defaultValue": {
+            "listVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+                "valueFormula": "return fmtListVar(p.listVariable)",
+                "attribute": "listVariable",
+                "identifier": "list",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$A95D1BE01269E44E1E7961F8286ED66B7D5F\",\n    \"windowTitle\": \"$$67B3604CK927EA4C25S9433EDD54150ADEB0\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.ListShuffle\",\n    \"group\": \"$$C9C23A6E5A74F84FE07940677A0C2E37E13D\",\n    \"subGroup\": \"$$499F821A3A6E764627192618B66F3B07368F\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"listVariable\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"quickItems\": [\n        GSQ.CONTROLS.LIST_VARIABLE_SELECTION\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Shuffle List",
+        "order": 8
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

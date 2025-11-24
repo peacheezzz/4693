@@ -1,0 +1,75 @@
+{
+    "uid": "5AE1AE10K6175A45F6SA833EBC4F5F0C9AEE",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "displayName": "$$1E4278B669969640628BE385259A498BF5EA",
+        "id": "gs.CheckTextVariable",
+        "group": "$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24",
+        "subGroup": "$$0982629273001344698BD7512598CADED0B4",
+        "defaultValue": {
+            "targetVariable": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "operation": 0,
+            "value": "",
+            "label": ""
+        },
+        "quickItems": [
+            {
+                "label": "$$9B944D2D4639444AA19AE865CF9A2A740205",
+                "valueFormula": "return fmtStrVar(p.targetVariable)",
+                "attribute": "targetVariable",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                }
+            },
+            {
+                "label": "$$C5EB04527677A744804A8F85744C8BE285F3",
+                "valueFormula": "return GS.CONST.COMPARE_OPERATIONS[p.operation]",
+                "attribute": "operation",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$FD7F42C7K8032A4020SA92CEFD61743CA00E",
+                    "$$C8CD0C11KE33BA4EE4SA59EECD429A9E49AD",
+                    "$$71240A2FK6698A4123SA8ADEB07A3E6E0F68",
+                    "$$4F23A754KD61DA42F5S920CEB7D988404BD0",
+                    "$$62C42C66K9995A468ESAFCFE3F84551CC797",
+                    "$$1B879F39KF9C0A4F95SB2CEEEA931D2D8B26"
+                ]
+            },
+            {
+                "label": "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "valueFormula": "return fmtStrVar(p.value || lcs('CEA96B0BK6FBBA416BSB00FEDF96A1248489'))",
+                "attribute": "value",
+                "type": "GSQTextArea",
+                "multiline": false
+            },
+            {
+                "label": "$$A28F7E4D5EB8774F7178B5A7157571D193FB",
+                "valueFormula": "return p.label || lcs('DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C')",
+                "attribute": "label",
+                "type": "GSQTextArea",
+                "multiline": false
+            }
+        ],
+        "rawContent": "{\n    \"displayName\": \"$$1E4278B669969640628BE385259A498BF5EA\",\n    \"id\": \"gs.CheckTextVariable\",\n    \"group\": \"$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24\",\n    \"subGroup\": \"$$0982629273001344698BD7512598CADED0B4\",\n    \"defaultValue\": { \"targetVariable\": { \"scope\": 1, \"index\": 0, \"domain\": GS.CONST.DEFAULT_DOMAIN }, \"operation\": 0, \"value\": \"\", \"label\": \"\" },\n    \"quickItems\": [\n        {\n            \"label\": \"$$9B944D2D4639444AA19AE865CF9A2A740205\",\n            \"valueFormula\": \"return fmtStrVar(p.targetVariable)\",\n            \"attribute\": \"targetVariable\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" }}\n        },\n        {\n            \"label\": \"$$C5EB04527677A744804A8F85744C8BE285F3\",\n            \"valueFormula\": \"return GS.CONST.COMPARE_OPERATIONS[p.operation]\",\n            \"attribute\": \"operation\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.COMPARE_OPERATIONS\n        },\n        {\n            \"label\": \"$$CEA96B0BK6FBBA416BSB00FEDF96A1248489\",\n            \"variableButton\": {\"dataSource\": \"strings\"},\n            \"valueFormula\": \"return fmtStrVar(p.value || lcs('CEA96B0BK6FBBA416BSB00FEDF96A1248489'))\",\n            \"attribute\": \"value\",\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false\n        },\n        {\n            \"label\": \"$$A28F7E4D5EB8774F7178B5A7157571D193FB\",\n            \"valueFormula\": \"return p.label || lcs('DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C')\",\n            \"attribute\": \"label\",\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false\n        }\n    ]\n}",
+        "name": "Check Text",
+        "type": "event_command",
+        "parentId": "97163D89K8F9DA45ADSA51CE47DE4ECE311C",
+        "order": 13
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "uid": "D7D757A4716B16447D5A533336EBFC4665F7",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "gs.ListClear",
+        "displayName": "$$AD2E05516DEAB64E663B11F66EA98E936532",
+        "group": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+        "subGroup": "$$499F821A3A6E764627192618B66F3B07368F",
+        "defaultValue": {
+            "listVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+                "valueFormula": "return fmtListVar(p.listVariable)",
+                "attribute": "listVariable",
+                "identifier": "list",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            }
+        ],
+        "rawContent": "{\n    \"id\": \"gs.ListClear\",\n    \"displayName\": \"$$AD2E05516DEAB64E663B11F66EA98E936532\",\n    \"group\": \"$$C9C23A6E5A74F84FE07940677A0C2E37E13D\",\n    \"subGroup\": \"$$499F821A3A6E764627192618B66F3B07368F\",\n    \"defaultValue\": { \"listVariable\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"quickItems\": [\n        GSQ.CONTROLS.LIST_VARIABLE_SELECTION\n    ]\n}",
+        "name": "Clear List",
+        "type": "event_command",
+        "parentId": "39568CDEK37BDA4AF4SB2BCEC53E3EBBE419",
+        "order": 12
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

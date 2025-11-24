@@ -1,0 +1,105 @@
+{
+    "uid": "77581DC1KC892A481FSAFE5EF1F3D31150C0",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "windowTitle": "$$B30ED82745B4434C1A09FE025BC5866F2EE0",
+        "type": "custom_view",
+        "windowSize": {
+            "w": 400,
+            "h": 400
+        },
+        "windowSizeFormula": "var res = GS.GAME.previewResolution(); return { w: res.w + GS.CONST.WINDOW_PADDING }",
+        "sections": [
+            {
+                "name": "Position",
+                "identifier": "positionSection",
+                "noBorder": true,
+                "column": 0,
+                "items": [
+                    {
+                        "type": "GSLabel",
+                        "text": "$$B36B17C48DADB44C7968D7B397DAC6694D6B",
+                        "frame": [
+                            0,
+                            0
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSResourcePopupField",
+                        "folder": "Graphics/Pictures",
+                        "identifier": "image",
+                        "attribute": "previewImage",
+                        "bindings": [
+                            {
+                                "source": "image",
+                                "to": "positionView",
+                                "target": "cells.0"
+                            }
+                        ],
+                        "frame": [
+                            1,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSLabel",
+                        "text": "$$2983646A2E7A344B6429830460A50DA4FB4A",
+                        "frame": [
+                            0,
+                            1
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSResourcePopupField",
+                        "folder": "Graphics/Backgrounds",
+                        "identifier": "resource",
+                        "attribute": "previewBackground",
+                        "delegates": [
+                            {
+                                "identifiers": [
+                                    "positionView"
+                                ],
+                                "selector": "setBackground:resource:"
+                            }
+                        ],
+                        "frame": [
+                            1,
+                            1
+                        ]
+                    },
+                    {
+                        "type": "GSDispositionView",
+                        "allowCellZoom": true,
+                        "allowCellRotate": true,
+                        "border": true,
+                        "identifier": "positionView",
+                        "cellPropertiesDialog": {
+                            "uid": "7C0818997DE4D742260BAF889CD17188005B"
+                        },
+                        "storeMode": "single",
+                        "attribute": "position",
+                        "folder": "Graphics/Pictures",
+                        "cellCount": 1,
+                        "scaleForPreview": true,
+                        "frame": [
+                            0,
+                            3
+                        ],
+                        "sizeFormula": "return GS.GAME.previewResolution();"
+                    }
+                ]
+            }
+        ],
+        "rawContent": "{\n    \"windowTitle\": \"$$B30ED82745B4434C1A09FE025BC5866F2EE0\",\n    \"type\": \"custom_view\",\n    \"windowSize\": {\n        \"w\": 400, \"h\": 400\n    },\n    \"windowSizeFormula\": \"var res = GS.GAME.previewResolution(); return { w: res.w + GS.CONST.WINDOW_PADDING }\",\n    \"sections\": [\n        {\n            \"name\": \"Position\",\n            \"identifier\": \"positionSection\",\n            \"noBorder\": true,\n            \"column\": 0,\n            \"items\": [\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$B36B17C48DADB44C7968D7B397DAC6694D6B\",\n                    \"frame\": [0, 0],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSResourcePopupField\",\n                    \"folder\": \"Graphics/Pictures\",\n                    \"identifier\": \"image\",\n                    \"attribute\": \"previewImage\",\n                    \"bindings\": [{ \"source\": \"image\",  \"to\": \"positionView\", \"target\": \"cells.0\" }],\n                    \"frame\": [1, 0]\n                },\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$2983646A2E7A344B6429830460A50DA4FB4A\",\n                    \"frame\": [0, 1],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSResourcePopupField\",\n                    \"folder\": \"Graphics/Backgrounds\",\n                    \"identifier\": \"resource\",\n                    \"attribute\": \"previewBackground\",\n                    \"delegates\": [{ \"identifiers\": [\"positionView\"], \"selector\": \"setBackground:resource:\"}],\n                    \"frame\": [1, 1]\n                },\n                {\n                    \"type\": \"GSDispositionView\",\n                    \"allowCellZoom\": true,\n                    \"allowCellRotate\": true,\n                    \"border\": true,\n                    \"identifier\": \"positionView\",\n                    \"cellPropertiesDialog\": { \"uid\": \"7C0818997DE4D742260BAF889CD17188005B\" },\n                    \"storeMode\": \"single\",\n                    \"attribute\": \"position\",\n                    \"folder\": \"Graphics/Pictures\",\n                    \"cellCount\": 1,\n                    \"scaleForPreview\": true,\n                    \"frame\": [0, 3],\n                    \"sizeFormula\": \"return GS.GAME.previewResolution();\"\n                }\n            ]\n        }\n    ]\n}",
+        "name": "Position Selection Image",
+        "parentId": "AC1ABDCBK050BA4863S9964E3DC378247DAD",
+        "order": 14
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

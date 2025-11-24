@@ -1,0 +1,90 @@
+{
+    "uid": "55AB3A0CK561DA4554SACC8E438058391386",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "7A22C363K2908A4E47S847CEF6497E3C751F",
+        "displayName": "$$E2726CAB4B2B6643AF2AEF17196F44EAFD68",
+        "windowTitle": "$$6CB6FA85KD0ABA4653S92D1E908EACECA578",
+        "type": "event_command",
+        "id": "vn.CharacterMotionBlur",
+        "group": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+        "subGroup": "$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5",
+        "windowSize": {
+            "w": 400,
+            "h": 400
+        },
+        "columns": [
+            400
+        ],
+        "nodes": [
+            {
+                "name": "return GS.ECH.textForShowPicture(p)",
+                "id": "vn.CharacterMotionBlur"
+            }
+        ],
+        "defaultValue": {
+            "characterId": null,
+            "motionBlur": {
+                "enabled": 0,
+                "delay": 2,
+                "opacity": 100,
+                "dissolveSpeed": 3
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId)",
+                "attribute": "characterId",
+                "identifier": "character",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQDataRecordField",
+                "dataSource": "characters"
+            },
+            {
+                "label": "$$39F3501D5398B243109AC4E68EA163812B38",
+                "lockable": true,
+                "type": "GSQCheckBox",
+                "attribute": "motionBlur.enabled",
+                "valueFormula": "return GS.CONST.YES_NO[p.motionBlur.enabled]",
+                "enableItems": [
+                    "motionBlur.delay",
+                    "motionBlur.dissolveSpeed",
+                    "motionBlur.opacity"
+                ]
+            },
+            {
+                "label": "$$4DAD1BF70B09254B8C7898E012FD7FAF15CC",
+                "type": "GSQStepper",
+                "attribute": "motionBlur.delay",
+                "minimum": 1,
+                "maximum": 1000
+            },
+            {
+                "label": "$$BE21611B4A0B334CE4092F34651F62808466",
+                "type": "GSQStepper",
+                "attribute": "motionBlur.dissolveSpeed",
+                "minimum": 1,
+                "maximum": 255
+            },
+            {
+                "label": "$$P176",
+                "type": "GSQStepper",
+                "attribute": "motionBlur.opacity",
+                "minimum": 1,
+                "maximum": 255
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$E2726CAB4B2B6643AF2AEF17196F44EAFD68\",\n    \"windowTitle\": \"$$6CB6FA85KD0ABA4653S92D1E908EACECA578\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.CharacterMotionBlur\",\n    \"group\": \"$$1CCE5315K1F61A4059SBC64E0B6CECA383C3\",\n    \"subGroup\": \"$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5\",\n    \"windowSize\": {\n        \"w\": 400,\n        \"h\": 400\n    },\n    \"columns\": [\n        400\n    ],\n    \"nodes\": [\n        {\n            \"name\": \"return GS.ECH.textForShowPicture(p)\",\n            \"id\": \"vn.CharacterMotionBlur\"\n        }\n    ],\n    \"defaultValue\": { \"characterId\": GS.CONST.DEFAULT_RECORD_ID, \"motionBlur\": GS.CONST.DEFAULT_MOTION_BLUR_DATA },\n    \"quickItems\": ([GSQ.CONTROLS.CHARACTER_SELECTION]).concat(GSQ.CONTROLS.MOTION_BLUR),\n    \"sections\": [\n    ]\n}",
+        "name": "Character Motion Blur",
+        "order": 4
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

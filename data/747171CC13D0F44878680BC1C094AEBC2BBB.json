@@ -1,0 +1,43 @@
+{
+    "uid": "747171CC13D0F44878680BC1C094AEBC2BBB",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "idle",
+        "type": "data_record",
+        "category": "characterExpressions",
+        "id": "747171CC13D0F44878680BC1C094AEBC2BBB",
+        "isFolder": false,
+        "parentId": "64CCF81D5A8710427299AD891B42112F6AB8",
+        "data": {
+            "idleTime": {
+                "start": 0,
+                "end": 0
+            },
+            "name": "idle",
+            "idleSpeed": 100,
+            "idle": [
+                {
+                    "resource": {
+                        "name": "marc_test.png",
+                        "folderPath": "Graphics/Characters/marc",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": null
+                    }
+                }
+            ],
+            "talkingSpeed": 100,
+            "talking": [],
+            "index": "747171CC13D0F44878680BC1C094AEBC2BBB"
+        },
+        "order": 0
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

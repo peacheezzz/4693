@@ -1,0 +1,16 @@
+{
+    "uid": "D854BCB567855540D948D91802ED8FE27A4E",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "rawContent": "{}\n",
+        "name": "__TRANSLATION_HELP",
+        "type": "custom_view",
+        "parentId": "AC1ABDCBK050BA4863S9964E3DC378247DAD",
+        "order": 42
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

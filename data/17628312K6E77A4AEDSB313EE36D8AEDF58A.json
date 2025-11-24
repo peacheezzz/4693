@@ -1,0 +1,83 @@
+{
+    "uid": "17628312K6E77A4AEDSB313EE36D8AEDF58A",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "AAC731FDK40F7A4B4CSA1D9E425BC2784C57",
+        "displayName": "$$E3A20D685716474B6A891E980F6F3F29DB31",
+        "windowTitle": "$$4870958C3ABB1243A2591832E3311D039368",
+        "title": "Live2D Motion Group",
+        "type": "event_command",
+        "id": "vn.L2DMotionGroup",
+        "group": "$$49C76C7F1C2EE8468B1BA2884C6A06B3C241",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "requiresThirdPartyComponents": [
+            "live2d"
+        ],
+        "color": "orange",
+        "columns": [
+            -1,
+            250
+        ],
+        "nodes": [],
+        "defaultValue": {
+            "characterId": null,
+            "loop": 1,
+            "data": {
+                "motionGroup": ""
+            },
+            "waitForCompletion": 0
+        },
+        "inlineImage": {
+            "formula": "return !GSIsNull(p.expressionId) ? GS.VN.resourceForExpression(p.expressionId) : GS.VN.resourceForCharacter(p.characterId)",
+            "folder": "Graphics/Characters"
+        },
+        "quickItems": [
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId)",
+                "attribute": "characterId",
+                "identifier": "character",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQDataRecordField",
+                "dataSource": "characters"
+            },
+            {
+                "label": "$$A1670E332C64B44EA22BDCE357DA4542221E",
+                "valueFormula": "return p.data.motionGroup || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826');",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "CE265679KEA14A46B7S9E49E35D3DA373A71"
+                },
+                "attribute": "data"
+            },
+            {
+                "label": "$$1BEC6000K432BA4248S9D9DE3B81A14B9B42",
+                "type": "GSQCheckBox",
+                "attribute": "loop",
+                "identifier": "loop",
+                "valueFormula": "return GS.CONST.YES_NO[p.loop]"
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$E3A20D685716474B6A891E980F6F3F29DB31\",\n    \"windowTitle\": \"$$4870958C3ABB1243A2591832E3311D039368\",\n    \"title\": \"Live2D Motion Group\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.L2DMotionGroup\",\n    \"group\": \"$$49C76C7F1C2EE8468B1BA2884C6A06B3C241\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"requiresThirdPartyComponents\": [\"live2d\"],\n    \"color\": \"orange\",\n    \"columns\": [-1, 250],\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"characterId\": GS.CONST.DEFAULT_RECORD_ID, \"loop\": 1, \"data\": { \"motionGroup\": \"\" }, \"waitForCompletion\": 0},\n    \"inlineImage\": { \n        \"formula\": \"return !GSIsNull(p.expressionId) ? GS.VN.resourceForExpression(p.expressionId) : GS.VN.resourceForCharacter(p.characterId)\", \n        \"folder\": \"Graphics/Characters\"\n    },\n    \"quickItems\": [\n        GSQ.CONTROLS.CHARACTER_SELECTION,\n        {\n            \"label\": \"$$A1670E332C64B44EA22BDCE357DA4542221E\",\n            \"valueFormula\": \"return p.data.motionGroup || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826');\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"CE265679KEA14A46B7S9E49E35D3DA373A71\" },\n            \"attribute\": \"data\"\n        },\n        GSQ.CONTROLS.CHECK_BOX(\"$$1BEC6000K432BA4248S9D9DE3B81A14B9B42\", \"loop\"),\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Live2D Motion Group",
+        "order": 5
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

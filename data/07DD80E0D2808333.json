@@ -1,0 +1,154 @@
+{
+    "uid": "07DD80E0D2808333",
+    "isLoaded": true,
+    "lastModificationTime": 1424023478617,
+    "items": {
+        "displayName": "$$E1D22DABK1D36A478ES9C9BEC0273299916B",
+        "id": "gs.Condition",
+        "group": "$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24",
+        "subGroup": "$$0982629273001344698BD7512598CADED0B4",
+        "isContainer": true,
+        "isMainNode": true,
+        "defaultValue": {
+            "variable": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "numberValue": 0,
+            "textValue": "",
+            "switchValue": 0,
+            "valueType": 0,
+            "operation": 0
+        },
+        "quickItems": [
+            {
+                "label": "$$46B13E5F425044489F3B1B4865D3AD57BE2A",
+                "valueFormula": "return GS.CONST.VARIABLE_VALUE_TYPES[p.valueType]",
+                "attribute": "valueType",
+                "identifier": "valueType",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                    "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                    "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489"
+                ],
+                "showItems": [
+                    [
+                        "numberVariable",
+                        "numberValue"
+                    ],
+                    [
+                        "switchVariable",
+                        "switchValue"
+                    ],
+                    [
+                        "textVariable",
+                        "textValue"
+                    ]
+                ]
+            },
+            {
+                "label": "$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF",
+                "identifier": "numberVariable",
+                "valueFormula": "return fmtNumVar(p.variable)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                },
+                "attribute": "variable"
+            },
+            {
+                "label": "$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF",
+                "identifier": "switchVariable",
+                "valueFormula": "return fmtBoolVar(p.variable)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "booleans"
+                    }
+                },
+                "attribute": "variable"
+            },
+            {
+                "label": "$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF",
+                "identifier": "textVariable",
+                "valueFormula": "return fmtStrVar(p.variable)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                },
+                "attribute": "variable"
+            },
+            {
+                "label": "$$C5EB04527677A744804A8F85744C8BE285F3",
+                "valueFormula": "return GS.CONST.COMPARE_OPERATIONS[p.operation]",
+                "attribute": "operation",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$FD7F42C7K8032A4020SA92CEFD61743CA00E",
+                    "$$C8CD0C11KE33BA4EE4SA59EECD429A9E49AD",
+                    "$$71240A2FK6698A4123SA8ADEB07A3E6E0F68",
+                    "$$4F23A754KD61DA42F5S920CEB7D988404BD0",
+                    "$$62C42C66K9995A468ESAFCFE3F84551CC797",
+                    "$$1B879F39KF9C0A4F95SB2CEEEA931D2D8B26"
+                ]
+            },
+            {
+                "label": "$$89ECAECDK4610A4BF8SA019E8444CA45FAB6",
+                "identifier": "numberValue",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.numberValue);",
+                "type": "GSQStepper",
+                "attribute": "numberValue",
+                "defaultValue": 0,
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$89ECAECDK4610A4BF8SA019E8444CA45FAB6",
+                "identifier": "textValue",
+                "valueFormula": "return fmtStrVar(p.textValue)",
+                "type": "GSQTextArea",
+                "multiline": false,
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "textValue"
+            },
+            {
+                "label": "$$89ECAECDK4610A4BF8SA019E8444CA45FAB6",
+                "variableButton": {
+                    "dataSource": "booleans"
+                },
+                "valueFormula": "return isVar(p.switchValue) ? fmtBoolVar(p.switchValue) : GS.CONST.SWITCH_STATES[p.switchValue]",
+                "identifier": "switchValue",
+                "attribute": "switchValue",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$DA1F7042K631AA464BSA0F8E78BB13F6C242",
+                    "$$B958FADFKE38BA4BC2SAFC0E8B2CC6722744"
+                ]
+            }
+        ],
+        "rawContent": "{\n    \"displayName\": \"$$E1D22DABK1D36A478ES9C9BEC0273299916B\",\n    \"id\": \"gs.Condition\",\n    \"group\": \"$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24\",\n    \"subGroup\": \"$$0982629273001344698BD7512598CADED0B4\",\n    \"isContainer\": true,\n    \"isMainNode\": true,\n    \"defaultValue\": { \"variable\": { \"scope\": 1, \"index\": 0, \"domain\": GS.CONST.DEFAULT_DOMAIN }, \"numberValue\": 0, \"textValue\": \"\", \"switchValue\": 0, \"valueType\": 0, \"operation\": 0 },\n    \"quickItems\": [\n        {\n            \"label\": \"$$46B13E5F425044489F3B1B4865D3AD57BE2A\",\n            \"valueFormula\": \"return GS.CONST.VARIABLE_VALUE_TYPES[p.valueType]\",\n            \"attribute\": \"valueType\",\n            \"identifier\": \"valueType\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VARIABLE_VALUE_TYPES,\n            \"showItems\": [[\"numberVariable\", \"numberValue\"], [\"switchVariable\", \"switchValue\"], [\"textVariable\", \"textValue\"]]\n        },\n        {\n            \"label\": \"$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF\",\n            \"identifier\": \"numberVariable\",\n            \"valueFormula\": \"return fmtNumVar(p.variable)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" } },\n            \"attribute\": \"variable\"\n        },\n        {\n            \"label\": \"$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF\",\n            \"identifier\": \"switchVariable\",\n            \"valueFormula\": \"return fmtBoolVar(p.variable)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"booleans\" } },\n            \"attribute\": \"variable\"\n        },\n        {\n            \"label\": \"$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF\",\n            \"identifier\": \"textVariable\",\n            \"valueFormula\": \"return fmtStrVar(p.variable)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" } },\n            \"attribute\": \"variable\"\n        },\n        {\n            \"label\": \"$$C5EB04527677A744804A8F85744C8BE285F3\",\n            \"valueFormula\": \"return GS.CONST.COMPARE_OPERATIONS[p.operation]\",\n            \"attribute\": \"operation\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.COMPARE_OPERATIONS\n        },\n        {\n            \"label\": \"$$89ECAECDK4610A4BF8SA019E8444CA45FAB6\",\n            \"identifier\": \"numberValue\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"valueFormula\": \"return fmtNumVar(p.numberValue);\",\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"numberValue\",\n            \"defaultValue\": 0,\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$89ECAECDK4610A4BF8SA019E8444CA45FAB6\",\n            \"identifier\": \"textValue\",\n            \"valueFormula\": \"return fmtStrVar(p.textValue)\",\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false,\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"attribute\": \"textValue\"\n        },\n        {\n            \"label\": \"$$89ECAECDK4610A4BF8SA019E8444CA45FAB6\",\n            \"variableButton\": { \"dataSource\": \"booleans\" },\n            \"valueFormula\": \"return isVar(p.switchValue) ? fmtBoolVar(p.switchValue) : GS.CONST.SWITCH_STATES[p.switchValue]\",\n            \"identifier\": \"switchValue\",\n            \"attribute\": \"switchValue\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.SWITCH_STATES\n        }\n    ]\n}",
+        "name": "Condition",
+        "type": "event_command",
+        "parentId": "97163D89K8F9DA45ADSA51CE47DE4ECE311C",
+        "order": 7
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

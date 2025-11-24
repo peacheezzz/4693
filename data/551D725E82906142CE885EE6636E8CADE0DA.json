@@ -1,0 +1,115 @@
+{
+    "uid": "551D725E82906142CE885EE6636E8CADE0DA",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "gs.ResetVariables",
+        "displayName": "$$6D22727A87E828466F181BC6F4F53A1C5D60",
+        "group": "$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24",
+        "subGroup": "$$P235",
+        "defaultValue": {
+            "scope": 0,
+            "scene": null,
+            "type": 0,
+            "target": 0,
+            "range": {
+                "start": 1,
+                "end": 1
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$8F52A5EE89E7E948CD5805E9FD34F6392535",
+                "identifier": "scope",
+                "valueFormula": "return GS.CONST.VARIABLE_SCOPES_ALL[p.scope]",
+                "attribute": "scope",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$P240",
+                    "$$4EDC3B627E69F64E4A6A5608181C285AE4E9",
+                    "$$P241",
+                    "$$64D4ABA05552D44C542B22239362DF2E6D2D"
+                ],
+                "showItems": [
+                    [
+                        "scene"
+                    ],
+                    [],
+                    []
+                ]
+            },
+            {
+                "type": "GSQPopupField",
+                "label": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+                "attribute": "scene",
+                "dataAttribute": "scene",
+                "dialog": {
+                    "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                },
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "valueFormula": "return isVar(p.scene) ? fmtStrVar(p.scene) : (p.scene ? fmtDocument(p.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+            },
+            {
+                "label": "$$BD058CE5KA3B8A41C6S9B32ECEC674F8EC05",
+                "identifier": "type",
+                "valueFormula": "return GS.CONST.VARIABLE_TYPES_ALL[p.type]",
+                "attribute": "type",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$6E4629373750674D117834C2DD79EFE13F7F",
+                    "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                    "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                    "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                    "$$C9C23A6E5A74F84FE07940677A0C2E37E13D"
+                ]
+            },
+            {
+                "label": "$$30A49AB7K99E9A4E59SAA85EAA161A0E1836",
+                "identifier": "target",
+                "valueFormula": "return GS.CONST.VARIABLE_RESET_TARGETS[p.target]",
+                "attribute": "target",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$6E4629373750674D117834C2DD79EFE13F7F",
+                    "$$0985523CK3F07A46FFSA058E0688B86AE3F0"
+                ],
+                "showItems": [
+                    [],
+                    [
+                        "range.start",
+                        "range.end"
+                    ]
+                ]
+            },
+            {
+                "label": "$$CA1904C34CB8A64AEE891DD1784948E737C4",
+                "valueFormula": "return p.range.start;",
+                "type": "GSQStepper",
+                "identifier": "range.start",
+                "attribute": "range.start",
+                "minimum": 1,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                "valueFormula": "return p.range.end;",
+                "type": "GSQStepper",
+                "identifier": "range.end",
+                "attribute": "range.end",
+                "minimum": 1,
+                "maximum": 999999999
+            }
+        ],
+        "rawContent": "{\n    \"id\": \"gs.ResetVariables\",\n    \"displayName\": \"$$6D22727A87E828466F181BC6F4F53A1C5D60\",\n    \"group\": \"$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24\",\n    \"subGroup\": \"$$P235\",\n    \"defaultValue\": { \"scope\": 0, \"scene\": null, \"type\": 0, \"target\": 0, \"range\": { \"start\": 1, \"end\": 1 } },\n    \"quickItems\": [\n        {\n            \"label\": \"$$8F52A5EE89E7E948CD5805E9FD34F6392535\",\n            \"identifier\": \"scope\",\n            \"valueFormula\": \"return GS.CONST.VARIABLE_SCOPES_ALL[p.scope]\",\n            \"attribute\": \"scope\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VARIABLE_SCOPES_ALL,\n            \"showItems\": [[\"scene\"], [], []]\n        },\n        {\n            \"type\": \"GSQPopupField\",\n            \"label\": \"$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA\",\n            \"attribute\": \"scene\",\n            \"dataAttribute\": \"scene\",\n            \"dialog\": { \"uid\": \"0E620E08KED4CA4E7CS8514E5B2BF2657DA5\" },\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"valueFormula\": \"return isVar(p.scene) ? fmtStrVar(p.scene) : (p.scene ? fmtDocument(p.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));\"\n        },\n        {\n            \"label\": \"$$BD058CE5KA3B8A41C6S9B32ECEC674F8EC05\",\n            \"identifier\": \"type\",\n            \"valueFormula\": \"return GS.CONST.VARIABLE_TYPES_ALL[p.type]\",\n            \"attribute\": \"type\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VARIABLE_TYPES_ALL\n        },\n        {\n            \"label\": \"$$30A49AB7K99E9A4E59SAA85EAA161A0E1836\",\n            \"identifier\": \"target\",\n            \"valueFormula\": \"return GS.CONST.VARIABLE_RESET_TARGETS[p.target]\",\n            \"attribute\": \"target\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VARIABLE_RESET_TARGETS,\n            \"showItems\": [[], [\"range.start\", \"range.end\"]]\n        },\n        {\n            \"label\": \"$$CA1904C34CB8A64AEE891DD1784948E737C4\",\n            \"valueFormula\": \"return p.range.start;\",\n            \"type\": \"GSQStepper\",\n            \"identifier\": \"range.start\",\n            \"attribute\": \"range.start\",\n            \"minimum\": 1,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$DC1A41265CECC346098B4931B5874A2AF62A\",\n            \"valueFormula\": \"return p.range.end;\",\n            \"type\": \"GSQStepper\",\n            \"identifier\": \"range.end\",\n            \"attribute\": \"range.end\",\n            \"minimum\": 1,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        }\n    ]\n}",
+        "name": "Reset Variables",
+        "type": "event_command",
+        "parentId": "97163D89K8F9DA45ADSA51CE47DE4ECE311C",
+        "order": 22
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

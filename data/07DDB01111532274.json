@@ -1,0 +1,596 @@
+{
+    "uid": "07DDB01111532274",
+    "isLoaded": true,
+    "lastModificationTime": 1424023480262,
+    "items": {
+        "parentId": "AC1ABDCBK050BA4863S9964E3DC378247DAD",
+        "name": "Tone Control",
+        "windowTitle": "$$9E039D81K87CCA4E71S9A18E88C3396087E0",
+        "type": "custom_view",
+        "windowSize": {
+            "w": 350
+        },
+        "sectionSpacing": [
+            0,
+            0
+        ],
+        "sections": [
+            {
+                "name": "Tone",
+                "noBorder": true,
+                "layout": {
+                    "type": "dynamicGrid"
+                },
+                "column": 0,
+                "items": [
+                    {
+                        "type": "GSToneView",
+                        "attribute": "tone",
+                        "identifier": "tone",
+                        "border": true,
+                        "location": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": 194
+                        }
+                    },
+                    {
+                        "type": "GSLabel",
+                        "text": "$$1311339FKC54DA4D7FS9A9BECCFADA7BE141",
+                        "location": {
+                            "x": 0,
+                            "y": 1
+                        },
+                        "size": {
+                            "w": 40,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSSlider",
+                        "attribute": "tone.red",
+                        "identifier": "redSlider",
+                        "defaultValue": 0,
+                        "minimum": -255,
+                        "maximum": 255,
+                        "bindings": [
+                            {
+                                "source": "value",
+                                "to": "tone",
+                                "target": "red"
+                            },
+                            {
+                                "source": "value",
+                                "to": "redStepper",
+                                "target": "value"
+                            }
+                        ],
+                        "location": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSStepper",
+                        "attribute": "tone.red",
+                        "identifier": "redStepper",
+                        "defaultValue": 0,
+                        "minimum": -255,
+                        "maximum": 255,
+                        "bindings": [
+                            {
+                                "source": "value",
+                                "to": "tone",
+                                "target": "red"
+                            },
+                            {
+                                "source": "value",
+                                "to": "redSlider",
+                                "target": "value"
+                            }
+                        ],
+                        "location": {
+                            "x": 2,
+                            "y": 1
+                        },
+                        "size": {
+                            "w": 70,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSLabel",
+                        "text": "$$0D0BD08AK2179A4261SA512E57DDA73AE4A8",
+                        "location": {
+                            "x": 0,
+                            "y": 2
+                        },
+                        "size": {
+                            "w": 40,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSSlider",
+                        "attribute": "tone.green",
+                        "identifier": "greenSlider",
+                        "defaultValue": 0,
+                        "minimum": -255,
+                        "maximum": 255,
+                        "bindings": [
+                            {
+                                "source": "value",
+                                "to": "tone",
+                                "target": "green"
+                            },
+                            {
+                                "source": "value",
+                                "to": "greenStepper",
+                                "target": "value"
+                            }
+                        ],
+                        "location": {
+                            "x": 1,
+                            "y": 2
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSStepper",
+                        "attribute": "tone.green",
+                        "identifier": "greenStepper",
+                        "defaultValue": 0,
+                        "minimum": -255,
+                        "maximum": 255,
+                        "bindings": [
+                            {
+                                "source": "value",
+                                "to": "tone",
+                                "target": "green"
+                            },
+                            {
+                                "source": "value",
+                                "to": "greenSlider",
+                                "target": "value"
+                            }
+                        ],
+                        "location": {
+                            "x": 2,
+                            "y": 2
+                        },
+                        "size": {
+                            "w": 70,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSLabel",
+                        "text": "$$EB9CBBAEKB01FA43DCSB9D7ED1DC9326F5A6",
+                        "location": {
+                            "x": 0,
+                            "y": 3
+                        },
+                        "size": {
+                            "w": 40,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSSlider",
+                        "attribute": "tone.blue",
+                        "identifier": "blueSlider",
+                        "defaultValue": 0,
+                        "minimum": -255,
+                        "maximum": 255,
+                        "bindings": [
+                            {
+                                "source": "value",
+                                "to": "tone",
+                                "target": "blue"
+                            },
+                            {
+                                "source": "value",
+                                "to": "blueStepper",
+                                "target": "value"
+                            }
+                        ],
+                        "location": {
+                            "x": 1,
+                            "y": 3
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSStepper",
+                        "attribute": "tone.blue",
+                        "identifier": "blueStepper",
+                        "defaultValue": 0,
+                        "minimum": -255,
+                        "maximum": 255,
+                        "bindings": [
+                            {
+                                "source": "value",
+                                "to": "tone",
+                                "target": "blue"
+                            },
+                            {
+                                "source": "value",
+                                "to": "blueSlider",
+                                "target": "value"
+                            }
+                        ],
+                        "location": {
+                            "x": 2,
+                            "y": 3
+                        },
+                        "size": {
+                            "w": 70,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSLabel",
+                        "text": "$$3938CB05K3FCAA4428SAE54E8E68497651B5",
+                        "location": {
+                            "x": 0,
+                            "y": 4
+                        },
+                        "size": {
+                            "w": 40,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSSlider",
+                        "attribute": "tone.grey",
+                        "identifier": "greySlider",
+                        "minimum": 0,
+                        "maximum": 255,
+                        "bindings": [
+                            {
+                                "source": "value",
+                                "to": "tone",
+                                "target": "grey"
+                            },
+                            {
+                                "source": "value",
+                                "to": "greyStepper",
+                                "target": "value"
+                            }
+                        ],
+                        "location": {
+                            "x": 1,
+                            "y": 4
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSStepper",
+                        "attribute": "tone.grey",
+                        "identifier": "greyStepper",
+                        "minimum": 0,
+                        "maximum": 255,
+                        "bindings": [
+                            {
+                                "source": "value",
+                                "to": "tone",
+                                "target": "grey"
+                            },
+                            {
+                                "source": "value",
+                                "to": "greySlider",
+                                "target": "value"
+                            }
+                        ],
+                        "location": {
+                            "x": 2,
+                            "y": 4
+                        },
+                        "size": {
+                            "w": 70,
+                            "h": -1
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Quick Setting",
+                "column": 0,
+                "noBorder": true,
+                "items": [
+                    {
+                        "type": "GSButton",
+                        "identifier": "normal",
+                        "text": "$$P155",
+                        "data": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        },
+                        "bindings": [
+                            {
+                                "source": "data.red",
+                                "to": [
+                                    "redStepper",
+                                    "redSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.green",
+                                "to": [
+                                    "greenStepper",
+                                    "greenSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.blue",
+                                "to": [
+                                    "blueStepper",
+                                    "blueSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.grey",
+                                "to": [
+                                    "greyStepper",
+                                    "greySlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data",
+                                "to": "tone",
+                                "target": "tone"
+                            }
+                        ],
+                        "frame": [
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSButton",
+                        "data": {
+                            "red": -68,
+                            "green": -68,
+                            "blue": -68,
+                            "grey": 0
+                        },
+                        "identifier": "dark",
+                        "text": "$$4B9A81799D70E645515B10A1DBF2DCD1010B",
+                        "bindings": [
+                            {
+                                "source": "data.red",
+                                "to": [
+                                    "redStepper",
+                                    "redSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.green",
+                                "to": [
+                                    "greenStepper",
+                                    "greenSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.blue",
+                                "to": [
+                                    "blueStepper",
+                                    "blueSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.grey",
+                                "to": [
+                                    "greyStepper",
+                                    "greySlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data",
+                                "to": "tone",
+                                "target": "tone"
+                            }
+                        ],
+                        "frame": [
+                            1,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSButton",
+                        "identifier": "sepia",
+                        "data": {
+                            "red": 34,
+                            "green": -34,
+                            "blue": -68,
+                            "grey": 170
+                        },
+                        "bindings": [
+                            {
+                                "source": "data.red",
+                                "to": [
+                                    "redStepper",
+                                    "redSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.green",
+                                "to": [
+                                    "greenStepper",
+                                    "greenSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.blue",
+                                "to": [
+                                    "blueStepper",
+                                    "blueSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.grey",
+                                "to": [
+                                    "greyStepper",
+                                    "greySlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data",
+                                "to": "tone",
+                                "target": "tone"
+                            }
+                        ],
+                        "text": "$$3C94F9711C2EB340727AD1D9E5DECB2679C7",
+                        "frame": [
+                            2,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSButton",
+                        "identifier": "morning",
+                        "data": {
+                            "red": 68,
+                            "green": -34,
+                            "blue": -34,
+                            "grey": 0
+                        },
+                        "bindings": [
+                            {
+                                "source": "data.red",
+                                "to": [
+                                    "redStepper",
+                                    "redSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.green",
+                                "to": [
+                                    "greenStepper",
+                                    "greenSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.blue",
+                                "to": [
+                                    "blueStepper",
+                                    "blueSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.grey",
+                                "to": [
+                                    "greyStepper",
+                                    "greySlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data",
+                                "to": "tone",
+                                "target": "tone"
+                            }
+                        ],
+                        "text": "$$F0AD318882224643E38AC5C89C1C60A95129",
+                        "frame": [
+                            3,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSButton",
+                        "identifier": "night",
+                        "data": {
+                            "red": -68,
+                            "green": -68,
+                            "blue": 0,
+                            "grey": 68
+                        },
+                        "bindings": [
+                            {
+                                "source": "data.red",
+                                "to": [
+                                    "redStepper",
+                                    "redSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.green",
+                                "to": [
+                                    "greenStepper",
+                                    "greenSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.blue",
+                                "to": [
+                                    "blueStepper",
+                                    "blueSlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data.grey",
+                                "to": [
+                                    "greyStepper",
+                                    "greySlider"
+                                ],
+                                "target": "value"
+                            },
+                            {
+                                "source": "data",
+                                "to": "tone",
+                                "target": "tone"
+                            }
+                        ],
+                        "text": "$$2BE4E8BC5B09184F9749A004A5E292B87D73",
+                        "frame": [
+                            4,
+                            0
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rawContent": "{ \n    \"parentId\": \"AC1ABDCBK050BA4863S9964E3DC378247DAD\",\n\"name\": \"Tone Control\",\n    \"windowTitle\": \"$$9E039D81K87CCA4E71S9A18E88C3396087E0\",\n    \"type\": \"custom_view\",\n    \"windowSize\": {\n        \"w\": 350\n    },\n    \"sectionSpacing\": [\n        0,\n        0\n    ],\n    \"sections\": [\n        {\n            \"name\": \"Tone\",\n            \"noBorder\": true,\n            \"layout\": {\n                \"type\": \"dynamicGrid\"\n            },\n            \"column\": 0,\n            \"items\": [\n                {\n                    \"type\": \"GSToneView\",\n                    \"attribute\": \"tone\",\n                    \"identifier\": \"tone\",\n                    \"border\": true,\n                    \"location\": {\n                        \"x\": 0,\n                        \"y\": 0\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": 194\n                    }\n                },\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$1311339FKC54DA4D7FS9A9BECCFADA7BE141\",\n                    \"location\": {\n                        \"x\": 0,\n                        \"y\": 1\n                    },\n                    \"size\": {\n                        \"w\": 40,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSSlider\",\n                    \"attribute\": \"tone.red\",\n                    \"identifier\": \"redSlider\",\n                    \"defaultValue\": 0,\n                    \"minimum\": -255,\n                    \"maximum\": 255,\n                    \"bindings\": [\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"tone\",\n                            \"target\": \"red\"\n                        },\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"redStepper\",\n                            \"target\": \"value\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 1,\n                        \"y\": 1\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSStepper\",\n                    \"attribute\": \"tone.red\",\n                    \"identifier\": \"redStepper\",\n                    \"defaultValue\": 0,\n                    \"minimum\": -255,\n                    \"maximum\": 255,\n                    \"bindings\": [\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"tone\",\n                            \"target\": \"red\"\n                        },\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"redSlider\",\n                            \"target\": \"value\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 2,\n                        \"y\": 1\n                    },\n                    \"size\": {\n                        \"w\": 70,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$0D0BD08AK2179A4261SA512E57DDA73AE4A8\",\n                    \"location\": {\n                        \"x\": 0,\n                        \"y\": 2\n                    },\n                    \"size\": {\n                        \"w\": 40,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSSlider\",\n                    \"attribute\": \"tone.green\",\n                    \"identifier\": \"greenSlider\",\n                    \"defaultValue\": 0,\n                    \"minimum\": -255,\n                    \"maximum\": 255,\n                    \"bindings\": [\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"tone\",\n                            \"target\": \"green\"\n                        },\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"greenStepper\",\n                            \"target\": \"value\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 1,\n                        \"y\": 2\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSStepper\",\n                    \"attribute\": \"tone.green\",\n                    \"identifier\": \"greenStepper\",\n                    \"defaultValue\": 0,\n                    \"minimum\": -255,\n                    \"maximum\": 255,\n                    \"bindings\": [\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"tone\",\n                            \"target\": \"green\"\n                        },\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"greenSlider\",\n                            \"target\": \"value\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 2,\n                        \"y\": 2\n                    },\n                    \"size\": {\n                        \"w\": 70,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$EB9CBBAEKB01FA43DCSB9D7ED1DC9326F5A6\",\n                    \"location\": {\n                        \"x\": 0,\n                        \"y\": 3\n                    },\n                    \"size\": {\n                        \"w\": 40,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSSlider\",\n                    \"attribute\": \"tone.blue\",\n                    \"identifier\": \"blueSlider\",\n                    \"defaultValue\": 0,\n                    \"minimum\": -255,\n                    \"maximum\": 255,\n                    \"bindings\": [\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"tone\",\n                            \"target\": \"blue\"\n                        },\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"blueStepper\",\n                            \"target\": \"value\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 1,\n                        \"y\": 3\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSStepper\",\n                    \"attribute\": \"tone.blue\",\n                    \"identifier\": \"blueStepper\",\n                    \"defaultValue\": 0,\n                    \"minimum\": -255,\n                    \"maximum\": 255,\n                    \"bindings\": [\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"tone\",\n                            \"target\": \"blue\"\n                        },\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"blueSlider\",\n                            \"target\": \"value\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 2,\n                        \"y\": 3\n                    },\n                    \"size\": {\n                        \"w\": 70,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$3938CB05K3FCAA4428SAE54E8E68497651B5\",\n                    \"location\": {\n                        \"x\": 0,\n                        \"y\": 4\n                    },\n                    \"size\": {\n                        \"w\": 40,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSSlider\",\n                    \"attribute\": \"tone.grey\",\n                    \"identifier\": \"greySlider\",\n                    \"minimum\": 0,\n                    \"maximum\": 255,\n                    \"bindings\": [\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"tone\",\n                            \"target\": \"grey\"\n                        },\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"greyStepper\",\n                            \"target\": \"value\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 1,\n                        \"y\": 4\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSStepper\",\n                    \"attribute\": \"tone.grey\",\n                    \"identifier\": \"greyStepper\",\n                    \"minimum\": 0,\n                    \"maximum\": 255,\n                    \"bindings\": [\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"tone\",\n                            \"target\": \"grey\"\n                        },\n                        {\n                            \"source\": \"value\",\n                            \"to\": \"greySlider\",\n                            \"target\": \"value\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 2,\n                        \"y\": 4\n                    },\n                    \"size\": {\n                        \"w\": 70,\n                        \"h\": -1\n                    }\n                }\n            ]\n        },\n        {\n            \"name\": \"Quick Setting\",\n            \"column\": 0,\n            \"noBorder\": true,\n            \"items\": [\n                {\n                    \"type\": \"GSButton\",\n                    \"identifier\": \"normal\",\n                    \n                    \"text\": \"$$P155\",\n                    \"data\": { \"red\": 0, \"green\": 0, \"blue\": 0, \"grey\": 0 },\n                    \"bindings\": [{ \"source\": \"data.red\", \"to\": [\"redStepper\",\"redSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.green\", \"to\": [\"greenStepper\",\"greenSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.blue\", \"to\": [\"blueStepper\",\"blueSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.grey\", \"to\": [\"greyStepper\",\"greySlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data\", \"to\": \"tone\", \"target\": \"tone\" }],\n                    \"frame\": [0, 0]\n                },\n                {\n                    \"type\": \"GSButton\",\n                    \"data\": { \"red\": -68, \"green\": -68, \"blue\": -68, \"grey\": 0 },\n                    \"identifier\": \"dark\",\n                    \"text\": \"$$4B9A81799D70E645515B10A1DBF2DCD1010B\",\n                    \"data\": { \"red\": -68, \"green\": -68, \"blue\": -68, \"grey\": 0 },\n                    \"bindings\": [{ \"source\": \"data.red\", \"to\": [\"redStepper\",\"redSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.green\", \"to\": [\"greenStepper\",\"greenSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.blue\", \"to\": [\"blueStepper\",\"blueSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.grey\", \"to\": [\"greyStepper\",\"greySlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data\", \"to\": \"tone\", \"target\": \"tone\" }],\n                    \"frame\": [1, 0]\n                },\n                {\n                    \"type\": \"GSButton\",\n                    \"identifier\": \"sepia\",\n                    \"data\": { \"red\": 34, \"green\": -34, \"blue\": -68, \"grey\": 170 },\n                    \"bindings\": [{ \"source\": \"data.red\", \"to\": [\"redStepper\",\"redSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.green\", \"to\": [\"greenStepper\",\"greenSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.blue\", \"to\": [\"blueStepper\",\"blueSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.grey\", \"to\": [\"greyStepper\",\"greySlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data\", \"to\": \"tone\", \"target\": \"tone\" }],\n                    \"text\": \"$$3C94F9711C2EB340727AD1D9E5DECB2679C7\",\n                    \"frame\": [2, 0]\n                },\n                {\n                    \"type\": \"GSButton\",\n                    \"identifier\": \"morning\",\n                    \"data\": { \"red\": 68, \"green\": -34, \"blue\": -34, \"grey\": 0 },\n                    \"bindings\": [{ \"source\": \"data.red\", \"to\": [\"redStepper\",\"redSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.green\", \"to\": [\"greenStepper\",\"greenSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.blue\", \"to\": [\"blueStepper\",\"blueSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.grey\", \"to\": [\"greyStepper\",\"greySlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data\", \"to\": \"tone\", \"target\": \"tone\" }],\n                    \"text\": \"$$F0AD318882224643E38AC5C89C1C60A95129\",\n                    \"frame\": [3, 0]\n                },\n                {\n                    \"type\": \"GSButton\",\n                    \"identifier\": \"night\",\n                    \"data\": { \"red\": -68, \"green\": -68, \"blue\": 0, \"grey\": 68 },\n                    \"bindings\": [{ \"source\": \"data.red\", \"to\": [\"redStepper\",\"redSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.green\", \"to\": [\"greenStepper\",\"greenSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.blue\", \"to\": [\"blueStepper\",\"blueSlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data.grey\", \"to\": [\"greyStepper\",\"greySlider\"], \"target\": \"value\" },\n                                 { \"source\": \"data\", \"to\": \"tone\", \"target\": \"tone\" }],\n                    \"text\": \"$$2BE4E8BC5B09184F9749A004A5E292B87D73\",\n                    \"frame\": [4, 0]\n                }\n            ]\n        }\n    ]\n}"
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

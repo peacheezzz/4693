@@ -1,0 +1,147 @@
+{
+    "uid": "982BE86F1B79754F255A8A459048BC0154C5",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "vn.L2DSettings",
+        "displayName": "$$6E0E9D13035F054AAC699D245D477F6645DC",
+        "group": "$$49C76C7F1C2EE8468B1BA2884C6A06B3C241",
+        "subGroup": "$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5",
+        "requiresThirdPartyComponents": [
+            "live2d"
+        ],
+        "defaultValue": {
+            "characterId": null,
+            "eyeBlink": {
+                "enabled": 1,
+                "interval": 4000,
+                "closedMotionTime": 50,
+                "closingMotionTime": 100,
+                "openingMotionTime": 150
+            },
+            "breathIntensity": 1,
+            "idleIntensity": 1,
+            "lipSyncSensitivity": 1
+        },
+        "quickItems": [
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId)",
+                "attribute": "characterId",
+                "identifier": "character",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQDataRecordField",
+                "dataSource": "characters"
+            },
+            {
+                "type": "GSQStepper",
+                "attribute": "breathIntensity",
+                "label": "$$E6937E90514C37424D7B636147FDDEFB1CBB",
+                "lockable": true,
+                "valueFormula": "return p.breathIntensity * 100 + '%'",
+                "valueTranslator": {
+                    "read": "return v * 100",
+                    "write": "return v / 100"
+                }
+            },
+            {
+                "type": "GSQStepper",
+                "attribute": "idleIntensity",
+                "label": "$$40EA095D062F9546FD4B42253E2CCCA666D7",
+                "lockable": true,
+                "valueFormula": "return p.idleIntensity * 100 + '%'",
+                "valueTranslator": {
+                    "read": "return v * 100",
+                    "write": "return v / 100"
+                }
+            },
+            {
+                "type": "GSQStepper",
+                "attribute": "lipSyncSensitivity",
+                "label": "$$90791FCC34EDE440309BC978DC6D67A038F0",
+                "lockable": true,
+                "valueFormula": "return p.lipSyncSensitivity * 100 + '%'",
+                "valueTranslator": {
+                    "read": "return v * 100",
+                    "write": "return v / 100"
+                }
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$CCF9701A250AA748B74ACF9186F86CE54DFA",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "attribute": "eyeBlink.enabled",
+                                            "lockable": true,
+                                            "label": "$$575FB27FK7F1FA4BA3SBEDFE639DCC170DED",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQStepper",
+                                            "attribute": "eyeBlink.interval",
+                                            "lockable": true,
+                                            "label": "$$8B7BC43319CE884D1E7AA7A53C2CD04D4EE7",
+                                            "minimum": 0,
+                                            "maximum": 999999999,
+                                            "valueFormula": "return p.eyeBlink.interval + 'ms'",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQStepper",
+                                            "attribute": "eyeBlink.closedMotionTime",
+                                            "lockable": true,
+                                            "label": "$$49D635AA7F533945031961C84E53DA47FC4A",
+                                            "minimum": 0,
+                                            "maximum": 999999999,
+                                            "valueFormula": "return p.eyeBlink.closedMotionTime + 'ms'",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQStepper",
+                                            "attribute": "eyeBlink.closingMotionTime",
+                                            "lockable": true,
+                                            "label": "$$80666DBD4B6550418F2ABD277A1D721274A3",
+                                            "minimum": 0,
+                                            "maximum": 999999999,
+                                            "valueFormula": "return p.eyeBlink.closingMotionTime + 'ms'",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQStepper",
+                                            "attribute": "eyeBlink.openingMotionTime",
+                                            "lockable": true,
+                                            "label": "$$AAC691DE7A7AA744C07987D1895C7BA401DC",
+                                            "minimum": 0,
+                                            "maximum": 999999999,
+                                            "valueFormula": "return p.eyeBlink.openingMotionTime + 'ms'",
+                                            "width": "50%"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n    \"id\": \"vn.L2DSettings\",\n    \"displayName\": \"$$6E0E9D13035F054AAC699D245D477F6645DC\",\n    \"group\": \"$$49C76C7F1C2EE8468B1BA2884C6A06B3C241\",\n    \"subGroup\": \"$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5\",\n    \"requiresThirdPartyComponents\": [\"live2d\"],\n    \"defaultValue\": { \"characterId\": GS.CONST.DEFAULT_RECORD_ID, \"eyeBlink\": { \"enabled\": 1, \"interval\": 4000, \"closedMotionTime\": 50, \"closingMotionTime\": 100, \"openingMotionTime\": 150 }, \"breathIntensity\": 1.0, \"idleIntensity\": 1.0, \"lipSyncSensitivity\": 1.0 },\n    \"quickItems\": [\n        GSQ.CONTROLS.CHARACTER_SELECTION,\n        {\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"breathIntensity\",\n            \"label\": \"$$E6937E90514C37424D7B636147FDDEFB1CBB\",\n            \"lockable\": true,\n            \"valueFormula\": \"return p.breathIntensity * 100 + '%'\",\n            \"valueTranslator\": { \"read\": \"return v * 100\", \"write\": \"return v / 100\" }\n        },\n        {\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"idleIntensity\",\n            \"label\": \"$$40EA095D062F9546FD4B42253E2CCCA666D7\",\n            \"lockable\": true,\n            \"valueFormula\": \"return p.idleIntensity * 100 + '%'\",\n            \"valueTranslator\": { \"read\": \"return v * 100\", \"write\": \"return v / 100\" }\n        },\n        {\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"lipSyncSensitivity\",\n            \"label\": \"$$90791FCC34EDE440309BC978DC6D67A038F0\",\n            \"lockable\": true,\n            \"valueFormula\": \"return p.lipSyncSensitivity * 100 + '%'\",\n            \"valueTranslator\": { \"read\": \"return v * 100\", \"write\": \"return v / 100\" }\n        }\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$CCF9701A250AA748B74ACF9186F86CE54DFA\",\n                        \"rows\": [\n                            { \"items\": [\n                                {\n                                    \"type\": \"GSQCheckBox\",\n                                    \"attribute\": \"eyeBlink.enabled\",\n                                    \"lockable\": true,\n                                    \"label\": \"$$575FB27FK7F1FA4BA3SBEDFE639DCC170DED\",\n                                    \"width\": \"50%\"\n                                },\n                                {\n                                    \"type\": \"GSQStepper\",\n                                    \"attribute\": \"eyeBlink.interval\",\n                                    \"lockable\": true,\n                                    \"label\": \"$$8B7BC43319CE884D1E7AA7A53C2CD04D4EE7\",\n                                    \"minimum\": 0,\n                                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                                    \"valueFormula\": \"return p.eyeBlink.interval + 'ms'\",\n                                    \"width\": \"50%\"\n                                },\n                                {\n                                    \"type\": \"GSQStepper\",\n                                    \"attribute\": \"eyeBlink.closedMotionTime\",\n                                    \"lockable\": true,\n                                    \"label\": \"$$49D635AA7F533945031961C84E53DA47FC4A\",\n                                    \"minimum\": 0,\n                                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                                    \"valueFormula\": \"return p.eyeBlink.closedMotionTime + 'ms'\",\n                                    \"width\": \"50%\"\n                                },\n                                {\n                                    \"type\": \"GSQStepper\",\n                                    \"attribute\": \"eyeBlink.closingMotionTime\",\n                                    \"lockable\": true,\n                                    \"label\": \"$$80666DBD4B6550418F2ABD277A1D721274A3\",\n                                    \"minimum\": 0,\n                                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                                    \"valueFormula\": \"return p.eyeBlink.closingMotionTime + 'ms'\",\n                                    \"width\": \"50%\"\n                                },\n                                {\n                                    \"type\": \"GSQStepper\",\n                                    \"attribute\": \"eyeBlink.openingMotionTime\",\n                                    \"lockable\": true,\n                                    \"label\": \"$$AAC691DE7A7AA744C07987D1895C7BA401DC\",\n                                    \"minimum\": 0,\n                                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                                    \"valueFormula\": \"return p.eyeBlink.openingMotionTime + 'ms'\",\n                                    \"width\": \"50%\"\n                                }\n                            ] }\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    }\n}",
+        "name": "Live2D Settings",
+        "type": "event_command",
+        "parentId": "AAC731FDK40F7A4B4CSA1D9E425BC2784C57",
+        "order": 8
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

@@ -1,0 +1,560 @@
+{
+    "uid": "63C3F8F1K3103A4B0BS914DE2C6A0648F6A9",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "CCC1D58AKA96AA4B0ESA33CE6CCC06CB5662",
+        "displayName": "$$920AFC8E549CC348534811D3370FD77FC8F2",
+        "windowTitle": "$$90433D4CK4E35A4DFDS862EEFB0C4808F17E",
+        "type": "event_command",
+        "id": "gs.GetInputData",
+        "group": "$$C1953650K4FD7A4268SB298E0BEFC554D88E",
+        "subGroup": "$$271150F15AF34549943BCE034E6B8B439297",
+        "windowSize": {
+            "w": 600,
+            "h": 260
+        },
+        "nodes": [],
+        "defaultValue": {
+            "field": 0,
+            "state": 0,
+            "inputSession": 0,
+            "targetVariable": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB",
+                "valueFormula": "return p.field >= 100 ? GS.CONST.KEYS_BY_CODE[p.field].name : GS.CONST.INPUT_DATA_FIELDS[p.field];",
+                "attribute": "field",
+                "identifier": "field",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$6ED7DC92706A164F375A3085915CE5F675A5",
+                    "$$0DAD83E65AAC7747B33B1448994B14543065",
+                    "$$565A00C13E328143F85983D57A0F6DAF9184",
+                    "$$635F4F4686746440076B9AB17C10DE1BE8B2",
+                    "$$246F25B679514346FE5B9D71B6B86C6FC203",
+                    "$$9DE271A74E616343170BDDD773C3FCC933B8",
+                    "$$D0351CBF3EFAB74A40199EB5F11AB466A1F5",
+                    "$$10EE899E08A136460C59BFC65B71B9762C9C",
+                    "$$0627F4896315D3420C7816C1C2068FB6734E",
+                    "$$EED16AF89235A848B569D35898A9A2887F48",
+                    "$$6C6A0A0F84C235428A88D969C2466B508783",
+                    "$$E5EC2E32396D0944133ABCF7F3972A22CD47",
+                    "$$D2B1D1C82FA02246143847764B431C2BD5B3",
+                    "$$A83E228491E695450008E3C0CA25B36CF752",
+                    {
+                        "name": "$$860083A58A6EE44E0279F6F8CEEA5201E2F5",
+                        "alias": 100
+                    },
+                    {
+                        "name": "$$00A9E2314B1EC8430F6884A52B3DF1130FBC",
+                        "alias": 101
+                    },
+                    {
+                        "name": "$$F806BE367A72A54DE66A861438BDC0D43C0C",
+                        "alias": 102
+                    },
+                    {
+                        "name": "$$6573D0D639E326443169D455940DBDBE260C",
+                        "alias": 103
+                    },
+                    {
+                        "name": "$$7BF2A20B1EFA08462D184603EB6E0DFEFF78",
+                        "alias": 106
+                    },
+                    {
+                        "name": "$$348773472DC23746492958E858768C473D08",
+                        "alias": 108
+                    },
+                    {
+                        "name": "$$A6B2EA6C3CE4D343CE1B7B85377A110F6AAE",
+                        "alias": 109
+                    },
+                    {
+                        "name": "$$4E9F97AB8ECA72497F3B7EC41CFFA693F0D1",
+                        "alias": 112
+                    },
+                    {
+                        "name": "$$D65CF3D338D8C9419288CD6847043C260769",
+                        "alias": 113
+                    },
+                    {
+                        "name": "$$B3CA3F181914684AFA19A552960FA8BBFBB6",
+                        "alias": 114
+                    },
+                    {
+                        "name": "$$6E0579B7053C93443019C0E61971546EDEAC",
+                        "alias": 116
+                    },
+                    {
+                        "name": "$$45AFB25982D687438B78B1262ED7F3136B87",
+                        "alias": 117
+                    },
+                    {
+                        "name": "$$3D25EC89734C614C0A8BCBD6B3781798E914",
+                        "alias": 118
+                    },
+                    {
+                        "name": "$$7A7958E01BA9294ACE29041519F6B826CCAE",
+                        "alias": 119
+                    },
+                    {
+                        "name": "$$CE83DB0E6393984DF37A20E182D1DE6C6F3A",
+                        "alias": 120
+                    },
+                    {
+                        "name": "$$5FA15C5A1DA8A54C6868C9C706AC68C8ADB1",
+                        "alias": 127
+                    },
+                    {
+                        "name": "$$7C5389928CA6844DF46A00151200A009E067",
+                        "alias": 132
+                    },
+                    {
+                        "name": "$$48A67E156245C541CD2A98B09B94D90E46B2",
+                        "alias": 133
+                    },
+                    {
+                        "name": "$$9CC483351E5762447E6BCD64D971E8F12022",
+                        "alias": 134
+                    },
+                    {
+                        "name": "$$3DCB590D43160944D32AD87549EB0E3722B7",
+                        "alias": 135
+                    },
+                    {
+                        "name": "$$82E83B5228CBA94C3F694883743301604D71",
+                        "alias": 136
+                    },
+                    {
+                        "name": "$$6539A9B900A92444E62862169C739C497B03",
+                        "alias": 137
+                    },
+                    {
+                        "name": "$$F706E31D21395943AA4805416A62F6F4D967",
+                        "alias": 138
+                    },
+                    {
+                        "name": "$$408283167686D244FC1A8958939203BD5D66",
+                        "alias": 139
+                    },
+                    {
+                        "name": "$$1FEF049A334B674F60388AC5CF096316F459",
+                        "alias": 140
+                    },
+                    {
+                        "name": "$$035FFAC94DF00147B66B2297C927DBE950AC",
+                        "alias": 144
+                    },
+                    {
+                        "name": "$$BD3F33D43D23A8457C187C9588E72C4DCEB1",
+                        "alias": 145
+                    },
+                    {
+                        "name": "$$D11D13701594384D6D6A4462D3CC54F08999",
+                        "alias": 146
+                    },
+                    {
+                        "name": "$$428C36074C60C945B4795B94D487D3E798CE",
+                        "alias": 148
+                    },
+                    {
+                        "name": "$$172A40BE01C04142DB9B1DB74B877F6330A7",
+                        "alias": 149
+                    },
+                    {
+                        "name": "$$8348BD50319475438949034940DDD0BDD8D9",
+                        "alias": 150
+                    },
+                    {
+                        "name": "$$929F6F0C2F4DC340D7182354134470C5CB3C",
+                        "alias": 151
+                    },
+                    {
+                        "name": "$$33CECD203AD8504B0298C731DE5E59D4B3F4",
+                        "alias": 152
+                    },
+                    {
+                        "name": "$$54DF09EC285204467C2984B6C9897FA29252",
+                        "alias": 153
+                    },
+                    {
+                        "name": "$$64DD6A4A0133F444CA5A5E3149E454F3D5A1",
+                        "alias": 154
+                    },
+                    {
+                        "name": "$$E8D378D0141FE846B739ECA1F60A0A16EFB3",
+                        "alias": 155
+                    },
+                    {
+                        "name": "$$1CF90F1C9F4F45403C8A7C12586E4F7DA359",
+                        "alias": 156
+                    },
+                    {
+                        "name": "$$D04FAF793410184145396E605649E4733EF5",
+                        "alias": 157
+                    },
+                    {
+                        "name": "$$50FA944A5E1A484F50390EE10E53804D93A9",
+                        "alias": 159
+                    },
+                    {
+                        "name": "$$744267A1656FD34A3428A363B83750488BAA",
+                        "alias": 161
+                    },
+                    {
+                        "name": "$$6184936338FC7542F4899C462BE44A4B0391",
+                        "alias": 165
+                    },
+                    {
+                        "name": "$$1B6FB43710BC9449F55BDA071E500B840002",
+                        "alias": 166
+                    },
+                    {
+                        "name": "$$6A0CCE1A2AA793466819F6D2633BCCD3C92C",
+                        "alias": 167
+                    },
+                    {
+                        "name": "$$1647D11C4E2E5844F169D5505601719C3312",
+                        "alias": 168
+                    },
+                    {
+                        "name": "$$C9D39AEB3A01274BFB49A4810EB8CDAD9368",
+                        "alias": 169
+                    },
+                    {
+                        "name": "$$3D6A132A0FFA444ABE1AA52285AEF41CF085",
+                        "alias": 170
+                    },
+                    {
+                        "name": "$$81C1EA9568CCF44B617B78F4B24411FB8867",
+                        "alias": 171
+                    },
+                    {
+                        "name": "$$511682003850F443134B1AB5BFF33F6E19F3",
+                        "alias": 172
+                    },
+                    {
+                        "name": "$$3754D5514F8C7248663957E394B8510A5440",
+                        "alias": 173
+                    },
+                    {
+                        "name": "$$6E7C98799BB896465E69787958E43B57E65D",
+                        "alias": 174
+                    },
+                    {
+                        "name": "$$B1B6F5AA297ED34EAB481DF8E17A4DF16E71",
+                        "alias": 175
+                    },
+                    {
+                        "name": "$$48F90DAC21D1B043FD3ABD0822708AE32D09",
+                        "alias": 176
+                    },
+                    {
+                        "name": "$$4783A9533D3EA247B61AC2328C707D2B960C",
+                        "alias": 177
+                    },
+                    {
+                        "name": "$$414C333D99FD494C420B61A8923060C220E0",
+                        "alias": 178
+                    },
+                    {
+                        "name": "$$7EF9FBE47705F048F479B083D49E5A1093F6",
+                        "alias": 179
+                    },
+                    {
+                        "name": "$$D6E0A4F45E124943C21B4D142FBF74579C1B",
+                        "alias": 180
+                    },
+                    {
+                        "name": "$$D18FDBB15FDC3847B459D7668D8DA88F3ACC",
+                        "alias": 181
+                    },
+                    {
+                        "name": "$$808EC2806C587344601A277834616EDE0057",
+                        "alias": 182
+                    },
+                    {
+                        "name": "$$B25FAB1F2BD8D94D2D8806D90A45C9BC772E",
+                        "alias": 183
+                    },
+                    {
+                        "name": "$$5DB59BB10200884AFD3A40761CF1054E322E",
+                        "alias": 184
+                    },
+                    {
+                        "name": "$$03DD54029F4CC446B19B3DD5D6E61FBDEF49",
+                        "alias": 185
+                    },
+                    {
+                        "name": "$$01BEA02A26D5734DFC9BA52382F2179782C6",
+                        "alias": 186
+                    },
+                    {
+                        "name": "$$2D028AF66FFED74E5E2B0A58EBD2481902FF",
+                        "alias": 187
+                    },
+                    {
+                        "name": "$$0D98D8978BD05145206B76C7632D3D9F918A",
+                        "alias": 188
+                    },
+                    {
+                        "name": "$$8C27F5BD93C60446E7299EC1165C1100B21E",
+                        "alias": 189
+                    },
+                    {
+                        "name": "$$E9EF6635341DB243B92BC0D97B13B753EEAF",
+                        "alias": 190
+                    },
+                    {
+                        "name": "$$CD39745D283623447F4B5247B6F5CD9DA832",
+                        "alias": 193
+                    },
+                    {
+                        "name": "$$3BD491D4403E584490998348091F510F7A86",
+                        "alias": 196
+                    },
+                    {
+                        "name": "$$4AFFF3151CF1C14B9C39BD47B39018825992",
+                        "alias": 197
+                    },
+                    {
+                        "name": "$$C856209B3110444AEE48676265EA52E0099F",
+                        "alias": 198
+                    },
+                    {
+                        "name": "$$D8FAEAED50D5B54AD38B0E87862124F2CEB4",
+                        "alias": 199
+                    },
+                    {
+                        "name": "$$03217B65377CD64B14986EF130138D36ACED",
+                        "alias": 200
+                    },
+                    {
+                        "name": "$$3C9E451808B4204A3018D510B156CDABE080",
+                        "alias": 201
+                    },
+                    {
+                        "name": "$$AF9C250F9478314734284191D20E6D65A39F",
+                        "alias": 202
+                    },
+                    {
+                        "name": "$$A126BB9F8F3E2843D1791511557A157DEA86",
+                        "alias": 203
+                    },
+                    {
+                        "name": "$$9B543F5A26CD974ACD68A934700E296DAD68",
+                        "alias": 204
+                    },
+                    {
+                        "name": "$$9C2737C82CB7F74F6408F4A1B61CE6006722",
+                        "alias": 205
+                    },
+                    {
+                        "name": "$$A31AD6678F224146C2293874225974593347",
+                        "alias": 206
+                    },
+                    {
+                        "name": "$$C4AC4D950F9A184DF9490A865FFCC8225E36",
+                        "alias": 207
+                    },
+                    {
+                        "name": "$$9D9A7C9B0E066042BC7901B0B4E212C2DB0A",
+                        "alias": 208
+                    },
+                    {
+                        "name": "$$9370062F55F8C144811B5F933F27B2A36F88",
+                        "alias": 209
+                    },
+                    {
+                        "name": "$$DE79C8043DFA3443B9284A9225937947ABCE",
+                        "alias": 210
+                    },
+                    {
+                        "name": "$$C70B30EA506F1445B46B5D54C83E4DB35873",
+                        "alias": 211
+                    },
+                    {
+                        "name": "$$966BBF827C15D147F668B84783BB10212F78",
+                        "alias": 212
+                    },
+                    {
+                        "name": "$$DE1757AF8431A64964899F122998D1908BE4",
+                        "alias": 213
+                    },
+                    {
+                        "name": "$$CE3FAEA58F53D34D589B7F3524D042D1450C",
+                        "alias": 214
+                    },
+                    {
+                        "name": "$$8F3AD8DC2D94C747B08BD873CBD046FF814E",
+                        "alias": 215
+                    },
+                    {
+                        "name": "$$E228694D651ED14AB18A5728E71E56DBBAD4",
+                        "alias": 216
+                    },
+                    {
+                        "name": "$$B6A9AE708907874931886BE50E54D2C185A2",
+                        "alias": 217
+                    },
+                    {
+                        "name": "$$E559C0D71759E946CD48116851EB9DA5D9B6",
+                        "alias": 218
+                    },
+                    {
+                        "name": "$$879ADE965419A64D005B7D4858C720AF3707",
+                        "alias": 219
+                    },
+                    {
+                        "name": "$$4B5902CF1B63384B469873E13E2E8CB9FC64",
+                        "alias": 220
+                    },
+                    {
+                        "name": "$$5C92179B0BAA8343952B3FA46647714FB451",
+                        "alias": 221
+                    },
+                    {
+                        "name": "$$5FF080C478C6634D82183AD35D9B30AC5B60",
+                        "alias": 222
+                    },
+                    {
+                        "name": "$$9D580AEC784F78436D8BDE41384DE85CA483",
+                        "alias": 223
+                    },
+                    {
+                        "name": "$$0B3F13DF1879044D9F8B55947A85DBBC15F7",
+                        "alias": 224
+                    },
+                    {
+                        "name": "$$7CB108BD49D96941BF7A9145F6F7CB976E08",
+                        "alias": 225
+                    },
+                    {
+                        "name": "$$35CD6CF5725A3545074881E2B0876B5EFF8E",
+                        "alias": 226
+                    },
+                    {
+                        "name": "$$49DE469966F1284B2E689A237085BDAA8BA0",
+                        "alias": 227
+                    },
+                    {
+                        "name": "$$C74C42E53719C2427759B4B84CED14C2CFD3",
+                        "alias": 228
+                    },
+                    {
+                        "name": "$$119AAA1B702CE645E68A8313DF553C3570BA",
+                        "alias": 229
+                    },
+                    {
+                        "name": "$$C81AB1E94AC286460E7A5A55F6938A0C3587",
+                        "alias": 230
+                    },
+                    {
+                        "name": "$$2324712A2D44234D493981B35500DDD0BF3F",
+                        "alias": 231
+                    },
+                    {
+                        "name": "$$A3DB430F33ECE143212B77B2E6D730A07752",
+                        "alias": 232
+                    },
+                    {
+                        "name": "$$F7C1FCB851D16443B01B9CA7DDC103FDA6F2",
+                        "alias": 233
+                    },
+                    {
+                        "name": "$$3F45CA5E9A3128472F6852151D2475926E93",
+                        "alias": 234
+                    },
+                    {
+                        "name": "$$7DD97AA88B24A8496718EDB3707C6E2F7EBD",
+                        "alias": 235
+                    },
+                    {
+                        "name": "$$0A1B28CB60343844DE38AA64EA081C8E487B",
+                        "alias": 244
+                    },
+                    {
+                        "name": "$$808660E58502064B1859B1420456B942FDF2",
+                        "alias": 245
+                    },
+                    {
+                        "name": "$$03CE4836162D91485108377486B0F04E6A1D",
+                        "alias": 288
+                    },
+                    {
+                        "name": "$$EF03C785270C0645931A4E61D3FBA8190DE5",
+                        "alias": 290
+                    },
+                    {
+                        "name": "$$7A777E9669DBB54EC76872912A1761F17949",
+                        "alias": 291
+                    },
+                    {
+                        "name": "$$308E73D7182903476A782497F5B9BCA265BE",
+                        "alias": 292
+                    },
+                    {
+                        "name": "$$D94EA05F245AA34DA0194227B28395171F08",
+                        "alias": 319
+                    },
+                    {
+                        "name": "$$E52CF5C015D1E347662943B4AE0660AF3B8B",
+                        "alias": 320
+                    },
+                    {
+                        "name": "$$D123CABB1D6AE9462D787D86F14E7B1523D7",
+                        "alias": 321
+                    },
+                    {
+                        "name": "$$A1BCA694910C42484618AD644616C92B67AE",
+                        "alias": 322
+                    },
+                    {
+                        "name": "$$7C98F4771AD77740DB88B6052D0878E7C034",
+                        "alias": 324
+                    }
+                ]
+            },
+            {
+                "label": "$$279A870082643340194815582532E3A95B7F",
+                "identifier": "numberVariable",
+                "valueFormula": "return fmtNumVar(p.targetVariable)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                },
+                "attribute": "targetVariable"
+            },
+            {
+                "type": "GSQStepper",
+                "tooltip": "The input session this input data check is valid for. If a different input session is active, no input is received.",
+                "attribute": "inputSession",
+                "label": "Input Session",
+                "minimum": 0,
+                "maximum": 999999999,
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.inputSession || 0)"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$920AFC8E549CC348534811D3370FD77FC8F2\",\n    \"windowTitle\": \"$$90433D4CK4E35A4DFDS862EEFB0C4808F17E\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.GetInputData\",\n    \"group\": \"$$C1953650K4FD7A4268SB298E0BEFC554D88E\",\n    \"subGroup\": \"$$271150F15AF34549943BCE034E6B8B439297\",\n    \"windowSize\": {\n        \"w\": 600,\n        \"h\": 260\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"field\": 0, \"state\": 0, \"inputSession\": 0, \"targetVariable\": { \"scope\": 1, \"index\": 0, \"domain\": GS.CONST.DEFAULT_DOMAIN } },\n    \"quickItems\": [\n        {\n            \"label\": \"$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB\",\n            \"valueFormula\": \"return p.field >= 100 ? GS.CONST.KEYS_BY_CODE[p.field].name : GS.CONST.INPUT_DATA_FIELDS[p.field];\",\n            \"attribute\": \"field\",\n            \"identifier\": \"field\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.INPUT_DATA_FIELDS\n        },\n        {\n            \"label\": \"$$279A870082643340194815582532E3A95B7F\",\n            \"identifier\": \"numberVariable\",\n            \"valueFormula\": \"return fmtNumVar(p.targetVariable)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" } },\n            \"attribute\": \"targetVariable\"\n        },\n        {\n            \"type\": \"GSQStepper\",\n            \"tooltip\": \"The input session this input data check is valid for. If a different input session is active, no input is received.\",\n            \"attribute\": \"inputSession\",\n            \"label\": \"Input Session\",\n            \"minimum\": 0,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n            \"variableButton\": {\n                \"dataSource\": \"numbers\"\n            },\n            \"valueFormula\": \"return fmtNumVar(p.inputSession || 0)\"\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Input Data",
+        "order": 6
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

@@ -1,0 +1,72 @@
+{
+    "uid": "5EF0D226K4AA9A4954SB196E8C9C58D846A3",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "3E57923EKA72FA43ECSB6ACE60B387513294",
+        "displayName": "$$6CD66E3A52E5034317395C5487D456D204DA",
+        "windowTitle": "Change Transition",
+        "type": "event_command",
+        "id": "gs.ChangeTransition",
+        "group": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+        "subGroup": "$$3821D5611242A9442D597146E7D807708DE1",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [],
+        "defaultValue": {
+            "graphic": null,
+            "vague": 30,
+            "duration": 20
+        },
+        "quickItems": [
+            {
+                "type": "GSQPopupField",
+                "label": "$$P61",
+                "lockable": true,
+                "attribute": "graphic",
+                "dialog": {
+                    "uid": "dialog.selectGraphicResource",
+                    "parameters": {
+                        "folder": "Graphics/Masks"
+                    }
+                },
+                "valueFormula": "return fmtResource(p.graphic)",
+                "dataAttribute": "resource"
+            },
+            {
+                "type": "GSQStepper",
+                "label": "$$A20F74E20798454C200A83253DEACB863B87",
+                "lockable": true,
+                "attribute": "vague",
+                "minimum": 0,
+                "maximum": 255
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999,
+                "lockable": true
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$6CD66E3A52E5034317395C5487D456D204DA\",\n    \"windowTitle\": \"Change Transition\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.ChangeTransition\",\n    \"group\": \"$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA\",\n    \"subGroup\": \"$$3821D5611242A9442D597146E7D807708DE1\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"graphic\": null, \"vague\": 30, \"duration\": 20 },\n    \"quickItems\": [\n        {\n            \"type\": \"GSQPopupField\",\n            \"label\": \"$$P61\",\n            \"lockable\": true,\n            \"attribute\": \"graphic\",\n            \"dialog\": { \"uid\": \"dialog.selectGraphicResource\", \"parameters\": { \"folder\": \"Graphics/Masks\" } },\n            \"valueFormula\": \"return fmtResource(p.graphic)\",\n            \"dataAttribute\": \"resource\"\n        },\n        {\n            \"type\": \"GSQStepper\",\n            \"label\": \"$$A20F74E20798454C200A83253DEACB863B87\",\n            \"lockable\": true,\n            \"attribute\": \"vague\",\n            \"minimum\": 0,\n            \"maximum\": 255\n        },\n        Object.override(GSQ.CONTROLS.DURATION, {\"lockable\": true})\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Change Transition",
+        "order": 1
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

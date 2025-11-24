@@ -1,0 +1,207 @@
+{
+    "uid": "07DDB01140811271",
+    "isLoaded": true,
+    "lastModificationTime": 1428415343871,
+    "items": {
+        "parentId": "0FEBB76EK401BA41A4S99B1E2346601143E2",
+        "displayName": "$$P24",
+        "windowTitle": "$$P24",
+        "type": "event_command",
+        "title": "$$P24",
+        "id": "gs.MovePicture",
+        "group": "$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "windowSize": {
+            "w": 400
+        },
+        "defaultValue": {
+            "numberDomain": "com.degica.vnm.default",
+            "predefinedPositionId": 0,
+            "number": 0,
+            "duration": 0,
+            "waitForCompletion": 0,
+            "positionType": 0,
+            "picture": {
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                "identifier": "number",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "number",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$P31",
+                "type": "GSQPopupField",
+                "valueFormula": "return GS.CONST.GRAPHIC_POSITION_TYPES[p.positionType]",
+                "attribute": "positionType",
+                "dataSource": [
+                    "$$52E2B8291E58F74BCA0BCAB906C31A14C8E8",
+                    "$$EDA8FFF8758AE841037B2DB13D815982AF4D",
+                    "$$7975782B2E59994D107B13C1801F5A299E12"
+                ],
+                "showItems": [
+                    [
+                        "predefinedPositionId"
+                    ],
+                    [
+                        "position"
+                    ],
+                    [
+                        "x",
+                        "y"
+                    ]
+                ]
+            },
+            {
+                "label": "",
+                "valueFormula": "return fmtNumVar(p.picture.position.x) + ', ' + fmtNumVar(p.picture.position.y);",
+                "type": "GSQPopupField",
+                "attribute": "picture",
+                "identifier": "position",
+                "dialog": {
+                    "uid": "77581DC1KC892A481FSAFE5EF1F3D31150C0"
+                }
+            },
+            {
+                "label": "",
+                "valueFormula": "return GS.VN.textForPredefinedObjectPosition(p.predefinedPositionId);",
+                "type": "GSQPopupField",
+                "dataSource": {
+                    "sourceFormula": "return GS.VN.predefinedObjectPositionList(undefined)"
+                },
+                "attribute": "predefinedPositionId"
+            },
+            {
+                "label": "X",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "identifier": "x",
+                "attribute": "picture.position.x",
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "Y",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "identifier": "y",
+                "attribute": "picture.position.y",
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "nodes": [
+            {
+                "name": "return fmt(lcs('AEC301E9K9298A4DB7SBE7DE75B65E8D79BA')+' @%s, %s, [%s, %s], [%s%%, %s%%], [%s, %s], %sf%s', fmtNumVar(p.number), scase(p.origin, [0, 1], ['Top-Left', 'Center']), fmtNumVar(p.x), fmtNumVar(p.y), fmtNumVar(p.scaleX), fmtNumVar(p.scaleY), fmtNumVar(p.opacity), scase(p.blending, [0, 1, 2], GS.CONST.BLEND_MODES), fmtNumVar(p.duration), p.waitForCompletion ? ', '+lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : '')",
+                "id": "gs.MovePicture"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$P24\",\n    \"windowTitle\": \"$$P24\",\n    \"type\": \"event_command\",\n    \"title\": \"$$P24\",\n    \"id\": \"gs.MovePicture\",\n    \"group\": \"$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"defaultValue\": { \"numberDomain\": GS.CONST.DEFAULT_DOMAIN, \"predefinedPositionId\": 0, \"number\": 0, \"duration\": 0, \"waitForCompletion\": 0, \"positionType\": 0,  \"picture\": { \"position\": { \"x\": 0, \"y\": 0 }}, \"easing\": { \"type\": 0, \"inOut\": 1 }},\n    \"quickItems\": [\n        GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER,\n        GSQ.CONTROLS.GRAPHIC_POSITION_TYPE,\n        {\n            \"label\": \"\",\n            \"valueFormula\": \"return fmtNumVar(p.picture.position.x) + ', ' + fmtNumVar(p.picture.position.y);\",\n            \"type\": \"GSQPopupField\",\n            \"attribute\": \"picture\",\n            \"identifier\": \"position\",\n            \"dialog\": { \"uid\": \"77581DC1KC892A481FSAFE5EF1F3D31150C0\" }\n        },\n        GSQ.CONTROLS.CREATE_PREDEFINED_OBJECT_POSITION(),\n        Object.override(GSQ.CONTROLS.GRAPHIC_POSITION_X, { \"attribute\": \"picture.position.x\" }),\n        Object.override(GSQ.CONTROLS.GRAPHIC_POSITION_Y, { \"attribute\": \"picture.position.y\" }),\n        GSQ.CONTROLS.DURATION,\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING\n                        ]\n                    } \n                ]\n            }\n        ]\n    },\n    \"nodes\": [\n        {\n            \"name\": \"return fmt(lcs('AEC301E9K9298A4DB7SBE7DE75B65E8D79BA')+' @%s, %s, [%s, %s], [%s%%, %s%%], [%s, %s], %sf%s', fmtNumVar(p.number), scase(p.origin, [0, 1], ['Top-Left', 'Center']), fmtNumVar(p.x), fmtNumVar(p.y), fmtNumVar(p.scaleX), fmtNumVar(p.scaleY), fmtNumVar(p.opacity), scase(p.blending, [0, 1, 2], GS.CONST.BLEND_MODES), fmtNumVar(p.duration), p.waitForCompletion ? ', '+lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : '')\",\n            \"id\": \"gs.MovePicture\"\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Move Picture",
+        "order": 1
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "uid": "72CD309022F08845D05AC9863756F4CB7A7C",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "type": "vn.chapter",
+        "name": "Chapter1",
+        "commands": [
+            {
+                "id": "vn.Chapter",
+                "params": {
+                    "name": "Chapter1",
+                    "description": ""
+                },
+                "indent": 0
+            }
+        ],
+        "order": 1
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

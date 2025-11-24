@@ -1,0 +1,21 @@
+{
+    "uid": "C0268943K60B3A42B7SA6F1EDDCF2F642FD7",
+    "isLoaded": true,
+    "lastModificationTime": 1421095533408,
+    "items": {
+        "name": "Managers",
+        "type": "game_script",
+        "order": 2,
+        "content": "",
+        "parentId": "ROOT",
+        "folder": true,
+        "compiledContent": "\n\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VzQ29udGVudCI6WyIiXX0=\n//# sourceURL=Managers_40.js",
+        "index": 40
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

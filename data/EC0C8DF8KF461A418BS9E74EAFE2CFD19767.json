@@ -1,0 +1,53 @@
+{
+    "uid": "EC0C8DF8KF461A418BS9E74EAFE2CFD19767",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "displayName": "$$FF82600780DF4242917B9C378C0907B76195",
+        "id": "gs.ClearMessage",
+        "group": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "subGroup": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "defaultValue": {
+            "waitForCompletion": 1,
+            "duration": 30
+        },
+        "quickItems": [
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999,
+                "lockable": true
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "rawContent": "{\n    \"displayName\": \"$$FF82600780DF4242917B9C378C0907B76195\",\n    \"id\": \"gs.ClearMessage\",\n    \"group\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"subGroup\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"defaultValue\": { \"waitForCompletion\": 1, \"duration\": 30 },\n    \"quickItems\": [\n        Object.override(GSQ.CONTROLS.DURATION, {\"lockable\": true}),\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ]\n}",
+        "name": "Clear Message",
+        "type": "event_command",
+        "parentId": "8CC0A736KF347A454AS899FE4F42878D912C",
+        "order": 6
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

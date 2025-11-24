@@ -1,0 +1,158 @@
+{
+    "uid": "1460AF25KB022A432DSA370E68012CDC1B17",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "C7F59F96KBEE0A493AS9298E6E96A9327DC7",
+        "displayName": "$$082A96AF209B324D54486878C8A82AE3A0D5",
+        "windowTitle": "Scroll Background",
+        "type": "event_command",
+        "title": "$$P24",
+        "id": "vn.ScrollBackground",
+        "group": "$$2FBA90CCK88F7A4B74SA654EC5FF13F44EF7",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [
+            {
+                "name": "return fmt('Scroll Background: @%s, Scroll-H(%s), Scroll-V(%s), [%s, %s], @%sf%s', fmtNumVar(p.layer), p.horizontal ? fmtNumVar(p.horizontalSpeed) : 'Stop', p.vertical ? fmtNumVar(p.verticalSpeed) : 'Stop', GS.CONST.EASING_TYPES[p.easing.type], GS.CONST.EASING_IN_OUT[p.easing.inOut], fmtNumVar(p.duration), p.waitForCompletion ? ', Wait' : '')",
+                "id": "vn.ScrollBackground"
+            }
+        ],
+        "defaultValue": {
+            "layer": 0,
+            "duration": 0,
+            "waitForCompletion": 0,
+            "verticalSpeed": 0,
+            "horizontalSpeed": 0,
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$272673AEKE288A48D0SB8D7EEFF528276A59",
+                "valueFormula": "return fmtNumVar(p.layer);",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "attribute": "layer",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$323B7A1881A13340D32A7B8520D8893F8518",
+                "valueFormula": "return fmtNumVar(p.horizontalSpeed) + lcs('4CB1B96948F4B447E119F7829BD93C0D90AF');",
+                "type": "GSQStepper",
+                "attribute": "horizontalSpeed",
+                "numberFormat": "decimal",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$EEE313F0542B4443ED58F4B9DAE55097ACD5",
+                "valueFormula": "return fmtNumVar(p.verticalSpeed) + lcs('4CB1B96948F4B447E119F7829BD93C0D90AF');",
+                "type": "GSQStepper",
+                "numberFormat": "decimal",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "attribute": "verticalSpeed",
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$082A96AF209B324D54486878C8A82AE3A0D5\",\n    \"windowTitle\": \"Scroll Background\",\n    \"type\": \"event_command\",\n    \"title\": \"$$P24\",\n    \"id\": \"vn.ScrollBackground\",\n    \"group\": \"$$2FBA90CCK88F7A4B74SA654EC5FF13F44EF7\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n        {\n            \"name\": \"return fmt('Scroll Background: @%s, Scroll-H(%s), Scroll-V(%s), [%s, %s], @%sf%s', fmtNumVar(p.layer), p.horizontal ? fmtNumVar(p.horizontalSpeed) : 'Stop', p.vertical ? fmtNumVar(p.verticalSpeed) : 'Stop', GS.CONST.EASING_TYPES[p.easing.type], GS.CONST.EASING_IN_OUT[p.easing.inOut], fmtNumVar(p.duration), p.waitForCompletion ? ', Wait' : '')\",\n            \"id\": \"vn.ScrollBackground\"\n        }\n    ],\n    \"defaultValue\": { \"layer\": 0, \"duration\": 0, \"waitForCompletion\": 0, \"verticalSpeed\": 0, \"horizontalSpeed\": 0, \"easing\": { \"type\": 0, \"inOut\": 1 } },\n    \"quickItems\": [\n        {\n            \"label\": \"$$272673AEKE288A48D0SB8D7EEFF528276A59\",\n            \"valueFormula\": \"return fmtNumVar(p.layer);\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"layer\",\n            \"minimum\": 0,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$323B7A1881A13340D32A7B8520D8893F8518\",\n            \"valueFormula\": \"return fmtNumVar(p.horizontalSpeed) + lcs('4CB1B96948F4B447E119F7829BD93C0D90AF');\",\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"horizontalSpeed\",\n            \"numberFormat\": \"decimal\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$EEE313F0542B4443ED58F4B9DAE55097ACD5\",\n            \"valueFormula\": \"return fmtNumVar(p.verticalSpeed) + lcs('4CB1B96948F4B447E119F7829BD93C0D90AF');\",\n            \"type\": \"GSQStepper\",\n            \"numberFormat\": \"decimal\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"attribute\": \"verticalSpeed\",\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        GSQ.CONTROLS.DURATION,\n        {\n            \"type\": \"GSQPopupField\",\n            \"attribute\": \"waitForCompletion\",\n            \"dataSource\": [\"$$2EA7A7BF12D3404F62094CA6644784A9FC40\", \"$$97A5E676K2351A43FCSB0DFEBB5CF7A73243\"],\n            \"valueFormula\": \"return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))\"\n        }\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    },\n    \"sections\": [\n    ]\n}",
+        "name": "Scroll Background",
+        "order": 5
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

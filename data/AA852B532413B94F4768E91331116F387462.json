@@ -1,0 +1,369 @@
+{
+    "uid": "AA852B532413B94F4768E91331116F387462",
+    "isLoaded": true,
+    "lastModificationTime": 1424023487462,
+    "items": {
+        "parentId": "B384159EK3827A45E9S93E0E2345AAFC3787",
+        "displayName": "$$6245330B45C1C34CFE59C509C041F1FCEB70",
+        "windowTitle": "$$24EB2C7CKA440A4B79SA9D3EB2D17C588C55",
+        "type": "event_command",
+        "id": "gs.ChangeTextSettings",
+        "group": "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+        "subGroup": "$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5",
+        "windowSize": {
+            "w": 400,
+            "h": 400
+        },
+        "columns": [
+            400
+        ],
+        "defaultValue": {
+            "numberDomain": "com.degica.vnm.default",
+            "number": 0,
+            "bold": 0,
+            "italic": 0,
+            "underline": 0,
+            "smallCaps": 0,
+            "strikeThrough": 0,
+            "lineSpacing": 0,
+            "padding": [
+                6,
+                0,
+                6,
+                0
+            ],
+            "font": "Verdana",
+            "size": 40,
+            "outline": 0,
+            "shadow": 0,
+            "outlineColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0,
+                "alpha": 255
+            },
+            "shadowColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0,
+                "alpha": 255
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                "identifier": "number",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "number",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$5E0D20EA477EB14323884BD171CB75EF8D66",
+                "lockable": true,
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "valueFormula": "return fmtStrVar(p.font)",
+                "attribute": "font",
+                "type": "GSQTextArea",
+                "multiline": false
+            },
+            {
+                "label": "$$2BFCB38471EC754E301910E61CB9E9E930FC",
+                "lockable": true,
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.size) + 'px'",
+                "attribute": "size",
+                "type": "GSQStepper",
+                "minimum": 1,
+                "maximum": 1000
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$5DFAC3F9842F404696394AD3C46DED3C5DF4",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$CE4922C3K0381A4335S898CEFEBA22825F89",
+                                            "valueFormula": "return fmtColor(p.color);",
+                                            "attribute": "color",
+                                            "type": "GSQPopupField",
+                                            "lockable": true,
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "bold",
+                                            "label": "$$22CA6F8BK6967A4B13S80C4EBE73D23267EE"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "italic",
+                                            "label": "$$56DFDC1CK48A9A4B3DSB5BEEF528856D1AFA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "smallCaps",
+                                            "label": "$$2F786E0037B3684307780746FF079D38FED0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "underline",
+                                            "label": "$$51E89D03K534DA492FSA76DEDC4D4284B4EB"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "attribute": "strikeThrough",
+                                            "label": "$$6BC927E074D6D5444789F8C2CD10EB878CB6"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "valueFormula": "return p.lineSpacing + 'px'",
+                                            "attribute": "lineSpacing",
+                                            "label": "$$11FE738E780BF34E4D8BD23850B9AF9B0A56"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "sections": [
+                        {
+                            "label": "$$A2EAC842K1241A483FS91FDEA944A16669ED",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "valueFormula": "return GS.CONST.YES_NO[p.outline];",
+                                            "attribute": "outline",
+                                            "label": "$$A2EAC842K1241A483FS91FDEA944A16669ED",
+                                            "enableItems": [
+                                                "outlineColor",
+                                                "outlineSize"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$CE4922C3K0381A4335S898CEFEBA22825F89",
+                                            "valueFormula": "return fmtColor(p.outlineColor);",
+                                            "attribute": "outlineColor",
+                                            "type": "GSQPopupField",
+                                            "lockable": true,
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "minimum": 1,
+                                            "maximum": 10,
+                                            "attribute": "outlineSize",
+                                            "label": "$$2BFCB38471EC754E301910E61CB9E9E930FC"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "sections": [
+                        {
+                            "label": "$$8EE9F3B2K7B8AA4B74SB016E38A4779C5955",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQCheckBox",
+                                            "lockable": true,
+                                            "valueFormula": "return GS.CONST.YES_NO[p.shadow];",
+                                            "attribute": "shadow",
+                                            "label": "$$8EE9F3B2K7B8AA4B74SB016E38A4779C5955",
+                                            "enableItems": [
+                                                "shadowColor",
+                                                "shadowOffsetX",
+                                                "shadowOffsetY"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$CE4922C3K0381A4335S898CEFEBA22825F89",
+                                            "valueFormula": "return fmtColor(p.shadowColor);",
+                                            "attribute": "shadowColor",
+                                            "type": "GSQPopupField",
+                                            "lockable": true,
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "attribute": "shadowOffsetX",
+                                            "label": "$$68FB7C8F2A39144FAB3AC4D08FC63E65BEED"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQStepper",
+                                            "lockable": true,
+                                            "attribute": "shadowOffsetY",
+                                            "label": "$$1649C7C95814084C5A89FF92313C8C60021D"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "sections": [
+                        {
+                            "label": "$$B938DEDB8247F5408A38A4D5C6FC614F47E1",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$DA8B51B3KB92CA46EFSB9A9EDF4D4C81A9B8",
+                                            "type": "GSQStepper",
+                                            "valueFormula": "return p.padding[0];",
+                                            "lockable": true,
+                                            "attribute": "padding.0",
+                                            "maximum": 999999999,
+                                            "minimum": -999999999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$0E468336KEA04A497CS8813E5A7FA8B85AF5",
+                                            "type": "GSQStepper",
+                                            "valueFormula": "return p.padding[1];",
+                                            "lockable": true,
+                                            "attribute": "padding.1",
+                                            "maximum": 999999999,
+                                            "minimum": -999999999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$927A7043KEE05A4A52SA7C9E418BAF35232F",
+                                            "type": "GSQStepper",
+                                            "valueFormula": "return p.padding[2];",
+                                            "lockable": true,
+                                            "attribute": "padding.2",
+                                            "maximum": 999999999,
+                                            "minimum": -999999999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$EB59D1CFK6206A4F2BSB258EE66915195A6D",
+                                            "type": "GSQStepper",
+                                            "valueFormula": "return p.padding[3];",
+                                            "lockable": true,
+                                            "attribute": "padding.3",
+                                            "maximum": 999999999,
+                                            "minimum": -999999999
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "nodes": [
+            {
+                "name": "return GS.ECH.textForChangeTextSettings(p)",
+                "id": "gs.ChangeTextSettings"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$6245330B45C1C34CFE59C509C041F1FCEB70\",\n    \"windowTitle\": \"$$24EB2C7CKA440A4B79SA9D3EB2D17C588C55\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.ChangeTextSettings\",\n    \"group\": \"$$CEA96B0BK6FBBA416BSB00FEDF96A1248489\",\n    \"subGroup\": \"$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5\",\n    \"windowSize\": {\n        \"w\": 400,\n        \"h\": 400\n    },\n    \"columns\": [\n        400\n    ],\n    \"defaultValue\": { \"numberDomain\": GS.CONST.DEFAULT_DOMAIN, \"number\": 0, \"bold\": 0, \"italic\": 0, \"underline\": 0, \"smallCaps\": 0, \"strikeThrough\": 0, \"lineSpacing\": 0, \"padding\": [6, 0, 6, 0], \"font\": \"Verdana\", \"size\": 40, \"outline\": 0, \"shadow\": 0, \"outlineColor\": { \"red\": 0, \"green\": 0, \"blue\": 0, \"alpha\": 255 }, \"shadowColor\": { \"red\": 0, \"green\": 0, \"blue\": 0, \"alpha\": 255 } },\n    \"quickItems\": [\n        GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER,\n        {\n            \"label\": \"$$5E0D20EA477EB14323884BD171CB75EF8D66\",\n            \"lockable\": true,\n            \"variableButton\": {\"dataSource\": \"strings\"},\n            \"valueFormula\": \"return fmtStrVar(p.font)\",\n            \"attribute\": \"font\",\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false\n        },\n        {\n            \"label\": \"$$2BFCB38471EC754E301910E61CB9E9E930FC\",\n            \"lockable\": true,\n            \"variableButton\": {\"dataSource\": \"numbers\"},\n            \"valueFormula\": \"return fmtNumVar(p.size) + 'px'\",\n            \"attribute\": \"size\",\n            \"type\": \"GSQStepper\",\n            \"minimum\": 1,\n            \"maximum\": 1000\n        }\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [ \n                    {\n                        \"label\": \"$$5DFAC3F9842F404696394AD3C46DED3C5DF4\",\n                        \"rows\": [\n                            { \"items\": [\n                                Object.override(GSQ.CONTROLS.COLOR, { \"attribute\": \"color\", \"lockable\": true, \"valueFormula\": \"return fmtColor(p.color);\" })\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"bold\", \"label\": \"$$22CA6F8BK6967A4B13S80C4EBE73D23267EE\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"italic\", \"label\": \"$$56DFDC1CK48A9A4B3DSB5BEEF528856D1AFA\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"smallCaps\", \"label\": \"$$2F786E0037B3684307780746FF079D38FED0\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"underline\", \"label\": \"$$51E89D03K534DA492FSA76DEDC4D4284B4EB\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"attribute\": \"strikeThrough\", \"label\": \"$$6BC927E074D6D5444789F8C2CD10EB878CB6\" }\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"valueFormula\": \"return p.lineSpacing + 'px'\", \"attribute\": \"lineSpacing\", \"label\": \"$$11FE738E780BF34E4D8BD23850B9AF9B0A56\" },\n                            ] }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$A2EAC842K1241A483FS91FDEA944A16669ED\",\n                        \"rows\": [\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"valueFormula\": \"return GS.CONST.YES_NO[p.outline];\", \"attribute\": \"outline\", \"label\": \"$$A2EAC842K1241A483FS91FDEA944A16669ED\", \"enableItems\": [\"outlineColor\", \"outlineSize\"] },\n                            ] },\n                            { \"items\": [\n                                Object.override(GSQ.CONTROLS.COLOR, { \"attribute\": \"outlineColor\", \"lockable\": true, \"valueFormula\": \"return fmtColor(p.outlineColor);\" }),\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"minimum\": 1, \"maximum\": 10, \"attribute\": \"outlineSize\", \"label\": \"$$2BFCB38471EC754E301910E61CB9E9E930FC\" },\n                            ] }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$8EE9F3B2K7B8AA4B74SB016E38A4779C5955\",\n                        \"rows\": [\n                            { \"items\": [\n                                { \"type\": \"GSQCheckBox\", \"lockable\": true, \"valueFormula\": \"return GS.CONST.YES_NO[p.shadow];\", \"attribute\": \"shadow\", \"label\": \"$$8EE9F3B2K7B8AA4B74SB016E38A4779C5955\", \"enableItems\": [\"shadowColor\", \"shadowOffsetX\", \"shadowOffsetY\"] },\n                            ] },\n                            { \"items\": [\n                                Object.override(GSQ.CONTROLS.COLOR, { \"lockable\": true, \"attribute\": \"shadowColor\", \"valueFormula\": \"return fmtColor(p.shadowColor);\" })\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"attribute\": \"shadowOffsetX\", \"label\": \"$$68FB7C8F2A39144FAB3AC4D08FC63E65BEED\" },\n                            ] },\n                            { \"items\": [\n                                { \"type\": \"GSQStepper\", \"lockable\": true, \"attribute\": \"shadowOffsetY\", \"label\": \"$$1649C7C95814084C5A89FF92313C8C60021D\" },\n                            ] }\n                        ]\n                    } \n                ]\n            },\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$B938DEDB8247F5408A38A4D5C6FC614F47E1\",\n                        \"rows\": [\n                            { \"items\": [\n                                {\n                                    \"label\": \"$$DA8B51B3KB92CA46EFSB9A9EDF4D4C81A9B8\",\n                                    \"type\": \"GSQStepper\",\n                                    \"valueFormula\": \"return p.padding[0];\",\n                                    \"lockable\": true,\n                                    \"attribute\": \"padding.0\",\n                                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                                    \"minimum\": -GS.CONST.MAX_NUMBER_VALUE\n                                }\n                            ] },\n                            { \"items\": [\n                                {\n                                    \"label\": \"$$0E468336KEA04A497CS8813E5A7FA8B85AF5\",\n                                    \"type\": \"GSQStepper\",\n                                    \"valueFormula\": \"return p.padding[1];\",\n                                    \"lockable\": true,\n                                    \"attribute\": \"padding.1\",\n                                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                                    \"minimum\": -GS.CONST.MAX_NUMBER_VALUE\n                                }\n                            ] },\n                            { \"items\": [\n                                {\n                                    \"label\": \"$$927A7043KEE05A4A52SA7C9E418BAF35232F\",\n                                    \"type\": \"GSQStepper\",\n                                    \"valueFormula\": \"return p.padding[2];\",\n                                    \"lockable\": true,\n                                    \"attribute\": \"padding.2\",\n                                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                                    \"minimum\": -GS.CONST.MAX_NUMBER_VALUE\n                                }\n                            ] },\n                            { \"items\": [\n                                {\n                                    \"label\": \"$$EB59D1CFK6206A4F2BSB258EE66915195A6D\",\n                                    \"type\": \"GSQStepper\",\n                                    \"valueFormula\": \"return p.padding[3];\",\n                                    \"lockable\": true,\n                                    \"attribute\": \"padding.3\",\n                                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                                    \"minimum\": -GS.CONST.MAX_NUMBER_VALUE\n                                }\n                            ] }\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    },\n    \"nodes\": [\n        {\n            \"name\": \"return GS.ECH.textForChangeTextSettings(p)\",\n            \"id\": \"gs.ChangeTextSettings\"\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Text Settings",
+        "order": 6
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

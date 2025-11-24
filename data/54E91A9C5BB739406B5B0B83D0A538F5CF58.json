@@ -1,0 +1,38 @@
+{
+    "uid": "54E91A9C5BB739406B5B0B83D0A538F5CF58",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "id": "gs.SetInputSession",
+        "displayName": "Set Input Session",
+        "group": "$$C1953650K4FD7A4268SB298E0BEFC554D88E",
+        "subGroup": "$$271150F15AF34549943BCE034E6B8B439297",
+        "defaultValue": {
+            "inputSession": 0
+        },
+        "quickItems": [
+            {
+                "type": "GSQStepper",
+                "tooltip": "Sets the active input session. Only elements created during that active session will receive input. Useful for more advanced UI systems.",
+                "attribute": "inputSession",
+                "label": "Number",
+                "minimum": 0,
+                "maximum": 999999999,
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.inputSession)"
+            }
+        ],
+        "rawContent": "{\n    \"id\": \"gs.SetInputSession\",\n    \"displayName\": \"Set Input Session\",\n    \"group\": \"$$C1953650K4FD7A4268SB298E0BEFC554D88E\",\n    \"subGroup\": \"$$271150F15AF34549943BCE034E6B8B439297\",\n    \"defaultValue\": { \"inputSession\": 0 },\n    \"quickItems\": [\n        {\n            \"type\": \"GSQStepper\",\n            \"tooltip\": \"Sets the active input session. Only elements created during that active session will receive input. Useful for more advanced UI systems.\",\n            \"attribute\": \"inputSession\",\n            \"label\": \"Number\",\n            \"minimum\": 0,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n            \"variableButton\": {\n                \"dataSource\": \"numbers\"\n            },\n            \"valueFormula\": \"return fmtNumVar(p.inputSession)\",\n        }\n    ]\n}",
+        "name": "Set Input Session",
+        "type": "event_command",
+        "parentId": "CCC1D58AKA96AA4B0ESA33CE6CCC06CB5662",
+        "order": 19
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

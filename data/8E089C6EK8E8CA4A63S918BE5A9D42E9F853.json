@@ -1,0 +1,221 @@
+{
+    "uid": "8E089C6EK8E8CA4A63S918BE5A9D42E9F853",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "AAC731FDK40F7A4B4CSA1D9E425BC2784C57",
+        "displayName": "$$B9215CBE63DBD842D43A15E2CD73E200E8FF",
+        "windowTitle": "Exit Scene",
+        "requiresThirdPartyComponents": [
+            "live2d"
+        ],
+        "title": "Exit Scene",
+        "type": "event_command",
+        "id": "vn.L2DExitScene",
+        "group": "$$49C76C7F1C2EE8468B1BA2884C6A06B3C241",
+        "subGroup": "$$9E1A5407531CC141D66911387F0B53C14B4F",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [],
+        "defaultValue": {
+            "characterId": null,
+            "duration": 0,
+            "waitForCompletion": 0,
+            "easing": {
+                "type": 1,
+                "inOut": 0
+            },
+            "animation": {
+                "type": 1,
+                "movement": 0,
+                "mask": {
+                    "graphic": null,
+                    "vague": 30
+                }
+            }
+        },
+        "inlineImage": {
+            "formula": "return GS.VN.resourceForCharacter(p.characterId)",
+            "folder": "Graphics/Characters"
+        },
+        "quickItems": [
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId)",
+                "attribute": "characterId",
+                "identifier": "character",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQDataRecordField",
+                "dataSource": "characters"
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999,
+                "lockable": true
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "attribute": "animation.type",
+                                            "width": "50%",
+                                            "lockable": true,
+                                            "label": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+                                            "dataSource": [
+                                                "$$2683C0C34985474F713910185340D35D3108",
+                                                "$$P177",
+                                                "$$000ADEF46265D146AF5893C3E8B9A840397F"
+                                            ],
+                                            "valueFormula": "return GS.CONST.APPEARANCE_ANIMATION_TYPES[p.animation.type]",
+                                            "showItems": [
+                                                [
+                                                    "animation_movement"
+                                                ],
+                                                [],
+                                                [
+                                                    "animation_maskFile",
+                                                    "animation_maskVague"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "identifier": "animation_movement",
+                                            "dataSource": [
+                                                "$$DA8B51B3KB92CA46EFSB9A9EDF4D4C81A9B8",
+                                                "$$0E468336KEA04A497CS8813E5A7FA8B85AF5",
+                                                "$$927A7043KEE05A4A52SA7C9E418BAF35232F",
+                                                "$$EB59D1CFK6206A4F2BSB258EE66915195A6D"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "animation.type"
+                                            ],
+                                            "attribute": "animation.movement",
+                                            "valueFormula": "return GS.CONST.MOVE_ANIMATION_TYPES[p.animation.movement]"
+                                        },
+                                        {
+                                            "label": "$$P61",
+                                            "valueFormula": "return fmtResource(p.animation.mask.graphic);",
+                                            "attribute": "animation.mask.graphic",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "identifier": "animation_maskFile",
+                                            "unlockItems": [
+                                                "animation.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "resource",
+                                            "dialog": {
+                                                "uid": "dialog.selectGraphicResource",
+                                                "parameters": {
+                                                    "folder": "Graphics/Masks"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "label": "$$A20F74E20798454C200A83253DEACB863B87",
+                                            "identifier": "animation_maskVague",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "unlockItems": [
+                                                "animation.type"
+                                            ],
+                                            "type": "GSQStepper",
+                                            "attribute": "animation.mask.vague",
+                                            "minimum": 0,
+                                            "maximum": 255
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$B9215CBE63DBD842D43A15E2CD73E200E8FF\",\n    \"windowTitle\": \"Exit Scene\",\n    \"requiresThirdPartyComponents\": [\"live2d\"],\n    \"title\": \"Exit Scene\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.L2DExitScene\",\n    \"group\": \"$$49C76C7F1C2EE8468B1BA2884C6A06B3C241\",\n    \"subGroup\": \"$$9E1A5407531CC141D66911387F0B53C14B4F\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"characterId\": GS.CONST.DEFAULT_RECORD_ID, \"duration\": 0, \"waitForCompletion\": 0, \"easing\": { \"type\": 1, \"inOut\": 0 }, \"animation\": GS.CONST.DEFAULT_APPEARANCE_ANIMATION_DATA },\n    \"inlineImage\": { \n        \"formula\": \"return GS.VN.resourceForCharacter(p.characterId)\", \n        \"folder\": \"Graphics/Characters\"\n    },\n    \"quickItems\": [\n        GSQ.CONTROLS.CHARACTER_SELECTION,\n        Object.override(GSQ.CONTROLS.DURATION, {\"lockable\": true}),\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING,\n                            GSQ.ROWS.APPEARANCE_ANIMATION\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    },\n    \"sections\": [\n    ]\n}",
+        "name": "Live2D Exit Scene",
+        "order": 1
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

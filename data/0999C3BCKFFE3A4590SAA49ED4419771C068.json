@@ -1,0 +1,160 @@
+{
+    "uid": "0999C3BCKFFE3A4590SAA49ED4419771C068",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "AC1ABDCBK050BA4863S9964E3DC378247DAD",
+        "name": "Live2D Motion Selection",
+        "windowTitle": "$$C993387884B63643221AC4709B986C0A7ADE",
+        "type": "custom_view",
+        "windowSize": {
+            "w": 800,
+            "h": 400
+        },
+        "bindings": [
+            {
+                "source": "local.data.resource",
+                "asDataFromFolder": "Live2D",
+                "to": "model",
+                "target": "global.data.model"
+            },
+            {
+                "source": "local.data.resource",
+                "asDataFromFolder": "Live2D",
+                "to": "positionView",
+                "target": "model"
+            },
+            {
+                "source": "local.data.motion",
+                "to": "positionView",
+                "target": "motion"
+            }
+        ],
+        "windowSizeFormula": "var res = GS.GAME.previewResolution(); return { w: res.w + 385  + GS.CONST.WINDOW_PADDING }",
+        "columns": [
+            400,
+            -1
+        ],
+        "sections": [
+            {
+                "name": "Position",
+                "identifier": "positionSection",
+                "noBorder": true,
+                "column": 0,
+                "items": [
+                    {
+                        "type": "GSLabel",
+                        "text": "$$79C3606A31A6A347B80AD628C0099CFE1421",
+                        "frame": [
+                            0,
+                            0
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSResourcePopupField",
+                        "identifier": "model",
+                        "attribute": "model",
+                        "folder": "Live2D",
+                        "bindings": [
+                            {
+                                "source": "resource",
+                                "asDataFromFolder": "Live2D",
+                                "to": "model",
+                                "target": "global.data.model"
+                            },
+                            {
+                                "source": "resource",
+                                "asDataFromFolder": "Live2D",
+                                "to": "positionView",
+                                "target": "model"
+                            }
+                        ],
+                        "delegates": [
+                            {
+                                "identifiers": [
+                                    "motion"
+                                ],
+                                "selector": "update"
+                            }
+                        ],
+                        "frame": [
+                            1,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSTable",
+                        "border": true,
+                        "attribute": "motion",
+                        "dataSource": {
+                            "sourceFormula": "return d && d.global.model ? GS.VN.live2DMotionList(d.global.model) : []"
+                        },
+                        "identifier": "motion",
+                        "delegates": [
+                            {
+                                "identifiers": [
+                                    "positionView"
+                                ],
+                                "selector": "setBackground:resource:"
+                            }
+                        ],
+                        "frame": [
+                            0,
+                            1,
+                            -1,
+                            200
+                        ],
+                        "bindings": [
+                            {
+                                "source": "selectedItem",
+                                "to": "positionView",
+                                "target": "motion"
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "identifier": "privilege",
+                                "attribute": "privilege",
+                                "text": "$$4870958C3ABB1243A2591832E3311D039368",
+                                "width": 50,
+                                "content": "return d"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "$$P117",
+                "column": 1,
+                "layout": {
+                    "type": "dynamicGrid",
+                    "spacing": [
+                        0,
+                        0
+                    ]
+                },
+                "items": [
+                    {
+                        "type": "GSLive2DView",
+                        "identifier": "positionView",
+                        "attribute": "position",
+                        "folder": "Live2D",
+                        "frame": [
+                            0,
+                            0
+                        ],
+                        "sizeFormula": "return GS.GAME.previewResolution();"
+                    }
+                ]
+            }
+        ],
+        "rawContent": "{\n    \"parentId\": \"AC1ABDCBK050BA4863S9964E3DC378247DAD\",\n\"name\": \"Live2D Motion Selection\",\n    \"windowTitle\": \"$$C993387884B63643221AC4709B986C0A7ADE\",\n    \"type\": \"custom_view\",\n    \"windowSize\": {\n        \"w\": 800, \"h\": 400\n    },\n    \"bindings\": [\n        { \"source\": \"local.data.resource\", \"asDataFromFolder\": \"Live2D\", \"to\": \"model\", \"target\": \"global.data.model\" },\n        { \"source\": \"local.data.resource\", \"asDataFromFolder\": \"Live2D\", \"to\": \"positionView\", \"target\": \"model\" },\n        { \"source\": \"local.data.motion\", \"to\": \"positionView\", \"target\": \"motion\" }\n    ],\n    \"windowSizeFormula\": \"var res = GS.GAME.previewResolution(); return { w: res.w + 385  + GS.CONST.WINDOW_PADDING }\",\n    \"columns\": [400, -1],\n    \"sections\": [\n        {\n            \"name\": \"Position\",\n            \"identifier\": \"positionSection\",\n            \"noBorder\": true,\n            \"column\": 0,\n            \"items\": [\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$79C3606A31A6A347B80AD628C0099CFE1421\",\n                    \"frame\": [0, 0],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSResourcePopupField\",\n                    \"identifier\": \"model\",\n                    \"attribute\": \"model\",\n                    \"folder\": \"Live2D\",\n                    \"bindings\": [\n                        { \"source\": \"resource\", \"asDataFromFolder\": \"Live2D\", \"to\": \"model\", \"target\": \"global.data.model\" },\n                        { \"source\": \"resource\", \"asDataFromFolder\": \"Live2D\", \"to\": \"positionView\", \"target\": \"model\" }\n                    ],\n                    \"delegates\": [\n                        { \"identifiers\": [\"motion\"], \"selector\": \"update\" }\n                    ],\n                    \"frame\": [1, 0]\n                },\n                {\n                    \"type\": \"GSTable\",\n                    \"border\": true,\n                    \"attribute\": \"motion\",\n                    \"dataSource\": {\n                        \"sourceFormula\": \"return d && d.global.model ? GS.VN.live2DMotionList(d.global.model) : []\" \n                    },\n                    \"identifier\": \"motion\",\n                    \"delegates\": [{ \"identifiers\": [\"positionView\"], \"selector\": \"setBackground:resource:\"}],\n                    \"frame\": [0, 1, -1, 200],\n                    \"bindings\": [\n                        { \"source\": \"selectedItem\", \"to\": \"positionView\", \"target\": \"motion\" }\n                    ],\n                    \"columns\": [\n                        {\n                            \"identifier\": \"privilege\",\n                            \"attribute\": \"privilege\",\n                            \"text\": \"$$4870958C3ABB1243A2591832E3311D039368\",\n                            \"width\": 50,\n                            \"content\": \"return d\"\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"name\": \"$$P117\",\n            \"column\": 1,\n            \"layout\": { \"type\": \"dynamicGrid\", \"spacing\": [0, 0]},\n            \"items\": [\n                {\n                    \"type\": \"GSLive2DView\",\n                    \n                    \"identifier\": \"positionView\",\n                    \"attribute\": \"position\",\n                    \"folder\": \"Live2D\",\n                    \"frame\": [0, 0],\n                    \"sizeFormula\": \"return GS.GAME.previewResolution();\"\n                }\n            ]\n        }\n    ]\n}",
+        "order": 25
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

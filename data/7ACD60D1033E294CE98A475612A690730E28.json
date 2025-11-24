@@ -1,0 +1,20 @@
+{
+    "uid": "7ACD60D1033E294CE98A475612A690730E28",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "Interpreter",
+        "type": "game_script",
+        "order": 25,
+        "content": "",
+        "parentId": "D3325122KACDEA4515SB731E37A42B9D779F",
+        "folder": true,
+        "scriptType": 0,
+        "decoded": true
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

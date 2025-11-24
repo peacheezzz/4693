@@ -1,0 +1,365 @@
+{
+    "uid": "1A2F9DC9KB606A4796SB83BEF933C1CD5694",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "CCC1D58AKA96AA4B0ESA33CE6CCC06CB5662",
+        "displayName": "$$C3A4C7FC66D8D846FF8B016583A0EFDA1D6B",
+        "windowTitle": "$$90433D4CK4E35A4DFDS862EEFB0C4808F17E",
+        "type": "event_command",
+        "id": "vn.SetObjectData",
+        "group": "$$C1953650K4FD7A4268SB298E0BEFC554D88E",
+        "subGroup": "$$271150F15AF34549943BCE034E6B8B439297",
+        "windowSize": {
+            "w": 600,
+            "h": 260
+        },
+        "nodes": [],
+        "defaultValue": {
+            "objectType": 0,
+            "number": 0,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 0,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": 0
+        },
+        "quickItems": [
+            {
+                "label": "$$CCA7AD2408FF384B453A1346DCB971E71E3F",
+                "identifier": "objectType",
+                "valueFormula": "return GS.CONST.VN_GAME_OBJECT_TYPES[p.objectType];",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760",
+                    "$$2FBA90CCK88F7A4B74SA654EC5FF13F44EF7",
+                    "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                    "$$ADD23624771072411D3A82987C5BE70C8582",
+                    "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                    "$$CA2F5CE46EDE2040744AEE28918BBEC6DE8D",
+                    "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+                    "$$1544BC741CFDC644141A7D57FB9B227D88F1"
+                ],
+                "attribute": "objectType",
+                "showItems": [
+                    [
+                        "number",
+                        "field"
+                    ],
+                    [
+                        "layer",
+                        "field"
+                    ],
+                    [
+                        "number",
+                        "field"
+                    ],
+                    [
+                        "number",
+                        "field"
+                    ],
+                    [
+                        "character",
+                        "characterField"
+                    ],
+                    [
+                        "messageBoxField"
+                    ],
+                    [
+                        "number",
+                        "messageBoxField"
+                    ],
+                    [
+                        "number",
+                        "field"
+                    ]
+                ],
+                "refreshItems": [
+                    [
+                        "field"
+                    ],
+                    [
+                        "field"
+                    ],
+                    [
+                        "field"
+                    ],
+                    [
+                        "field"
+                    ],
+                    [
+                        "characterField"
+                    ],
+                    [
+                        "messageBoxField"
+                    ],
+                    [
+                        "messageBoxField"
+                    ],
+                    [
+                        "field"
+                    ]
+                ]
+            },
+            {
+                "label": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                "identifier": "number",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "number",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$272673AEKE288A48D0SB8D7EEFF528276A59",
+                "identifier": "layer",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "attribute": "layer",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId)",
+                "attribute": "characterId",
+                "identifier": "character",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQDataRecordField",
+                "dataSource": "characters"
+            },
+            {
+                "label": "$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB",
+                "valueFormula": "return GS.CONST.VN_WRITABLE_GAME_OBJECT_FIELDS[p.field];",
+                "attribute": "field",
+                "identifier": "field",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$E1A0B7F41284614AB49B1CD4D4AD35195F26",
+                    "$$FEC1880501DD234E4338F538794174A4EF6D",
+                    "$$E1D92147266CD34B5B7A1E7417267A154BFE",
+                    "$$21CCF2F04F0EE147F6283E4926D2FC62FF69",
+                    "$$092A86C9745D3847F579A35434304DFE99D6",
+                    "$$96FC5C5D353C044AE14B2F6352C040B53034",
+                    "$$7AACD084157D114D433A3DB85EFDE514B10C",
+                    "$$1EB0352C7DA4A84EBE7A2349D47FB1DC5854",
+                    "$$P176",
+                    "$$P174",
+                    "$$8FC3C1F0K7714A494AS8514EB17C32F29FC3",
+                    "$$6E6A55971BE4664E2D89AC97DED89BC4DF08",
+                    "$$B3FD2AAA285DE943153AEB474FD525FB2E04",
+                    "Input Session"
+                ],
+                "showItems": [
+                    [
+                        "textValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "numberValue"
+                    ]
+                ]
+            },
+            {
+                "label": "$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB",
+                "valueFormula": "return GS.CONST.VN_WRITABLE_CHARACTER_FIELDS[p.field];",
+                "attribute": "field",
+                "identifier": "characterField",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$P55",
+                    "$$E1A0B7F41284614AB49B1CD4D4AD35195F26",
+                    "$$FEC1880501DD234E4338F538794174A4EF6D",
+                    "$$E1D92147266CD34B5B7A1E7417267A154BFE",
+                    "$$21CCF2F04F0EE147F6283E4926D2FC62FF69",
+                    "$$092A86C9745D3847F579A35434304DFE99D6",
+                    "$$96FC5C5D353C044AE14B2F6352C040B53034",
+                    "$$7AACD084157D114D433A3DB85EFDE514B10C",
+                    "$$1EB0352C7DA4A84EBE7A2349D47FB1DC5854",
+                    "$$P176",
+                    "$$P174",
+                    "$$8FC3C1F0K7714A494AS8514EB17C32F29FC3",
+                    "$$6E6A55971BE4664E2D89AC97DED89BC4DF08",
+                    "$$B3FD2AAA285DE943153AEB474FD525FB2E04",
+                    "Input Session"
+                ],
+                "showItems": [
+                    [
+                        "textValue"
+                    ],
+                    [
+                        "textValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "switchValue"
+                    ]
+                ]
+            },
+            {
+                "label": "$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB",
+                "valueFormula": "return GS.CONST.VN_WRITABLE_MESSAGEBOX_FIELDS[p.field];",
+                "attribute": "field",
+                "identifier": "messageBoxField",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$FEC1880501DD234E4338F538794174A4EF6D",
+                    "$$E1D92147266CD34B5B7A1E7417267A154BFE",
+                    "$$1EB0352C7DA4A84EBE7A2349D47FB1DC5854",
+                    "$$P176",
+                    "$$8FC3C1F0K7714A494AS8514EB17C32F29FC3",
+                    "Input Session"
+                ],
+                "showItems": [
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "numberValue"
+                    ]
+                ]
+            },
+            {
+                "label": "$$3188BF5032FDE243E65A66914CBA9FC239AC",
+                "identifier": "numberValue",
+                "valueFormula": "return fmtNumVar(p.numberValue)",
+                "type": "GSQStepper",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "attribute": "numberValue",
+                "minimum": -999999999,
+                "maximum": 999999999,
+                "defaultValue": 0
+            },
+            {
+                "label": "$$3188BF5032FDE243E65A66914CBA9FC239AC",
+                "identifier": "textValue",
+                "valueFormula": "return fmtStrVar(p.textValue)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                },
+                "attribute": "textValue"
+            },
+            {
+                "label": "$$3188BF5032FDE243E65A66914CBA9FC239AC",
+                "identifier": "switchValue",
+                "valueFormula": "return isVar(p.switchValue) ? fmtBoolVar(p.switchValue) : GS.CONST.SWITCH_STATES[p.switchValue]",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$DA1F7042K631AA464BSA0F8E78BB13F6C242",
+                    "$$B958FADFKE38BA4BC2SAFC0E8B2CC6722744"
+                ],
+                "variableButton": {
+                    "dataSource": "booleans"
+                },
+                "attribute": "switchValue"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$C3A4C7FC66D8D846FF8B016583A0EFDA1D6B\",\n    \"windowTitle\": \"$$90433D4CK4E35A4DFDS862EEFB0C4808F17E\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.SetObjectData\",\n    \"group\": \"$$C1953650K4FD7A4268SB298E0BEFC554D88E\",\n    \"subGroup\": \"$$271150F15AF34549943BCE034E6B8B439297\",\n    \"windowSize\": {\n        \"w\": 600,\n        \"h\": 260\n    },\n    \"nodes\": [\n    ],\n    \n    \"defaultValue\": { \"objectType\": 0, \"number\": 0, \"numberDomain\": GS.CONST.DEFAULT_DOMAIN, \"layer\": 0, \"characterId\": GS.CONST.DEFAULT_RECORD_ID, \"field\": 0, \"numberValue\": 0, \"textValue\": { \"scope\": 1, \"index\": 0, \"domain\": GS.CONST.DEFAULT_DOMAIN }, \"switchValue\": 0 },\n    \"quickItems\": [\n        {\n            \"label\": \"$$CCA7AD2408FF384B453A1346DCB971E71E3F\",\n            \"identifier\": \"objectType\",\n            \"valueFormula\": \"return GS.CONST.VN_GAME_OBJECT_TYPES[p.objectType];\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VN_GAME_OBJECT_TYPES,\n            \"attribute\": \"objectType\",\n            \"showItems\": [\n                [\"number\", \"field\"],\n                [\"layer\", \"field\"],\n                [\"number\", \"field\"],\n                [\"number\", \"field\"],\n                [\"character\", \"characterField\"],\n                [\"messageBoxField\"],\n                [\"number\", \"messageBoxField\"],\n                [\"number\", \"field\"]\n            ],\n            \"refreshItems\": [\n                [\"field\"],\n                [\"field\"],\n                [\"field\"],\n                [\"field\"],\n                [\"characterField\"],\n                [\"messageBoxField\"],\n                [\"messageBoxField\"],\n                [\"field\"]\n            ]\n        },\n        GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER,\n        GSQ.CONTROLS.BACKGROUND_LAYER,\n        GSQ.CONTROLS.CHARACTER_SELECTION,\n        {\n            \"label\": \"$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB\",\n            \"valueFormula\": \"return GS.CONST.VN_WRITABLE_GAME_OBJECT_FIELDS[p.field];\",\n            \"attribute\": \"field\",\n            \"identifier\": \"field\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VN_WRITABLE_GAME_OBJECT_FIELDS,\n            \"showItems\": [\n                [\"textValue\"], \n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"switchValue\"],\n                [\"numberValue\"],\n                [\"switchValue\"],\n                [\"numberValue\"]\n            ]\n        },\n        {\n            \"label\": \"$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB\",\n            \"valueFormula\": \"return GS.CONST.VN_WRITABLE_CHARACTER_FIELDS[p.field];\",\n            \"attribute\": \"field\",\n            \"identifier\": \"characterField\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VN_WRITABLE_CHARACTER_FIELDS,\n            \"showItems\": [\n                [\"textValue\"],\n                [\"textValue\"], \n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"switchValue\"],\n                [\"numberValue\"],\n                [\"switchValue\"],\n            ]\n        },\n        {\n            \"label\": \"$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB\",\n            \"valueFormula\": \"return GS.CONST.VN_WRITABLE_MESSAGEBOX_FIELDS[p.field];\",\n            \"attribute\": \"field\",\n            \"identifier\": \"messageBoxField\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VN_WRITABLE_MESSAGEBOX_FIELDS,\n            \"showItems\": [\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"switchValue\"],\n                [\"numberValue\"]\n            ]\n        },\n        {\n            \"label\": \"$$3188BF5032FDE243E65A66914CBA9FC239AC\",\n            \"identifier\": \"numberValue\",\n            \"valueFormula\": \"return fmtNumVar(p.numberValue)\",\n            \"type\": \"GSQStepper\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"attribute\": \"numberValue\",\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n            \"defaultValue\": 0\n        },\n        {\n            \"label\": \"$$3188BF5032FDE243E65A66914CBA9FC239AC\",\n            \"identifier\": \"textValue\",\n            \"valueFormula\": \"return fmtStrVar(p.textValue)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" } },\n            \"attribute\": \"textValue\"\n        },\n        {\n            \"label\": \"$$3188BF5032FDE243E65A66914CBA9FC239AC\",\n            \"identifier\": \"switchValue\",\n            \"valueFormula\": \"return isVar(p.switchValue) ? fmtBoolVar(p.switchValue) : GS.CONST.SWITCH_STATES[p.switchValue]\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.SWITCH_STATES,\n            \"variableButton\": { \"dataSource\": \"booleans\" },\n            \"attribute\": \"switchValue\"\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Set Object Data",
+        "order": 9
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

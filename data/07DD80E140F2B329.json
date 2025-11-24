@@ -1,0 +1,131 @@
+{
+    "uid": "07DD80E140F2B329",
+    "isLoaded": true,
+    "lastModificationTime": 1427056787436,
+    "items": {
+        "parentId": "8CC0A736KF347A454AS899FE4F42878D912C",
+        "displayName": "$$576B2D24KA7DFA4435SB4CCE10946D00F1E5",
+        "windowTitle": "$$576B2D24KA7DFA4435SB4CCE10946D00F1E5",
+        "type": "event_command",
+        "id": "gs.ShowMessage",
+        "group": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "subGroup": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "windowSize": {
+            "w": 671
+        },
+        "expanded": true,
+        "defaultValue": {
+            "waitForCompletion": 1,
+            "duration": 15,
+            "expressionId": null,
+            "custom": {
+                "object": {
+                    "x": 0,
+                    "y": 0,
+                    "size": {
+                        "width": 300,
+                        "height": 100
+                    }
+                }
+            },
+            "message": "",
+            "position": 0,
+            "characterId": 0,
+            "partial": 0
+        },
+        "inlineImage": {
+            "formula": "return GSIsNull(p.expressionId) ? GS.VN.resourceForCharacter(p.characterId) : GS.VN.resourceForExpression(p.expressionId);",
+            "folder": "Graphics/Characters"
+        },
+        "fullSizeItems": [
+            {
+                "valueFormula": "return lcsg(p.message) || lcs('973C77352B3C0441947ADE8307C90AB4EF4B');",
+                "type": "GSQTextArea",
+                "attribute": "message",
+                "defaultValue": "",
+                "valueTranslator": {
+                    "write": "return GS.VN.writeMessageData(v, p)"
+                },
+                "localizable": {
+                    "data": {
+                        "cid": "characterId"
+                    }
+                }
+            }
+        ],
+        "quickItems": [
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId || 0);",
+                "attribute": "characterId",
+                "type": "GSQDataRecordField",
+                "updateLocalizationData": true,
+                "dataSource": "characters",
+                "variableButton": {
+                    "dataSource": "strings"
+                }
+            },
+            {
+                "label": "$$9A11A7A89FAF6747576B3C910EA4ECD5EBC7",
+                "valueFormula": "return fmtResource(p.voice);",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "voice",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectAudioResource",
+                    "parameters": {
+                        "folder": "Audio/Sounds"
+                    }
+                },
+                "icon": {
+                    "name": "listen-01"
+                }
+            },
+            {
+                "label": "$$8EC8F86A73D0524F417974A56C2120B44D7F",
+                "valueFormula": "return !GSIsNull(p.expressionId) ? fmtRecord('characterExpressions', p.expressionId) : lcs('FB0EA56B5F9B9146719B5F66A690FC3B9928');",
+                "type": "GSQDataRecordField",
+                "dataSource": "characterExpressions",
+                "attribute": "expressionId",
+                "allowEmptySelection": true
+            },
+            {
+                "label": "",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999,
+                "lockable": true
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$576B2D24KA7DFA4435SB4CCE10946D00F1E5\",\n    \"windowTitle\": \"$$576B2D24KA7DFA4435SB4CCE10946D00F1E5\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.ShowMessage\",\n    \"group\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"subGroup\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"windowSize\": {\n        \"w\": 671\n    },\n    \"expanded\": true,\n    \"defaultValue\": { \"waitForCompletion\": 1, \"duration\": 15, \"expressionId\": null, \"custom\": { \"object\": { \"x\": 0, \"y\": 0, \"size\": { \"width\": 300, \"height\": 100 }}}, \"message\": \"\", \"position\": 0, \"characterId\": 0, \"partial\": 0 },\n    \"inlineImage\": { \"formula\": \"return GSIsNull(p.expressionId) ? GS.VN.resourceForCharacter(p.characterId) : GS.VN.resourceForExpression(p.expressionId);\", \"folder\": \"Graphics/Characters\" },\n    \"fullSizeItems\": [\n        {\n            \"valueFormula\": \"return lcsg(p.message) || lcs('973C77352B3C0441947ADE8307C90AB4EF4B');\",\n            \"type\": \"GSQTextArea\",\n            \"attribute\": \"message\",\n            \"defaultValue\": \"\",\n            \"valueTranslator\": { \"write\": \"return GS.VN.writeMessageData(v, p)\" },\n            \"localizable\": { \"data\": { \"cid\": \"characterId\" } }\n        }\n    ],\n    \"quickItems\": [\n        {\n            \"label\": \"$$1CCE5315K1F61A4059SBC64E0B6CECA383C3\",\n            \"valueFormula\": \"return fmtRecord('characters', p.characterId || 0);\",\n            \"attribute\": \"characterId\",\n            \"type\": \"GSQDataRecordField\",\n            \"updateLocalizationData\": true,\n            \"dataSource\": \"characters\",\n            \"variableButton\": { \"dataSource\": \"strings\" }\n        },\n        GSQ.CONTROLS.VOICE_SELECTION,\n        {\n            \"label\": \"$$8EC8F86A73D0524F417974A56C2120B44D7F\",\n            \"valueFormula\": \"return !GSIsNull(p.expressionId) ? fmtRecord('characterExpressions', p.expressionId) : lcs('FB0EA56B5F9B9146719B5F66A690FC3B9928');\",\n            \"type\": \"GSQDataRecordField\",\n            \"dataSource\":\"characterExpressions\",\n            \"attribute\": \"expressionId\",\n            \"allowEmptySelection\": true\n        },\n        Object.override(GSQ.CONTROLS.DURATION, { \"lockable\": true, \"label\": \"\" }),\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"sections\": [\n      \n    ]\n}",
+        "name": "Show Message",
+        "order": 4
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

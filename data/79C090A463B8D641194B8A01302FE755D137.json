@@ -1,0 +1,22 @@
+{
+    "uid": "79C090A463B8D641194B8A01302FE755D137",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "gs.FreezeScreen",
+        "displayName": "$$8050AED85DD2A848836BB861736655C6DF2F",
+        "group": "$$0620EF3CK3406A4B70SA1ACE3750D5C17E57",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "defaultValue": {},
+        "quickItems": [],
+        "rawContent": "{\n    \"id\": \"gs.FreezeScreen\",\n    \"displayName\": \"$$8050AED85DD2A848836BB861736655C6DF2F\",\n    \"group\": \"$$0620EF3CK3406A4B70SA1ACE3750D5C17E57\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"defaultValue\": {},\n    \"quickItems\": []\n}",
+        "name": "Freeze Screen",
+        "type": "event_command",
+        "parentId": "85446216KA82AA4A7DS8F25E541AB7EFA66A",
+        "order": 4
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

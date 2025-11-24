@@ -1,0 +1,1354 @@
+{
+    "uid": "7ECBFC62K425CA4689S9C69E0F40475F62C6",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "0FEBB76EK401BA41A4S99B1E2346601143E2",
+        "displayName": "$$DA207B80909C2343435A95E4112CEB0C7DD9",
+        "windowTitle": "Add Hotspot",
+        "type": "event_command",
+        "id": "gs.AddHotspot",
+        "group": "$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760",
+        "subGroup": "$$AEB0463C403244454D5838451B328881EFFA",
+        "windowSize": {
+            "w": 671
+        },
+        "nodes": [],
+        "defaultValue": {
+            "numberDomain": "com.degica.vnm.default",
+            "number": 0,
+            "shape": "rect",
+            "positionType": 0,
+            "actions": {
+                "onClick": {
+                    "type": 0,
+                    "bindValue": 0,
+                    "bindValueVariable": {
+                        "scope": 0,
+                        "index": 0
+                    },
+                    "commonEventId": 0,
+                    "label": "",
+                    "switch": {
+                        "scope": 1,
+                        "index": 0
+                    },
+                    "scene": null
+                },
+                "onEnter": {
+                    "type": 0,
+                    "bindValue": 0,
+                    "bindValueVariable": {
+                        "scope": 0,
+                        "index": 0
+                    },
+                    "commonEventId": 0,
+                    "label": "",
+                    "switch": {
+                        "scope": 1,
+                        "index": 0
+                    },
+                    "scene": null
+                },
+                "onSelect": {
+                    "type": 0,
+                    "bindValue": 0,
+                    "bindValueVariable": {
+                        "scope": 0,
+                        "index": 0
+                    },
+                    "commonEventId": 0,
+                    "label": "",
+                    "switch": {
+                        "scope": 1,
+                        "index": 0
+                    },
+                    "scene": null
+                },
+                "onDeselect": {
+                    "type": 0,
+                    "bindValue": 0,
+                    "bindValueVariable": {
+                        "scope": 0,
+                        "index": 0
+                    },
+                    "commonEventId": 0,
+                    "label": "",
+                    "switch": {
+                        "scope": 1,
+                        "index": 0
+                    },
+                    "scene": null
+                },
+                "onLeave": {
+                    "type": 0,
+                    "bindValue": 0,
+                    "bindValueVariable": {
+                        "scope": 0,
+                        "index": 0
+                    },
+                    "commonEventId": 0,
+                    "label": "",
+                    "switch": {
+                        "scope": 1,
+                        "index": 0
+                    },
+                    "scene": null
+                },
+                "onDrag": {
+                    "type": 0,
+                    "bindValue": 0,
+                    "bindValueVariable": {
+                        "scope": 0,
+                        "index": 0
+                    },
+                    "commonEventId": 0,
+                    "label": "",
+                    "switch": {
+                        "scope": 1,
+                        "index": 0
+                    },
+                    "scene": null
+                },
+                "onDrop": {
+                    "type": 0,
+                    "bindValue": 0,
+                    "bindValueVariable": {
+                        "scope": 0,
+                        "index": 0
+                    },
+                    "commonEventId": 0,
+                    "label": "",
+                    "switch": {
+                        "scope": 1,
+                        "index": 0
+                    },
+                    "scene": null
+                },
+                "onDropReceive": {
+                    "type": 0,
+                    "bindValue": 0,
+                    "bindValueVariable": {
+                        "scope": 0,
+                        "index": 0
+                    },
+                    "commonEventId": 0,
+                    "label": "",
+                    "switch": {
+                        "scope": 1,
+                        "index": 0
+                    },
+                    "scene": null
+                }
+            },
+            "dragging": {
+                "enabled": 0,
+                "variable": {
+                    "scope": 1,
+                    "index": 0,
+                    "domain": "com.degica.vnm.default"
+                },
+                "horizontal": 1,
+                "vertical": 0,
+                "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "size": {
+                        "width": 200,
+                        "height": 50
+                    }
+                }
+            },
+            "position": 1,
+            "box": {
+                "x": 0,
+                "y": 0,
+                "size": {
+                    "width": 300,
+                    "height": 100
+                }
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                "identifier": "number",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "number",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$B762368E5C99C44A13693586425214FE0963",
+                "type": "GSQPopupField",
+                "valueFormula": "return GS.CONST.HOTSPOT_SHAPES[p.shape].name",
+                "attribute": "shape",
+                "dataSource": [
+                    {
+                        "name": "$$46D4CBA94889174D459A4FB406F938BBA3FB",
+                        "alias": "rect"
+                    },
+                    {
+                        "name": "$$FE643D9C1BC134461B8B7D84B7FE3B10B8FE",
+                        "alias": "pixel"
+                    }
+                ]
+            },
+            {
+                "label": "$$P31",
+                "type": "GSQPopupField",
+                "valueFormula": "return GS.CONST.HOTSPOT_POSITION_TYPES[p.positionType]",
+                "attribute": "positionType",
+                "dataSource": [
+                    "$$EDA8FFF8758AE841037B2DB13D815982AF4D",
+                    "$$7975782B2E59994D107B13C1801F5A299E12",
+                    "$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760",
+                    "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489"
+                ],
+                "showItems": [
+                    [
+                        "box"
+                    ],
+                    [
+                        "x",
+                        "y",
+                        "width",
+                        "height"
+                    ],
+                    [
+                        "pictureNumber"
+                    ],
+                    [
+                        "textNumber"
+                    ]
+                ]
+            },
+            {
+                "label": "",
+                "valueFormula": "return fmt('%d, %d, %d, %d', p.box.x, p.box.y, p.box.size.width, p.box.size.height)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "362CF89CKA303A4C45S8C46EF752B9CB2E43"
+                },
+                "attribute": "box",
+                "dataAttribute": "object"
+            },
+            {
+                "label": "X",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "identifier": "x",
+                "attribute": "box.x",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "Y",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "identifier": "y",
+                "attribute": "box.y",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$F298E912KB3FAA4D38S8699ED37655BCFEF0",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "identifier": "width",
+                "attribute": "box.size.width",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$6AD32F89KCC0CA4C25S8900E0FA08CE71324",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "identifier": "height",
+                "attribute": "box.size.height",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "Picture Number",
+                "identifier": "pictureNumber",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "pictureNumber",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "Text Number",
+                "identifier": "textNumber",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "textNumber",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$4B66B19661918348F378CEB12A44A8B0A94D",
+                "type": "GSQPopupField",
+                "valueFormula": "return GS.CONST.HOTSPOT_ACTION_TYPES[p.actions.onClick.type]",
+                "attribute": "actions.onClick.type",
+                "dataSource": [
+                    "$$71BC71C66ED2454FD2993602BE555D66E0FA",
+                    "$$92FC7C83K7C7CA40D8SA4BFE105C9DF03481",
+                    "$$8D066C2C8D2CD34D853AF130B815C569B18E",
+                    "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026",
+                    "$$438BA3C82B9D874CE2298B6861119D2ED3C4"
+                ],
+                "showItems": [
+                    [
+                        "label"
+                    ],
+                    [
+                        "commonEvent"
+                    ],
+                    [
+                        "switch"
+                    ],
+                    [
+                        "callScene"
+                    ],
+                    [
+                        "bindValue",
+                        "bindValueVariable",
+                        "bindValueLabel"
+                    ]
+                ]
+            },
+            {
+                "label": "$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C",
+                "type": "GSQTextArea",
+                "identifier": "label",
+                "attribute": "actions.onClick.label",
+                "multiline": false,
+                "valueFormula": "return p.actions.onClick.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')"
+            },
+            {
+                "label": "$$512615ADK2682A417AS9B11EF5FDFE78FD82",
+                "valueFormula": "return fmtRecord('commonEvents', p.actions.onClick.commonEventId)",
+                "attribute": "actions.onClick.commonEventId",
+                "identifier": "commonEvent",
+                "type": "GSQDataRecordField",
+                "dataSource": "commonEvents"
+            },
+            {
+                "label": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                "type": "GSQPopupField",
+                "identifier": "switch",
+                "attribute": "actions.onClick.switch",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "booleans"
+                    }
+                },
+                "valueFormula": "return fmtBoolVar(p.actions.onClick.switch)"
+            },
+            {
+                "type": "GSQPopupField",
+                "identifier": "callScene",
+                "label": "",
+                "attribute": "actions.onClick.scene",
+                "dataAttribute": "scene",
+                "dialog": {
+                    "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                },
+                "valueFormula": "return isVar(p.actions.onClick.scene) ? fmtStrVar(p.actions.onClick.scene) : (p.actions.onClick.scene ? fmtDocument(p.actions.onClick.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+            },
+            {
+                "label": "",
+                "type": "GSQStepper",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "identifier": "bindValue",
+                "attribute": "actions.onClick.bindValue",
+                "valueFormula": "return fmtNumVar(p.actions.onClick.bindValue)"
+            },
+            {
+                "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                "type": "GSQPopupField",
+                "identifier": "bindValueVariable",
+                "attribute": "actions.onClick.bindValueVariable",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                },
+                "valueFormula": "return fmtNumVar(p.actions.onClick.bindValueVariable)"
+            },
+            {
+                "label": "$$2D17A8195E24F34F438812609C2EB18B90D3",
+                "type": "GSQTextArea",
+                "identifier": "bindValueLabel",
+                "attribute": "actions.onClick.label",
+                "multiline": false,
+                "valueFormula": "return p.actions.onClick.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$7F4D32186AE6B342433A3586CAEB8004B67C",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$D84CCD8A56198241872857479170ACB55F92",
+                                            "valueFormula": "return fmtResource(p.baseGraphic);",
+                                            "attribute": "baseGraphic",
+                                            "identifier": "baseGraphic",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "resource",
+                                            "dialog": {
+                                                "uid": "dialog.selectGraphicResource",
+                                                "parameters": {
+                                                    "folder": "Graphics/Pictures"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$828ECA7022F26147773A74513BC532FBCE24",
+                                            "valueFormula": "return fmtResource(p.hoverGraphic);",
+                                            "attribute": "hoverGraphic",
+                                            "identifier": "hoverGraphic",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "resource",
+                                            "dialog": {
+                                                "uid": "dialog.selectGraphicResource",
+                                                "parameters": {
+                                                    "folder": "Graphics/Pictures"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$3CFB5CC34C0477461A2B7D22FE773F469677",
+                                            "valueFormula": "return fmtResource(p.selectedGraphic);",
+                                            "attribute": "selectedGraphic",
+                                            "identifier": "selectedGraphic",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "resource",
+                                            "dialog": {
+                                                "uid": "dialog.selectGraphicResource",
+                                                "parameters": {
+                                                    "folder": "Graphics/Pictures"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$0B2C562B32CAF241EF49C0A84CC1A1A21B3A",
+                                            "valueFormula": "return fmtResource(p.selectedHoverGraphic);",
+                                            "attribute": "selectedHoverGraphic",
+                                            "identifier": "selectedHoverGraphic",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "resource",
+                                            "dialog": {
+                                                "uid": "dialog.selectGraphicResource",
+                                                "parameters": {
+                                                    "folder": "Graphics/Pictures"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$CE92FBB22261764C1F28D9B8E5BEE4ACA40C",
+                                            "valueFormula": "return fmtResource(p.unselectedGraphic);",
+                                            "attribute": "unselectedGraphic",
+                                            "identifier": "unselectedGraphic",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "resource",
+                                            "dialog": {
+                                                "uid": "dialog.selectGraphicResource",
+                                                "parameters": {
+                                                    "folder": "Graphics/Pictures"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "$$71416A6700EBC542C16B1584F0DF6F369566",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$EB52AD8F824AA44DFE0B876477FCA0D890F0",
+                                            "attribute": "actions.onEnter.type",
+                                            "dataSource": [
+                                                "$$71BC71C66ED2454FD2993602BE555D66E0FA",
+                                                "$$92FC7C83K7C7CA40D8SA4BFE105C9DF03481",
+                                                "$$8D066C2C8D2CD34D853AF130B815C569B18E",
+                                                "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026",
+                                                "$$438BA3C82B9D874CE2298B6861119D2ED3C4"
+                                            ],
+                                            "valueFormula": "return GS.CONST.HOTSPOT_ACTION_TYPES[p.actions.onEnter.type]",
+                                            "showItems": [
+                                                [
+                                                    "actions.onEnter.label"
+                                                ],
+                                                [
+                                                    "actions.onEnter.commonEventId"
+                                                ],
+                                                [
+                                                    "actions.onEnter.switch"
+                                                ],
+                                                [
+                                                    "actions.onEnter.scene"
+                                                ],
+                                                [
+                                                    "actions.onEnter.bindValue",
+                                                    "actions.onEnter.bindValueVariable",
+                                                    "actions.onEnter.bindValueLabel"
+                                                ]
+                                            ],
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQDataRecordField",
+                                            "label": "$$512615ADK2682A417AS9B11EF5FDFE78FD82",
+                                            "valueFormula": "return fmtRecord('commonEvents', p.actions.onEnter.commonEventId)",
+                                            "attribute": "actions.onEnter.commonEventId",
+                                            "dataSource": "commonEvents",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "attribute": "actions.onEnter.label",
+                                            "valueFormula": "return p.actions.onEnter.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "label": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onEnter.switch",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "booleans"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtBoolVar(p.actions.onEnter.switch)",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "",
+                                            "attribute": "actions.onEnter.scene",
+                                            "dataAttribute": "scene",
+                                            "dialog": {
+                                                "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                                            },
+                                            "valueFormula": "return isVar(p.actions.onEnter.scene) ? fmtStrVar(p.actions.onEnter.scene) : (p.actions.onEnter.scene ? fmtDocument(p.actions.onEnter.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+                                        },
+                                        {
+                                            "label": "",
+                                            "type": "GSQStepper",
+                                            "attribute": "actions.onEnter.bindValue",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onEnter.bindValue)"
+                                        },
+                                        {
+                                            "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onEnter.bindValueVariable",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "numbers"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onEnter.bindValueVariable)"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "identifier": "actions.onEnter.bindValueLabel",
+                                            "attribute": "actions.onEnter.label",
+                                            "valueFormula": "return p.actions.onEnter.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$2D17A8195E24F34F438812609C2EB18B90D3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$FB6FF0B60608D546469B9BC1228FDA49CE7B",
+                                            "attribute": "actions.onSelect.type",
+                                            "dataSource": [
+                                                "$$71BC71C66ED2454FD2993602BE555D66E0FA",
+                                                "$$92FC7C83K7C7CA40D8SA4BFE105C9DF03481",
+                                                "$$8D066C2C8D2CD34D853AF130B815C569B18E",
+                                                "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026",
+                                                "$$438BA3C82B9D874CE2298B6861119D2ED3C4"
+                                            ],
+                                            "valueFormula": "return GS.CONST.HOTSPOT_ACTION_TYPES[p.actions.onSelect.type]",
+                                            "showItems": [
+                                                [
+                                                    "actions.onSelect.label"
+                                                ],
+                                                [
+                                                    "actions.onSelect.commonEventId"
+                                                ],
+                                                [
+                                                    "actions.onSelect.switch"
+                                                ],
+                                                [
+                                                    "actions.onSelect.scene"
+                                                ],
+                                                [
+                                                    "actions.onSelect.bindValue",
+                                                    "actions.onSelect.bindValueVariable",
+                                                    "actions.onSelect.bindValueLabel"
+                                                ]
+                                            ],
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQDataRecordField",
+                                            "label": "$$512615ADK2682A417AS9B11EF5FDFE78FD82",
+                                            "valueFormula": "return fmtRecord('commonEvents', p.actions.onSelect.commonEventId)",
+                                            "attribute": "actions.onSelect.commonEventId",
+                                            "dataSource": "commonEvents",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "attribute": "actions.onSelect.label",
+                                            "valueFormula": "return p.actions.onSelect.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "label": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onSelect.switch",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "booleans"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtBoolVar(p.actions.onSelect.switch)",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "",
+                                            "attribute": "actions.onSelect.scene",
+                                            "dataAttribute": "scene",
+                                            "dialog": {
+                                                "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                                            },
+                                            "valueFormula": "return isVar(p.actions.onSelect.scene) ? fmtStrVar(p.actions.onSelect.scene) : (p.actions.onSelect.scene ? fmtDocument(p.actions.onSelect.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+                                        },
+                                        {
+                                            "label": "",
+                                            "type": "GSQStepper",
+                                            "attribute": "actions.onSelect.bindValue",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onSelect.bindValue)"
+                                        },
+                                        {
+                                            "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onSelect.bindValueVariable",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "numbers"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onSelect.bindValueVariable)"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "identifier": "actions.onSelect.bindValueLabel",
+                                            "attribute": "actions.onSelect.label",
+                                            "valueFormula": "return p.actions.onSelect.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$2D17A8195E24F34F438812609C2EB18B90D3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$DEC9A1F06B931544AC28D3F1A327A51F79DE",
+                                            "attribute": "actions.onDeselect.type",
+                                            "dataSource": [
+                                                "$$71BC71C66ED2454FD2993602BE555D66E0FA",
+                                                "$$92FC7C83K7C7CA40D8SA4BFE105C9DF03481",
+                                                "$$8D066C2C8D2CD34D853AF130B815C569B18E",
+                                                "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026",
+                                                "$$438BA3C82B9D874CE2298B6861119D2ED3C4"
+                                            ],
+                                            "valueFormula": "return GS.CONST.HOTSPOT_ACTION_TYPES[p.actions.onDeselect.type]",
+                                            "showItems": [
+                                                [
+                                                    "actions.onDeselect.label"
+                                                ],
+                                                [
+                                                    "actions.onDeselect.commonEventId"
+                                                ],
+                                                [
+                                                    "actions.onDeselect.switch"
+                                                ],
+                                                [
+                                                    "actions.onDeselect.scene"
+                                                ],
+                                                [
+                                                    "actions.onDeselect.bindValue",
+                                                    "actions.onDeselect.bindValueVariable",
+                                                    "actions.onDeselect.bindValueLabel"
+                                                ]
+                                            ],
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQDataRecordField",
+                                            "label": "$$512615ADK2682A417AS9B11EF5FDFE78FD82",
+                                            "valueFormula": "return fmtRecord('commonEvents', p.actions.onDeselect.commonEventId)",
+                                            "attribute": "actions.onDeselect.commonEventId",
+                                            "dataSource": "commonEvents",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "attribute": "actions.onDeselect.label",
+                                            "valueFormula": "return p.actions.onDeselect.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "label": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onDeselect.switch",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "booleans"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtBoolVar(p.actions.onDeselect.switch)",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "",
+                                            "attribute": "actions.onDeselect.scene",
+                                            "dataAttribute": "scene",
+                                            "dialog": {
+                                                "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                                            },
+                                            "valueFormula": "return isVar(p.actions.onDeselect.scene) ? fmtStrVar(p.actions.onDeselect.scene) : (p.actions.onDeselect.scene ? fmtDocument(p.actions.onDeselect.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+                                        },
+                                        {
+                                            "label": "",
+                                            "type": "GSQStepper",
+                                            "attribute": "actions.onDeselect.bindValue",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onDeselect.bindValue)"
+                                        },
+                                        {
+                                            "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onDeselect.bindValueVariable",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "numbers"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onDeselect.bindValueVariable)"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "identifier": "actions.onDeselect.bindValueLabel",
+                                            "attribute": "actions.onDeselect.label",
+                                            "valueFormula": "return p.actions.onDeselect.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$2D17A8195E24F34F438812609C2EB18B90D3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$655949B6180C4343C22AB0E6A1D358CA005B",
+                                            "attribute": "actions.onLeave.type",
+                                            "dataSource": [
+                                                "$$71BC71C66ED2454FD2993602BE555D66E0FA",
+                                                "$$92FC7C83K7C7CA40D8SA4BFE105C9DF03481",
+                                                "$$8D066C2C8D2CD34D853AF130B815C569B18E",
+                                                "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026",
+                                                "$$438BA3C82B9D874CE2298B6861119D2ED3C4"
+                                            ],
+                                            "valueFormula": "return GS.CONST.HOTSPOT_ACTION_TYPES[p.actions.onLeave.type]",
+                                            "showItems": [
+                                                [
+                                                    "actions.onLeave.label"
+                                                ],
+                                                [
+                                                    "actions.onLeave.commonEventId"
+                                                ],
+                                                [
+                                                    "actions.onLeave.switch"
+                                                ],
+                                                [
+                                                    "actions.onLeave.scene"
+                                                ],
+                                                [
+                                                    "actions.onLeave.bindValue",
+                                                    "actions.onLeave.bindValueVariable",
+                                                    "actions.onLeave.bindValueLabel"
+                                                ]
+                                            ],
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQDataRecordField",
+                                            "label": "$$512615ADK2682A417AS9B11EF5FDFE78FD82",
+                                            "valueFormula": "return fmtRecord('commonEvents', p.actions.onLeave.commonEventId)",
+                                            "attribute": "actions.onLeave.commonEventId",
+                                            "dataSource": "commonEvents",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "attribute": "actions.onLeave.label",
+                                            "valueFormula": "return p.actions.onLeave.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "label": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onLeave.switch",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "booleans"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtBoolVar(p.actions.onLeave.switch)",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "",
+                                            "attribute": "actions.onLeave.scene",
+                                            "dataAttribute": "scene",
+                                            "dialog": {
+                                                "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                                            },
+                                            "valueFormula": "return isVar(p.actions.onLeave.scene) ? fmtStrVar(p.actions.onLeave.scene) : (p.actions.onLeave.scene ? fmtDocument(p.actions.onLeave.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+                                        },
+                                        {
+                                            "label": "",
+                                            "type": "GSQStepper",
+                                            "attribute": "actions.onLeave.bindValue",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onLeave.bindValue)"
+                                        },
+                                        {
+                                            "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onLeave.bindValueVariable",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "numbers"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onLeave.bindValueVariable)"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "identifier": "actions.onLeave.bindValueLabel",
+                                            "attribute": "actions.onLeave.label",
+                                            "valueFormula": "return p.actions.onLeave.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$2D17A8195E24F34F438812609C2EB18B90D3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$DA93793052A95048BF4830616725287AF0F8",
+                                            "attribute": "actions.onDrag.type",
+                                            "dataSource": [
+                                                "$$71BC71C66ED2454FD2993602BE555D66E0FA",
+                                                "$$92FC7C83K7C7CA40D8SA4BFE105C9DF03481",
+                                                "$$8D066C2C8D2CD34D853AF130B815C569B18E",
+                                                "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026",
+                                                "$$438BA3C82B9D874CE2298B6861119D2ED3C4"
+                                            ],
+                                            "valueFormula": "return GS.CONST.HOTSPOT_ACTION_TYPES[p.actions.onDrag.type]",
+                                            "showItems": [
+                                                [
+                                                    "actions.onDrag.label"
+                                                ],
+                                                [
+                                                    "actions.onDrag.commonEventId"
+                                                ],
+                                                [
+                                                    "actions.onDrag.switch"
+                                                ],
+                                                [
+                                                    "actions.onDrag.scene"
+                                                ],
+                                                [
+                                                    "actions.onDrag.bindValue",
+                                                    "actions.onDrag.bindValueVariable",
+                                                    "actions.onDrag.bindValueLabel"
+                                                ]
+                                            ],
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQDataRecordField",
+                                            "label": "$$512615ADK2682A417AS9B11EF5FDFE78FD82",
+                                            "valueFormula": "return fmtRecord('commonEvents', p.actions.onDrag.commonEventId)",
+                                            "attribute": "actions.onDrag.commonEventId",
+                                            "dataSource": "commonEvents",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "attribute": "actions.onDrag.label",
+                                            "valueFormula": "return p.actions.onDrag.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "label": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onDrag.switch",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "booleans"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtBoolVar(p.actions.onDrag.switch)",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "",
+                                            "attribute": "actions.onDrag.scene",
+                                            "dataAttribute": "scene",
+                                            "dialog": {
+                                                "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                                            },
+                                            "valueFormula": "return isVar(p.actions.onDrag.scene) ? fmtStrVar(p.actions.onDrag.scene) : (p.actions.onDrag.scene ? fmtDocument(p.actions.onDrag.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+                                        },
+                                        {
+                                            "label": "",
+                                            "type": "GSQStepper",
+                                            "attribute": "actions.onDrag.bindValue",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onDrag.bindValue)"
+                                        },
+                                        {
+                                            "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onDrag.bindValueVariable",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "numbers"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onDrag.bindValueVariable)"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "identifier": "actions.onDrag.bindValueLabel",
+                                            "attribute": "actions.onDrag.label",
+                                            "valueFormula": "return p.actions.onDrag.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$2D17A8195E24F34F438812609C2EB18B90D3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$D79ACEFE31260347E24A59398E49F7F728E5",
+                                            "attribute": "actions.onDrop.type",
+                                            "dataSource": [
+                                                "$$71BC71C66ED2454FD2993602BE555D66E0FA",
+                                                "$$92FC7C83K7C7CA40D8SA4BFE105C9DF03481",
+                                                "$$8D066C2C8D2CD34D853AF130B815C569B18E",
+                                                "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026",
+                                                "$$438BA3C82B9D874CE2298B6861119D2ED3C4"
+                                            ],
+                                            "valueFormula": "return GS.CONST.HOTSPOT_ACTION_TYPES[p.actions.onDrop.type]",
+                                            "showItems": [
+                                                [
+                                                    "actions.onDrop.label"
+                                                ],
+                                                [
+                                                    "actions.onDrop.commonEventId"
+                                                ],
+                                                [
+                                                    "actions.onDrop.switch"
+                                                ],
+                                                [
+                                                    "actions.onDrop.scene"
+                                                ],
+                                                [
+                                                    "actions.onDrop.bindValue",
+                                                    "actions.onDrop.bindValueVariable",
+                                                    "actions.onDrop.bindValueLabel"
+                                                ]
+                                            ],
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQDataRecordField",
+                                            "label": "$$512615ADK2682A417AS9B11EF5FDFE78FD82",
+                                            "valueFormula": "return fmtRecord('commonEvents', p.actions.onDrop.commonEventId)",
+                                            "attribute": "actions.onDrop.commonEventId",
+                                            "dataSource": "commonEvents",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "attribute": "actions.onDrop.label",
+                                            "valueFormula": "return p.actions.onDrop.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "label": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onDrop.switch",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "booleans"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtBoolVar(p.actions.onDrop.switch)",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "",
+                                            "attribute": "actions.onDrop.scene",
+                                            "dataAttribute": "scene",
+                                            "dialog": {
+                                                "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                                            },
+                                            "valueFormula": "return isVar(p.actions.onDrop.scene) ? fmtStrVar(p.actions.onDrop.scene) : (p.actions.onDrop.scene ? fmtDocument(p.actions.onDrop.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+                                        },
+                                        {
+                                            "label": "",
+                                            "type": "GSQStepper",
+                                            "attribute": "actions.onDrop.bindValue",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onDrop.bindValue)"
+                                        },
+                                        {
+                                            "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onDrop.bindValueVariable",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "numbers"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onDrop.bindValueVariable)"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "identifier": "actions.onDrop.bindValueLabel",
+                                            "attribute": "actions.onDrop.label",
+                                            "valueFormula": "return p.actions.onDrop.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$2D17A8195E24F34F438812609C2EB18B90D3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$7D0BCD245D3E3545CE8BFC764087FF9F58E1",
+                                            "attribute": "actions.onDropReceive.type",
+                                            "dataSource": [
+                                                "$$71BC71C66ED2454FD2993602BE555D66E0FA",
+                                                "$$92FC7C83K7C7CA40D8SA4BFE105C9DF03481",
+                                                "$$8D066C2C8D2CD34D853AF130B815C569B18E",
+                                                "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026",
+                                                "$$438BA3C82B9D874CE2298B6861119D2ED3C4"
+                                            ],
+                                            "valueFormula": "return GS.CONST.HOTSPOT_ACTION_TYPES[p.actions.onDropReceive.type]",
+                                            "showItems": [
+                                                [
+                                                    "actions.onDropReceive.label"
+                                                ],
+                                                [
+                                                    "actions.onDropReceive.commonEventId"
+                                                ],
+                                                [
+                                                    "actions.onDropReceive.switch"
+                                                ],
+                                                [
+                                                    "actions.onDropReceive.scene"
+                                                ],
+                                                [
+                                                    "actions.onDropReceive.bindValue",
+                                                    "actions.onDropReceive.bindValueVariable",
+                                                    "actions.onDropReceive.bindValueLabel"
+                                                ]
+                                            ],
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQDataRecordField",
+                                            "label": "$$512615ADK2682A417AS9B11EF5FDFE78FD82",
+                                            "valueFormula": "return fmtRecord('commonEvents', p.actions.onDropReceive.commonEventId)",
+                                            "attribute": "actions.onDropReceive.commonEventId",
+                                            "dataSource": "commonEvents",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "attribute": "actions.onDropReceive.label",
+                                            "valueFormula": "return p.actions.onDropReceive.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "label": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onDropReceive.switch",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "booleans"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtBoolVar(p.actions.onDropReceive.switch)",
+                                            "width": "50%"
+                                        },
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "",
+                                            "attribute": "actions.onDropReceive.scene",
+                                            "dataAttribute": "scene",
+                                            "dialog": {
+                                                "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                                            },
+                                            "valueFormula": "return isVar(p.actions.onDropReceive.scene) ? fmtStrVar(p.actions.onDropReceive.scene) : (p.actions.onDropReceive.scene ? fmtDocument(p.actions.onDropReceive.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+                                        },
+                                        {
+                                            "label": "",
+                                            "type": "GSQStepper",
+                                            "attribute": "actions.onDropReceive.bindValue",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onDropReceive.bindValue)"
+                                        },
+                                        {
+                                            "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                                            "type": "GSQPopupField",
+                                            "attribute": "actions.onDropReceive.bindValueVariable",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "numbers"
+                                                }
+                                            },
+                                            "valueFormula": "return fmtNumVar(p.actions.onDropReceive.bindValueVariable)"
+                                        },
+                                        {
+                                            "type": "GSQTextArea",
+                                            "multiline": false,
+                                            "identifier": "actions.onDropReceive.bindValueLabel",
+                                            "attribute": "actions.onDropReceive.label",
+                                            "valueFormula": "return p.actions.onDropReceive.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                                            "label": "$$2D17A8195E24F34F438812609C2EB18B90D3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "$$CD90C0D85BF21748797A6B734A889009A331",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$5C8AFEBD337EA9444A7BB1833DB9941091C9",
+                                            "type": "GSQCheckBox",
+                                            "attribute": "dragging.enabled",
+                                            "identifier": "dragging.enabled",
+                                            "enableItems": [
+                                                "dragging.horizontal",
+                                                "dragging.vertical",
+                                                "dragging.rect",
+                                                "dragging.variable"
+                                            ],
+                                            "valueFormula": "return GS.CONST.YES_NO[p.dragging.enabled]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$648DC3D2KD5F6A42B2S8132ED75014FA6D5B",
+                                            "type": "GSQCheckBox",
+                                            "attribute": "dragging.horizontal",
+                                            "identifier": "dragging.horizontal",
+                                            "valueFormula": "return GS.CONST.YES_NO[p.dragging.horizontal]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$CE9AC1AEK0702A45ECS8A94E83C19094559E",
+                                            "type": "GSQCheckBox",
+                                            "attribute": "dragging.vertical",
+                                            "identifier": "dragging.vertical",
+                                            "valueFormula": "return GS.CONST.YES_NO[p.dragging.vertical]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$E20AC05C4BDB03477169DA70EE837DF2A4B3",
+                                            "valueFormula": "return fmt('%d, %d, %d, %d', p.dragging.rect.x, p.dragging.rect.y, p.dragging.rect.size.width, p.dragging.rect.size.height)",
+                                            "type": "GSQPopupField",
+                                            "dialog": {
+                                                "uid": "362CF89CKA303A4C45S8C46EF752B9CB2E43"
+                                            },
+                                            "attribute": "dragging.rect",
+                                            "dataAttribute": "object"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$279A870082643340194815582532E3A95B7F",
+                                            "type": "GSQPopupField",
+                                            "dialog": {
+                                                "uid": "dialog.selectVariable",
+                                                "parameters": {
+                                                    "dataSource": "numbers"
+                                                }
+                                            },
+                                            "attribute": "dragging.variable",
+                                            "valueFormula": "return fmtVar(p.dragging.variable, 'numbers')"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$DA207B80909C2343435A95E4112CEB0C7DD9\",\n    \"windowTitle\": \"Add Hotspot\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.AddHotspot\",\n    \"group\": \"$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760\",\n    \"subGroup\": \"$$AEB0463C403244454D5838451B328881EFFA\",\n    \"windowSize\": {\n        \"w\": 671\n    },\n    \"nodes\": [\n    ], \n    \"defaultValue\": \n    { \n        \"numberDomain\": GS.CONST.DEFAULT_DOMAIN, \n        \"number\": 0,\n        \"shape\": Object.keys(GS.CONST.HOTSPOT_SHAPES)[0],\n        \"positionType\": 0, \"actions\": { \n            \"onClick\": GS.CONST.DEFAULT_ACTION_DATA, \n            \"onEnter\": GS.CONST.DEFAULT_ACTION_DATA, \n            \"onSelect\": GS.CONST.DEFAULT_ACTION_DATA,\n            \"onDeselect\": GS.CONST.DEFAULT_ACTION_DATA,\n            \"onLeave\": GS.CONST.DEFAULT_ACTION_DATA,\n            \"onDrag\": GS.CONST.DEFAULT_ACTION_DATA,\n            \"onDrop\": GS.CONST.DEFAULT_ACTION_DATA,\n            \"onDropReceive\": GS.CONST.DEFAULT_ACTION_DATA\n        }, \n        \"dragging\": { \"enabled\": 0, \"variable\": { \"scope\": 1, \"index\": 0, \"domain\": GS.CONST.DEFAULT_DOMAIN }, \"horizontal\": 1, \"vertical\": 0, \"rect\": { \"x\": 0, \"y\": 0, \"size\": { \"width\": 200, \"height\": 50 }}}, \"position\": 1, \"box\": { \"x\": 0, \"y\": 0, \"size\": { \"width\": 300, \"height\": 100 }} },\n    \"quickItems\": [\n        GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER,\n        {\n            \"label\": \"$$B762368E5C99C44A13693586425214FE0963\",\n            \"type\": \"GSQPopupField\",\n            \"valueFormula\": \"return GS.CONST.HOTSPOT_SHAPES[p.shape].name\",\n            \"attribute\": \"shape\",\n            \"dataSource\": Object.values(GS.CONST.HOTSPOT_SHAPES)\n        },\n        {\n            \"label\": \"$$P31\",\n            \"type\": \"GSQPopupField\",\n            \"valueFormula\": \"return GS.CONST.HOTSPOT_POSITION_TYPES[p.positionType]\",\n            \"attribute\": \"positionType\",\n            \"dataSource\": GS.CONST.HOTSPOT_POSITION_TYPES ,\n            \"showItems\": [[\"box\"], [\"x\", \"y\", \"width\", \"height\"], [\"pictureNumber\"], [\"textNumber\"]]\n        },\n        {\n            \"label\": \"\",\n            \"valueFormula\": \"return fmt('%d, %d, %d, %d', p.box.x, p.box.y, p.box.size.width, p.box.size.height)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"362CF89CKA303A4C45S8C46EF752B9CB2E43\" },\n            \"attribute\": \"box\",\n            \"dataAttribute\": \"object\"\n        },\n        {\n            \"label\": \"X\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"type\": \"GSQStepper\",\n            \"identifier\": \"x\",\n            \"attribute\": \"box.x\",\n            \"minimum\": 0,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"Y\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"type\": \"GSQStepper\",\n            \"identifier\": \"y\",\n            \"attribute\": \"box.y\",\n            \"minimum\": 0,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$F298E912KB3FAA4D38S8699ED37655BCFEF0\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"type\": \"GSQStepper\",\n            \"identifier\": \"width\",\n            \"attribute\": \"box.size.width\",\n            \"minimum\": 0,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$6AD32F89KCC0CA4C25S8900E0FA08CE71324\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"type\": \"GSQStepper\",\n            \"identifier\": \"height\",\n            \"attribute\": \"box.size.height\",\n            \"minimum\": 0,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        Object.override(GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER, { \"label\": \"Picture Number\", \"attribute\": \"pictureNumber\", \"identifier\": \"pictureNumber\" }),\n        Object.override(GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER, { \"label\": \"Text Number\", \"attribute\": \"textNumber\", \"identifier\": \"textNumber\" }),\n        {\n            \"label\": \"$$4B66B19661918348F378CEB12A44A8B0A94D\",\n            \"type\": \"GSQPopupField\",\n            \"valueFormula\": \"return GS.CONST.HOTSPOT_ACTION_TYPES[p.actions.onClick.type]\",\n            \"attribute\": \"actions.onClick.type\",\n            \"dataSource\": GS.CONST.HOTSPOT_ACTION_TYPES,\n            \"showItems\": [[\"label\"], [\"commonEvent\"], [\"switch\"], [\"callScene\"], [\"bindValue\", \"bindValueVariable\", \"bindValueLabel\"]]\n        },\n        {\n            \"label\": \"$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C\",\n            \"type\": \"GSQTextArea\",\n            \"identifier\": \"label\",\n            \"attribute\": \"actions.onClick.label\",\n            \"multiline\": false,\n            \"valueFormula\": \"return p.actions.onClick.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')\"\n        },\n        {\n            \"label\": \"$$512615ADK2682A417AS9B11EF5FDFE78FD82\",\n            \"valueFormula\": \"return fmtRecord('commonEvents', p.actions.onClick.commonEventId)\",\n            \"attribute\": \"actions.onClick.commonEventId\",\n            \"identifier\": \"commonEvent\",\n            \"type\": \"GSQDataRecordField\",\n            \"dataSource\": \"commonEvents\"\n        },\n        {\n            \"label\": \"$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9\",\n            \"type\": \"GSQPopupField\",\n            \"identifier\": \"switch\",\n            \"attribute\": \"actions.onClick.switch\",\n            \"dialog\": { \"uid\":\"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"booleans\" } },\n            \"valueFormula\": \"return fmtBoolVar(p.actions.onClick.switch)\"\n        },\n        {\n            \"type\": \"GSQPopupField\",\n            \"identifier\": \"callScene\",\n            \"label\": \"\",\n            \"attribute\": \"actions.onClick.scene\",\n            \"dataAttribute\": \"scene\",\n            \"dialog\": { \"uid\": \"0E620E08KED4CA4E7CS8514E5B2BF2657DA5\" },\n            \"valueFormula\": \"return isVar(p.actions.onClick.scene) ? fmtStrVar(p.actions.onClick.scene) : (p.actions.onClick.scene ? fmtDocument(p.actions.onClick.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));\"\n        },\n        {\n            \"label\": \"\",\n            \"type\": \"GSQStepper\",\n            \"variableButton\": { \"dataSource\": \"numbers\"},\n            \"identifier\": \"bindValue\",\n            \"attribute\": \"actions.onClick.bindValue\",\n            \"valueFormula\": \"return fmtNumVar(p.actions.onClick.bindValue)\"\n        },\n        {\n            \"label\": \"$$DC1A41265CECC346098B4931B5874A2AF62A\",\n            \"type\": \"GSQPopupField\",\n            \"identifier\": \"bindValueVariable\",\n            \"attribute\": \"actions.onClick.bindValueVariable\",\n            \"dialog\": { \"uid\":\"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" } },\n            \"valueFormula\": \"return fmtNumVar(p.actions.onClick.bindValueVariable)\"\n        },\n        {\n            \"label\": \"$$2D17A8195E24F34F438812609C2EB18B90D3\",\n            \"type\": \"GSQTextArea\",\n            \"identifier\": \"bindValueLabel\",\n            \"attribute\": \"actions.onClick.label\",\n            \"multiline\": false,\n            \"valueFormula\": \"return p.actions.onClick.label || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')\"\n        }\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$7F4D32186AE6B342433A3586CAEB8004B67C\",\n                        \"rows\": [\n                            { \"items\": [GSQ.CONTROLS.IMAGE_SELECTION(\"$$D84CCD8A56198241872857479170ACB55F92\", \"baseGraphic\")] },\n                            { \"items\": [GSQ.CONTROLS.IMAGE_SELECTION(\"$$828ECA7022F26147773A74513BC532FBCE24\", \"hoverGraphic\")] },\n                            { \"items\": [GSQ.CONTROLS.IMAGE_SELECTION(\"$$3CFB5CC34C0477461A2B7D22FE773F469677\", \"selectedGraphic\")] },\n                            { \"items\": [GSQ.CONTROLS.IMAGE_SELECTION(\"$$0B2C562B32CAF241EF49C0A84CC1A1A21B3A\", \"selectedHoverGraphic\")] },\n                            { \"items\": [GSQ.CONTROLS.IMAGE_SELECTION(\"$$CE92FBB22261764C1F28D9B8E5BEE4ACA40C\", \"unselectedGraphic\")] }\n                        ]\n                    },\n                    {\n                        \"label\": \"$$71416A6700EBC542C16B1584F0DF6F369566\",\n                        \"rows\": [\n                            GSQ.ROWS.CREATE_ACTION_SELECTION(\"$$EB52AD8F824AA44DFE0B876477FCA0D890F0\", \"actions.onEnter\"),\n                            GSQ.ROWS.CREATE_ACTION_SELECTION(\"$$FB6FF0B60608D546469B9BC1228FDA49CE7B\", \"actions.onSelect\"),\n                            GSQ.ROWS.CREATE_ACTION_SELECTION(\"$$DEC9A1F06B931544AC28D3F1A327A51F79DE\", \"actions.onDeselect\"),\n                            GSQ.ROWS.CREATE_ACTION_SELECTION(\"$$655949B6180C4343C22AB0E6A1D358CA005B\", \"actions.onLeave\"),\n                            GSQ.ROWS.CREATE_ACTION_SELECTION(\"$$DA93793052A95048BF4830616725287AF0F8\", \"actions.onDrag\"),\n                            GSQ.ROWS.CREATE_ACTION_SELECTION(\"$$D79ACEFE31260347E24A59398E49F7F728E5\", \"actions.onDrop\"),\n                            GSQ.ROWS.CREATE_ACTION_SELECTION(\"$$7D0BCD245D3E3545CE8BFC764087FF9F58E1\", \"actions.onDropReceive\")\n                        ]\n                    },\n                    {\n                        \"label\": \"$$CD90C0D85BF21748797A6B734A889009A331\",\n                        \"rows\": [\n                            { \"items\": [\n                                    GSQ.CONTROLS.CHECK_BOX(\"$$5C8AFEBD337EA9444A7BB1833DB9941091C9\", \"dragging.enabled\", [\"dragging.horizontal\", \"dragging.vertical\", \"dragging.rect\", \"dragging.variable\"])\n                                ] \n                            },\n                            { \"items\": [GSQ.CONTROLS.CHECK_BOX(\"$$648DC3D2KD5F6A42B2S8132ED75014FA6D5B\", \"dragging.horizontal\")] },\n                            { \"items\": [GSQ.CONTROLS.CHECK_BOX(\"$$CE9AC1AEK0702A45ECS8A94E83C19094559E\", \"dragging.vertical\")] },\n                            { \"items\": [\n                                {\n                                    \"label\": \"$$E20AC05C4BDB03477169DA70EE837DF2A4B3\",\n                                    \"valueFormula\": \"return fmt('%d, %d, %d, %d', p.dragging.rect.x, p.dragging.rect.y, p.dragging.rect.size.width, p.dragging.rect.size.height)\",\n                                    \"type\": \"GSQPopupField\",\n                                    \"dialog\": { \"uid\": \"362CF89CKA303A4C45S8C46EF752B9CB2E43\" },\n                                    \"attribute\": \"dragging.rect\",\n                                    \"dataAttribute\": \"object\"\n                                }\n                            ] },\n                            { \"items\": [GSQ.CONTROLS.VARIABLE_SELECTION(\"$$279A870082643340194815582532E3A95B7F\", \"dragging.variable\", \"numbers\")] }\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    },\n    \"sections\": [\n    ]\n}",
+        "name": "Add Hotspot",
+        "order": 16
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

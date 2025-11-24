@@ -1,0 +1,42 @@
+{
+    "uid": "07DE318110D06131",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "Settings",
+        "type": "settings",
+        "bundleId": "com.example.game",
+        "version": "1.0.0",
+        "description": "Describe your game. May be visible on app-store listings.",
+        "orientation": "any",
+        "author": {
+            "email": "me@example.com",
+            "website": "http://www.example.com",
+            "description": "Description about development team. May be visible on app-store listings."
+        },
+        "ios": {
+            "codeSignIdentity": "iPhone Developer",
+            "provisioningProfile": "",
+            "developmentTeam": "",
+            "packageType": "development"
+        },
+        "livePreview": {
+            "disabled": false,
+            "animationDisabled": false,
+            "animationTime": 0
+        },
+        "android": {
+            "keystore": "MyGame.keystore",
+            "storePassword": "",
+            "storeAlias": "",
+            "privateKeyPassword": "",
+            "licenseKey": "",
+            "useExpansionFile": false
+        }
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

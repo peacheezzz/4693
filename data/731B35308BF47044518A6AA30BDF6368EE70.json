@@ -1,0 +1,150 @@
+{
+    "uid": "731B35308BF47044518A6AA30BDF6368EE70",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "vn.ChangeColors",
+        "group": "$$C1953650K4FD7A4268SB298E0BEFC554D88E",
+        "defaultValue": {
+            "colors": []
+        },
+        "displayName": "$$AE2256F96714404629894C3281D625B561E4",
+        "subGroup": "$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5",
+        "quickItems": [
+            {
+                "label": "$$:lcs('26718EC92FCFB84DA8881166D557A816E1B2').replace('%s', 1)",
+                "lockable": true,
+                "valueFormula": "var color = p.colors[0]; return color ?  color.red + ', ' + color.green + ', ' + color.blue + ', '+color.alpha : 'None'; ",
+                "attribute": "colors.0",
+                "type": "GSQPopupField",
+                "dataAttribute": "color",
+                "dialog": {
+                    "uid": "07DDB0112342C01F",
+                    "parameters": {}
+                }
+            },
+            {
+                "label": "$$:lcs('26718EC92FCFB84DA8881166D557A816E1B2').replace('%s', 2)",
+                "lockable": true,
+                "valueFormula": "var color = p.colors[1]; return color ?  color.red + ', ' + color.green + ', ' + color.blue + ', '+color.alpha : 'None'; ",
+                "attribute": "colors.1",
+                "type": "GSQPopupField",
+                "dataAttribute": "color",
+                "dialog": {
+                    "uid": "07DDB0112342C01F",
+                    "parameters": {}
+                }
+            },
+            {
+                "label": "$$:lcs('26718EC92FCFB84DA8881166D557A816E1B2').replace('%s', 3)",
+                "lockable": true,
+                "valueFormula": "var color = p.colors[2]; return color ?  color.red + ', ' + color.green + ', ' + color.blue + ', '+color.alpha : 'None'; ",
+                "attribute": "colors.2",
+                "type": "GSQPopupField",
+                "dataAttribute": "color",
+                "dialog": {
+                    "uid": "07DDB0112342C01F",
+                    "parameters": {}
+                }
+            },
+            {
+                "label": "$$:lcs('26718EC92FCFB84DA8881166D557A816E1B2').replace('%s', 4)",
+                "lockable": true,
+                "valueFormula": "var color = p.colors[3]; return color ?  color.red + ', ' + color.green + ', ' + color.blue + ', '+color.alpha : 'None'; ",
+                "attribute": "colors.3",
+                "type": "GSQPopupField",
+                "dataAttribute": "color",
+                "dialog": {
+                    "uid": "07DDB0112342C01F",
+                    "parameters": {}
+                }
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$1FECB481KADF5A47CBS82C1E2761EBBBBA6A",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$:lcs('26718EC92FCFB84DA8881166D557A816E1B2').replace('%s', 5)",
+                                            "lockable": true,
+                                            "valueFormula": "var color = p.colors[4]; return color ?  color.red + ', ' + color.green + ', ' + color.blue + ', '+color.alpha : 'None'; ",
+                                            "attribute": "colors.4",
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$:lcs('26718EC92FCFB84DA8881166D557A816E1B2').replace('%s', 6)",
+                                            "lockable": true,
+                                            "valueFormula": "var color = p.colors[5]; return color ?  color.red + ', ' + color.green + ', ' + color.blue + ', '+color.alpha : 'None'; ",
+                                            "attribute": "colors.5",
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$:lcs('26718EC92FCFB84DA8881166D557A816E1B2').replace('%s', 7)",
+                                            "lockable": true,
+                                            "valueFormula": "var color = p.colors[6]; return color ?  color.red + ', ' + color.green + ', ' + color.blue + ', '+color.alpha : 'None'; ",
+                                            "attribute": "colors.6",
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$:lcs('26718EC92FCFB84DA8881166D557A816E1B2').replace('%s', 8)",
+                                            "lockable": true,
+                                            "valueFormula": "var color = p.colors[7]; return color ?  color.red + ', ' + color.green + ', ' + color.blue + ', '+color.alpha : 'None'; ",
+                                            "attribute": "colors.7",
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n    \"id\": \"vn.ChangeColors\",\n    \"group\": \"$$C1953650K4FD7A4268SB298E0BEFC554D88E\",\n    \"defaultValue\": { \"colors\": [] },\n    \"displayName\": \"$$AE2256F96714404629894C3281D625B561E4\",\n    \"subGroup\": \"$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5\",\n    \"quickItems\": [\n        GSQ.CONTROLS.CREATE_SYSTEM_COLOR(0),\n        GSQ.CONTROLS.CREATE_SYSTEM_COLOR(1),\n        GSQ.CONTROLS.CREATE_SYSTEM_COLOR(2),\n        GSQ.CONTROLS.CREATE_SYSTEM_COLOR(3)\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$1FECB481KADF5A47CBS82C1E2761EBBBBA6A\",\n                        \"rows\": [\n                            { \"items\": [GSQ.CONTROLS.CREATE_SYSTEM_COLOR(4)] },\n                            { \"items\": [GSQ.CONTROLS.CREATE_SYSTEM_COLOR(5)] },\n                            { \"items\": [GSQ.CONTROLS.CREATE_SYSTEM_COLOR(6)] },\n                            { \"items\": [GSQ.CONTROLS.CREATE_SYSTEM_COLOR(7)] }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}",
+        "name": "Change Colors",
+        "type": "event_command",
+        "parentId": "CCC1D58AKA96AA4B0ESA33CE6CCC06CB5662",
+        "order": 13
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

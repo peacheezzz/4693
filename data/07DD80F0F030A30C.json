@@ -1,0 +1,53 @@
+{
+    "uid": "07DD80F0F030A30C",
+    "isLoaded": true,
+    "lastModificationTime": 1424023478781,
+    "items": {
+        "displayName": "$$A4F947BBK7DFBA44B6SB449EC35405E4DEE7",
+        "id": "gs.JumpToLabel",
+        "group": "$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24",
+        "subGroup": "$$BC4DFF3B1A9953463A7BE1E9FA84DF33D265",
+        "defaultValue": {
+            "name": "",
+            "target": "activeContext"
+        },
+        "quickItems": [
+            {
+                "type": "GSQTextArea",
+                "label": "$$P55",
+                "multiline": false,
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "name",
+                "valueFormula": "return fmtStrVar(p.name) || lcs('2AA95C2462998440D08A89C884F8259FD71F')"
+            },
+            {
+                "type": "GSQPopupField",
+                "label": "$$30A49AB7K99E9A4E59SAA85EAA161A0E1836",
+                "dataSource": [
+                    {
+                        "name": "Active Context",
+                        "alias": "activeContext"
+                    },
+                    {
+                        "name": "Active Scene",
+                        "alias": "activeScene"
+                    }
+                ],
+                "attribute": "target",
+                "valueFormula": "return GS.CONST.INTERPRETER_CONTEXT_TYPES.first(x => x.alias == p.target).name"
+            }
+        ],
+        "rawContent": "{\n    \"displayName\": \"$$A4F947BBK7DFBA44B6SB449EC35405E4DEE7\",\n    \"id\": \"gs.JumpToLabel\",\n    \"group\": \"$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24\",\n    \"subGroup\": \"$$BC4DFF3B1A9953463A7BE1E9FA84DF33D265\",\n    \"defaultValue\": { \"name\": \"\", \"target\": \"activeContext\" },\n    \"quickItems\": [\n        {\n            \"type\": \"GSQTextArea\",\n            \"label\": \"$$P55\",\n            \"multiline\": false,\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"attribute\": \"name\",\n            \"valueFormula\": \"return fmtStrVar(p.name) || lcs('2AA95C2462998440D08A89C884F8259FD71F')\"\n        },\n        {\n            \"type\": \"GSQPopupField\",\n            \"label\": \"$$30A49AB7K99E9A4E59SAA85EAA161A0E1836\",\n            \"dataSource\": GS.CONST.INTERPRETER_CONTEXT_TYPES,\n            \"attribute\": \"target\",\n            \"valueFormula\": \"return GS.CONST.INTERPRETER_CONTEXT_TYPES.first(x => x.alias == p.target).name\"\n        }\n    ]\n}",
+        "name": "Jump to Label",
+        "type": "event_command",
+        "parentId": "97163D89K8F9DA45ADSA51CE47DE4ECE311C",
+        "order": 9
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

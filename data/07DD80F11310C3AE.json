@@ -1,0 +1,525 @@
+{
+    "uid": "07DD80F11310C3AE",
+    "isLoaded": true,
+    "lastModificationTime": 1428161614217,
+    "items": {
+        "id": "gs.ShowPicture",
+        "group": "$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760",
+        "subGroup": "$$9E1A5407531CC141D66911387F0B53C14B4F",
+        "displayName": "$$6CB6FA85KD0ABA4653S92D1E908EACECA578",
+        "defaultValue": {
+            "numberDomain": "com.degica.vnm.default",
+            "viewport": {
+                "type": "ui"
+            },
+            "size": {
+                "type": 0,
+                "width": 100,
+                "height": 100
+            },
+            "visual": {
+                "type": 0,
+                "quad": {
+                    "color": {
+                        "red": 255,
+                        "green": 255,
+                        "blue": 255,
+                        "alpha": 255
+                    }
+                },
+                "frame": {
+                    "thickness": 16,
+                    "cornerSize": 16
+                },
+                "threePartImage": {
+                    "orientation": 0
+                }
+            },
+            "predefinedPositionId": 0,
+            "number": 0,
+            "blendMode": 0,
+            "zOrder": 0,
+            "duration": 0,
+            "origin": 0,
+            "waitForCompletion": 0,
+            "positionType": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            },
+            "animation": {
+                "type": 1,
+                "movement": 0,
+                "mask": {
+                    "graphic": null,
+                    "vague": 30
+                }
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                "identifier": "number",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "number",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$P61",
+                "valueFormula": "return fmtResource(p.graphic);",
+                "attribute": "graphic",
+                "identifier": "graphic",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQPopupField",
+                "dataAttribute": "resource",
+                "dialog": {
+                    "uid": "dialog.selectGraphicResource",
+                    "parameters": {
+                        "folder": "Graphics/Pictures"
+                    }
+                }
+            },
+            {
+                "label": "$$376D9476064BA24775187795894CD3009687",
+                "type": "GSQPopupField",
+                "valueFormula": "return p.origin == 0 ? lcs('P29') : lcs('P30')",
+                "attribute": "origin",
+                "dataSource": [
+                    "$$P29",
+                    "$$P30"
+                ],
+                "lockable": true
+            },
+            {
+                "label": "$$P31",
+                "type": "GSQPopupField",
+                "valueFormula": "return GS.CONST.GRAPHIC_POSITION_TYPES[p.positionType]",
+                "attribute": "positionType",
+                "dataSource": [
+                    "$$52E2B8291E58F74BCA0BCAB906C31A14C8E8",
+                    "$$EDA8FFF8758AE841037B2DB13D815982AF4D",
+                    "$$7975782B2E59994D107B13C1801F5A299E12"
+                ],
+                "showItems": [
+                    [
+                        "predefinedPositionId"
+                    ],
+                    [
+                        "position"
+                    ],
+                    [
+                        "x",
+                        "y"
+                    ]
+                ]
+            },
+            {
+                "label": "",
+                "valueFormula": "return fmtNumVar(p.position.x) + ', ' + fmtNumVar(p.position.y);",
+                "type": "GSQPopupField",
+                "attribute": "position",
+                "dataAttributes": [
+                    "position",
+                    "previewZoom"
+                ],
+                "dialog": {
+                    "uid": "2F6833B1K4A87A4B4BS9F58E5A0F08E17949",
+                    "bindings": [
+                        {
+                            "source": "graphic",
+                            "to": "local",
+                            "target": "data.picture"
+                        }
+                    ]
+                }
+            },
+            {
+                "label": "",
+                "valueFormula": "return GS.VN.textForPredefinedObjectPosition(p.predefinedPositionId);",
+                "type": "GSQPopupField",
+                "dataSource": {
+                    "sourceFormula": "return GS.VN.predefinedObjectPositionList(undefined)"
+                },
+                "attribute": "predefinedPositionId"
+            },
+            {
+                "label": "X",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.position.x);",
+                "type": "GSQStepper",
+                "identifier": "x",
+                "attribute": "position.x",
+                "defaultValue": 0,
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "Y",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "identifier": "y",
+                "valueFormula": "return fmtNumVar(p.position.y);",
+                "type": "GSQStepper",
+                "attribute": "position.y",
+                "defaultValue": 0,
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999,
+                "lockable": true
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "attribute": "animation.type",
+                                            "width": "50%",
+                                            "lockable": true,
+                                            "label": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+                                            "dataSource": [
+                                                "$$2683C0C34985474F713910185340D35D3108",
+                                                "$$P177",
+                                                "$$000ADEF46265D146AF5893C3E8B9A840397F"
+                                            ],
+                                            "valueFormula": "return GS.CONST.APPEARANCE_ANIMATION_TYPES[p.animation.type]",
+                                            "showItems": [
+                                                [
+                                                    "animation_movement"
+                                                ],
+                                                [],
+                                                [
+                                                    "animation_maskFile",
+                                                    "animation_maskVague"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "identifier": "animation_movement",
+                                            "dataSource": [
+                                                "$$DA8B51B3KB92CA46EFSB9A9EDF4D4C81A9B8",
+                                                "$$0E468336KEA04A497CS8813E5A7FA8B85AF5",
+                                                "$$927A7043KEE05A4A52SA7C9E418BAF35232F",
+                                                "$$EB59D1CFK6206A4F2BSB258EE66915195A6D"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "animation.type"
+                                            ],
+                                            "attribute": "animation.movement",
+                                            "valueFormula": "return GS.CONST.MOVE_ANIMATION_TYPES[p.animation.movement]"
+                                        },
+                                        {
+                                            "label": "$$P61",
+                                            "valueFormula": "return fmtResource(p.animation.mask.graphic);",
+                                            "attribute": "animation.mask.graphic",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "identifier": "animation_maskFile",
+                                            "unlockItems": [
+                                                "animation.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "resource",
+                                            "dialog": {
+                                                "uid": "dialog.selectGraphicResource",
+                                                "parameters": {
+                                                    "folder": "Graphics/Masks"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "label": "$$A20F74E20798454C200A83253DEACB863B87",
+                                            "identifier": "animation_maskVague",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "unlockItems": [
+                                                "animation.type"
+                                            ],
+                                            "type": "GSQStepper",
+                                            "attribute": "animation.mask.vague",
+                                            "minimum": 0,
+                                            "maximum": 255
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "$$9E1A5407531CC141D66911387F0B53C14B4F",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$A4972EEB1026104D6B2BC9F4B0493B3D8B5F",
+                                            "type": "GSQStepper",
+                                            "attribute": "zOrder",
+                                            "minimum": -999999999,
+                                            "maximum": 999999999,
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "defaultValue": 0,
+                                            "lockable": true,
+                                            "width": "50%"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$6E6A55971BE4664E2D89AC97DED89BC4DF08",
+                                            "type": "GSQPopupField",
+                                            "attribute": "blendMode",
+                                            "dataSource": [
+                                                "$$P155",
+                                                "$$P156",
+                                                "$$P157"
+                                            ],
+                                            "valueFormula": "return GS.CONST.BLEND_MODES[p.blendMode]",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "defaultValue": 0,
+                                            "lockable": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$D7C5B0CB4112B74D0A5937F288305900EE57",
+                                            "valueFormula": "return GS.CONST.GRAPHIC_VISUAL_TYPES[p.visual.type]",
+                                            "dataSource": [
+                                                "$$3E0C4FA07623E34F3908D417D8F8B4FD63D3",
+                                                "$$2586E6655FB193421B6A3E43620E3ADB0D93",
+                                                "$$43AB4A768C7E8447B41AF3275AB85714F14D",
+                                                "$$FD7EF6A29DCE65415D6B8733997391E98142",
+                                                "$$892EDC432CBA6542A64A3E266BAC9C430DD1",
+                                                "$$336A741F4BF10746214BADF05F2642357B67"
+                                            ],
+                                            "attribute": "visual.type",
+                                            "lockable": true,
+                                            "showItems": [
+                                                [],
+                                                [],
+                                                [
+                                                    "visual.frame.thickness",
+                                                    "visual.frame.cornerSize"
+                                                ],
+                                                [
+                                                    "orientation"
+                                                ],
+                                                [
+                                                    "visual.quad.color"
+                                                ],
+                                                []
+                                            ]
+                                        },
+                                        {
+                                            "type": "GSQStepper",
+                                            "label": "$$CCE1D54E6C1C2347DE6BA161805011F03142",
+                                            "attribute": "visual.frame.thickness",
+                                            "lockable": true
+                                        },
+                                        {
+                                            "type": "GSQStepper",
+                                            "label": "$$D3F006541FBD774BC38B21E1A1A20078669B",
+                                            "attribute": "visual.frame.cornerSize",
+                                            "lockable": true
+                                        },
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$D134DB1755C3394F602AAC137CA7CA1766DF",
+                                            "identifier": "orientation",
+                                            "valueFormula": "return GS.CONST.ORIENTATION[p.visual.threePartImage.orientation]",
+                                            "dataSource": [
+                                                "$$CE9AC1AEK0702A45ECS8A94E83C19094559E",
+                                                "$$648DC3D2KD5F6A42B2S8132ED75014FA6D5B"
+                                            ],
+                                            "attribute": "visual.threePartImage.orientation",
+                                            "lockable": true
+                                        },
+                                        {
+                                            "label": "$$CE4922C3K0381A4335S898CEFEBA22825F89",
+                                            "valueFormula": "return p.visual.quad.color.red + ', ' + p.visual.quad.color.green + ', ' + p.visual.quad.color.blue + ', '+p.visual.quad.color.alpha; ",
+                                            "attribute": "visual.quad.color",
+                                            "type": "GSQPopupField",
+                                            "lockable": true,
+                                            "dataAttribute": "color",
+                                            "dialog": {
+                                                "uid": "07DDB0112342C01F",
+                                                "parameters": {}
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$2BFCB38471EC754E301910E61CB9E9E930FC",
+                                            "valueFormula": "return GS.CONST.GRAPHIC_VISUAL_SIZE[p.size.type]",
+                                            "dataSource": [
+                                                "$$3CB124F3KFE8DA4EC8SB3ADED03F6CA18763",
+                                                "$$1D0DB574K2BF9A4582SA57BE4AAC9420853B"
+                                            ],
+                                            "attribute": "size.type",
+                                            "lockable": true,
+                                            "showItems": [
+                                                [],
+                                                [
+                                                    "size.width",
+                                                    "size.height"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "type": "GSQStepper",
+                                            "label": "$$F298E912KB3FAA4D38S8699ED37655BCFEF0",
+                                            "attribute": "size.width",
+                                            "variableButton": {
+                                                "dataSource": "numbers "
+                                            },
+                                            "lockable": true
+                                        },
+                                        {
+                                            "type": "GSQStepper",
+                                            "label": "$$6AD32F89KCC0CA4C25S8900E0FA08CE71324",
+                                            "attribute": "size.height",
+                                            "variableButton": {
+                                                "dataSource": "numbers "
+                                            },
+                                            "lockable": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$799D25F96B14034F6D393B75F6A724949693",
+                                            "valueFormula": "return GS.CONST.VIEWPORT_TYPES[p.viewport.type].name",
+                                            "dataSource": [
+                                                {
+                                                    "name": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+                                                    "alias": "scene"
+                                                },
+                                                {
+                                                    "name": "$$FC1FC2A18D7D32424E7A0AB0BDCED147ED92",
+                                                    "alias": "ui"
+                                                }
+                                            ],
+                                            "attribute": "viewport.type",
+                                            "lockable": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "sections": [],
+        "rawContent": "{\n    \"id\": \"gs.ShowPicture\",\n    \"group\": \"$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760\",\n    \"subGroup\": \"$$9E1A5407531CC141D66911387F0B53C14B4F\",\n    \"displayName\": \"$$6CB6FA85KD0ABA4653S92D1E908EACECA578\",\n    \"defaultValue\": { \"numberDomain\": GS.CONST.DEFAULT_DOMAIN, \"viewport\": { \"type\": \"ui\" }, \"size\": { \"type\": 0, \"width\": 100, \"height\": 100 }, \"visual\": { \"type\": 0, \"quad\": { \"color\": { \"red\": 255, \"green\": 255, \"blue\": 255, \"alpha\": 255 } }, \"frame\": { \"thickness\": 16, \"cornerSize\": 16 }, \"threePartImage\": { \"orientation\": 0 } }, \"predefinedPositionId\": 0, \"number\": 0, \"blendMode\": 0, \"zOrder\": 0, \"duration\": 0, \"origin\": 0, \"waitForCompletion\": 0, \"positionType\": 0, \"position\": { \"x\": 0, \"y\": 0 }, \"easing\": { \"type\": 0, \"inOut\": 1 }, \"animation\":GS.CONST.DEFAULT_APPEARANCE_ANIMATION_DATA },\n    \"quickItems\": [\n        GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER,\n        {\n            \"label\": \"$$P61\",\n            \"valueFormula\": \"return fmtResource(p.graphic);\",\n            \"attribute\": \"graphic\",\n            \"identifier\": \"graphic\",\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"type\": \"GSQPopupField\",\n            \"dataAttribute\": \"resource\",\n            \"dialog\": { \"uid\": \"dialog.selectGraphicResource\", \"parameters\": { \"folder\": \"Graphics/Pictures\" }}\n        },\n        GSQ.CONTROLS.CREATE_GRAPHIC_ORIGIN(true),\n        GSQ.CONTROLS.GRAPHIC_POSITION_TYPE,\n        {\n            \"label\": \"\",\n            \"valueFormula\": \"return fmtNumVar(p.position.x) + ', ' + fmtNumVar(p.position.y);\",\n            \"type\": \"GSQPopupField\",\n            \"attribute\": \"position\",\n            \"dataAttributes\": [\"position\", \"previewZoom\"],\n            \"dialog\": { \"uid\": \"2F6833B1K4A87A4B4BS9F58E5A0F08E17949\", \"bindings\": [{ \"source\": \"graphic\", \"to\": \"local\", \"target\": \"data.picture\" }] }\n        },\n        GSQ.CONTROLS.CREATE_PREDEFINED_OBJECT_POSITION(),\n        {\n            \"label\": \"X\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"valueFormula\": \"return fmtNumVar(p.position.x);\",\n            \"type\": \"GSQStepper\",\n            \"identifier\": \"x\",\n            \"attribute\": \"position.x\",\n            \"defaultValue\": 0,\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"Y\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"identifier\": \"y\",\n            \"valueFormula\": \"return fmtNumVar(p.position.y);\",\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"position.y\",\n            \"defaultValue\": 0,\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        Object.override(GSQ.CONTROLS.DURATION, {\"lockable\": true}),\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING,\n                            GSQ.ROWS.APPEARANCE_ANIMATION\n                        ]\n                    },\n                    {\n                        \"label\": \"$$9E1A5407531CC141D66911387F0B53C14B4F\",\n                        \"rows\": [\n                            { \"items\": [Object.override(GSQ.CONTROLS.GRAPHIC_Z_ORDER, { \"lockable\": true, \"width\": \"50%\" })] },\n                            { \"items\": [Object.override(GSQ.CONTROLS.GRAPHIC_BLEND_MODE, { \"lockable\": true })] },\n                            { \"items\": [\n                                {\n                                    \"type\": \"GSQPopupField\",\n                                    \"label\": \"$$D7C5B0CB4112B74D0A5937F288305900EE57\",\n                                    \"valueFormula\": 'return GS.CONST.GRAPHIC_VISUAL_TYPES[p.visual.type]',\n                                    \"dataSource\": GS.CONST.GRAPHIC_VISUAL_TYPES,\n                                    \"attribute\": \"visual.type\",\n                                    \"lockable\": true,\n                                    \"showItems\": [[], [], [\"visual.frame.thickness\", \"visual.frame.cornerSize\"], [\"orientation\"], [\"visual.quad.color\"], []]\n                                },\n                                {\n                                    \"type\": \"GSQStepper\",\n                                    \"label\": \"$$CCE1D54E6C1C2347DE6BA161805011F03142\",\n                                    \"attribute\": \"visual.frame.thickness\",\n                                    \"lockable\": true\n                                },\n                                {\n                                    \"type\": \"GSQStepper\",\n                                    \"label\": \"$$D3F006541FBD774BC38B21E1A1A20078669B\",\n                                    \"attribute\": \"visual.frame.cornerSize\",\n                                    \"lockable\": true\n                                },\n                                {\n                                    \"type\": \"GSQPopupField\",\n                                    \"label\": \"$$D134DB1755C3394F602AAC137CA7CA1766DF\",\n                                    \"identifier\": \"orientation\",\n                                    \"valueFormula\": \"return GS.CONST.ORIENTATION[p.visual.threePartImage.orientation]\",\n                                    \"dataSource\": GS.CONST.ORIENTATION,\n                                    \"attribute\": \"visual.threePartImage.orientation\",\n                                    \"lockable\": true\n                                },\n                                GSQ.CONTROLS.CREATE_COLOR(null, \"visual.quad.color\", true)\n                            ] },\n                            { \"items\": [\n                                {\n                                    \"type\": \"GSQPopupField\",\n                                    \"label\": \"$$2BFCB38471EC754E301910E61CB9E9E930FC\",\n                                    \"valueFormula\": 'return GS.CONST.GRAPHIC_VISUAL_SIZE[p.size.type]',\n                                    \"dataSource\": GS.CONST.GRAPHIC_VISUAL_SIZE,\n                                    \"attribute\": \"size.type\",\n                                    \"lockable\": true,\n                                    \"showItems\": [[], [\"size.width\", \"size.height\"]]\n                                },\n                                {\n                                    \"type\": \"GSQStepper\",\n                                    \"label\": \"$$F298E912KB3FAA4D38S8699ED37655BCFEF0\",\n                                    \"attribute\": \"size.width\",\n                                    \"variableButton\": { \"dataSource\": \"numbers \"},\n                                    \"lockable\": true\n                                },\n                                {\n                                    \"type\": \"GSQStepper\",\n                                    \"label\": \"$$6AD32F89KCC0CA4C25S8900E0FA08CE71324\",\n                                    \"attribute\": \"size.height\",\n                                    \"variableButton\": { \"dataSource\": \"numbers \"},\n                                    \"lockable\": true\n                                }\n                                ]\n                            },\n                            GSQ.ROWS.VIEWPORT\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    },\n    \"sections\": [\n    ]\n}",
+        "name": "Show Picture",
+        "type": "event_command",
+        "parentId": "0FEBB76EK401BA41A4S99B1E2346601143E2",
+        "order": 0
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

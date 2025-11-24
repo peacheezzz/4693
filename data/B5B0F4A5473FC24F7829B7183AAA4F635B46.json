@@ -1,0 +1,206 @@
+{
+    "uid": "B5B0F4A5473FC24F7829B7183AAA4F635B46",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "vn.ChangeSounds",
+        "displayName": "$$E4B34E7F130BF8440E1AE392D3806F3F7FD4",
+        "group": "$$C1953650K4FD7A4268SB298E0BEFC554D88E",
+        "subGroup": "$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5",
+        "defaultValue": {
+            "sounds": []
+        },
+        "quickItems": [
+            {
+                "label": "$$:lcs('D1FFAC39529CA742C208064749961529A468').replace('%s',1)",
+                "lockable": true,
+                "valueFormula": "return fmtResource(p.sounds[0]);",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "sounds.0",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectAudioResource",
+                    "parameters": {
+                        "folder": "Audio/Sounds"
+                    }
+                },
+                "icon": {
+                    "name": "listen-01"
+                }
+            },
+            {
+                "label": "$$:lcs('D1FFAC39529CA742C208064749961529A468').replace('%s',2)",
+                "lockable": true,
+                "valueFormula": "return fmtResource(p.sounds[1]);",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "sounds.1",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectAudioResource",
+                    "parameters": {
+                        "folder": "Audio/Sounds"
+                    }
+                },
+                "icon": {
+                    "name": "listen-01"
+                }
+            },
+            {
+                "label": "$$:lcs('D1FFAC39529CA742C208064749961529A468').replace('%s',3)",
+                "lockable": true,
+                "valueFormula": "return fmtResource(p.sounds[2]);",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "sounds.2",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectAudioResource",
+                    "parameters": {
+                        "folder": "Audio/Sounds"
+                    }
+                },
+                "icon": {
+                    "name": "listen-01"
+                }
+            },
+            {
+                "label": "$$:lcs('D1FFAC39529CA742C208064749961529A468').replace('%s',4)",
+                "lockable": true,
+                "valueFormula": "return fmtResource(p.sounds[3]);",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "sounds.3",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectAudioResource",
+                    "parameters": {
+                        "folder": "Audio/Sounds"
+                    }
+                },
+                "icon": {
+                    "name": "listen-01"
+                }
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$P137",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$:lcs('D1FFAC39529CA742C208064749961529A468').replace('%s',5)",
+                                            "lockable": true,
+                                            "valueFormula": "return fmtResource(p.sounds[4]);",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "attribute": "sounds.4",
+                                            "type": "GSQPopupField",
+                                            "dialog": {
+                                                "uid": "dialog.selectAudioResource",
+                                                "parameters": {
+                                                    "folder": "Audio/Sounds"
+                                                }
+                                            },
+                                            "icon": {
+                                                "name": "listen-01"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$:lcs('D1FFAC39529CA742C208064749961529A468').replace('%s',6)",
+                                            "lockable": true,
+                                            "valueFormula": "return fmtResource(p.sounds[5]);",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "attribute": "sounds.5",
+                                            "type": "GSQPopupField",
+                                            "dialog": {
+                                                "uid": "dialog.selectAudioResource",
+                                                "parameters": {
+                                                    "folder": "Audio/Sounds"
+                                                }
+                                            },
+                                            "icon": {
+                                                "name": "listen-01"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$:lcs('D1FFAC39529CA742C208064749961529A468').replace('%s',7)",
+                                            "lockable": true,
+                                            "valueFormula": "return fmtResource(p.sounds[6]);",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "attribute": "sounds.6",
+                                            "type": "GSQPopupField",
+                                            "dialog": {
+                                                "uid": "dialog.selectAudioResource",
+                                                "parameters": {
+                                                    "folder": "Audio/Sounds"
+                                                }
+                                            },
+                                            "icon": {
+                                                "name": "listen-01"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$:lcs('D1FFAC39529CA742C208064749961529A468').replace('%s',8)",
+                                            "lockable": true,
+                                            "valueFormula": "return fmtResource(p.sounds[7]);",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "attribute": "sounds.7",
+                                            "type": "GSQPopupField",
+                                            "dialog": {
+                                                "uid": "dialog.selectAudioResource",
+                                                "parameters": {
+                                                    "folder": "Audio/Sounds"
+                                                }
+                                            },
+                                            "icon": {
+                                                "name": "listen-01"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n    \"id\": \"vn.ChangeSounds\",\n    \"displayName\": \"$$E4B34E7F130BF8440E1AE392D3806F3F7FD4\",\n    \"group\": \"$$C1953650K4FD7A4268SB298E0BEFC554D88E\",\n    \"subGroup\": \"$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5\",\n    \"defaultValue\": { \"sounds\": [] },\n    \"quickItems\": [ \n        GSQ.CONTROLS.CREATE_SYSTEM_SOUND(0),\n        GSQ.CONTROLS.CREATE_SYSTEM_SOUND(1),\n        GSQ.CONTROLS.CREATE_SYSTEM_SOUND(2),\n        GSQ.CONTROLS.CREATE_SYSTEM_SOUND(3)\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$P137\",\n                        \"rows\": [\n                            { \"items\": [GSQ.CONTROLS.CREATE_SYSTEM_SOUND(4)] },\n                            { \"items\": [GSQ.CONTROLS.CREATE_SYSTEM_SOUND(5)] },\n                            { \"items\": [GSQ.CONTROLS.CREATE_SYSTEM_SOUND(6)] },\n                            { \"items\": [GSQ.CONTROLS.CREATE_SYSTEM_SOUND(7)] }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}",
+        "name": "Change Sounds",
+        "type": "event_command",
+        "parentId": "CCC1D58AKA96AA4B0ESA33CE6CCC06CB5662",
+        "order": 12
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

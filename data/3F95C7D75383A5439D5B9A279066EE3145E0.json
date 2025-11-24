@@ -1,0 +1,150 @@
+{
+    "uid": "3F95C7D75383A5439D5B9A279066EE3145E0",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "vn.L2DParameter",
+        "displayName": "$$7B137A744F7C174D5B193598362C66DDBB84",
+        "group": "$$49C76C7F1C2EE8468B1BA2884C6A06B3C241",
+        "subGroup": "$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5",
+        "requiresThirdPartyComponents": [
+            "live2d"
+        ],
+        "defaultValue": {
+            "characterId": null,
+            "param": {
+                "name": "ParamAngleX",
+                "value": "0"
+            },
+            "duration": 0,
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId)",
+                "attribute": "characterId",
+                "identifier": "character",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQDataRecordField",
+                "dataSource": "characters"
+            },
+            {
+                "type": "GSQTextArea",
+                "multiline": false,
+                "attribute": "param.name",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "valueFormula": "return fmtStrVar(p.param.name)",
+                "label": "$$895B0B9746E9A6447909D9C6ED09EC2F5E4B"
+            },
+            {
+                "type": "GSQStepper",
+                "numberFormat": "decimal",
+                "minimum": -999999999,
+                "maximum": 999999999,
+                "attribute": "param.value",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.param.value)",
+                "label": "$$89ECAECDK4610A4BF8SA019E8444CA45FAB6"
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "Effects",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n    \"id\": \"vn.L2DParameter\",\n    \"displayName\": \"$$7B137A744F7C174D5B193598362C66DDBB84\",\n    \"group\": \"$$49C76C7F1C2EE8468B1BA2884C6A06B3C241\",\n    \"subGroup\": \"$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5\",\n    \"requiresThirdPartyComponents\": [\"live2d\"],\n    \"defaultValue\": { \"characterId\": GS.CONST.DEFAULT_RECORD_ID, \"param\": { \"name\": \"ParamAngleX\", \"value\": \"0\" }, \"duration\": 0, \"easing\": GS.CONST.DEFAULT_EASING_DATA },\n    \"quickItems\": [\n        GSQ.CONTROLS.CHARACTER_SELECTION,\n        {\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false,\n            \"attribute\": \"param.name\",\n            \"variableButton\": {\n                \"dataSource\": \"strings\"\n            },\n            \"valueFormula\": \"return fmtStrVar(p.param.name)\",\n            \"label\": \"$$895B0B9746E9A6447909D9C6ED09EC2F5E4B\"\n        },\n        {\n            \"type\": \"GSQStepper\",\n            \"numberFormat\": \"decimal\",\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n            \"attribute\": \"param.value\",\n            \"variableButton\": {\n                \"dataSource\": \"numbers\"\n            },\n            \"valueFormula\": \"return fmtNumVar(p.param.value)\",\n            \"label\": \"$$89ECAECDK4610A4BF8SA019E8444CA45FAB6\"\n        },\n        GSQ.CONTROLS.DURATION,\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"Effects\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    }\n}",
+        "name": "Live2D Parameter",
+        "type": "event_command",
+        "parentId": "AAC731FDK40F7A4B4CSA1D9E425BC2784C57",
+        "order": 7
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

@@ -1,0 +1,178 @@
+{
+    "uid": "88E1B1F3K1D1EA4B56S9E29E65724BCE1FDD",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "windowTitle": "$$67B3604CK927EA4C25S9433EDD54150ADEB0",
+        "type": "event_command",
+        "id": "vn.Choice",
+        "displayName": "$$48EDCF759A23924FAF88FFD369F83F28581B",
+        "group": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "subGroup": "$$AEB0463C403244454D5838451B328881EFFA",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [
+            {
+                "name": "return GS.ECH.textForChangeBooleanVariables(p);",
+                "id": "vn.Choice"
+            }
+        ],
+        "defaultValue": {
+            "action": {
+                "type": 0,
+                "bindValue": 0,
+                "bindValueVariable": {
+                    "scope": 0,
+                    "index": 0
+                },
+                "commonEventId": 0,
+                "label": "",
+                "switch": {
+                    "scope": 1,
+                    "index": 0
+                },
+                "scene": null
+            },
+            "text": "",
+            "label": "",
+            "enabled": 1,
+            "positionType": 0,
+            "box": {
+                "x": 0,
+                "y": 0,
+                "size": {
+                    "width": 300,
+                    "height": 50
+                }
+            },
+            "defaultChoice": 0
+        },
+        "quickItems": [
+            {
+                "label": "$$0E27AB7F753E94485608D241E74BBA1355A3",
+                "valueFormula": "return lcsg(p.text) || lcs('13AA1B746F2EF146818900D8DE031DA44380')",
+                "attribute": "text",
+                "type": "GSQTextArea",
+                "localizable": true,
+                "multiline": false
+            },
+            {
+                "label": "$$FB6FF0B60608D546469B9BC1228FDA49CE7B",
+                "type": "GSQPopupField",
+                "valueFormula": "return GS.CONST.CHOICE_ACTION_TYPES[p.action.type]",
+                "dataSource": [
+                    "$$71BC71C66ED2454FD2993602BE555D66E0FA",
+                    "$$F6DFC545KF53CA4617SA066EDA0BD2F65F02",
+                    "$$8D066C2C8D2CD34D853AF130B815C569B18E",
+                    "$$C1E5CEAE0D38F74D664B84A1E19EA9B66026"
+                ],
+                "attribute": "action.type",
+                "showItems": [
+                    [
+                        "label"
+                    ],
+                    [
+                        "commonEvent"
+                    ],
+                    [
+                        "switch"
+                    ],
+                    [
+                        "scene"
+                    ]
+                ]
+            },
+            {
+                "label": "$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C",
+                "valueFormula": "return p.action.label || lcs('DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C')",
+                "attribute": "action.label",
+                "identifier": "label",
+                "type": "GSQTextArea",
+                "multiline": false
+            },
+            {
+                "type": "GSQPopupField",
+                "label": "",
+                "attribute": "action.scene",
+                "identifier": "scene",
+                "dataAttribute": "scene",
+                "dialog": {
+                    "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                },
+                "valueFormula": "return isVar(p.action.scene) ? fmtStrVar(p.action.scene) : (p.action.scene ? fmtDocument(p.action.scene.uid) : 'None');"
+            },
+            {
+                "label": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                "type": "GSQPopupField",
+                "identifier": "switch",
+                "attribute": "action.switch",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "booleans"
+                    }
+                },
+                "valueFormula": "return fmtBoolVar(p.action.switch)"
+            },
+            {
+                "label": "",
+                "valueFormula": "return fmtRecord('commonEvents', p.action.commonEventId)",
+                "attribute": "action.commonEventId",
+                "identifier": "commonEvent",
+                "type": "GSQDataRecordField",
+                "dataSource": "commonEvents"
+            },
+            {
+                "label": "$$P31",
+                "type": "GSQPopupField",
+                "valueFormula": "return p.positionType == 0 ? lcs('3CB124F3KFE8DA4EC8SB3ADED03F6CA18763') : lcs('EDA8FFF8758AE841037B2DB13D815982AF4D')",
+                "attribute": "positionType",
+                "dataSource": [
+                    "$$3CB124F3KFE8DA4EC8SB3ADED03F6CA18763",
+                    "$$EDA8FFF8758AE841037B2DB13D815982AF4D"
+                ],
+                "showItems": [
+                    [],
+                    [
+                        "position"
+                    ]
+                ]
+            },
+            {
+                "label": "",
+                "identifier": "position",
+                "valueFormula": "return fmt('%d, %d, %d, %d', p.box.x, p.box.y, p.box.size.width, p.box.size.height)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "362CF89CKA303A4C45S8C46EF752B9CB2E43"
+                },
+                "attribute": "box",
+                "dataAttribute": "object"
+            },
+            {
+                "label": "$$P113",
+                "type": "GSQCheckBox",
+                "attribute": "defaultChoice"
+            },
+            {
+                "label": "$$575FB27FK7F1FA4BA3SBEDFE639DCC170DED",
+                "type": "GSQCheckBox",
+                "variableButton": {
+                    "dataSource": "booleans"
+                },
+                "attribute": "enabled"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"windowTitle\": \"$$67B3604CK927EA4C25S9433EDD54150ADEB0\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.Choice\",\n    \"displayName\": \"$$48EDCF759A23924FAF88FFD369F83F28581B\",\n    \"group\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"subGroup\": \"$$AEB0463C403244454D5838451B328881EFFA\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n        {\n            \"name\": \"return GS.ECH.textForChangeBooleanVariables(p);\",\n            \"id\": \"vn.Choice\"\n        }\n    ],\n    \"defaultValue\": { \"action\": GS.CONST.DEFAULT_ACTION_DATA, \"text\": \"\", \"label\": \"\", \"enabled\": 1, \"positionType\": 0, \"box\": { \"x\": 0, \"y\": 0, \"size\": { \"width\": 300, \"height\": 50 } }, \"defaultChoice\": 0 },\n    \"quickItems\": [\n        {\n            \"label\": \"$$0E27AB7F753E94485608D241E74BBA1355A3\",\n            \"valueFormula\": \"return lcsg(p.text) || lcs('13AA1B746F2EF146818900D8DE031DA44380')\",\n            \"attribute\": \"text\",\n            \"type\": \"GSQTextArea\",\n            \"localizable\": true,\n            \"multiline\": false\n        },\n        {\n            \"label\": \"$$FB6FF0B60608D546469B9BC1228FDA49CE7B\",\n            \"type\": \"GSQPopupField\",\n            \"valueFormula\": \"return GS.CONST.CHOICE_ACTION_TYPES[p.action.type]\",\n            \"dataSource\": GS.CONST.CHOICE_ACTION_TYPES,  \n            \"attribute\": \"action.type\",\n            \"showItems\": [[\"label\"], [\"commonEvent\"], [\"switch\"], [\"scene\"]]\n        },\n        {\n            \"label\": \"$$DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C\",\n            \"valueFormula\": \"return p.action.label || lcs('DE90FBDDKDCE8A4CAASA1C1E982F7D417C1C')\",\n            \"attribute\": \"action.label\",\n            \"identifier\": \"label\",\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false\n        },\n        {\n            \"type\": \"GSQPopupField\",\n            \"label\": \"\",\n            \"attribute\": \"action.scene\",\n            \"identifier\": \"scene\",\n            \"dataAttribute\": \"scene\",\n            \"dialog\": { \"uid\": \"0E620E08KED4CA4E7CS8514E5B2BF2657DA5\" },\n            \"valueFormula\": \"return isVar(p.action.scene) ? fmtStrVar(p.action.scene) : (p.action.scene ? fmtDocument(p.action.scene.uid) : 'None');\"\n        },\n        {\n            \"label\": \"$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9\",\n            \"type\": \"GSQPopupField\",\n            \"identifier\": \"switch\",\n            \"attribute\": \"action.switch\",\n            \"dialog\": { \"uid\":\"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"booleans\" } },\n            \"valueFormula\": \"return fmtBoolVar(p.action.switch)\"\n        },\n        {\n            \"label\": \"\",\n            \"valueFormula\": \"return fmtRecord('commonEvents', p.action.commonEventId)\",\n            \"attribute\": \"action.commonEventId\",\n            \"identifier\": \"commonEvent\",\n            \"type\": \"GSQDataRecordField\",\n            \"dataSource\": \"commonEvents\"\n        },\n        {\n            \"label\": \"$$P31\",\n            \"type\": \"GSQPopupField\",\n            \"valueFormula\": \"return p.positionType == 0 ? lcs('3CB124F3KFE8DA4EC8SB3ADED03F6CA18763') : lcs('EDA8FFF8758AE841037B2DB13D815982AF4D')\",\n            \"attribute\": \"positionType\",\n            \"dataSource\": [\"$$3CB124F3KFE8DA4EC8SB3ADED03F6CA18763\", \"$$EDA8FFF8758AE841037B2DB13D815982AF4D\"],\n            \"showItems\": [[], [\"position\"]]\n        },\n        {\n            \"label\": \"\",\n            \"identifier\": \"position\",\n            \"valueFormula\": \"return fmt('%d, %d, %d, %d', p.box.x, p.box.y, p.box.size.width, p.box.size.height)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"362CF89CKA303A4C45S8C46EF752B9CB2E43\" },\n            \"attribute\": \"box\",\n            \"dataAttribute\": \"object\"\n        },\n        {\n            \"label\": \"$$P113\",\n            \"type\": \"GSQCheckBox\",\n            \"attribute\": \"defaultChoice\"\n        },\n        {\n            \"label\": \"$$575FB27FK7F1FA4BA3SBEDFE639DCC170DED\",\n            \"type\": \"GSQCheckBox\",\n            \"variableButton\": { \"dataSource\": \"booleans\" },\n            \"attribute\": \"enabled\"\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Add Choice",
+        "parentId": "8CC0A736KF347A454AS899FE4F42878D912C",
+        "order": 5
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

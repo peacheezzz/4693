@@ -1,0 +1,20 @@
+{
+    "uid": "0C1D8BE8KDB63A469AS9782EB90E63254DB3",
+    "isLoaded": true,
+    "lastModificationTime": 1421095533365,
+    "items": {
+        "name": "Scene",
+        "type": "game_script",
+        "order": 23,
+        "content": "",
+        "parentId": "D3325122KACDEA4515SB731E37A42B9D779F",
+        "folder": true,
+        "compiledContent": "\n\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VzQ29udGVudCI6WyIiXX0=\n//# sourceURL=Scene_167.js"
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

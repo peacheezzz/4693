@@ -1,0 +1,22 @@
+{
+    "uid": "AD72122467BE0948243903965AF18BCA300F",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "vn.ReturnToPreviousScene",
+        "displayName": "$$2EBC3B1C1C9BD547B0385629BABB5CD2B523",
+        "group": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+        "subGroup": "$$3821D5611242A9442D597146E7D807708DE1",
+        "defaultValue": {},
+        "quickItems": [],
+        "rawContent": "{\n    \"id\": \"vn.ReturnToPreviousScene\",\n    \"displayName\": \"$$2EBC3B1C1C9BD547B0385629BABB5CD2B523\",\n    \"group\": \"$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA\",\n    \"subGroup\": \"$$3821D5611242A9442D597146E7D807708DE1\",\n    \"defaultValue\": {},\n    \"quickItems\": []\n}",
+        "name": "Previous Scene",
+        "type": "event_command",
+        "parentId": "3E57923EKA72FA43ECSB6ACE60B387513294",
+        "order": 4
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

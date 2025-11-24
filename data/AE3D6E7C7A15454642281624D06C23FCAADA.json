@@ -1,0 +1,22 @@
+{
+    "uid": "AE3D6E7C7A15454642281624D06C23FCAADA",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "vn.ShowChoices",
+        "group": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "subGroup": "$$AEB0463C403244454D5838451B328881EFFA",
+        "displayName": "$$5E24195FKCC57A42AES9B02E6452E9DF7415",
+        "defaultValue": {},
+        "quickItems": [],
+        "rawContent": "{\n    \"id\": \"vn.ShowChoices\",\n    \"group\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"subGroup\": \"$$AEB0463C403244454D5838451B328881EFFA\",\n    \"displayName\": \"$$5E24195FKCC57A42AES9B02E6452E9DF7415\",\n    \"defaultValue\": {},\n    \"quickItems\": []\n}",
+        "name": "Show Choices",
+        "type": "event_command",
+        "parentId": "8CC0A736KF347A454AS899FE4F42878D912C",
+        "order": 12
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "uid": "2F6833B1K4A87A4B4BS9F58E5A0F08E17949",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "AC1ABDCBK050BA4863S9964E3DC378247DAD",
+        "name": "Position Selection",
+        "windowTitle": "$$B30ED82745B4434C1A09FE025BC5866F2EE0",
+        "type": "custom_view",
+        "windowSize": {
+            "w": 400,
+            "h": 400
+        },
+        "bindings": [
+            {
+                "source": "local.data.picture",
+                "postTranslator": "return GS.VN.imageForAnimation(p, d.originalSourceValue.animationId)",
+                "asImageFromFolder": "Graphics/Pictures",
+                "to": "positionView",
+                "target": "cells.0"
+            }
+        ],
+        "windowSizeFormula": "var res = GS.GAME.previewResolution(); return { w: res.w + GS.CONST.WINDOW_PADDING }",
+        "sections": [
+            {
+                "name": "Position",
+                "identifier": "positionSection",
+                "noBorder": true,
+                "column": 0,
+                "items": [
+                    {
+                        "type": "GSLabel",
+                        "text": "$$2983646A2E7A344B6429830460A50DA4FB4A",
+                        "frame": [
+                            0,
+                            0
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSResourcePopupField",
+                        "folder": "Graphics/Backgrounds",
+                        "defaultValue": {
+                            "name": "$live_preview_snapshot"
+                        },
+                        "bindings": [
+                            {
+                                "source": "image",
+                                "to": "positionView",
+                                "target": "backgrounds.0"
+                            }
+                        ],
+                        "identifier": "resource",
+                        "attribute": "previewBackground",
+                        "frame": [
+                            1,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSDispositionView",
+                        "border": true,
+                        "allowCellZoom": true,
+                        "allowCellRotate": true,
+                        "identifier": "positionView",
+                        "storeMode": "single",
+                        "attribute": "position",
+                        "folder": "Graphics/Characters",
+                        "cellPropertiesDialog": {
+                            "uid": "7C0818997DE4D742260BAF889CD17188005B"
+                        },
+                        "cellCount": 1,
+                        "scaleForPreview": true,
+                        "frame": [
+                            0,
+                            2
+                        ],
+                        "sizeFormula": "return GS.GAME.previewResolution();"
+                    }
+                ]
+            }
+        ],
+        "rawContent": "{\n    \"parentId\": \"AC1ABDCBK050BA4863S9964E3DC378247DAD\",\n\"name\": \"Position Selection\",\n    \"windowTitle\": \"$$B30ED82745B4434C1A09FE025BC5866F2EE0\",\n    \"type\": \"custom_view\",\n    \"windowSize\": {\n        \"w\": 400, \"h\": 400\n    },\n    \"bindings\": [\n        { \"source\": \"local.data.picture\", \"postTranslator\": \"return GS.VN.imageForAnimation(p, d.originalSourceValue.animationId)\", \"asImageFromFolder\": \"Graphics/Pictures\", \"to\": \"positionView\", \"target\": \"cells.0\" }\n    ],\n    \"windowSizeFormula\": \"var res = GS.GAME.previewResolution(); return { w: res.w + GS.CONST.WINDOW_PADDING }\",\n    \"sections\": [\n        {\n            \"name\": \"Position\",\n            \"identifier\": \"positionSection\",\n            \"noBorder\": true,\n            \"column\": 0,\n            \"items\": [\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$2983646A2E7A344B6429830460A50DA4FB4A\",\n                    \"frame\": [0, 0],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSResourcePopupField\",\n                    \"folder\": \"Graphics/Backgrounds\",\n                    \"defaultValue\": { \"name\": \"$live_preview_snapshot\" },\n                    \"bindings\": [{ \"source\": \"image\", \"to\": \"positionView\", \"target\": \"backgrounds.0\" }],\n                    \"identifier\": \"resource\",\n                    \"attribute\": \"previewBackground\",\n                    \"frame\": [1, 0]\n                },\n                {\n                    \"type\": \"GSDispositionView\",\n                    \"border\": true,\n                    \"allowCellZoom\": true,\n                    \"allowCellRotate\": true,\n                    \"identifier\": \"positionView\",\n                    \"storeMode\": \"single\",\n                    \"attribute\": \"position\",\n                    \"folder\": \"Graphics/Characters\",\n                    \"cellPropertiesDialog\": { \"uid\": \"7C0818997DE4D742260BAF889CD17188005B\" },\n                    \"cellCount\": 1,\n                    \"scaleForPreview\": true,\n                    \"frame\": [0, 2],\n                    \"sizeFormula\": \"return GS.GAME.previewResolution();\"\n                }\n            ]\n        }\n    ]\n}",
+        "order": 13
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

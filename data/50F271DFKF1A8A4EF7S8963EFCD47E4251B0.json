@@ -1,0 +1,250 @@
+{
+    "uid": "50F271DFKF1A8A4EF7S8963EFCD47E4251B0",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "windowTitle": "$$0B154C8E1B3B164154697313084074360E97",
+        "windowSize": {
+            "w": 600,
+            "h": 400
+        },
+        "sections": [
+            {
+                "include": "22E0BB326702B84AF95BEAC0E5D75E1A9858"
+            },
+            {
+                "name": "$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5",
+                "identifier": "positionSection",
+                "noBorder": false,
+                "column": 0,
+                "items": [
+                    {
+                        "type": "GSRadioButton",
+                        "identifier": "none",
+                        "defaultValue": true,
+                        "text": "$$D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826",
+                        "attribute": "action",
+                        "value": 0,
+                        "frame": [
+                            0,
+                            0
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSRadioButton",
+                        "identifier": "jumpTo",
+                        "text": "$$A235787977C733443B3A4264217158BCAB70",
+                        "attribute": "action",
+                        "enableItems": [
+                            "label"
+                        ],
+                        "value": 1,
+                        "frame": [
+                            0,
+                            1
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSTextField",
+                        "attribute": "label",
+                        "identifier": "label",
+                        "frame": [
+                            1,
+                            1
+                        ]
+                    },
+                    {
+                        "type": "GSRadioButton",
+                        "identifier": "call",
+                        "enableItems": [
+                            "commonEvent"
+                        ],
+                        "text": "$$463E8DBE005DE44F156946A2C4FE885D13DE",
+                        "value": 2,
+                        "attribute": "action",
+                        "frame": [
+                            0,
+                            2
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSDataRecordField",
+                        "attribute": "commonEventId",
+                        "identifier": "commonEvent",
+                        "dataSource": "commonEvents",
+                        "frame": [
+                            1,
+                            2
+                        ]
+                    },
+                    {
+                        "type": "GSCheckBox",
+                        "identifier": "bindToSwitch",
+                        "enableItems": [
+                            "switch"
+                        ],
+                        "text": "$$6FB6C82D3E132340C06B35819EDFB2C3E873",
+                        "attribute": "bindToSwitch",
+                        "frame": [
+                            0,
+                            3
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSVariablePopupField",
+                        "identifier": "switch",
+                        "dataSource": "booleans",
+                        "attribute": "switch",
+                        "frame": [
+                            1,
+                            3
+                        ]
+                    },
+                    {
+                        "type": "GSCheckBox",
+                        "identifier": "bindEnabledState",
+                        "enableItems": [
+                            "enabledSwitch"
+                        ],
+                        "text": "$$794FD5AD8B7BF44947489C577451F303ACB3",
+                        "attribute": "bindEnabledState",
+                        "frame": [
+                            0,
+                            4
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSVariablePopupField",
+                        "identifier": "enabledSwitch",
+                        "dataSource": "booleans",
+                        "attribute": "enabledSwitch",
+                        "frame": [
+                            1,
+                            4
+                        ]
+                    },
+                    {
+                        "type": "GSCheckBox",
+                        "identifier": "bindValueTo",
+                        "enableItems": [
+                            "bindValue",
+                            "bindValueVariable"
+                        ],
+                        "text": "$$AE4EB76B4C65D849B14886B2CEC9D4DA5523",
+                        "attribute": "bindValueTo",
+                        "frame": [
+                            0,
+                            5
+                        ],
+                        "group": "labels"
+                    },
+                    {
+                        "type": "GSStepper",
+                        "identifier": "bindValue",
+                        "defaultValue": 0,
+                        "maximum": 999999999,
+                        "attribute": "bindValue",
+                        "frame": [
+                            1,
+                            5
+                        ]
+                    },
+                    {
+                        "type": "GSLabel",
+                        "identifier": "bindValueToLabel",
+                        "text": "$$EE07B2825823B5485849F2570AC946F075DD",
+                        "frame": [
+                            2,
+                            5
+                        ],
+                        "group": "toLabel"
+                    },
+                    {
+                        "type": "GSVariablePopupField",
+                        "identifier": "bindValueVariable",
+                        "dataSource": "numbers",
+                        "attribute": "bindValueVariable",
+                        "frame": [
+                            3,
+                            5
+                        ]
+                    },
+                    {
+                        "type": "GSCheckBox",
+                        "identifier": "finish",
+                        "text": "$$B33C09F54C76014F67881408BA247E115D28",
+                        "attribute": "finish",
+                        "frame": [
+                            0,
+                            6
+                        ],
+                        "group": "labels"
+                    }
+                ]
+            },
+            {
+                "name": "$$8FDFEA30K0102A46B5S8271EE34632EFFFF4",
+                "noBorder": false,
+                "column": 0,
+                "items": [
+                    {
+                        "type": "GSLabel",
+                        "group": "soundlabels",
+                        "text": "$$2939776C556038493C2BEC69652EDF752D35",
+                        "attribute": "action",
+                        "value": 0,
+                        "frame": [
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSResourcePopupField",
+                        "resourceType": "audio",
+                        "folder": "Audio/Sounds",
+                        "attribute": "onClickSound",
+                        "frame": [
+                            1,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSLabel",
+                        "group": "soundlabels",
+                        "text": "$$8A3B36D43160F14DE17BAA35EB2CCB56E5CE",
+                        "attribute": "action",
+                        "value": 0,
+                        "frame": [
+                            0,
+                            1
+                        ]
+                    },
+                    {
+                        "type": "GSResourcePopupField",
+                        "resourceType": "audio",
+                        "folder": "Audio/Sounds",
+                        "attribute": "onHoverSound",
+                        "frame": [
+                            1,
+                            1
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rawContent": "{\n    \"windowTitle\": \"$$0B154C8E1B3B164154697313084074360E97\",\n    \"windowSize\": {\n        \"w\": 600, \"h\": 400\n    },\n    \"sections\": [\n        { \"include\": \"22E0BB326702B84AF95BEAC0E5D75E1A9858\" },\n        {\n            \"name\": \"$$9B8BB0A1KF746A4031S9AABE92F5A3AB5ED5\",\n            \"identifier\": \"positionSection\",\n            \"noBorder\": false,\n            \"column\": 0,\n            \"items\": [\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"identifier\": \"none\",\n                    \"defaultValue\": true,\n                    \"text\": \"$$D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826\",\n                    \"attribute\": \"action\",\n                    \"value\": 0,\n                    \"frame\": [0, 0],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"identifier\": \"jumpTo\",\n                    \"text\": \"$$A235787977C733443B3A4264217158BCAB70\",\n                    \"attribute\": \"action\",\n                    \"enableItems\": [\"label\"],\n                    \"value\": 1,\n                    \"frame\": [0, 1],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSTextField\",\n                    \"attribute\": \"label\",\n                    \"identifier\": \"label\",\n                    \"frame\": [1, 1]\n                },\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"identifier\": \"call\",\n                    \"enableItems\": [\"commonEvent\"],\n                    \"text\": \"$$463E8DBE005DE44F156946A2C4FE885D13DE\",\n                    \"value\": 2,\n                    \"attribute\": \"action\",\n                    \"frame\": [0, 2],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSDataRecordField\",\n                    \"attribute\": \"commonEventId\",\n                    \"identifier\": \"commonEvent\",\n                    \"dataSource\": \"commonEvents\",\n                    \"frame\": [1, 2]\n                },\n                {\n                    \"type\": \"GSCheckBox\",\n                    \"identifier\": \"bindToSwitch\",\n                    \"enableItems\": [\"switch\"],\n                    \"text\": \"$$6FB6C82D3E132340C06B35819EDFB2C3E873\",\n                    \"attribute\": \"bindToSwitch\",\n                    \"frame\": [0, 3],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSVariablePopupField\",\n                    \"identifier\": \"switch\",\n                    \"dataSource\": \"booleans\",\n                    \"attribute\": \"switch\",\n                    \"frame\": [1, 3]\n                },\n                {\n                    \"type\": \"GSCheckBox\",\n                    \"identifier\": \"bindEnabledState\",\n                    \"enableItems\": [\"enabledSwitch\"],\n                    \"text\": \"$$794FD5AD8B7BF44947489C577451F303ACB3\",\n                    \"attribute\": \"bindEnabledState\",\n                    \"frame\": [0, 4],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSVariablePopupField\",\n                    \"identifier\": \"enabledSwitch\",\n                    \"dataSource\": \"booleans\",\n                    \"attribute\": \"enabledSwitch\",\n                    \"frame\": [1, 4]\n                },\n                {\n                    \"type\": \"GSCheckBox\",\n                    \"identifier\": \"bindValueTo\",\n                    \"enableItems\": [\"bindValue\",\"bindValueVariable\"],\n                    \"text\": \"$$AE4EB76B4C65D849B14886B2CEC9D4DA5523\",\n                    \"attribute\": \"bindValueTo\",\n                    \"frame\": [0, 5],\n                    \"group\": \"labels\"\n                },\n                {\n                    \"type\": \"GSStepper\",\n                    \"identifier\": \"bindValue\",\n                    \"defaultValue\": 0,\n                    \"minimum\": GS.CONST.MIN_NUMBER_VALUE,\n                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                    \"attribute\": \"bindValue\",\n                    \"frame\": [1, 5]\n                },\n                {\n                    \"type\": \"GSLabel\",\n                    \"identifier\": \"bindValueToLabel\",\n                    \"text\": \"$$EE07B2825823B5485849F2570AC946F075DD\",\n                    \"frame\": [2, 5],\n                    \"group\": \"toLabel\"\n                },\n                {\n                    \"type\": \"GSVariablePopupField\",\n                    \"identifier\": \"bindValueVariable\",\n                    \"dataSource\": \"numbers\",\n                    \"attribute\": \"bindValueVariable\",\n                    \"frame\": [3, 5]\n                },\n                {\n                    \"type\": \"GSCheckBox\",\n                    \"identifier\": \"finish\",\n                    \"text\": \"$$B33C09F54C76014F67881408BA247E115D28\",\n                    \"attribute\": \"finish\",\n                    \"frame\": [0, 6],\n                    \"group\": \"labels\"\n                }\n            ]\n        },\n        {\n            \"name\": \"$$8FDFEA30K0102A46B5S8271EE34632EFFFF4\",\n            \"noBorder\": false,\n            \"column\": 0,\n            \"items\": [\n                {\n                    \"type\": \"GSLabel\",\n                    \"group\": \"soundlabels\",\n                    \"text\": \"$$2939776C556038493C2BEC69652EDF752D35\",\n                    \"attribute\": \"action\",\n                    \"value\": 0,\n                    \"frame\": [0, 0]\n                },\n                {\n                    \"type\": \"GSResourcePopupField\",\n                    \"resourceType\": \"audio\",\n                    \"folder\": \"Audio/Sounds\",\n                    \"attribute\": \"onClickSound\",\n                    \"frame\": [1, 0]\n                },\n                {\n                    \"type\": \"GSLabel\",\n                    \"group\": \"soundlabels\",\n                    \"text\": \"$$8A3B36D43160F14DE17BAA35EB2CCB56E5CE\",\n                    \"attribute\": \"action\",\n                    \"value\": 0,\n                    \"frame\": [0, 1]\n                },\n                {\n                    \"type\": \"GSResourcePopupField\",\n                    \"resourceType\": \"audio\",\n                    \"folder\": \"Audio/Sounds\",\n                    \"attribute\": \"onHoverSound\",\n                    \"frame\": [1, 1]\n                }\n            ]\n        }\n    ]\n}",
+        "name": "Image Map Hotspot Properties",
+        "type": "custom_view",
+        "parentId": "AC1ABDCBK050BA4863S9964E3DC378247DAD",
+        "order": 17
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

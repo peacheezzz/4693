@@ -1,0 +1,159 @@
+{
+    "uid": "E625F3E0K1852A415ASB941E3197B0FED575",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "622D180FKC6D9A4243S8FCBEA38FBF82865C",
+        "displayName": "$$D431AFA331DB3549D52AA2750F2E79F233CC",
+        "windowTitle": "$$P24",
+        "type": "event_command",
+        "title": "$$P24",
+        "id": "gs.MoveVideoPath",
+        "group": "$$ADD23624771072411D3A82987C5BE70C8582",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "windowSize": {
+            "w": 400
+        },
+        "defaultValue": {
+            "numberDomain": "com.degica.vnm.default",
+            "number": 0,
+            "path": {
+                "data": [],
+                "effects": {
+                    "data": []
+                }
+            },
+            "loopType": 0,
+            "duration": 0,
+            "waitForCompletion": 0,
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                "identifier": "number",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "number",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$66679F92339DD144E21BBAF584980BF8105A",
+                "valueFormula": "return p.path.data.length > 0 ? p.path.data.length + ' ' + lcs('505531C2919DF248B058F6C4664249FF5608') : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826')",
+                "type": "GSQPopupField",
+                "attribute": "path",
+                "identifier": "path",
+                "dialog": {
+                    "uid": "3BFBF9E4KD37BA4393S8307E28A355F0A633"
+                }
+            },
+            {
+                "label": "$$ED7B5BF9KDE84A4CE8S9308E872A21F2D766",
+                "valueFormula": "return GS.CONST.PATH_LOOP_TYPES[p.loopType]",
+                "type": "GSQPopupField",
+                "attribute": "loopType",
+                "identifier": "loopType",
+                "dataSource": [
+                    "$$D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826",
+                    "$$P155",
+                    "$$9CD9DE05509D03480C1886A7D53B523D533C"
+                ]
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "nodes": [],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$D431AFA331DB3549D52AA2750F2E79F233CC\",\n    \"windowTitle\": \"$$P24\",\n    \"type\": \"event_command\",\n    \"title\": \"$$P24\",\n    \"id\": \"gs.MoveVideoPath\",\n    \"group\": \"$$ADD23624771072411D3A82987C5BE70C8582\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"defaultValue\": { \"numberDomain\": GS.CONST.DEFAULT_DOMAIN, \"number\": 0, \"path\": { \"data\": [], \"effects\": { \"data\": [] } }, \"loopType\": 0, \"duration\": 0, \"waitForCompletion\": 0, \"easing\": { \"type\": 0, \"inOut\": 1 }},\n    \"quickItems\": [\n        GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER,\n        GSQ.CONTROLS.GRAPHIC_PATH_SELECTION,\n        GSQ.CONTROLS.GRAPHIC_PATH_LOOP_TYPE,\n        GSQ.CONTROLS.DURATION,\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING\n                        ]\n                    } \n                ]\n            }\n        ]\n    },\n    \"nodes\": [\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Move Movie along Path",
+        "order": 11
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

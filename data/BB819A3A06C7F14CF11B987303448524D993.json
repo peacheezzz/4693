@@ -1,0 +1,81 @@
+{
+    "uid": "BB819A3A06C7F14CF11B987303448524D993",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "gs.ListJoin",
+        "displayName": "$$4306212A555084449B88E746B758FB1394BD",
+        "group": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+        "subGroup": "$$1F61FF138D26A248296A90D6385BA256EF31",
+        "defaultValue": {
+            "separator": ",",
+            "order": 0,
+            "listVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+                "valueFormula": "return fmtListVar(p.listVariable)",
+                "attribute": "listVariable",
+                "identifier": "list",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            },
+            {
+                "type": "GSQPopupField",
+                "valueFormula": "return p.order == 0 ? lcs('P155') : lcs('9CD9DE05509D03480C1886A7D53B523D533C')",
+                "label": "$$5A8422E939F5344457591BA79EB9EA7E1492",
+                "attribute": "order",
+                "dataSource": [
+                    "$$P155",
+                    "$$9CD9DE05509D03480C1886A7D53B523D533C"
+                ]
+            },
+            {
+                "type": "GSQPopupField",
+                "valueFormula": "return fmtStrVar(p.targetVariable)",
+                "label": "$$279A870082643340194815582532E3A95B7F",
+                "attribute": "targetVariable",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                }
+            },
+            {
+                "type": "GSQTextArea",
+                "multiline": false,
+                "valueFormula": "return fmtStrVar(p.separator)",
+                "label": "$$ABA86DA776CB164D894A994661709D6E46A0",
+                "attribute": "separator",
+                "variableButton": {
+                    "dataSource": "strings"
+                }
+            }
+        ],
+        "rawContent": "{\n    \"id\": \"gs.ListJoin\",\n    \"displayName\": \"$$4306212A555084449B88E746B758FB1394BD\",\n    \"group\": \"$$C9C23A6E5A74F84FE07940677A0C2E37E13D\",\n    \"subGroup\": \"$$1F61FF138D26A248296A90D6385BA256EF31\",\n    \"defaultValue\": { \"separator\": \",\", \"order\": 0, \"listVariable\": GS.CONST.DEFAULT_VARIABLE_DATA, \"targetVariable\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"quickItems\": [\n        GSQ.CONTROLS.LIST_VARIABLE_SELECTION,\n        {\n            \"type\": \"GSQPopupField\",\n            \"valueFormula\": \"return p.order == 0 ? lcs('P155') : lcs('9CD9DE05509D03480C1886A7D53B523D533C')\",\n            \"label\": \"$$5A8422E939F5344457591BA79EB9EA7E1492\",\n            \"attribute\": \"order\",\n            \"dataSource\": [\"$$P155\", \"$$9CD9DE05509D03480C1886A7D53B523D533C\"]\n        },\n        {\n            \"type\": \"GSQPopupField\",\n            \"valueFormula\": \"return fmtStrVar(p.targetVariable)\",\n            \"label\": \"$$279A870082643340194815582532E3A95B7F\",\n            \"attribute\": \"targetVariable\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" }}\n        },\n        {\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false,\n            \"valueFormula\": \"return fmtStrVar(p.separator)\",\n            \"label\": \"$$ABA86DA776CB164D894A994661709D6E46A0\",\n            \"attribute\": \"separator\",\n            \"variableButton\": { \"dataSource\": \"strings\" }\n        }\n    ],\n}",
+        "name": "Join List",
+        "type": "event_command",
+        "parentId": "39568CDEK37BDA4AF4SB2BCEC53E3EBBE419",
+        "order": 13
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

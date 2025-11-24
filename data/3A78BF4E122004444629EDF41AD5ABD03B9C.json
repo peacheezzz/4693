@@ -1,0 +1,16 @@
+{
+    "uid": "3A78BF4E122004444629EDF41AD5ABD03B9C",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "Resource Processors",
+        "type": "document_folder",
+        "parentId": "DB2D3154KEE4EA43BCSBC59ED3B462A07998",
+        "rawContent": "{}",
+        "order": 4
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "uid": "07DD71B152D1439F",
+    "isLoaded": true,
+    "lastModificationTime": 1424023478332,
+    "items": {
+        "displayName": "$$P115",
+        "id": "gs.Comment",
+        "group": "$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24",
+        "color": [
+            255,
+            0,
+            255,
+            255
+        ],
+        "defaultValue": {
+            "text": ""
+        },
+        "fullSizeItems": [
+            {
+                "type": "GSQTextArea",
+                "attribute": "text",
+                "valueFormula": "return p.text || lcs('BED760B180FC484984185B630BB9FA2D1118');"
+            }
+        ],
+        "rawContent": "{\n    \"displayName\": \"$$P115\",\n    \"id\": \"gs.Comment\",\n    \"group\": \"$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24\",\n    \"color\": [255, 0, 255, 255],\n    \"defaultValue\": { \"text\": \"\" },\n    \"fullSizeItems\": [{\n        \"type\": \"GSQTextArea\",\n        \"attribute\": \"text\",\n        \"valueFormula\": \"return p.text || lcs('BED760B180FC484984185B630BB9FA2D1118');\"\n    }]\n}",
+        "name": "Comment",
+        "type": "event_command",
+        "parentId": "97163D89K8F9DA45ADSA51CE47DE4ECE311C",
+        "order": 2
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

@@ -1,0 +1,454 @@
+{
+    "uid": "9FEA5FB3K5124A4E1FS93F9EBD96C721FA7B",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "AAC731FDK40F7A4B4CSA1D9E425BC2784C57",
+        "displayName": "$$870E05A785AB46486F4977A3EB2129E1CA7E",
+        "windowTitle": "Join Scene",
+        "requiresThirdPartyComponents": [
+            "live2d"
+        ],
+        "title": "Join Scene",
+        "type": "event_command",
+        "id": "vn.L2DJoinScene",
+        "group": "$$49C76C7F1C2EE8468B1BA2884C6A06B3C241",
+        "subGroup": "$$9E1A5407531CC141D66911387F0B53C14B4F",
+        "color": "orange",
+        "columns": [
+            -1,
+            250
+        ],
+        "nodes": [],
+        "defaultValue": {
+            "viewport": {
+                "type": "scene"
+            },
+            "predefinedPositionId": 0,
+            "characterId": null,
+            "model": null,
+            "zOrder": 0,
+            "origin": 0,
+            "blendMode": 0,
+            "positionType": 0,
+            "motionBlur": {
+                "enabled": 0,
+                "delay": 2,
+                "opacity": 100,
+                "dissolveSpeed": 3
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "zoom": {
+                    "x": 1,
+                    "y": 1,
+                    "d": 1
+                }
+            },
+            "animation": {
+                "type": 1,
+                "movement": 0,
+                "mask": {
+                    "graphic": null,
+                    "vague": 30
+                }
+            },
+            "easing": {
+                "type": 0,
+                "inOut": 0
+            },
+            "duration": 0,
+            "waitForCompletion": 0
+        },
+        "inlineImage": {
+            "formula": "return !GSIsNull(p.expressionId) ? GS.VN.resourceForExpression(p.expressionId) : GS.VN.resourceForCharacter(p.characterId)",
+            "folder": "Graphics/Characters"
+        },
+        "quickItems": [
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId)",
+                "attribute": "characterId",
+                "identifier": "character",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQDataRecordField",
+                "dataSource": "characters"
+            },
+            {
+                "label": "$$82F2307A8F685345E51BB749FF2D32C44050",
+                "valueFormula": "return fmtResource(p.model);",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "model",
+                "identifier": "model",
+                "type": "GSQPopupField",
+                "dataAttribute": "resource",
+                "dialog": {
+                    "uid": "dialog.selectGraphicResource",
+                    "parameters": {
+                        "folder": "Live2D"
+                    }
+                }
+            },
+            {
+                "label": "$$P31",
+                "type": "GSQPopupField",
+                "valueFormula": "return GS.CONST.GRAPHIC_POSITION_TYPES[p.positionType]",
+                "attribute": "positionType",
+                "dataSource": [
+                    "$$52E2B8291E58F74BCA0BCAB906C31A14C8E8",
+                    "$$EDA8FFF8758AE841037B2DB13D815982AF4D",
+                    "$$7975782B2E59994D107B13C1801F5A299E12"
+                ],
+                "showItems": [
+                    [
+                        "predefinedPositionId"
+                    ],
+                    [
+                        "position"
+                    ],
+                    [
+                        "x",
+                        "y"
+                    ]
+                ]
+            },
+            {
+                "label": "",
+                "valueFormula": "return p.position.x + ', ' + p.position.y;",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "5CF7F076K8348A4EC6S84F9E9CACCBA5AC09",
+                    "bindings": [
+                        {
+                            "source": "model",
+                            "to": "local",
+                            "target": "data.resource"
+                        }
+                    ]
+                },
+                "attribute": "position",
+                "dataAttributes": [
+                    "position",
+                    "previewBackground"
+                ]
+            },
+            {
+                "label": "",
+                "valueFormula": "return GS.VN.textForPredefinedObjectPosition(p.predefinedPositionId);",
+                "type": "GSQPopupField",
+                "dataSource": {
+                    "sourceFormula": "return GS.VN.predefinedObjectPositionList(undefined)"
+                },
+                "attribute": "predefinedPositionId"
+            },
+            {
+                "label": "X",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "identifier": "x",
+                "attribute": "position.x",
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "Y",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "identifier": "y",
+                "attribute": "position.y",
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999,
+                "lockable": true
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "attribute": "animation.type",
+                                            "width": "50%",
+                                            "lockable": true,
+                                            "label": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+                                            "dataSource": [
+                                                "$$2683C0C34985474F713910185340D35D3108",
+                                                "$$P177",
+                                                "$$000ADEF46265D146AF5893C3E8B9A840397F"
+                                            ],
+                                            "valueFormula": "return GS.CONST.APPEARANCE_ANIMATION_TYPES[p.animation.type]",
+                                            "showItems": [
+                                                [
+                                                    "animation_movement"
+                                                ],
+                                                [],
+                                                [
+                                                    "animation_maskFile",
+                                                    "animation_maskVague"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "identifier": "animation_movement",
+                                            "dataSource": [
+                                                "$$DA8B51B3KB92CA46EFSB9A9EDF4D4C81A9B8",
+                                                "$$0E468336KEA04A497CS8813E5A7FA8B85AF5",
+                                                "$$927A7043KEE05A4A52SA7C9E418BAF35232F",
+                                                "$$EB59D1CFK6206A4F2BSB258EE66915195A6D"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "animation.type"
+                                            ],
+                                            "attribute": "animation.movement",
+                                            "valueFormula": "return GS.CONST.MOVE_ANIMATION_TYPES[p.animation.movement]"
+                                        },
+                                        {
+                                            "label": "$$P61",
+                                            "valueFormula": "return fmtResource(p.animation.mask.graphic);",
+                                            "attribute": "animation.mask.graphic",
+                                            "variableButton": {
+                                                "dataSource": "strings"
+                                            },
+                                            "identifier": "animation_maskFile",
+                                            "unlockItems": [
+                                                "animation.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "dataAttribute": "resource",
+                                            "dialog": {
+                                                "uid": "dialog.selectGraphicResource",
+                                                "parameters": {
+                                                    "folder": "Graphics/Masks"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "label": "$$A20F74E20798454C200A83253DEACB863B87",
+                                            "identifier": "animation_maskVague",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "unlockItems": [
+                                                "animation.type"
+                                            ],
+                                            "type": "GSQStepper",
+                                            "attribute": "animation.mask.vague",
+                                            "minimum": 0,
+                                            "maximum": 255
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$39F3501D5398B243109AC4E68EA163812B38",
+                                            "lockable": true,
+                                            "type": "GSQCheckBox",
+                                            "attribute": "motionBlur.enabled",
+                                            "valueFormula": "return GS.CONST.YES_NO[p.motionBlur.enabled]",
+                                            "enableItems": [
+                                                "motionBlur.delay",
+                                                "motionBlur.dissolveSpeed",
+                                                "motionBlur.opacity"
+                                            ]
+                                        },
+                                        {
+                                            "label": "$$4DAD1BF70B09254B8C7898E012FD7FAF15CC",
+                                            "type": "GSQStepper",
+                                            "attribute": "motionBlur.delay",
+                                            "minimum": 1,
+                                            "maximum": 1000
+                                        },
+                                        {
+                                            "label": "$$BE21611B4A0B334CE4092F34651F62808466",
+                                            "type": "GSQStepper",
+                                            "attribute": "motionBlur.dissolveSpeed",
+                                            "minimum": 1,
+                                            "maximum": 255
+                                        },
+                                        {
+                                            "label": "$$P176",
+                                            "type": "GSQStepper",
+                                            "attribute": "motionBlur.opacity",
+                                            "minimum": 1,
+                                            "maximum": 255
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "$$9E1A5407531CC141D66911387F0B53C14B4F",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$376D9476064BA24775187795894CD3009687",
+                                            "type": "GSQPopupField",
+                                            "valueFormula": "return p.origin == 0 ? lcs('P29') : lcs('P30')",
+                                            "attribute": "origin",
+                                            "dataSource": [
+                                                "$$P29",
+                                                "$$P30"
+                                            ],
+                                            "width": "50%",
+                                            "lockable": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$A4972EEB1026104D6B2BC9F4B0493B3D8B5F",
+                                            "type": "GSQStepper",
+                                            "attribute": "zOrder",
+                                            "minimum": -999999999,
+                                            "maximum": 999999999,
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "defaultValue": 0,
+                                            "width": "50%",
+                                            "lockable": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$6E6A55971BE4664E2D89AC97DED89BC4DF08",
+                                            "type": "GSQPopupField",
+                                            "attribute": "blendMode",
+                                            "dataSource": [
+                                                "$$P155",
+                                                "$$P156",
+                                                "$$P157"
+                                            ],
+                                            "valueFormula": "return GS.CONST.BLEND_MODES[p.blendMode]",
+                                            "variableButton": {
+                                                "dataSource": "numbers"
+                                            },
+                                            "defaultValue": 0,
+                                            "lockable": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "type": "GSQPopupField",
+                                            "label": "$$799D25F96B14034F6D393B75F6A724949693",
+                                            "valueFormula": "return GS.CONST.VIEWPORT_TYPES[p.viewport.type].name",
+                                            "dataSource": [
+                                                {
+                                                    "name": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+                                                    "alias": "scene"
+                                                },
+                                                {
+                                                    "name": "$$FC1FC2A18D7D32424E7A0AB0BDCED147ED92",
+                                                    "alias": "ui"
+                                                }
+                                            ],
+                                            "attribute": "viewport.type",
+                                            "lockable": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$870E05A785AB46486F4977A3EB2129E1CA7E\",\n    \"windowTitle\": \"Join Scene\",\n    \"requiresThirdPartyComponents\": [\"live2d\"],\n    \"title\": \"Join Scene\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.L2DJoinScene\",\n    \"group\": \"$$49C76C7F1C2EE8468B1BA2884C6A06B3C241\",\n    \"subGroup\": \"$$9E1A5407531CC141D66911387F0B53C14B4F\",\n    \"color\": \"orange\",\n    \"columns\": [-1, 250],\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"viewport\": GS.CONST.DEFAULT_VIEWPORT_DATA, \"predefinedPositionId\": 0, \"characterId\": GS.CONST.DEFAULT_RECORD_ID, \"model\": null, \"zOrder\": 0, \"origin\": 0, \"blendMode\": 0, \"positionType\": 0, \"motionBlur\": GS.CONST.DEFAULT_MOTION_BLUR_DATA, \"position\": { \"x\": 0, \"y\": 0, \"zoom\": { \"x\": 1, \"y\": 1, \"d\": 1 } }, \"animation\": GS.CONST.DEFAULT_APPEARANCE_ANIMATION_DATA, \"easing\": { \"type\": 0, \"inOut\": 0 }, \"duration\": 0, \"waitForCompletion\": 0},\n    \"inlineImage\": { \n        \"formula\": \"return !GSIsNull(p.expressionId) ? GS.VN.resourceForExpression(p.expressionId) : GS.VN.resourceForCharacter(p.characterId)\", \n        \"folder\": \"Graphics/Characters\"\n    },\n    \"quickItems\": [\n        GSQ.CONTROLS.CHARACTER_SELECTION,\n        {\n            \"label\": \"$$82F2307A8F685345E51BB749FF2D32C44050\",\n            \"valueFormula\": \"return fmtResource(p.model);\",\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"attribute\": \"model\",\n            \"identifier\": \"model\",\n            \"type\": \"GSQPopupField\",\n            \"dataAttribute\": \"resource\",\n            \"dialog\": { \"uid\": \"dialog.selectGraphicResource\", \"parameters\": { \"folder\": \"Live2D\" }}\n        },\n        GSQ.CONTROLS.GRAPHIC_POSITION_TYPE,\n        {\n            \"label\": \"\",\n            \"valueFormula\": \"return p.position.x + ', ' + p.position.y;\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"5CF7F076K8348A4EC6S84F9E9CACCBA5AC09\", \"bindings\": [{ \"source\": \"model\", \"to\": \"local\", \"target\": \"data.resource\" }] },\n            \"attribute\": \"position\",\n            \"dataAttributes\": [\"position\", \"previewBackground\"]\n        },\n        GSQ.CONTROLS.CREATE_PREDEFINED_OBJECT_POSITION(),\n        GSQ.CONTROLS.GRAPHIC_POSITION_X,\n        GSQ.CONTROLS.GRAPHIC_POSITION_Y,\n        Object.override(GSQ.CONTROLS.DURATION, {\"lockable\": true}),\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n        \n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING,\n                            GSQ.ROWS.APPEARANCE_ANIMATION,\n                            GSQ.ROWS.MOTION_BLUR\n                        ]\n                    },\n                    {\n                        \"label\": \"$$9E1A5407531CC141D66911387F0B53C14B4F\",\n                        \"rows\": [\n                            { \"items\": [Object.override(GSQ.CONTROLS.GRAPHIC_ORIGIN, {\"width\": \"50%\", \"lockable\": true })] },\n                            { \"items\": [Object.override(GSQ.CONTROLS.GRAPHIC_Z_ORDER, {\"width\": \"50%\", \"lockable\": true })] },\n                            { \"items\": [Object.override(GSQ.CONTROLS.GRAPHIC_BLEND_MODE, { \"lockable\": true })] },\n                            GSQ.ROWS.VIEWPORT\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    },\n    \"sections\": [\n    ]\n}",
+        "name": "Live2D Join Scene",
+        "order": 0
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

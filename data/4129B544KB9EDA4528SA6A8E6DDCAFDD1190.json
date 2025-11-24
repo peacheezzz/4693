@@ -1,0 +1,228 @@
+{
+    "uid": "4129B544KB9EDA4528SA6A8E6DDCAFDD1190",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "0FEBB76EK401BA41A4S99B1E2346601143E2",
+        "displayName": "$$76B1881439284643832A615111AAE7FBF08D",
+        "windowTitle": "Picture Effect",
+        "type": "event_command",
+        "title": "$$P22",
+        "id": "gs.PictureEffect",
+        "group": "$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [
+            {
+                "name": "return GS.ECH.textForErasePicture(p);",
+                "id": "gs.ErasePicture"
+            }
+        ],
+        "defaultValue": {
+            "numberDomain": "com.degica.vnm.default",
+            "number": 0,
+            "duration": 0,
+            "pixelate": {
+                "enabled": false,
+                "size": {
+                    "width": 10,
+                    "height": 10
+                }
+            },
+            "blur": {
+                "enabled": false,
+                "power": 0
+            },
+            "wobble": {
+                "power": 10,
+                "speed": 10,
+                "orientation": 0
+            },
+            "waitForCompletion": 0,
+            "type": 0,
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                "identifier": "number",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "number",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "label": "$$BD058CE5KA3B8A41C6S9B32ECEC674F8EC05",
+                "dataSource": [
+                    "$$ED0E4CA1976D854C5F8AC810864A28AF3E22",
+                    "$$DA61190939963742963810216A7BCE496C1B",
+                    "$$5D13814F17C08347CC3A8E6035F066387EDF"
+                ],
+                "valueFormula": "return GS.CONST.GRAPHIC_EFFECTS[p.type]",
+                "attribute": "type",
+                "showItems": [
+                    [
+                        "wobble.power",
+                        "wobble.speed",
+                        "wobble.orientation"
+                    ],
+                    [
+                        "blur.power"
+                    ],
+                    [
+                        "pixelate.size.width",
+                        "pixelate.size.height"
+                    ]
+                ]
+            },
+            {
+                "type": "GSQStepper",
+                "label": "$$130D916E55CD9841721804F4B47B6D8C3A5E",
+                "minimum": 0,
+                "maximum": 1000,
+                "identifier": "blur.power",
+                "attribute": "blur.power"
+            },
+            {
+                "type": "GSQStepper",
+                "label": "$$F298E912KB3FAA4D38S8699ED37655BCFEF0",
+                "minimum": 0,
+                "maximum": 999999999,
+                "identifier": "pixelate.size.width",
+                "attribute": "pixelate.size.width"
+            },
+            {
+                "type": "GSQStepper",
+                "label": "$$6AD32F89KCC0CA4C25S8900E0FA08CE71324",
+                "minimum": 0,
+                "maximum": 999999999,
+                "identifier": "pixelate.size.height",
+                "attribute": "pixelate.size.height"
+            },
+            {
+                "type": "GSQStepper",
+                "label": "$$130D916E55CD9841721804F4B47B6D8C3A5E",
+                "minimum": 0,
+                "maximum": 100,
+                "identifier": "wobble.power",
+                "attribute": "wobble.power"
+            },
+            {
+                "type": "GSQStepper",
+                "label": "$$D61D429627E27449B86881C3DE0446316091",
+                "minimum": 0,
+                "maximum": 100,
+                "attribute": "wobble.speed",
+                "identifier": "wobble.speed"
+            },
+            {
+                "type": "GSQPopupField",
+                "label": "$$D134DB1755C3394F602AAC137CA7CA1766DF",
+                "dataSource": [
+                    "$$CE9AC1AEK0702A45ECS8A94E83C19094559E",
+                    "$$648DC3D2KD5F6A42B2S8132ED75014FA6D5B",
+                    "$$FF57EDE2K4355A45C6S8E0CE5D5BAF017110"
+                ],
+                "valueFormula": "return GS.CONST.ORIENTATION_BOTH[p.wobble.orientation]",
+                "attribute": "wobble.orientation",
+                "identifier": "wobble.orientation"
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$76B1881439284643832A615111AAE7FBF08D\",\n    \"windowTitle\": \"Picture Effect\",\n    \"type\": \"event_command\",\n    \"title\": \"$$P22\",\n    \"id\": \"gs.PictureEffect\",\n    \"group\": \"$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n        {\n            \"name\": \"return GS.ECH.textForErasePicture(p);\",\n            \"id\": \"gs.ErasePicture\"\n        }\n    ],\n    \"defaultValue\": { \"numberDomain\": GS.CONST.DEFAULT_DOMAIN, \"number\": 0, \"duration\": 0, \"pixelate\": { \"enabled\": false, \"size\": { \"width\": 10, \"height\": 10 } }, \"blur\": { \"enabled\": false, \"power\": 0 }, \"wobble\": { \"power\": 10, \"speed\": 10, \"orientation\": 0 }, \"waitForCompletion\": 0, \"type\": 0, \"easing\": { \"type\": 0, \"inOut\": 1 }  },\n    \"quickItems\": [\n        GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER\n    ].concat(GSQ.CONTROLS.GRAPHIC_EFFECTS).concat([\n        GSQ.CONTROLS.DURATION,\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ]),\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING\n                        ]\n                    } \n                ]\n            }\n        ]\n    }\n}",
+        "name": "Picture Effect",
+        "order": 14
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

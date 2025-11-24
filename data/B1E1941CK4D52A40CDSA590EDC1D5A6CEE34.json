@@ -1,0 +1,87 @@
+{
+    "uid": "B1E1941CK4D52A40CDSA590EDC1D5A6CEE34",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "AAC731FDK40F7A4B4CSA1D9E425BC2784C57",
+        "displayName": "$$D2AC192A258FB94582395917B8EFE63F8603",
+        "windowTitle": "Expression",
+        "title": "Live2D Expression",
+        "type": "event_command",
+        "requiresThirdPartyComponents": [
+            "live2d"
+        ],
+        "id": "vn.L2DExpression",
+        "group": "$$49C76C7F1C2EE8468B1BA2884C6A06B3C241",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "color": "orange",
+        "columns": [
+            -1,
+            250
+        ],
+        "nodes": [],
+        "defaultValue": {
+            "characterId": null,
+            "data": {
+                "expression": ""
+            },
+            "fadeInTime": 1000
+        },
+        "inlineImage": {
+            "formula": "return !GSIsNull(p.expressionId) ? GS.VN.resourceForExpression(p.expressionId) : GS.VN.resourceForCharacter(p.characterId)",
+            "folder": "Graphics/Characters"
+        },
+        "quickItems": [
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId)",
+                "attribute": "characterId",
+                "identifier": "character",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQDataRecordField",
+                "dataSource": "characters"
+            },
+            {
+                "label": "$$3DAF7BAF14E7D240E589BF03BA968C8A8336",
+                "valueFormula": "return p.data.expression || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826');",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "BF7C212CK5DD7A46FCS83EBE379637C209DB",
+                    "bindings": [
+                        {
+                            "source": "data.model",
+                            "to": "local",
+                            "target": "data.resource"
+                        },
+                        {
+                            "source": "data.expression",
+                            "to": "local",
+                            "target": "data.expression"
+                        }
+                    ]
+                },
+                "attribute": "data"
+            },
+            {
+                "label": "$$9A85901717E9C14C952955616EA96882EF43",
+                "lockable": true,
+                "valueFormula": "return (p.fadeInTime||0)+'ms'",
+                "attribute": "fadeInTime",
+                "minimum": 0,
+                "maximum": 999999999,
+                "type": "GSQStepper"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$D2AC192A258FB94582395917B8EFE63F8603\",\n    \"windowTitle\": \"Expression\",\n    \"title\": \"Live2D Expression\",\n    \"type\": \"event_command\",\n    \"requiresThirdPartyComponents\": [\"live2d\"],\n    \"id\": \"vn.L2DExpression\",\n    \"group\": \"$$49C76C7F1C2EE8468B1BA2884C6A06B3C241\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"color\": \"orange\",\n    \"columns\": [-1, 250],\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"characterId\": GS.CONST.DEFAULT_RECORD_ID, \"data\": { \"expression\": \"\" }, \"fadeInTime\": 1000 },\n    \"inlineImage\": { \n        \"formula\": \"return !GSIsNull(p.expressionId) ? GS.VN.resourceForExpression(p.expressionId) : GS.VN.resourceForCharacter(p.characterId)\", \n        \"folder\": \"Graphics/Characters\"\n    },\n    \"quickItems\": [\n        GSQ.CONTROLS.CHARACTER_SELECTION,\n        {\n            \"label\": \"$$3DAF7BAF14E7D240E589BF03BA968C8A8336\",\n            \"valueFormula\": \"return p.data.expression || lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826');\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"BF7C212CK5DD7A46FCS83EBE379637C209DB\", \"bindings\": [{ \"source\": \"data.model\", \"to\": \"local\", \"target\": \"data.resource\" }, { \"source\": \"data.expression\", \"to\": \"local\", \"target\": \"data.expression\" }] },\n            \"attribute\": \"data\"\n        },\n        GSQ.CONTROLS.CREATE_FADE_IN_MS(\"$$9A85901717E9C14C952955616EA96882EF43\", \"fadeInTime\"),\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Live2D Expression",
+        "order": 3
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

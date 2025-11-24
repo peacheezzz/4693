@@ -1,0 +1,161 @@
+{
+    "uid": "50BADA8AK85A5A4D6CSA61CE295B757D917F",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "0FEBB76EK401BA41A4S99B1E2346601143E2",
+        "displayName": "$$5E9F314547769743D40B73D6763BA59B8F26",
+        "windowTitle": "Zoom Picture",
+        "type": "event_command",
+        "title": "$$P24",
+        "id": "gs.ZoomPicture",
+        "group": "$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [
+            {
+                "name": "return fmt('Zoom Background: @%s, (%s%%, %s%%), [%s, %s], @%sf%s', fmtNumVar(p.layer), fmtNumVar(p.zooming.x), fmtNumVar(p.zooming.y), GS.CONST.EASING_TYPES[p.easing.type], GS.CONST.EASING_IN_OUT[p.easing.inOut], fmtNumVar(p.duration), p.waitForCompletion ? ', Wait' : '')",
+                "id": "gs.ZoomPicture"
+            }
+        ],
+        "defaultValue": {
+            "numberDomain": "com.degica.vnm.default",
+            "number": 0,
+            "duration": 0,
+            "waitForCompletion": 0,
+            "zooming": {
+                "x": 100,
+                "y": 100
+            },
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                "identifier": "number",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "domainButton": true,
+                "type": "GSQStepper",
+                "attribute": "number",
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$F566735230CD0440CA7BBC89B1EF3C783939",
+                "valueFormula": "return fmtNumVar(p.zooming.x) + '%';",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "type": "GSQStepper",
+                "attribute": "zooming.x",
+                "minimum": 0,
+                "maximum": 1000
+            },
+            {
+                "label": "$$B6E9AFBC24F70744F83BC5432458C25DCB2C",
+                "valueFormula": "return fmtNumVar(p.zooming.y) + '%';",
+                "type": "GSQStepper",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "attribute": "zooming.y",
+                "minimum": 0,
+                "maximum": 1000
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$4B6665ACK640FA4A19S89F1E4F1070280626",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$858E29BD598E6544DD49356017DFC223DA6F",
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.type",
+                                            "lockable": true,
+                                            "width": "50%",
+                                            "dataSource": [
+                                                "$$B04840A62C08B644918821142386D7EEB014",
+                                                "$$99D9039B6FF24440998B5ED62A44E25D562A",
+                                                "$$6DB3AC545EBEF747C56BB237892A2FE7DC6A",
+                                                "$$087E67D05860D644FC9A87C91B303A91E774",
+                                                "$$5101E7646B6A284EC5385FF42CC39E29BC20",
+                                                "$$9DEB76CD12AA024F65384215C8DF97C64463",
+                                                "$$757243FE807A124F5058CEA6DC72BB24F1AD",
+                                                "$$22D2BB118D79E248023904E4E5DCF459C2B2",
+                                                "Ease Elastic",
+                                                "Ease Bounce",
+                                                "Ease Back"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_TYPES[p.easing.type]"
+                                        },
+                                        {
+                                            "label": "",
+                                            "width": "auto",
+                                            "unlockItems": [
+                                                "easing.type"
+                                            ],
+                                            "type": "GSQPopupField",
+                                            "attribute": "easing.inOut",
+                                            "dataSource": [
+                                                "$$19C38D481D2B4947845AFB426AA83A22A24E",
+                                                "$$636489127D19D648ED6BB357549054B90E98",
+                                                "$$03359F826080274E018A4693CE01C765D700"
+                                            ],
+                                            "valueFormula": "return GS.CONST.EASING_IN_OUT[p.easing.inOut]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$5E9F314547769743D40B73D6763BA59B8F26\",\n    \"windowTitle\": \"Zoom Picture\",\n    \"type\": \"event_command\",\n    \"title\": \"$$P24\",\n    \"id\": \"gs.ZoomPicture\",\n    \"group\": \"$$8E805C42KAAEBA4E2ASAFEBE14638DCA0760\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n        {\n            \"name\": \"return fmt('Zoom Background: @%s, (%s%%, %s%%), [%s, %s], @%sf%s', fmtNumVar(p.layer), fmtNumVar(p.zooming.x), fmtNumVar(p.zooming.y), GS.CONST.EASING_TYPES[p.easing.type], GS.CONST.EASING_IN_OUT[p.easing.inOut], fmtNumVar(p.duration), p.waitForCompletion ? ', Wait' : '')\",\n            \"id\": \"gs.ZoomPicture\"\n        }\n    ],\n    \"defaultValue\": { \"numberDomain\": GS.CONST.DEFAULT_DOMAIN, \"number\": 0, \"duration\": 0, \"waitForCompletion\": 0, \"zooming\": { \"x\": 100, \"y\": 100 }, \"easing\": { \"type\": 0, \"inOut\": 1 } },\n    \"quickItems\": [\n        GSQ.CONTROLS.GRAPHIC_OBJECT_NUMBER,\n        GSQ.CONTROLS.GRAPHIC_ZOOM_X,\n        GSQ.CONTROLS.GRAPHIC_ZOOM_Y,\n        GSQ.CONTROLS.DURATION,\n        GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$4B6665ACK640FA4A19S89F1E4F1070280626\",\n                        \"rows\": [\n                            GSQ.ROWS.EASING\n                        ]\n                    } \n                ]\n            }\n        ]\n        \n    },\n    \"sections\": [\n    ]\n}",
+        "name": "Zoom Picture",
+        "order": 7
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

@@ -1,0 +1,333 @@
+{
+    "uid": "07DDA020D242A05E",
+    "isLoaded": true,
+    "lastModificationTime": 1424023479489,
+    "items": {
+        "parentId": "AC1ABDCBK050BA4863S9964E3DC378247DAD",
+        "name": "Template Variable",
+        "windowTitle": "$$DFBEBA70KA719A4DD3SB786E520FE5FF2D3A",
+        "type": "custom_view",
+        "windowSize": {
+            "w": 700,
+            "h": 220
+        },
+        "columns": [
+            700
+        ],
+        "sections": [
+            {
+                "name": "$$P25",
+                "noBorder": false,
+                "layout": {
+                    "type": "dynamicGrid",
+                    "fixedRowHeight": true
+                },
+                "column": 0,
+                "items": [
+                    {
+                        "type": "GSLabel",
+                        "text": "$$F919F13FK5308A48E2SA6A0EFC16CBF6C506",
+                        "location": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "size": {
+                            "w": 100,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSTextField",
+                        "attribute": "label",
+                        "identifier": "labelX",
+                        "location": {
+                            "x": 1,
+                            "y": 0
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "$$BD058CE5KA3B8A41C6S9B32ECEC674F8EC05",
+                "noBorder": false,
+                "layout": {
+                    "type": "dynamicGrid",
+                    "fixedRowHeight": true
+                },
+                "column": 0,
+                "items": [
+                    {
+                        "type": "GSRadioButton",
+                        "attribute": "type",
+                        "identifier": "number",
+                        "defaultValue": true,
+                        "value": 1,
+                        "text": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                        "delegates": [
+                            {
+                                "identifiers": [
+                                    "numberVariable",
+                                    "numberValueType",
+                                    "label",
+                                    "numberListEntries"
+                                ],
+                                "selector": "setEnabled:enabled:"
+                            }
+                        ],
+                        "location": {
+                            "x": 0,
+                            "y": 1
+                        },
+                        "size": {
+                            "w": 100,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSVariablePopupField",
+                        "attribute": "numberVariable",
+                        "scope": "local",
+                        "dataSource": "numbers",
+                        "location": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSComboBox",
+                        "attribute": "numberValueType",
+                        "dataSource": [
+                            {
+                                "name": "$$3E739130K1072A4ADBS9FB0E7F33C4B64801",
+                                "alias": "number"
+                            },
+                            {
+                                "name": "$$6D3CB93FK7CA5A48A0S8B7CE2483ADF01721",
+                                "alias": "numberList"
+                            }
+                        ],
+                        "location": {
+                            "x": 2,
+                            "y": 1
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSButton",
+                        "identifier": "numberList",
+                        "attribute": "numberList",
+                        "dialog": {
+                            "uid": "206B9F77K691EA41C9S92ADE3DC60464A57F"
+                        },
+                        "text": "$$CFD70BE7K00B7A4B66SA23CE16DE1D2EAF5B",
+                        "location": {
+                            "x": 3,
+                            "y": 1
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSRadioButton",
+                        "attribute": "type",
+                        "identifier": "switch",
+                        "value": 2,
+                        "text": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                        "delegates": [
+                            {
+                                "identifiers": [
+                                    "booleanVariable",
+                                    "label"
+                                ],
+                                "selector": "setEnabled:enabled:"
+                            }
+                        ],
+                        "location": {
+                            "x": 0,
+                            "y": 2
+                        },
+                        "size": {
+                            "w": 100,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSVariablePopupField",
+                        "attribute": "booleanVariable",
+                        "scope": "local",
+                        "dataSource": "booleans",
+                        "location": {
+                            "x": 1,
+                            "y": 2
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSRadioButton",
+                        "attribute": "type",
+                        "identifier": "string",
+                        "value": 3,
+                        "text": "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                        "delegates": [
+                            {
+                                "identifiers": [
+                                    "stringVariable",
+                                    "stringValueType",
+                                    "label"
+                                ],
+                                "selector": "setEnabled:enabled:"
+                            }
+                        ],
+                        "location": {
+                            "x": 0,
+                            "y": 3
+                        },
+                        "size": {
+                            "w": 100,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSVariablePopupField",
+                        "attribute": "stringVariable",
+                        "scope": "local",
+                        "dataSource": "strings",
+                        "location": {
+                            "x": 1,
+                            "y": 3
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSComboBox",
+                        "attribute": "stringValueType",
+                        "dataSource": [
+                            {
+                                "name": "$$AEBE2CF0K0A1AA4F5DS9D39EC55E0E148E43",
+                                "alias": "text"
+                            },
+                            {
+                                "name": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+                                "alias": "sceneId"
+                            },
+                            {
+                                "name": "$$35BFB2B03A010240B1781E034DAEA8180D68",
+                                "alias": "characters"
+                            },
+                            {
+                                "name": "$$1E5036322953C848A7891A68777FFAA29C88",
+                                "alias": "characterExpressions"
+                            },
+                            {
+                                "name": "$$F34509AB7FBBB5408C6860012D0A129C0477",
+                                "alias": "cgGallery"
+                            },
+                            {
+                                "name": "$$E38A7520KAB4EA4606SAFC2E8FB24F6AD84D",
+                                "alias": "animations"
+                            },
+                            {
+                                "name": "$$936B4D1EK0D9FA4D49SA760EB2BC047C58DB",
+                                "alias": "commonEvents"
+                            },
+                            {
+                                "name": "Graphic Resource",
+                                "alias": "graphic"
+                            },
+                            {
+                                "name": "Movie Resource",
+                                "alias": "video"
+                            },
+                            {
+                                "name": "Audio Resource",
+                                "alias": "audio"
+                            },
+                            {
+                                "name": "Live2D Resource",
+                                "alias": "live2d"
+                            }
+                        ],
+                        "location": {
+                            "x": 2,
+                            "y": 3
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSCheckBox",
+                        "text": "Localizable",
+                        "defaultValue": true,
+                        "attribute": "stringValueLocalizable",
+                        "location": {
+                            "x": 3,
+                            "y": 3
+                        },
+                        "size": {
+                            "w": -1,
+                            "h": -1
+                        }
+                    },
+                    {
+                        "type": "GSRadioButton",
+                        "attribute": "type",
+                        "identifier": "list",
+                        "value": 4,
+                        "text": "List",
+                        "delegates": [
+                            {
+                                "identifiers": [
+                                    "listVariable"
+                                ],
+                                "selector": "setEnabled:enabled:"
+                            }
+                        ],
+                        "frame": [
+                            0,
+                            4,
+                            100,
+                            -1
+                        ]
+                    },
+                    {
+                        "type": "GSVariablePopupField",
+                        "attribute": "listVariable",
+                        "scope": "local",
+                        "dataSource": "lists",
+                        "frame": [
+                            1,
+                            4
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rawContent": "{ \n    \"parentId\": \"AC1ABDCBK050BA4863S9964E3DC378247DAD\",\n\"name\": \"Template Variable\",\n    \"windowTitle\": \"$$DFBEBA70KA719A4DD3SB786E520FE5FF2D3A\",\n    \"type\": \"custom_view\",\n    \"windowSize\": {\n        \"w\": 700,\n        \"h\": 220\n    },\n    \"columns\": [\n        700\n    ],\n    \"sections\": [\n        {\n            \"name\": \"$$P25\",\n            \"noBorder\": false,\n            \"layout\": {\n                \"type\": \"dynamicGrid\",\n                \"fixedRowHeight\": true\n            },\n            \"column\": 0,\n            \"items\": [\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$F919F13FK5308A48E2SA6A0EFC16CBF6C506\",\n                    \"location\": {\n                        \"x\": 0,\n                        \"y\": 0\n                    },\n                    \"size\": {\n                        \"w\": 100,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSTextField\",\n                    \"attribute\": \"label\",\n                    \"identifier\": \"labelX\",\n                    \"location\": {\n                        \"x\": 1,\n                        \"y\": 0\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                }\n            ]\n        },\n        {\n            \"name\": \"$$BD058CE5KA3B8A41C6S9B32ECEC674F8EC05\",\n            \"noBorder\": false,\n            \"layout\": {\n                \"type\": \"dynamicGrid\",\n                \"fixedRowHeight\": true\n            },\n            \"column\": 0,\n            \"items\": [\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"attribute\": \"type\",\n                    \"identifier\": \"number\",\n                    \"defaultValue\": true,\n                    \"value\": 1,\n                    \"text\": \"$$C287D490K9B01A4407SA616EF2726CA43B52\",\n                    \"delegates\": [\n                        {\n                            \"identifiers\": [\n                                \"numberVariable\",\n                                \"numberValueType\",\n                                \"label\",\n                                \"numberListEntries\"\n                            ],\n                            \"selector\": \"setEnabled:enabled:\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 0,\n                        \"y\": 1\n                    },\n                    \"size\": {\n                        \"w\": 100,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSVariablePopupField\",\n                    \"attribute\": \"numberVariable\",\n                    \"scope\": \"local\",\n                    \"dataSource\": \"numbers\",\n                    \"location\": {\n                        \"x\": 1,\n                        \"y\": 1\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSComboBox\",\n                    \"attribute\": \"numberValueType\",\n                    \"dataSource\": [\n                        {\n                            \"name\": \"$$3E739130K1072A4ADBS9FB0E7F33C4B64801\",\n                            \"alias\": \"number\"\n                        },\n                        {\n                            \"name\": \"$$6D3CB93FK7CA5A48A0S8B7CE2483ADF01721\",\n                            \"alias\": \"numberList\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 2,\n                        \"y\": 1\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSButton\",\n                    \"identifier\": \"numberList\",\n                    \"attribute\": \"numberList\",\n                    \"dialog\": {\n                        \"uid\": \"206B9F77K691EA41C9S92ADE3DC60464A57F\"\n                    },\n                    \"text\": \"$$CFD70BE7K00B7A4B66SA23CE16DE1D2EAF5B\",\n                    \"location\": {\n                        \"x\": 3,\n                        \"y\": 1\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"attribute\": \"type\",\n                    \"identifier\": \"switch\",\n                    \"value\": 2,\n                    \"text\": \"$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9\",\n                    \"delegates\": [\n                        {\n                            \"identifiers\": [\n                                \"booleanVariable\",\n                                \"label\"\n                            ],\n                            \"selector\": \"setEnabled:enabled:\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 0,\n                        \"y\": 2\n                    },\n                    \"size\": {\n                        \"w\": 100,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSVariablePopupField\",\n                    \"attribute\": \"booleanVariable\",\n                    \"scope\": \"local\",\n                    \"dataSource\": \"booleans\",\n                    \"location\": {\n                        \"x\": 1,\n                        \"y\": 2\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"attribute\": \"type\",\n                    \"identifier\": \"string\",\n                    \"value\": 3,\n                    \"text\": \"$$CEA96B0BK6FBBA416BSB00FEDF96A1248489\",\n                    \"delegates\": [\n                        {\n                            \"identifiers\": [\n                                \"stringVariable\",\n                                \"stringValueType\",\n                                \"label\"\n                            ],\n                            \"selector\": \"setEnabled:enabled:\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 0,\n                        \"y\": 3\n                    },\n                    \"size\": {\n                        \"w\": 100,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSVariablePopupField\",\n                    \"attribute\": \"stringVariable\",\n                    \"scope\": \"local\",\n                    \"dataSource\": \"strings\",\n                    \"location\": {\n                        \"x\": 1,\n                        \"y\": 3\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSComboBox\",\n                    \"attribute\": \"stringValueType\",\n                    \"dataSource\": [\n                        {\n                            \"name\": \"$$AEBE2CF0K0A1AA4F5DS9D39EC55E0E148E43\",\n                            \"alias\": \"text\"\n                        },\n                        {\n                            \"name\": \"$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA\",\n                            \"alias\": \"sceneId\"\n                        },\n                        {\n                            \"name\": \"$$35BFB2B03A010240B1781E034DAEA8180D68\",\n                            \"alias\": \"characters\"\n                        },\n                        {\n                            \"name\": \"$$1E5036322953C848A7891A68777FFAA29C88\",\n                            \"alias\": \"characterExpressions\"\n                        },\n                        {\n                            \"name\": \"$$F34509AB7FBBB5408C6860012D0A129C0477\",\n                            \"alias\": \"cgGallery\"\n                        },\n                        {\n                            \"name\": \"$$E38A7520KAB4EA4606SAFC2E8FB24F6AD84D\",\n                            \"alias\": \"animations\"\n                        },\n                        {\n                            \"name\": \"$$936B4D1EK0D9FA4D49SA760EB2BC047C58DB\",\n                            \"alias\": \"commonEvents\"\n                        },\n                        {\n                            \"name\": \"Graphic Resource\",\n                            \"alias\": \"graphic\"\n                        },\n                        {\n                            \"name\": \"Movie Resource\",\n                            \"alias\": \"video\"\n                        },\n                        {\n                            \"name\": \"Audio Resource\",\n                            \"alias\": \"audio\"\n                        },\n                        {\n                            \"name\": \"Live2D Resource\",\n                            \"alias\": \"live2d\"\n                        }\n                    ],\n                    \"location\": {\n                        \"x\": 2,\n                        \"y\": 3\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSCheckBox\",\n                    \"text\": \"Localizable\",\n                    \"defaultValue\": true,\n                    \"attribute\": \"stringValueLocalizable\",\n                    \"location\": {\n                        \"x\": 3,\n                        \"y\": 3\n                    },\n                    \"size\": {\n                        \"w\": -1,\n                        \"h\": -1\n                    }\n                },\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"attribute\": \"type\",\n                    \"identifier\": \"list\",\n                    \"value\": 4,\n                    \"text\": \"List\",\n                    \"delegates\": [\n                        {\n                            \"identifiers\": [\n                                \"listVariable\"\n                            ],\n                            \"selector\": \"setEnabled:enabled:\"\n                        }\n                    ],\n                    \"frame\": [0, 4, 100, -1]\n                },\n                {\n                    \"type\": \"GSVariablePopupField\",\n                    \"attribute\": \"listVariable\",\n                    \"scope\": \"local\",\n                    \"dataSource\": \"lists\",\n                    \"frame\": [1, 4]\n                }\n            ]\n        }\n    ]\n}"
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

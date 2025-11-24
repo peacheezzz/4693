@@ -1,0 +1,23 @@
+{
+    "uid": "64CCF81D5A8710427299AD891B42112F6AB8",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "marc",
+        "type": "data_record",
+        "category": "characterExpressions",
+        "isFolder": true,
+        "parentId": "ROOT",
+        "data": {
+            "name": "marc",
+            "isFolder": true
+        },
+        "order": 1
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

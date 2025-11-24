@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title></title>
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        window.GS = { dataCache: {} };
+        window.gs = {}
+        $MOBILE = false;
+    </script>
+
+    
+    <script type="text/javascript" src="data/lib/glMatrix.js"></script>
+    <!--{BOOT_LIBS}-->
+    <script type="text/javascript" src="data/lib/pathfinding-browser.min.js"></script>
+    <script type="text/javascript" src="data/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="data/lib/linq.min.js"></script>
+    <script type="text/javascript" src="data/lib/jszip.min.js"></script>
+    <script type="text/javascript" src="data/lib/live2d_21.min.js"></script>
+    <script type="text/javascript" src="data/lib/Live2DFramework_21.js"></script>
+    <script type="text/javascript" src="data/lib/live2dcubismcore.min.js"></script>
+    <script type="text/javascript" src="data/lib/live2dframework.js"></script>    
+    <script type="text/javascript" src="data/lib/sprintf.js"></script>
+    <script type="text/javascript" src="data/lib/jQuery.js"></script>
+    <script type="text/javascript" src="data/lib/jQuery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="data/lib/webfont.js"></script>
+    <script type="text/javascript" src="data/ENGINE.js"></script>
+    
+    <script src="development/$PARAMS_$PARAMS.js"></script>
+<script src="development/Constants_C2F9A7C9K48FFA4390S9F39E2E3A8A1D7221.js"></script>
+<script src="development/Namespaces_7A3432C8K24B2A42DCS9E6EECFE90B89A04D.js"></script>
+<script src="development/Colors_81A70CC9K3166A47C5S8B20E712D412ED6AD.js"></script>
+<script src="development/Fonts_9A20E50EK63DBA488BSB6A4E13C30BC01011.js"></script>
+<script src="development/ImageHandling_B7113A7DK9947A42E3SBF77E4F70BAB5891A.js"></script>
+<script src="development/EasingTypes_8087B9BDKE91AA4B4BS8166E0C7C97750FAA.js"></script>
+<script src="development/Easings_5C3FD5D2K8F24A44DBSA592E58D90CF041B0.js"></script>
+<script src="development/ContainerDisposeBehavior_4E4940CCKA8F7A424FS813DE0DB75D3B524B.js"></script>
+<script src="development/CommandFieldFlags_923F1F4E316CC6421A9A10F8C616DC214413.js"></script>
+<script src="development/UI_14495DE0KFF88A430DS90C9EE40D97139153.js"></script>
+<script src="development/UpdateBehavior_0A90CD55KAA29A442FSBB07E9303748D57C8.js"></script>
+<script src="development/LayoutManagementMode_284FE66765F1A843074B84639E12075940B7.js"></script>
+<script src="development/Sprites_B9408292KCC7EA454FSBDF2EAE7BB315F23B.js"></script>
+<script src="development/Sprite_Debug_339119F4KD640A423BS9F88ED234CC8F7FD2.js"></script>
+<script src="development/Managers_C0268943K60B3A42B7SA6F1EDDCF2F642FD7.js"></script>
+<script src="development/ObjectManager_8DBB050CK548EA49A5S800AE8C9C8A84C8B9.js"></script>
+<script src="development/GameManager_9D2D1D14K49FAA43CBS8582E7937AF84F3A2.js"></script>
+<script src="development/SceneManager_4E6166C5K0D27A44E3SB533EBD2F28EAC813.js"></script>
+<script src="development/LanguageManager_3BE5E982K41C4A404CSA869E226977338704.js"></script>
+<script src="development/ResourceManager_D98F90F2K8EF9A42FDS925AE12EEBFB09029.js"></script>
+<script src="development/AudioManager_564F8E31K64F3A4823S8E83E87FB6B24717C.js"></script>
+<script src="development/DataManager_7F1D60F1K265BA40B5SA78EEAB249F02B709.js"></script>
+<script src="development/RecordManager_4E35E151K4549A4236S864AE7CB8315B40EF.js"></script>
+<script src="development/UIManager_4216707AK784EA4859S86BBE1FCA7990F36B.js"></script>
+<script src="development/Components_D3325122KACDEA4515SB731E37A42B9D779F.js"></script>
+<script src="development/Component_B333A615K38FAA45B8SA13EE1AADAF98EFAF.js"></script>
+<script src="development/Component_Container_2ADC0E64K3E53A43DFSA080E702C95F0ABF5.js"></script>
+<script src="development/Component_DomainContainer_2634E26D35D2C14BDC69D7D0115A1ACEFF8A.js"></script>
+<script src="development/Component_Visual_4FB08FACK1FD1A483FSAB99E69479A78AA76.js"></script>
+<script src="development/Component_Sprite_B2F84FFAKF97DA4149SAB47E8B89F3C10D30.js"></script>
+<script src="development/Component_Quad_E8FBFC5DK15DEA4E5ASB674E1F40EDBB5620.js"></script>
+<script src="development/Component_TilingSprite_FBEA2EE7K25F8A42F1SBA1BE55C1458BD892.js"></script>
+<script src="development/Component_TilingPlane_960AB145K44D2A495DS9C83E4AECD84B7EDD.js"></script>
+<script src="development/Component_Viewport_C10D7C95K1F40A4131SB9C4ECE1DCCC93D30.js"></script>
+<script src="development/Component_ImageMap_DA213629K6807A40ABS819CEB68756DF5543.js"></script>
+<script src="development/Component_TextRenderer_A597C1D0K3983A48BBSAC37E1E30D2F97314.js"></script>
+<script src="development/Component_MessageTextRenderer_118CE96FK8F58A440CSAA11E22CCAF101A06.js"></script>
+<script src="development/Component_MessageBehavior_310BAD46K234CA48DBSABF0EE1601511F062.js"></script>
+<script src="development/Component_Animator_B37D8739K845BA40B2S8C10EB3F28C88E66B.js"></script>
+<script src="development/Component_Live2D_841ADA0FKB9A3A4682S9645E705921611A32.js"></script>
+<script src="development/Component_EventEmitter_AB1D7471K9AA5A4790SA69CEB8BEC017E46A.js"></script>
+<script src="development/Component_CharacterBehavior_BAE2E179KA229A4B14S98B3EE2F49426AC0A.js"></script>
+<script src="development/Component_CommonEventBehavior_3EAA6BFDKE6F9A4241SA320EB29D6E8E3F3F.js"></script>
+<script src="development/Component_Timer_ADF3B7B7K9DD6A4303S98F5E69C4B1C57BA6.js"></script>
+<script src="development/Component_IntervalTimer_613817565CED434E2F3AF0808662C3BAEF91.js"></script>
+<script src="development/Component_InputHandler_5D77390EKDA50A4FB7SBF0CE5BFDF3D799F1.js"></script>
+<script src="development/UI_01A95DA3K01E8A4CB4SBE17E790BCE1FC035.js"></script>
+<script src="development/Component_TextBehavior_620201AFKF664A4AABSBECAE71A1610CBF73.js"></script>
+<script src="development/Component_HotspotBehavior_87BE6898K0E78A48FCSB889E1DAAB10BF84B.js"></script>
+<script src="development/Component_Draggable_0D901A1BK87B4A47FCSA14CE7673DF632D26.js"></script>
+<script src="development/Component_LayoutBehavior_B54FB0D1K9DC1A4671S9BE6E84D78A18EAD1.js"></script>
+<script src="development/Component_FreeLayoutBehavior_C36C2E79K2769A40AES994EE16EAD26D7EC9.js"></script>
+<script src="development/Component_SpreadLayoutBehavior_64BE0206K14D8A4435S9A4BE3F480E1CAC53.js"></script>
+<script src="development/Component_StackLayoutBehavior_E442F997KC428A496DSA01EE8D171F72BDCA.js"></script>
+<script src="development/Component_GridLayoutBehavior_F0C3CB8EK77BEA4A14S967DE5584B7333520.js"></script>
+<script src="development/Component_Handler_7BE82043K96A3A41D6SAAFBEC5EA0135ADF9.js"></script>
+<script src="development/Component_BindingHandler_91139725K09EAA4678SBA18E0B484F480118.js"></script>
+<script src="development/Component_FormulaHandler_ECF00B441300864C6059B990EDE620CE8CA1.js"></script>
+<script src="development/Component_ActionHandler_05564A68K161FA4612S8C50E0584F5DA471D.js"></script>
+<script src="development/Component_AnimationHandler_C9BD558DKFF12A4617SA6A5E76E6CD5B2C51.js"></script>
+<script src="development/Component_AnimationExecutor_2F0E4A9D5A397344415A00371159005172AE.js"></script>
+<script src="development/Component_UIBehavior_5BCC16F29DC79547E53B16B76EC0822CB2E9.js"></script>
+<script src="development/Component_Frame_21B4CFA0K977AA4FDAS8B9DE2F942A1341C2.js"></script>
+<script src="development/Component_ThreePartImage_83C018C1K62FEA4FACS8AE2E5142593450D4.js"></script>
+<script src="development/Component_PanelBehavior_FF761871KC4C9A4C36S8444E05A5F5CB3055.js"></script>
+<script src="development/Component_NumberInput_DBED0D62K6A03A47C0SA78CEBB556CA2372D.js"></script>
+<script src="development/Component_TextInput_1F932484K382AA48B8SB623ECA67B7376D07.js"></script>
+<script src="development/Component_DataGridBehavior_CE4F231B812401459218A74604DDF88C533C.js"></script>
+<script src="development/Scene_0C1D8BE8KDB63A469AS9782EB90E63254DB3.js"></script>
+<script src="development/Component_SceneBehavior_B8F994B1K394BA42FFSBF77ED65646835E1A.js"></script>
+<script src="development/Component_LayoutSceneBehavior_7AD6803FKBBC9A4E4CSAF66EFC2E93FF462D.js"></script>
+<script src="development/Component_GameSceneBehavior_FA7A4820K975AA4196S8E5DEEFF71858030C.js"></script>
+<script src="development/Component_WebStartBehavior_871555D049A31243DD487BE58F07F78441AB.js"></script>
+<script src="development/Animation_A8E9945CKEE5CA4855SAC81E480CB8098E0E.js"></script>
+<script src="development/Component_Animation_921D4291K554AA4E8AS8B5DEFA84F1B78AA5.js"></script>
+<script src="development/Component_BlendAnimation_44F0ACF0K33D7A4596SB37BE1C1B90CB7A77.js"></script>
+<script src="development/Component_MaskAnimation_D1E8BD12K8995A47C7S86E8E89AD5013D83D.js"></script>
+<script src="development/Component_TintAnimation_73181918KC222A4A3BS9D6FE4D23C0106A49.js"></script>
+<script src="development/Component_PathAnimation_2718D349K7844A4CA3S98A2E776B3771FDE3.js"></script>
+<script src="development/Component_FieldAnimation_D1A8AFB3K8CF8A471DSA610E51324BC0F2CC.js"></script>
+<script src="development/Component_MoveAnimation_922103F9K2F40A4605SB7D6E96ACC3F0E72D.js"></script>
+<script src="development/Component_RotateAnimation_FB6E8ED2KD8BFA475ESB26EEEF8ABABE9026.js"></script>
+<script src="development/Component_FrameAnimation_BF1FEA5EK5664A49F7S92A5E94D58BE44A4A.js"></script>
+<script src="development/Component_ZoomAnimation_6BBB4642KC04EA4DDCSB9B6E51000D148D85.js"></script>
+<script src="development/Component_ColorAnimation_B3C3E1B9K3F67A4C85SBC37E4BDDDAA1F7BC.js"></script>
+<script src="development/Component_ShakeAnimation_C8BBDC08K70C4A4302S9DFBE9A4F740CE150.js"></script>
+<script src="development/Component_ImageAnimation_8530911CK1B19A4C27SB297E24E7EB4B5434.js"></script>
+<script src="development/Component_BlurAnimation_B1A645C31ED9E94B02382D1693ECAD7B5E62.js"></script>
+<script src="development/Component_WobbleAnimation_F199347670B451420E8B3F55B9A143619011.js"></script>
+<script src="development/Component_PixelateAnimation_362DA4311419C4409E0955A931FFF05A5143.js"></script>
+<script src="development/Component_Live2DAnimation_2A807B6228D551400E9A06E22E5AA73F781A.js"></script>
+<script src="development/Component_CommandInterpreter_893E6764K274EA46E2S918DEC27A2B911E42.js"></script>
+<script src="development/Component_CallSceneInterpreter_2CD7FB491476054EDE4B6F43B68F95F2BDBC.js"></script>
+<script src="development/LivePreviewInfo_729B97E42865A14F1C289E04259EC1CEFDF0.js"></script>
+<script src="development/InterpreterContext_DED209F868E4174D568A58D8CCF9F60B7BBD.js"></script>
+<script src="development/ForLoopCommand_B6300C2E0557E34AAC2BB1F7B4B3C052F3D1.js"></script>
+<script src="development/Objects_A05E7029K45DBA459BSADF4EEC07A526241A.js"></script>
+<script src="development/Object_Base_19D5B266K1082A4D01S85D0E17BE2BBA69F8.js"></script>
+<script src="development/Object_Visual_C3A9A8EEK52D7A4B8DSA5D0EC217E3C26368.js"></script>
+<script src="development/Object_Viewport_10D09A64K4079A4885S9E30E3D7C34151135.js"></script>
+<script src="development/Object_Picture_4C23121FKA889A415FS9109E3AC160E44CFD.js"></script>
+<script src="development/Object_Video_48904FD4K39C4A4306S84DCE13DB143B0A56.js"></script>
+<script src="development/Object_Live2DCharacter_044D6FBBKD82FA41E6S8A4BE9E8217823893.js"></script>
+<script src="development/Object_Hotspot_2A7327BBK6D3DA4C48SACC2EE5D932BB5252.js"></script>
+<script src="development/Object_Container_F697C525K3E13A4543SA71AEAA3BDAB4BE31.js"></script>
+<script src="development/Object_DomainContainer_ED1E69CB1F5C784B4289C170D52715863DEE.js"></script>
+<script src="development/Object_ImageMap_B252DC51KFE88A4E67S943EE89323B523849.js"></script>
+<script src="development/Object_ImageMapHotspot_0597B91F2BCE32494299BD751306D0FDD1F8.js"></script>
+<script src="development/Object_Text_BDF791F0KD80DA491BS98B9E2D5DE78C085F.js"></script>
+<script src="development/UI_4F9670D7KD392A494FS953DE4377B04AA7A6.js"></script>
+<script src="development/Object_UIElement_4C5917AAK0FD4A457ES869CEB180950AC2D4.js"></script>
+<script src="development/Object_GridLayout_9C4F6842K2187A4C1ESB129ECD7C93DB93B6.js"></script>
+<script src="development/Object_Hotspot_697FC39AK0958A420CS9073ED0E1B997C3EA.js"></script>
+<script src="development/Object_Image_5B9AEFDBKEE0EA4E06SB156E261605272FEA.js"></script>
+<script src="development/Object_Message_916DB18CK81C4A43FASB766E9ED1E87FDC8A.js"></script>
+<script src="development/Object_Panel_39918FB5KE3E4A4B23S86E3EAD7993FE1DA0.js"></script>
+<script src="development/Object_FreeLayout_6CA96EFAK4285A48DDSA427E157370CD016E.js"></script>
+<script src="development/Object_Frame_75766D35KDA92A4AF7SBC1EE7E8C73792C16.js"></script>
+<script src="development/Object_Text_9D36E101K281EA4982SB7FDE028B91DCAF6A.js"></script>
+<script src="development/Object_StackLayout_ABD67FC7KFFB7A4CA4SAF60E8ACE927FA2A8.js"></script>
+<script src="development/Object_ThreePartImage_11AE2B0EK551BA43DES8E68ECFA6299D3684.js"></script>
+<script src="development/Object_SpreadLayout_E4E0041FK88DEA446DSA444E40F8CCE47D49.js"></script>
+<script src="development/Object_Video_CDA97EA33A053246FC89AAB41D73C43728BF.js"></script>
+<script src="development/Object_DataGrid_C7074F7B2689B841798A93A6C614688F15CE.js"></script>
+<script src="development/Object_ImageMap_502491DC8D02C346337BEF567513C3011397.js"></script>
+<script src="development/Object_Background_E9B0D0D3K6420A4F29S90ECEB8F895335B3A.js"></script>
+<script src="development/Object_Layout_8AFDE55BKD6E3A4C21S8B61EF02FC9CC4942.js"></script>
+<script src="development/Object_CommonEvent_2C8E6136K1C73A4120SAF46EC417B6AE1CD7.js"></script>
+<script src="development/Object_Scene_37BD01A5KBA1BA4238S876AE816A837C1419.js"></script>
+<script src="development/Object_Timer_9B458E7EK1830A4047S9C61E51409DAF68DC.js"></script>
+<script src="development/Object_IntervalTimer_C49891BD5F4028431468E0A4176B6D7CFE92.js"></script>
+<script src="development/Object_Animation_6B40401585B4B249798BCA581896DFE0218A.js"></script>
+<script src="development/Object_Character_79CA9983KA768A4D7FSB64EE0AB3AFE35ACD.js"></script>
+<script src="development/Object_MessageArea_EA42D2D7212A33408C39AF1582CA441BF8A1.js"></script>
+<script src="development/CircularDistortionEffect_D3A4011838BF80460B58F607AF6563D9221E.js"></script>
+<script src="development/CustomEffectCollection_2B397FD47122884B501AAA977B26809FD1CC.js"></script>
+<script src="development/Layouts_A588F305KAB2DA4236SB838E7FF9BBA890FD.js"></script>
+<script src="development/Constants_44D3A7A3KD874A4520S85E3E2C4DB67DB739.js"></script>
+<script src="development/Layout_WebStart_286AC4F92011F1430C8818F8B92C4085E23D.js"></script>
+<script src="development/Layout_CGGallery_C2CD78AFKAEC2A465FSAF2DE9AAD59807CCE.js"></script>
+<script src="development/Layout_SettingsAudio_E93D845BK5C9FA4B94SA83FE07BFCDF5FE27.js"></script>
+<script src="development/Layout_SettingsMenu_032D436AK4650A41FAS9A66EE96FF2AD2311.js"></script>
+<script src="development/Layout_SettingsMessage_FD44B2D7K6D26A4C65SA039E9FBE4DB83D7E.js"></script>
+<script src="development/Layout_LoadMenu_C5273A87K6552A403BS9CB1ED4B3B6E1604D.js"></script>
+<script src="development/Layout_Game_B7834F1FK647DA493CS91F8E3B18F4AFE79B.js"></script>
+<script src="development/Layout_Title_469AC05AK5413A4BBFSBB84ED1385A919FC4.js"></script>
+<script src="development/Layout_SettingsGeneral_1608A720KFD18A4DD4S9594EB184F5B483A4.js"></script>
+<script src="development/Layout_LanguageMenu_AC10519C9A3A71497C79E765B689D7E61237.js"></script>
+<script src="development/Layout_CGGalleryEntry_3D974630722C354C1A4BFF13774851FF93A0.js"></script>
+<script src="development/Layout_SaveMenu_27F7EC2DK40B2A4C6ESABA7E4A39B05924F8.js"></script>
+<script src="development/Templates_2A0E8A67K5BAAA4D7AS9017ED220E9EFFCA7.js"></script>
+<script src="development/Template_MessageBox_624B4D4DK5A0CA487BSB0DBED4F2E7070F71.js"></script>
+<script src="development/Template_MessageBoxMenu_B72365CFKE31AA44ECS81CBE26F4D3FC7B8D.js"></script>
+<script src="development/Template_ChoiceBox_4FFEFECAK0DFEA44BCS8912ED0B9C15357EB.js"></script>
+<script src="development/Template_Slider_169DDD1AKCDCFA4738SB1E3E46A2D168A5ED.js"></script>
+<script src="development/Template_OptionButtonSet_40E381FDKFF9EA4536S8826E2443B9C16FC0.js"></script>
+<script src="development/Template_TitledWindow_F1FE005EK686FA468CSB8C1EB05110194060.js"></script>
+<script src="development/Template_StepSlider_648CC80FKD7E4A458ESA01BE9D6F77BBCA0A.js"></script>
+<script src="development/Template_MessageOptionButton_F4EBE0BEKD75CA4D54S8989E79195093571F.js"></script>
+<script src="development/Template_ConfirmationDialog_38EF8029K13CEA45D7SBCBCE30025B9DD54B.js"></script>
+<script src="development/Template_VerticalScrollView_A7FF7676K5755A4862SA680E67727A6E506D.js"></script>
+<script src="development/Template_SettingsMenuSlider_7FC49F902D96C645282B4CA923D4F357013B.js"></script>
+<script src="development/Template_SettingsStepSlider_FF363DC26272454516591678B7D64481592C.js"></script>
+<script src="development/Template_VerticalScrollBar_9C4B4737KDC01A4763SA3ADE1724270348E7.js"></script>
+<script src="development/Template_InputNumberBox_A3AD388FK7A43A40E6SBDAEE6632D53B3ECB.js"></script>
+<script src="development/Template_OptionButton_ABDD940AK5089A493CS9BCEEC74448550608.js"></script>
+<script src="development/Template_SelectableWindow_74F8A855KA042A46C4S87DFE049434DECDE7.js"></script>
+<script src="development/Template_Button_A9165C3DK50A9A43BDS987EE2B51DACB9DD6.js"></script>
+<script src="development/Template_DataScrollView_07AD818F7526B445304B41609C21B067400A.js"></script>
+<script src="development/Template_FreeChoiceBox_4FC8DB5825781449A98B79F6CDB6A04785D8.js"></script>
+<script src="development/Template_InputTextBox_58DE641BK85D1A431FSB93CED32C528832FD.js"></script>
+<script src="development/Template_ConfirmationButton_F0793627KD609A45B1S8FADE2F1933A523DD.js"></script>
+<script src="development/Template_SettingsOptionSet_9D05379F6DAA854616788E2945AA54922342.js"></script>
+<script src="development/Template_Window_DCC8312FK8A86A4AD7SA83FE67360D02ADC5.js"></script>
+<script src="development/Template_MessageBacklog_0287A57C29D34340DE89B3C64AE4DE9BE9B3.js"></script>
+<script src="development/Template_SaveGameSlot_CA2420D4K9E0FA4CFAS8F5CE6391766F7CCF.js"></script>
+<script src="development/Styles_84CE7649KF843A490DSB7D5E548DE689C8B5.js"></script>
+<script src="development/Style_Default_E24F0865K8D62A4DD0SA5E8EE1E1848D1FCE.js"></script>
+<script src="development/DataSources_A4664246K6D96A4561S9B3CE7A586E60407B.js"></script>
+<script src="development/DataSource_Default_EE2BD68CKE836A4627SB01DE53C6696689F4.js"></script>
+<script src="development/Helpers_2EC9F946K6417A4973S8308E368608E89B8B.js"></script>
+<script src="development/DataOptimizer_3A731523KD345A49DAS903FE171A585AEB27.js"></script>
+<script src="development/ResourceLoader_ABF7E648KE222A4121SBF4DE0A85BD9D5AFC.js"></script>
+<script src="development/GameTemp_C8B40A8B437AE9480E48954381E7FA9E52BC.js"></script>
+<script src="development/Easing_C7BD5B78KFEF0A47D3SBB23E9E8A252B27FE.js"></script>
+<script src="development/UIElementRectangle_BAAD9EB6K1D65A44C2SA52AE7543F7A0B82F.js"></script>
+<script src="development/UIElementPoint_C76A2092KACC6A4DA0S8778E69E7B1E95651.js"></script>
+<script src="development/VariableStore_1BEF7399KDF43A4E3ASA1A1E6EA70E833770.js"></script>
+<script src="development/Style_New_C0BC8A06491A63453559E6282D9822554834.js"></script>
+<script src="development/Style_New_50E15A2F6FF6B040ED1AB1C306B7B077D382.js"></script>
+<script src="development/Main_056C3A1FK171FA46C3SAD66E3F715367DB7C.js"></script>
+</head>
+<body style="background-color: black;">
+</body>
+</html>

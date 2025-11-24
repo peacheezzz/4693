@@ -1,0 +1,16 @@
+{
+    "uid": "AA3A4BE42F4D544A1509F6044F8DC9BF1969",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "Agents",
+        "type": "document_folder",
+        "parentId": "DB2D3154KEE4EA43BCSBC59ED3B462A07998",
+        "rawContent": "{}",
+        "order": 4
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

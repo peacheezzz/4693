@@ -1,0 +1,21 @@
+{
+    "uid": "F8E1B3C95C2C08482A398121D58F7F24419A",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "Fonts",
+        "type": "game_script",
+        "content": "",
+        "order": 9,
+        "parentId": "ROOT",
+        "folder": true,
+        "scriptType": 0,
+        "decoded": true
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

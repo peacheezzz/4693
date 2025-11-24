@@ -1,0 +1,274 @@
+{
+    "uid": "0FFB92357D262745753956D1D3373BAA61DC",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "displayName": "$$9B8E728C2830C54871795FD0576BA220E39A",
+        "id": "gs.ChangeDecimalVariables",
+        "group": "$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24",
+        "subGroup": "$$P235",
+        "defaultValue": {
+            "roundMethod": 0,
+            "target": 0,
+            "targetVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetScope": 0,
+            "targetRange": {
+                "start": 0,
+                "end": 0
+            },
+            "targetReferenceDomain": "com.degica.vnm.default",
+            "targetReference": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "operation": 0,
+            "source": 0,
+            "sourceValue": 0,
+            "sourceRandom": {
+                "start": 0,
+                "end": 0
+            },
+            "sourceScope": 0,
+            "sourceVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "sourceReferenceDomain": "com.degica.vnm.default",
+            "sourceReference": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$30A49AB7K99E9A4E59SAA85EAA161A0E1836",
+                "valueFormula": "return GS.CONST.NUMBER_VARIABLE_TARGETS[p.target]",
+                "attribute": "target",
+                "identifier": "target",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF",
+                    "$$0985523CK3F07A46FFSA058E0688B86AE3F0",
+                    "$$E9D43A91K0788A42D6SB1BEECB5798FF9691"
+                ],
+                "showItems": [
+                    [
+                        "targetVariable"
+                    ],
+                    [
+                        "targetScope",
+                        "targetRangeStart",
+                        "targetRangeEnd"
+                    ],
+                    [
+                        "targetScope",
+                        "targetReference"
+                    ]
+                ]
+            },
+            {
+                "label": "$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF",
+                "identifier": "targetVariable",
+                "valueFormula": "return fmtNumVar(p.targetVariable)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                },
+                "attribute": "targetVariable"
+            },
+            {
+                "label": "$$8F52A5EE89E7E948CD5805E9FD34F6392535",
+                "identifier": "targetScope",
+                "valueFormula": "return GS.CONST.VARIABLE_SCOPES[p.targetScope]",
+                "attribute": "targetScope",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$P240",
+                    "$$P241",
+                    "$$64D4ABA05552D44C542B22239362DF2E6D2D"
+                ]
+            },
+            {
+                "label": "$$CA1904C34CB8A64AEE891DD1784948E737C4",
+                "valueFormula": "return p.targetRange.start;",
+                "type": "GSQStepper",
+                "identifier": "targetRangeStart",
+                "attribute": "targetRange.start",
+                "minimum": 1,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                "identifier": "targetRangeEnd",
+                "valueFormula": "return p.targetRange.end;",
+                "type": "GSQStepper",
+                "attribute": "targetRange.end",
+                "minimum": 1,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$E9D43A91K0788A42D6SB1BEECB5798FF9691",
+                "identifier": "targetReference",
+                "valueFormula": "return fmtNumVar(p.targetReference)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                },
+                "attribute": "targetReference",
+                "domainButton": true
+            },
+            {
+                "label": "$$2900A383K89C0A4833SB25FE5DE87EB43DD7",
+                "valueFormula": "return GS.CONST.NUMBER_VARIABLE_OPERATIONS[p.operation]",
+                "attribute": "operation",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$1D0DB574K2BF9A4582SA57BE4AAC9420853B",
+                    "$$P156",
+                    "$$P157",
+                    "$$E25A0F02KC28BA4D20SB8AAE87D96B0BFA48",
+                    "$$40D4D9E9KAE6FA4B70SA4C5E574A2CCDE08E",
+                    "$$AF21AF1BKE787A4F24SA72DE006DD85E1F3F"
+                ]
+            },
+            {
+                "label": "$$78F4DB01K876EA43F7S97A0EC7758C04B58A",
+                "valueFormula": "return GS.CONST.NUMBER_VARIABLE_SOURCES[p.source]",
+                "attribute": "source",
+                "identifier": "source",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$89ECAECDK4610A4BF8SA019E8444CA45FAB6",
+                    "$$E83415475C0F37404E4AD6A3A7CDE7B45253",
+                    "$$E9D43A91K0788A42D6SB1BEECB5798FF9691"
+                ],
+                "showItems": [
+                    [
+                        "sourceValue"
+                    ],
+                    [
+                        "sourceRandomStart",
+                        "sourceRandomEnd"
+                    ],
+                    [
+                        "sourceScope",
+                        "sourceReference"
+                    ]
+                ]
+            },
+            {
+                "label": "$$89ECAECDK4610A4BF8SA019E8444CA45FAB6",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.sourceValue);",
+                "type": "GSQStepper",
+                "attribute": "sourceValue",
+                "numberFormat": "decimal",
+                "defaultValue": 0,
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$CA1904C34CB8A64AEE891DD1784948E737C4",
+                "identifier": "sourceRandomStart",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.sourceRandom.start);",
+                "type": "GSQStepper",
+                "attribute": "sourceRandom.start",
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$DC1A41265CECC346098B4931B5874A2AF62A",
+                "identifier": "sourceRandomEnd",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "valueFormula": "return fmtNumVar(p.sourceRandom.end);",
+                "type": "GSQStepper",
+                "attribute": "sourceRandom.end",
+                "minimum": -999999999,
+                "maximum": 999999999
+            },
+            {
+                "label": "$$8F52A5EE89E7E948CD5805E9FD34F6392535",
+                "identifier": "sourceScope",
+                "valueFormula": "return GS.CONST.VARIABLE_SCOPES[p.sourceScope]",
+                "attribute": "sourceScope",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$P240",
+                    "$$P241",
+                    "$$64D4ABA05552D44C542B22239362DF2E6D2D"
+                ]
+            },
+            {
+                "label": "$$E9D43A91K0788A42D6SB1BEECB5798FF9691",
+                "valueFormula": "return fmtNumVar(p.sourceReference)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                },
+                "attribute": "sourceReference",
+                "domainButton": true
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$P25",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$BBCEB6F835D7B64D737970208F950EB8403E",
+                                            "valueFormula": "return GS.CONST.ROUNDING_TYPES[p.roundMethod];",
+                                            "type": "GSQPopupField",
+                                            "dataSource": [
+                                                "$$P180",
+                                                "$$D074E2913547A84F2A898B43B80ADF50C3CE",
+                                                "$$86414BDC6D5854422E3BD950E51350C12DCB",
+                                                "$$ACA465106BDAA74634289C10B16F06D035AB"
+                                            ],
+                                            "attribute": "roundMethod"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n    \"displayName\": \"$$9B8E728C2830C54871795FD0576BA220E39A\",\n    \"id\": \"gs.ChangeDecimalVariables\",\n    \"group\": \"$$2DCE5AEAK657FA4F5BS8EC3EA543DC123D24\",\n    \"subGroup\": \"$$P235\",\n    \"defaultValue\": { \"roundMethod\": 0, \"target\": 0, \"targetVariable\": GS.CONST.DEFAULT_VARIABLE_DATA, \"targetScope\": 0, \"targetRange\": { \"start\": 0, \"end\": 0}, \"targetReferenceDomain\": GS.CONST.DEFAULT_DOMAIN, \"targetReference\": GS.CONST.DEFAULT_VARIABLE_DATA, \"operation\": 0, \"source\": 0, \"sourceValue\": 0, \"sourceRandom\": {\"start\":0, \"end\":0}, \"sourceScope\": 0, \"sourceVariable\": GS.CONST.DEFAULT_VARIABLE_DATA, \"sourceReferenceDomain\": GS.CONST.DEFAULT_DOMAIN, \"sourceReference\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"quickItems\": [\n        {\n            \"label\": \"$$30A49AB7K99E9A4E59SAA85EAA161A0E1836\",\n            \"valueFormula\": \"return GS.CONST.NUMBER_VARIABLE_TARGETS[p.target]\",\n            \"attribute\": \"target\",\n            \"identifier\": \"target\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.NUMBER_VARIABLE_TARGETS,\n            \"showItems\": [[\"targetVariable\"], [\"targetScope\", \"targetRangeStart\", \"targetRangeEnd\"], [\"targetScope\", \"targetReference\"]]\n        },\n        {\n            \"label\": \"$$8FDA6DB8K3D9DA4768SAEFEE8D5AC4132CBF\",\n            \"identifier\": \"targetVariable\",\n            \"valueFormula\": \"return fmtNumVar(p.targetVariable)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" } },\n            \"attribute\": \"targetVariable\"\n        },\n        {\n            \"label\": \"$$8F52A5EE89E7E948CD5805E9FD34F6392535\",\n            \"identifier\": \"targetScope\",\n            \"valueFormula\": \"return GS.CONST.VARIABLE_SCOPES[p.targetScope]\",\n            \"attribute\": \"targetScope\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VARIABLE_SCOPES\n        },\n        {\n            \"label\": \"$$CA1904C34CB8A64AEE891DD1784948E737C4\",\n            \"valueFormula\": \"return p.targetRange.start;\",\n            \"type\": \"GSQStepper\",\n            \"identifier\": \"targetRangeStart\",\n            \"attribute\": \"targetRange.start\",\n            \"minimum\": 1,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$DC1A41265CECC346098B4931B5874A2AF62A\",\n            \"identifier\": \"targetRangeEnd\",\n            \"valueFormula\": \"return p.targetRange.end;\",\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"targetRange.end\",\n            \"minimum\": 1,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$E9D43A91K0788A42D6SB1BEECB5798FF9691\",\n            \"identifier\": \"targetReference\",\n            \"valueFormula\": \"return fmtNumVar(p.targetReference)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" } },\n            \"attribute\": \"targetReference\",\n            \"domainButton\": true\n        },\n        {\n            \"label\": \"$$2900A383K89C0A4833SB25FE5DE87EB43DD7\",\n            \"valueFormula\": \"return GS.CONST.NUMBER_VARIABLE_OPERATIONS[p.operation]\",\n            \"attribute\": \"operation\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.NUMBER_VARIABLE_OPERATIONS\n        },\n        {\n            \"label\": \"$$78F4DB01K876EA43F7S97A0EC7758C04B58A\",\n            \"valueFormula\": \"return GS.CONST.NUMBER_VARIABLE_SOURCES[p.source]\",\n            \"attribute\": \"source\",\n            \"identifier\": \"source\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.NUMBER_VARIABLE_SOURCES,\n            \"showItems\": [[\"sourceValue\"], [\"sourceRandomStart\", \"sourceRandomEnd\"], [\"sourceScope\", \"sourceReference\"]]\n        },\n        {\n            \"label\": \"$$89ECAECDK4610A4BF8SA019E8444CA45FAB6\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"valueFormula\": \"return fmtNumVar(p.sourceValue);\",\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"sourceValue\",\n            \"numberFormat\": \"decimal\",\n            \"defaultValue\": 0,\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$CA1904C34CB8A64AEE891DD1784948E737C4\",\n            \"identifier\": \"sourceRandomStart\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"valueFormula\": \"return fmtNumVar(p.sourceRandom.start);\",\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"sourceRandom.start\",\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$DC1A41265CECC346098B4931B5874A2AF62A\",\n            \"identifier\": \"sourceRandomEnd\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"valueFormula\": \"return fmtNumVar(p.sourceRandom.end);\",\n            \"type\": \"GSQStepper\",\n            \"attribute\": \"sourceRandom.end\",\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE\n        },\n        {\n            \"label\": \"$$8F52A5EE89E7E948CD5805E9FD34F6392535\",\n            \"identifier\": \"sourceScope\",\n            \"valueFormula\": \"return GS.CONST.VARIABLE_SCOPES[p.sourceScope]\",\n            \"attribute\": \"sourceScope\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VARIABLE_SCOPES\n        },\n        {\n            \"label\": \"$$E9D43A91K0788A42D6SB1BEECB5798FF9691\",\n            \"valueFormula\": \"return fmtNumVar(p.sourceReference)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" } },\n            \"attribute\": \"sourceReference\",\n            \"domainButton\": true\n        }\n    ],\n    \n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$P25\",\n                        \"rows\": [\n                            { \"items\": [\n                                {\n                                    \"label\": \"$$BBCEB6F835D7B64D737970208F950EB8403E\",\n                                    \"valueFormula\": \"return GS.CONST.ROUNDING_TYPES[p.roundMethod];\",\n                                    \"type\": \"GSQPopupField\",\n                                    \"dataSource\": GS.CONST.ROUNDING_TYPES,\n                                    \"attribute\": \"roundMethod\"\n                                }\n                            ] }\n                        ]\n                    } \n                ]\n            }\n        ]\n    },\n}",
+        "name": "Decimal Variable",
+        "type": "event_command",
+        "parentId": "97163D89K8F9DA45ADSA51CE47DE4ECE311C",
+        "order": 5
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

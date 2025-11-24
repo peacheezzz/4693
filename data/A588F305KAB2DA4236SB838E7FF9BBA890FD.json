@@ -1,0 +1,22 @@
+{
+    "uid": "A588F305KAB2DA4236SB838E7FF9BBA890FD",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "Layouts",
+        "type": "game_script",
+        "order": 6,
+        "content": "",
+        "parentId": "ROOT",
+        "folder": true,
+        "compiledContent": "\n\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VzQ29udGVudCI6WyIiXX0=\n//# sourceURL=Layouts_74.js",
+        "index": 74,
+        "decoded": true
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

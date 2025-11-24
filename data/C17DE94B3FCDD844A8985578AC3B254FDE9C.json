@@ -1,0 +1,21 @@
+{
+    "uid": "C17DE94B3FCDD844A8985578AC3B254FDE9C",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "In-Game UI",
+        "type": "game_script",
+        "order": 8,
+        "content": "",
+        "parentId": "ROOT",
+        "folder": true,
+        "scriptType": 0,
+        "decoded": true
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

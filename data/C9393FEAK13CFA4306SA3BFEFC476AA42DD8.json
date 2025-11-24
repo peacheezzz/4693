@@ -1,0 +1,186 @@
+{
+    "uid": "C9393FEAK13CFA4306SA3BFEFC476AA42DD8",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "CCC1D58AKA96AA4B0ESA33CE6CCC06CB5662",
+        "displayName": "$$9B726F4F6E7125453F1914C1541DD785DF63",
+        "windowTitle": "$$90433D4CK4E35A4DFDS862EEFB0C4808F17E",
+        "type": "event_command",
+        "id": "vn.SetGameData",
+        "group": "$$C1953650K4FD7A4268SB298E0BEFC554D88E",
+        "subGroup": "$$271150F15AF34549943BCE034E6B8B439297",
+        "windowSize": {
+            "w": 600,
+            "h": 260
+        },
+        "nodes": [],
+        "defaultValue": {
+            "field": 0,
+            "numberValue": 0,
+            "textValue": "",
+            "switchValue": 0
+        },
+        "quickItems": [
+            {
+                "label": "$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB",
+                "valueFormula": "return GS.CONST.VN_WRITABLE_GAME_DATA_FIELDS[p.field];",
+                "attribute": "field",
+                "identifier": "field",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$65DF7DAE36B6634C3E786971C059B03AA731",
+                    "$$DB8AC85091F844454E79BC18AC572B7178FB",
+                    "$$DFE8D9558CB8C3458E1A85A69BA73C66B884",
+                    "$$EDB2329D569AB342A32913E80793EA0145BC",
+                    "$$881F410A5A49834F185822C3D5CA9F3E4988",
+                    "$$F862ED5811D8F44F79781BE67AA441B295CD",
+                    "$$FFF825281AD3144D52193C43AFAC63E50470",
+                    "$$0335104D4D2B48413B3A2D19436D69EE97E7",
+                    "$$2FA31DF17A40414BCE592217B6B26C5ACE35",
+                    "$$70487B5192E1B44A4028CCF7F031B3E6498B",
+                    "$$79FAA5ED7F12D9404839F577C4917E2E0C4D",
+                    "$$D65B5B4341C1E148C61897C4EF0861303855",
+                    "$$C1B583191B61554F539A0A625358290DAEE6",
+                    "$$58984FBA3507C8435E29E094FDB9F5EF8AC3",
+                    "$$CB58B38968345841F91B2B10C10758DDAE4D",
+                    "$$F152C63612ED5541A15BABF0650167C513D2",
+                    "$$BDD2749D7D179842685B84C69DABE7849BFF",
+                    "$$315BEDE93D342144F74816D4126EF6A7AB2A",
+                    "$$50D69F783360284753288E211B15D84D23E4",
+                    "$$CDB36CF157E4E345E85B8DD3F5E19D49A036",
+                    "$$4BD9FE2C88E75149A03B86F74B0A70B7FAB2",
+                    "$$DDBC466C06C4C449EE489256DA79461BEDA2"
+                ],
+                "showItems": [
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "decimalValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "numberValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "switchValue"
+                    ],
+                    [
+                        "textValue"
+                    ],
+                    [
+                        "switchValue"
+                    ]
+                ]
+            },
+            {
+                "label": "$$3188BF5032FDE243E65A66914CBA9FC239AC",
+                "identifier": "numberValue",
+                "valueFormula": "return fmtNumVar(p.numberValue)",
+                "type": "GSQStepper",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "attribute": "numberValue",
+                "minimum": -999999999,
+                "maximum": 999999999,
+                "defaultValue": 0
+            },
+            {
+                "label": "$$3188BF5032FDE243E65A66914CBA9FC239AC",
+                "identifier": "decimalValue",
+                "numberFormat": "decimal",
+                "valueFormula": "return fmtNumVar(p.decimalValue)",
+                "type": "GSQStepper",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "attribute": "decimalValue",
+                "minimum": -999999999,
+                "maximum": 999999999,
+                "defaultValue": 0
+            },
+            {
+                "label": "$$3188BF5032FDE243E65A66914CBA9FC239AC",
+                "identifier": "switchValue",
+                "valueFormula": "return isVar(p.switchValue) ? fmtBoolVar(p.switchValue) : GS.CONST.SWITCH_STATES[p.switchValue]",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$DA1F7042K631AA464BSA0F8E78BB13F6C242",
+                    "$$B958FADFKE38BA4BC2SAFC0E8B2CC6722744"
+                ],
+                "variableButton": {
+                    "dataSource": "booleans"
+                },
+                "attribute": "switchValue"
+            },
+            {
+                "label": "$$3188BF5032FDE243E65A66914CBA9FC239AC",
+                "identifier": "textValue",
+                "valueFormula": "return fmtStrVar(p.textValue)",
+                "type": "GSQTextArea",
+                "multiline": false,
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "attribute": "textValue"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$9B726F4F6E7125453F1914C1541DD785DF63\",\n    \"windowTitle\": \"$$90433D4CK4E35A4DFDS862EEFB0C4808F17E\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.SetGameData\",\n    \"group\": \"$$C1953650K4FD7A4268SB298E0BEFC554D88E\",\n    \"subGroup\": \"$$271150F15AF34549943BCE034E6B8B439297\",\n    \"windowSize\": {\n        \"w\": 600,\n        \"h\": 260\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"field\": 0, \"numberValue\": 0, \"textValue\": \"\", \"switchValue\": 0 },\n    \"quickItems\": [\n        {\n            \"label\": \"$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB\",\n            \"valueFormula\": \"return GS.CONST.VN_WRITABLE_GAME_DATA_FIELDS[p.field];\",\n            \"attribute\": \"field\",\n            \"identifier\": \"field\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VN_WRITABLE_GAME_DATA_FIELDS,\n            \"showItems\": [\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"decimalValue\"],\n                [\"switchValue\"],\n                [\"numberValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"numberValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"switchValue\"],\n                [\"textValue\"],\n                [\"switchValue\"]\n            ]\n        },\n        {\n            \"label\": \"$$3188BF5032FDE243E65A66914CBA9FC239AC\",\n            \"identifier\": \"numberValue\",\n            \"valueFormula\": \"return fmtNumVar(p.numberValue)\",\n            \"type\": \"GSQStepper\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"attribute\": \"numberValue\",\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n            \"defaultValue\": 0\n        },\n        {\n            \"label\": \"$$3188BF5032FDE243E65A66914CBA9FC239AC\",\n            \"identifier\": \"decimalValue\",\n            \"numberFormat\": \"decimal\",\n            \"valueFormula\": \"return fmtNumVar(p.decimalValue)\",\n            \"type\": \"GSQStepper\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"attribute\": \"decimalValue\",\n            \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n            \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n            \"defaultValue\": 0\n        },\n        {\n            \"label\": \"$$3188BF5032FDE243E65A66914CBA9FC239AC\",\n            \"identifier\": \"switchValue\",\n            \"valueFormula\": \"return isVar(p.switchValue) ? fmtBoolVar(p.switchValue) : GS.CONST.SWITCH_STATES[p.switchValue]\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.SWITCH_STATES,\n            \"variableButton\": { \"dataSource\": \"booleans\" },\n            \"attribute\": \"switchValue\"\n        },\n        {\n            \"label\": \"$$3188BF5032FDE243E65A66914CBA9FC239AC\",\n            \"identifier\": \"textValue\",\n            \"valueFormula\": \"return fmtStrVar(p.textValue)\",\n            \"type\": \"GSQTextArea\",\n            \"multiline\": false,\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"attribute\": \"textValue\"\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Set Game Data",
+        "order": 10
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

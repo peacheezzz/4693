@@ -1,0 +1,99 @@
+{
+    "uid": "EB4E26FAK69B9A4D05S9548E0833B4FDE11E",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "3E57923EKA72FA43ECSB6ACE60B387513294",
+        "displayName": "$$75F572E1851AD44ABE7B8B70EE271FD478D2",
+        "windowTitle": "Change Scene",
+        "type": "event_command",
+        "id": "vn.ChangeScene",
+        "group": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+        "subGroup": "$$3821D5611242A9442D597146E7D807708DE1",
+        "windowSize": {
+            "w": 400
+        },
+        "defaultValue": {
+            "scene": null,
+            "savePrevious": 0,
+            "erasePictures": 0,
+            "eraseTexts": 0,
+            "eraseVideos": 0
+        },
+        "quickItems": [
+            {
+                "type": "GSQPopupField",
+                "label": "$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA",
+                "attribute": "scene",
+                "dataAttribute": "scene",
+                "dialog": {
+                    "uid": "0E620E08KED4CA4E7CS8514E5B2BF2657DA5"
+                },
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "valueFormula": "return isVar(p.scene) ? fmtStrVar(p.scene) : (p.scene ? fmtDocument(p.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));"
+            },
+            {
+                "label": "$$80ABB339558BB14DD31B2E353D5AB51D792D",
+                "type": "GSQCheckBox",
+                "attribute": "savePrevious",
+                "identifier": "savePrevious",
+                "valueFormula": "return GS.CONST.YES_NO[p.savePrevious]"
+            }
+        ],
+        "expandedView": {
+            "columns": [
+                {
+                    "sections": [
+                        {
+                            "label": "$$896390DC3143F242F87A79C5AE6783D060E6",
+                            "rows": [
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$3DE8FAE19C134148973A95077AD48107ED9F",
+                                            "type": "GSQCheckBox",
+                                            "attribute": "erasePictures",
+                                            "identifier": "erasePictures",
+                                            "valueFormula": "return GS.CONST.YES_NO[p.erasePictures]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$29E6B0C21B76544BC978C1A450198D459003",
+                                            "type": "GSQCheckBox",
+                                            "attribute": "eraseTexts",
+                                            "identifier": "eraseTexts",
+                                            "valueFormula": "return GS.CONST.YES_NO[p.eraseTexts]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "items": [
+                                        {
+                                            "label": "$$1078B1A920D2974AF71B92674556295A0CE4",
+                                            "type": "GSQCheckBox",
+                                            "attribute": "eraseVideos",
+                                            "identifier": "eraseVideos",
+                                            "valueFormula": "return GS.CONST.YES_NO[p.eraseVideos]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$75F572E1851AD44ABE7B8B70EE271FD478D2\",\n    \"windowTitle\": \"Change Scene\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.ChangeScene\",\n    \"group\": \"$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA\",\n    \"subGroup\": \"$$3821D5611242A9442D597146E7D807708DE1\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"defaultValue\": { \"scene\": null, \"savePrevious\": 0, \"erasePictures\": 0, \"eraseTexts\": 0, \"eraseVideos\": 0 },\n    \"quickItems\": [\n        {\n            \"type\": \"GSQPopupField\",\n            \"label\": \"$$D4EBFB57KE5C7A4149S9FB1EBC4BB63151DA\",\n            \"attribute\": \"scene\",\n            \"dataAttribute\": \"scene\",\n            \"dialog\": { \"uid\": \"0E620E08KED4CA4E7CS8514E5B2BF2657DA5\" },\n            \"variableButton\": { \"dataSource\": \"strings\" },\n            \"valueFormula\": \"return isVar(p.scene) ? fmtStrVar(p.scene) : (p.scene ? fmtDocument(p.scene.uid) : lcs('D7DC911DKCCB9A4DE9SBE26EBFCCA4CB0826'));\"\n        },\n        GSQ.CONTROLS.CHECK_BOX(\"$$80ABB339558BB14DD31B2E353D5AB51D792D\", \"savePrevious\")\n    ],\n    \"expandedView\": {\n        \"columns\": [\n            {\n                \"sections\": [\n                    {\n                        \"label\": \"$$896390DC3143F242F87A79C5AE6783D060E6\",\n                        \"rows\": [\n                            { \"items\": [ GSQ.CONTROLS.CHECK_BOX(\"$$3DE8FAE19C134148973A95077AD48107ED9F\", \"erasePictures\") ] },\n                            { \"items\": [ GSQ.CONTROLS.CHECK_BOX(\"$$29E6B0C21B76544BC978C1A450198D459003\", \"eraseTexts\") ] },\n                            { \"items\": [ GSQ.CONTROLS.CHECK_BOX(\"$$1078B1A920D2974AF71B92674556295A0CE4\", \"eraseVideos\") ] }\n                        ]\n                    }\n                ]\n            }\n        ]\n        \n    }\n}",
+        "name": "Change Scene",
+        "order": 0
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "uid": "6A62D475K3A6FA4FC8S8E76E3C33BCA4E8A2",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "CCC1D58AKA96AA4B0ESA33CE6CCC06CB5662",
+        "displayName": "$$2365352064347640840A916928D18E353DAE",
+        "windowTitle": "$$053CCAE1KAF5DA4E71SB76AE2CA08A87E93F",
+        "type": "event_command",
+        "id": "vn.UnlockCG",
+        "group": "$$C1953650K4FD7A4268SB298E0BEFC554D88E",
+        "subGroup": "$$271150F15AF34549943BCE034E6B8B439297",
+        "windowSize": {
+            "w": 400
+        },
+        "defaultValue": {
+            "cgId": null
+        },
+        "quickItems": [
+            {
+                "label": "$$F31C83242C8F62485F5A2B348BC32838EF7E",
+                "valueFormula": "return fmtRecord('cgGallery', p.cgId)",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "attribute": "cgId",
+                "identifier": "cg",
+                "type": "GSQDataRecordField",
+                "dataSource": "cgGallery"
+            }
+        ],
+        "nodes": [],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$2365352064347640840A916928D18E353DAE\",\n    \"windowTitle\": \"$$053CCAE1KAF5DA4E71SB76AE2CA08A87E93F\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.UnlockCG\",\n    \"group\": \"$$C1953650K4FD7A4268SB298E0BEFC554D88E\",\n    \"subGroup\": \"$$271150F15AF34549943BCE034E6B8B439297\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"defaultValue\": { \"cgId\": null },\n    \"quickItems\": [\n        {\n            \"label\": \"$$F31C83242C8F62485F5A2B348BC32838EF7E\",\n            \"valueFormula\": \"return fmtRecord('cgGallery', p.cgId)\",\n            \"variableButton\": { \"dataSource\": \"numbers\" },\n            \"attribute\": \"cgId\",\n            \"identifier\": \"cg\",\n            \"type\": \"GSQDataRecordField\",\n            \"dataSource\": \"cgGallery\"\n        }\n    ],\n    \"nodes\": [\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Unlock CG",
+        "order": 3
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "uid": "07DE2070E28031A9",
+    "lastModificationTime": 0,
+    "items":
+    {
+        "name": "Settings",
+        "type": "settings"
+    },
+    "summary": ["name", "type"]
+}

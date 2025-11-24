@@ -1,0 +1,189 @@
+{
+    "uid": "RESOURCES",
+    "items": {
+        "type": "resource_table",
+        "resources": {
+            "Audio/Music/Daughter - The Right Way Around": [
+                ".mp3"
+            ],
+            "Audio/Sounds/11月17日": [
+                ".mp4"
+            ],
+            "Audio/Sounds/11月24日": [
+                ".MP3"
+            ],
+            "Audio/Sounds/car-crash-edit-two-92001": [
+                ".mp3"
+            ],
+            "Audio/Sounds/crash": [
+                ".MP3",
+                ".WAV"
+            ],
+            "Audio/Sounds/motorcycle_sound": [
+                ".mp3"
+            ],
+            "Audio/Sounds/System/choice_cancel_01": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/choice_cancel_02": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/choice_confirm_01": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/choice_confirm_02": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/choice_confirm_03": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/cursor": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/exit_01": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/exit_02": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/invalid_buzz_01": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/invalid_buzz_02": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/invalid_buzz_03": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/load_01": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/load_02": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/save_01": [
+                ".ogg"
+            ],
+            "Audio/Sounds/System/save_02": [
+                ".ogg"
+            ],
+            "folders": [
+                ".json"
+            ],
+            "fonts": [
+                ".css"
+            ],
+            "Graphics/Backgrounds/allBlack": [
+                ".png"
+            ],
+            "Graphics/Backgrounds/road": [
+                ".png"
+            ],
+            "Graphics/Backgrounds/roadtrip2": [
+                ".png"
+            ],
+            "Graphics/Characters/Animation/riding_4693": [
+                ".png"
+            ],
+            "Graphics/Characters/Animation/riding_93": [
+                ".png"
+            ],
+            "Graphics/Characters/kid/kidvale_blink1": [
+                ".png"
+            ],
+            "Graphics/Characters/kid/kidvale_blink2": [
+                ".png"
+            ],
+            "Graphics/Characters/kid/kidvale_blink3": [
+                ".png"
+            ],
+            "Graphics/Characters/marc/marc_test": [
+                ".png"
+            ],
+            "Graphics/Icons/Germany": [
+                ".png"
+            ],
+            "Graphics/Icons/Japan": [
+                ".png"
+            ],
+            "Graphics/Icons/United-Kingdom": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/bg-generic": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/diamond-large-off": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/diamond-large-on": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/diamond-small-off": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/diamond-small-on": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/dropshadow": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/entrybox": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/locked": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/message_caret": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/Mobile/m-arrow-disabled": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/Mobile/m-arrow": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/Mobile/m-diamond-large-off": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/Mobile/m-diamond-large-on": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/Mobile/m-diamond-small-off": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/Mobile/m-diamond-small-on": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/Mobile/msg-diamond-small-off": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/Mobile/msg-diamond-small-on": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/scrollbar": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/selection-inactive": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/selection": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/skin-frame": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/skin-stretch": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/skin-tile": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/thumbnailshadow": [
+                ".png"
+            ],
+            "Graphics/Pictures/web-start-screen": [
+                ".png"
+            ]
+        }
+    }
+}

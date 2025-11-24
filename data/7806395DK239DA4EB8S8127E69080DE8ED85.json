@@ -1,0 +1,141 @@
+{
+    "uid": "7806395DK239DA4EB8S8127E69080DE8ED85",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "AC1ABDCBK050BA4863S9964E3DC378247DAD",
+        "name": "Database Parameter",
+        "windowTitle": "$$895B0B9746E9A6447909D9C6ED09EC2F5E4B",
+        "type": "custom_view",
+        "windowSize": {
+            "w": 400
+        },
+        "sections": [
+            {
+                "name": "Time",
+                "noBorder": true,
+                "layout": {
+                    "type": "dynamicGrid",
+                    "fixedRowHeight": true
+                },
+                "column": 0,
+                "items": [
+                    {
+                        "type": "GSLabel",
+                        "text": "$$P119",
+                        "toolTip": "$$D086F69CK2E31A4A73S96F3E73722D94043A",
+                        "group": "labels",
+                        "frame": [
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSTextField",
+                        "defaultValue": "",
+                        "attribute": "name",
+                        "toolTip": "$$D086F69CK2E31A4A73S96F3E73722D94043A",
+                        "frame": [
+                            1,
+                            0
+                        ]
+                    },
+                    {
+                        "type": "GSRadioButton",
+                        "identifier": "number",
+                        "enableItems": [
+                            "numberValue"
+                        ],
+                        "defaultValue": true,
+                        "value": 0,
+                        "attribute": "type",
+                        "text": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                        "group": "labels",
+                        "toolTip": "$$3E003AE1K5374A4117SBE07E938FEE1C54D3",
+                        "frame": [
+                            0,
+                            1
+                        ]
+                    },
+                    {
+                        "type": "GSStepper",
+                        "attribute": "value",
+                        "identifier": "numberValue",
+                        "toolTip": "$$3E003AE1K5374A4117SBE07E938FEE1C54D3",
+                        "minimum": -999999999,
+                        "maximum": 999999999,
+                        "defaultValue": 0,
+                        "frame": [
+                            1,
+                            1
+                        ]
+                    },
+                    {
+                        "type": "GSRadioButton",
+                        "identifier": "switch",
+                        "enableItems": [
+                            "switchValue"
+                        ],
+                        "value": 1,
+                        "attribute": "type",
+                        "text": "$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9",
+                        "group": "labels",
+                        "toolTip": "$$3E003AE1K5374A4117SBE07E938FEE1C54D3",
+                        "frame": [
+                            0,
+                            2
+                        ]
+                    },
+                    {
+                        "type": "GSComboBox",
+                        "identifier": "switchValue",
+                        "attribute": "value",
+                        "dataSource": [
+                            "$$DA1F7042K631AA464BSA0F8E78BB13F6C242",
+                            "$$B958FADFKE38BA4BC2SAFC0E8B2CC6722744"
+                        ],
+                        "toolTip": "$$3E003AE1K5374A4117SBE07E938FEE1C54D3",
+                        "defaultValue": false,
+                        "frame": [
+                            1,
+                            2
+                        ]
+                    },
+                    {
+                        "type": "GSRadioButton",
+                        "identifier": "text",
+                        "enableItems": [
+                            "textValue"
+                        ],
+                        "value": 2,
+                        "attribute": "type",
+                        "text": "$$CEA96B0BK6FBBA416BSB00FEDF96A1248489",
+                        "group": "labels",
+                        "toolTip": "$$3E003AE1K5374A4117SBE07E938FEE1C54D3",
+                        "frame": [
+                            0,
+                            3
+                        ]
+                    },
+                    {
+                        "type": "GSTextField",
+                        "attribute": "value",
+                        "identifier": "textValue",
+                        "toolTip": "$$3E003AE1K5374A4117SBE07E938FEE1C54D3",
+                        "defaultValue": "",
+                        "frame": [
+                            1,
+                            3
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rawContent": "{ \n    \"parentId\": \"AC1ABDCBK050BA4863S9964E3DC378247DAD\",\n\"name\": \"Database Parameter\",\n    \"windowTitle\": \"$$895B0B9746E9A6447909D9C6ED09EC2F5E4B\",\n    \"type\": \"custom_view\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"sections\": [\n        {\n            \"name\": \"Time\",\n            \"noBorder\": true,\n            \"layout\": {\n                \"type\": \"dynamicGrid\",\n                \"fixedRowHeight\": true\n            },\n            \"column\": 0,\n            \"items\": [\n                {\n                    \"type\": \"GSLabel\",\n                    \"text\": \"$$P119\",\n                    \"toolTip\": \"$$D086F69CK2E31A4A73S96F3E73722D94043A\",\n                    \"group\": \"labels\",\n                    \"frame\": [0, 0]\n                },\n                {\n                    \"type\": \"GSTextField\",\n                    \"defaultValue\": \"\",\n                    \"attribute\": \"name\",\n                    \"toolTip\": \"$$D086F69CK2E31A4A73S96F3E73722D94043A\",\n                    \"frame\": [1, 0]\n                },\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"identifier\": \"number\",\n                    \"enableItems\": [\"numberValue\"],\n                    \"defaultValue\": true,\n                    \"value\": 0,\n                    \"attribute\": \"type\",\n                    \"text\": \"$$C287D490K9B01A4407SA616EF2726CA43B52\",\n                    \"group\": \"labels\",\n                    \"toolTip\": \"$$3E003AE1K5374A4117SBE07E938FEE1C54D3\",\n                    \"frame\": [0, 1]\n                },\n                {\n                    \"type\": \"GSStepper\",\n                    \"attribute\": \"value\",\n                    \"identifier\": \"numberValue\",\n                    \"toolTip\": \"$$3E003AE1K5374A4117SBE07E938FEE1C54D3\",\n                    \"minimum\": -GS.CONST.MAX_NUMBER_VALUE,\n                    \"maximum\": GS.CONST.MAX_NUMBER_VALUE,\n                    \"defaultValue\": 0,\n                    \"frame\": [1, 1]\n                },\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"identifier\": \"switch\",\n                    \"enableItems\": [\"switchValue\"],\n                    \"value\": 1,\n                    \"attribute\": \"type\",\n                    \"text\": \"$$A8B1ECD7K09BAA4FFESB501EEF84B2699ED9\",\n                    \"group\": \"labels\",\n                    \"toolTip\": \"$$3E003AE1K5374A4117SBE07E938FEE1C54D3\",\n                    \"frame\": [0, 2]\n                },\n                {\n                    \"type\": \"GSComboBox\",\n                    \"identifier\": \"switchValue\",\n                    \"attribute\": \"value\",\n                    \"dataSource\": GS.CONST.SWITCH_STATES,\n                    \"toolTip\": \"$$3E003AE1K5374A4117SBE07E938FEE1C54D3\",\n                    \"defaultValue\": false,\n                    \"frame\": [1, 2]\n                },\n                {\n                    \"type\": \"GSRadioButton\",\n                    \"identifier\": \"text\",\n                    \"enableItems\": [\"textValue\"],\n                    \"value\": 2,\n                    \"attribute\": \"type\",\n                    \"text\": \"$$CEA96B0BK6FBBA416BSB00FEDF96A1248489\",\n                    \"group\": \"labels\",\n                    \"toolTip\": \"$$3E003AE1K5374A4117SBE07E938FEE1C54D3\",\n                    \"frame\": [0, 3]\n                },\n                {\n                    \"type\": \"GSTextField\",\n                    \"attribute\": \"value\",\n                    \"identifier\": \"textValue\",\n                    \"toolTip\": \"$$3E003AE1K5374A4117SBE07E938FEE1C54D3\",\n                    \"defaultValue\": \"\",\n                    \"frame\": [1, 3]\n                }\n            ]\n        }\n    ]\n}",
+        "order": 28
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

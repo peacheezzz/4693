@@ -1,0 +1,211 @@
+{
+    "uid": "E3098EE0KEB2FA4773SB7DCEC99456AC0304",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "CCC1D58AKA96AA4B0ESA33CE6CCC06CB5662",
+        "displayName": "$$44F2CCB12630E24D9B790F982B0B2BF788A5",
+        "windowTitle": "$$90433D4CK4E35A4DFDS862EEFB0C4808F17E",
+        "type": "event_command",
+        "id": "vn.GetGameData",
+        "group": "$$C1953650K4FD7A4268SB298E0BEFC554D88E",
+        "subGroup": "$$271150F15AF34549943BCE034E6B8B439297",
+        "windowSize": {
+            "w": 600,
+            "h": 260
+        },
+        "nodes": [],
+        "defaultValue": {
+            "field": 0,
+            "targetVariable": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB",
+                "valueFormula": "return GS.CONST.VN_READABLE_GAME_DATA_FIELDS[p.field];",
+                "attribute": "field",
+                "identifier": "field",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$1EEA6C0221AFB74E5159178460DEF4CF529A",
+                    "$$4BB5163C87839245596973F432BBC00E0615",
+                    "$$B65B942211065745B27B7B73AF2F2AAA00D6",
+                    "$$90E1F2154651824C523814A6F4135508937B",
+                    "$$716B826A5E73D5458B3ACE467E67BAF230AB",
+                    "$$C6A6AC1218A264474F285245BD54D7734ECC",
+                    "$$4AA9EA5E3DBE214D4878F12616334FFF9618",
+                    "$$B8CEE3F5663DD74D5C6A1892C5CBF5BB961D",
+                    "$$65DF7DAE36B6634C3E786971C059B03AA731",
+                    "$$DB8AC85091F844454E79BC18AC572B7178FB",
+                    "$$DFE8D9558CB8C3458E1A85A69BA73C66B884",
+                    "$$EDB2329D569AB342A32913E80793EA0145BC",
+                    "$$881F410A5A49834F185822C3D5CA9F3E4988",
+                    "$$F862ED5811D8F44F79781BE67AA441B295CD",
+                    "$$FFF825281AD3144D52193C43AFAC63E50470",
+                    "$$0335104D4D2B48413B3A2D19436D69EE97E7",
+                    "$$2FA31DF17A40414BCE592217B6B26C5ACE35",
+                    "$$70487B5192E1B44A4028CCF7F031B3E6498B",
+                    "$$79FAA5ED7F12D9404839F577C4917E2E0C4D",
+                    "$$D65B5B4341C1E148C61897C4EF0861303855",
+                    "$$C1B583191B61554F539A0A625358290DAEE6",
+                    "$$58984FBA3507C8435E29E094FDB9F5EF8AC3",
+                    "$$CB58B38968345841F91B2B10C10758DDAE4D",
+                    "$$F152C63612ED5541A15BABF0650167C513D2",
+                    "$$BDD2749D7D179842685B84C69DABE7849BFF",
+                    "$$315BEDE93D342144F74816D4126EF6A7AB2A",
+                    "$$50D69F783360284753288E211B15D84D23E4",
+                    "$$CDB36CF157E4E345E85B8DD3F5E19D49A036",
+                    "$$4BD9FE2C88E75149A03B86F74B0A70B7FAB2",
+                    "$$679B39729703454C5D6882F268767ED0E7CC",
+                    "Game - Skip"
+                ],
+                "showItems": [
+                    [
+                        "textVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "numberVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ],
+                    [
+                        "textVariable"
+                    ],
+                    [
+                        "textVariable"
+                    ],
+                    [
+                        "switchVariable"
+                    ]
+                ]
+            },
+            {
+                "label": "$$279A870082643340194815582532E3A95B7F",
+                "identifier": "numberVariable",
+                "valueFormula": "return fmtNumVar(p.targetVariable)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                },
+                "attribute": "targetVariable"
+            },
+            {
+                "label": "$$279A870082643340194815582532E3A95B7F",
+                "identifier": "textVariable",
+                "valueFormula": "return fmtStrVar(p.targetVariable)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "strings"
+                    }
+                },
+                "attribute": "targetVariable"
+            },
+            {
+                "label": "$$279A870082643340194815582532E3A95B7F",
+                "identifier": "switchVariable",
+                "valueFormula": "return fmtBoolVar(p.targetVariable)",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "booleans"
+                    }
+                },
+                "attribute": "targetVariable"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$44F2CCB12630E24D9B790F982B0B2BF788A5\",\n    \"windowTitle\": \"$$90433D4CK4E35A4DFDS862EEFB0C4808F17E\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.GetGameData\",\n    \"group\": \"$$C1953650K4FD7A4268SB298E0BEFC554D88E\",\n    \"subGroup\": \"$$271150F15AF34549943BCE034E6B8B439297\",\n    \"windowSize\": {\n        \"w\": 600,\n        \"h\": 260\n    },\n    \"nodes\": [\n    ],\n    \n    \"defaultValue\": { \"field\": 0, \"targetVariable\": { \"scope\": 1, \"index\": 0, \"domain\": GS.CONST.DEFAULT_DOMAIN } },\n    \"quickItems\": [\n        {\n            \"label\": \"$$9EE4CE017D7EE74B2D7B1FA77978BD1CD3DB\",\n            \"valueFormula\": \"return GS.CONST.VN_READABLE_GAME_DATA_FIELDS[p.field];\",\n            \"attribute\": \"field\",\n            \"identifier\": \"field\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.VN_READABLE_GAME_DATA_FIELDS,\n            \"showItems\": [\n                [\"textVariable\"], \n                [\"numberVariable\"],\n                [\"numberVariable\"],\n                [\"numberVariable\"],\n                [\"numberVariable\"],\n                [\"numberVariable\"],\n                [\"numberVariable\"],\n                [\"numberVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"numberVariable\"],\n                [\"switchVariable\"],\n                [\"numberVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"numberVariable\"],\n                [\"numberVariable\"],\n                [\"numberVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"switchVariable\"],\n                [\"textVariable\"],\n                [\"textVariable\"],\n                [\"switchVariable\"]\n            ]\n        },\n        {\n            \"label\": \"$$279A870082643340194815582532E3A95B7F\",\n            \"identifier\": \"numberVariable\",\n            \"valueFormula\": \"return fmtNumVar(p.targetVariable)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" } },\n            \"attribute\": \"targetVariable\"\n        },\n        {\n            \"label\": \"$$279A870082643340194815582532E3A95B7F\",\n            \"identifier\": \"textVariable\",\n            \"valueFormula\": \"return fmtStrVar(p.targetVariable)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"strings\" } },\n            \"attribute\": \"targetVariable\"\n        },\n        {\n            \"label\": \"$$279A870082643340194815582532E3A95B7F\",\n            \"identifier\": \"switchVariable\",\n            \"valueFormula\": \"return fmtBoolVar(p.targetVariable)\",\n            \"type\": \"GSQPopupField\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"booleans\" } },\n            \"attribute\": \"targetVariable\"\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Get Game Data",
+        "order": 7
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

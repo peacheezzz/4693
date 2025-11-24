@@ -1,0 +1,54 @@
+{
+    "uid": "D3B77687KCE66A44A4SB072E7C52AE0F7986",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "displayName": "$$860DA3AA34FB084E8E586AB08BA680B959FC",
+        "type": "event_command",
+        "id": "gs.ListRemoveAt",
+        "group": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+        "subGroup": "$$499F821A3A6E764627192618B66F3B07368F",
+        "defaultValue": {
+            "index": 0,
+            "listVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+                "valueFormula": "return fmtListVar(p.listVariable)",
+                "attribute": "listVariable",
+                "identifier": "list",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            },
+            {
+                "type": "GSQStepper",
+                "label": "$$7C2566611D53564B0A4B8487ECE9DB247FC8",
+                "valueFormula": "return fmtNumVar(p.index)",
+                "attribute": "index",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            }
+        ],
+        "rawContent": "{\n    \"displayName\": \"$$860DA3AA34FB084E8E586AB08BA680B959FC\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.ListRemoveAt\",\n    \"group\": \"$$C9C23A6E5A74F84FE07940677A0C2E37E13D\",\n    \"subGroup\": \"$$499F821A3A6E764627192618B66F3B07368F\",\n    \"defaultValue\": { \"index\": 0, \"listVariable\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"quickItems\": [\n        GSQ.CONTROLS.LIST_VARIABLE_SELECTION,\n        GSQ.CONTROLS.LIST_VARIABLE_INDEX\n    ]\n}",
+        "name": "Remove from List",
+        "parentId": "39568CDEK37BDA4AF4SB2BCEC53E3EBBE419",
+        "order": 4
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

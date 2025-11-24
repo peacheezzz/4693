@@ -1,0 +1,22 @@
+{
+    "uid": "A8E9945CKEE5CA4855SAC81E480CB8098E0E",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "Animation",
+        "type": "game_script",
+        "order": 24,
+        "content": "",
+        "parentId": "D3325122KACDEA4515SB731E37A42B9D779F",
+        "folder": true,
+        "compiledContent": "\n\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VzQ29udGVudCI6WyIiXX0=\n//# sourceURL=Animation_169.js",
+        "index": 169,
+        "decoded": true
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

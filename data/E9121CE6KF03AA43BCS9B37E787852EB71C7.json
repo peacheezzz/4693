@@ -1,0 +1,65 @@
+{
+    "uid": "E9121CE6KF03AA43BCS9B37E787852EB71C7",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "39568CDEK37BDA4AF4SB2BCEC53E3EBBE419",
+        "displayName": "$$F7CEF7437877F744A08AC1D1BEA3D9AC46C1",
+        "windowTitle": "$$67B3604CK927EA4C25S9433EDD54150ADEB0",
+        "type": "event_command",
+        "id": "gs.ListLength",
+        "group": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+        "subGroup": "$$E110CF2C3DE4154BFD586BB8FB2210EFBBE6",
+        "windowSize": {
+            "w": 400
+        },
+        "nodes": [],
+        "defaultValue": {
+            "listVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetVariable": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "quickItems": [
+            {
+                "label": "$$C9C23A6E5A74F84FE07940677A0C2E37E13D",
+                "valueFormula": "return fmtListVar(p.listVariable)",
+                "attribute": "listVariable",
+                "identifier": "list",
+                "type": "GSQPopupField",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "lists"
+                    }
+                }
+            },
+            {
+                "type": "GSQPopupField",
+                "valueFormula": "return fmtNumVar(p.targetVariable)",
+                "label": "$$279A870082643340194815582532E3A95B7F",
+                "attribute": "targetVariable",
+                "dialog": {
+                    "uid": "dialog.selectVariable",
+                    "parameters": {
+                        "dataSource": "numbers"
+                    }
+                }
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$F7CEF7437877F744A08AC1D1BEA3D9AC46C1\",\n    \"windowTitle\": \"$$67B3604CK927EA4C25S9433EDD54150ADEB0\",\n    \"type\": \"event_command\",\n    \"id\": \"gs.ListLength\",\n    \"group\": \"$$C9C23A6E5A74F84FE07940677A0C2E37E13D\",\n    \"subGroup\": \"$$E110CF2C3DE4154BFD586BB8FB2210EFBBE6\",\n    \"windowSize\": {\n        \"w\": 400\n    },\n    \"nodes\": [\n    ],\n    \"defaultValue\": { \"listVariable\": GS.CONST.DEFAULT_VARIABLE_DATA, \"targetVariable\": GS.CONST.DEFAULT_VARIABLE_DATA },\n    \"quickItems\": [\n        GSQ.CONTROLS.LIST_VARIABLE_SELECTION,\n        {\n            \"type\": \"GSQPopupField\",\n            \"valueFormula\": \"return fmtNumVar(p.targetVariable)\",\n            \"label\": \"$$279A870082643340194815582532E3A95B7F\",\n            \"attribute\": \"targetVariable\",\n            \"dialog\": { \"uid\": \"dialog.selectVariable\", \"parameters\": { \"dataSource\": \"numbers\" }}\n        }\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Length of List",
+        "order": 10
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

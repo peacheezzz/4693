@@ -1,0 +1,20 @@
+{
+    "uid": "286AC4F92011F1430C8818F8B92C4085E23D",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "Layout_WebStart",
+        "type": "game_script",
+        "order": 1,
+        "parentId": "A588F305KAB2DA4236SB838E7FF9BBA890FD",
+        "folder": false,
+        "scriptType": 0,
+        "content": "ui.UiFactory.layouts.webStartLayout = {\n    \"type\": \"ui.FreeLayout\",\n    \"frame\": [0, 0, Graphics.width, Graphics.height],\n    \"component\": { \"className\": \"Component_WebStartBehavior\" },\n    \"controls\": [\n        {\n            \"type\": \"ui.Image\",\n            \"frame\": [0, 0, Graphics.width, Graphics.height],\n            \"image\": \"web-start-screen\"\n        }\n    ]\n}",
+        "compiledContent": "ui.UiFactory.layouts.webStartLayout = {\n  \"type\": \"ui.FreeLayout\",\n  \"frame\": [0, 0, Graphics.width, Graphics.height],\n  \"component\": {\n    \"className\": \"Component_WebStartBehavior\"\n  },\n  \"controls\": [\n    {\n      \"type\": \"ui.Image\",\n      \"frame\": [0, 0, Graphics.width, Graphics.height],\n      \"image\": \"web-start-screen\"\n    }\n  ]\n};\n\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEVBQUUsQ0FBQyxTQUFTLENBQUMsT0FBTyxDQUFDLGNBQXJCLEdBQXNDO0VBQ2xDLE1BQUEsRUFBUSxlQUQwQjtFQUVsQyxPQUFBLEVBQVMsQ0FBQyxDQUFELEVBQUksQ0FBSixFQUFPLFFBQVEsQ0FBQyxLQUFoQixFQUF1QixRQUFRLENBQUMsTUFBaEMsQ0FGeUI7RUFHbEMsV0FBQSxFQUFhO0lBQUUsV0FBQSxFQUFhLDRCQUFmO0dBSHFCO0VBSWxDLFVBQUEsRUFBWTtJQUNSO01BQ0ksTUFBQSxFQUFRLFVBRFo7TUFFSSxPQUFBLEVBQVMsQ0FBQyxDQUFELEVBQUksQ0FBSixFQUFPLFFBQVEsQ0FBQyxLQUFoQixFQUF1QixRQUFRLENBQUMsTUFBaEMsQ0FGYjtNQUdJLE9BQUEsRUFBUyxrQkFIYjtLQURRO0dBSnNCIiwic291cmNlc0NvbnRlbnQiOlsidWkuVWlGYWN0b3J5LmxheW91dHMud2ViU3RhcnRMYXlvdXQgPSB7XG4gICAgXCJ0eXBlXCI6IFwidWkuRnJlZUxheW91dFwiLFxuICAgIFwiZnJhbWVcIjogWzAsIDAsIEdyYXBoaWNzLndpZHRoLCBHcmFwaGljcy5oZWlnaHRdLFxuICAgIFwiY29tcG9uZW50XCI6IHsgXCJjbGFzc05hbWVcIjogXCJDb21wb25lbnRfV2ViU3RhcnRCZWhhdmlvclwiIH0sXG4gICAgXCJjb250cm9sc1wiOiBbXG4gICAgICAgIHtcbiAgICAgICAgICAgIFwidHlwZVwiOiBcInVpLkltYWdlXCIsXG4gICAgICAgICAgICBcImZyYW1lXCI6IFswLCAwLCBHcmFwaGljcy53aWR0aCwgR3JhcGhpY3MuaGVpZ2h0XSxcbiAgICAgICAgICAgIFwiaW1hZ2VcIjogXCJ3ZWItc3RhcnQtc2NyZWVuXCJcbiAgICAgICAgfVxuICAgIF1cbn0iXX0=\n//# sourceURL=Layout_WebStart_26.js"
+    },
+    "summary": [
+        "name",
+        "type"
+    ],
+    "externalItems": []
+}

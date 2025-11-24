@@ -1,0 +1,20 @@
+{
+    "uid": "2EC9F946K6417A4973S8308E368608E89B8B",
+    "isLoaded": true,
+    "lastModificationTime": 1421095533505,
+    "items": {
+        "name": "Helpers",
+        "type": "game_script",
+        "order": 7,
+        "content": "",
+        "parentId": "ROOT",
+        "folder": true,
+        "compiledContent": "\n\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VzQ29udGVudCI6WyIiXX0=\n//# sourceURL=Helpers_76.js"
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

@@ -1,0 +1,80 @@
+{
+    "uid": "76B7EFC98D7754427E48EF0289EF97EFA560",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "id": "gs.SetTargetMessage",
+        "group": "$$8C18C980KCA7CA4FCDS99EFEC6824693DD97",
+        "subGroup": "$$7F2E596F36975540830ACF8248644620D341",
+        "displayName": "$$63BE94B67D35D64B3F8B4694F9D98152E87E",
+        "defaultValue": {
+            "id": "gameMessage_message",
+            "numberDomain": "com.degica.vnm.default",
+            "number": 0,
+            "type": 1,
+            "clear": 1
+        },
+        "quickItems": [
+            {
+                "label": "$$BD058CE5KA3B8A41C6S9B32ECEC674F8EC05",
+                "valueFormula": "return GS.CONST.MESSAGE_BOX_POSITIONS[p.type];",
+                "attribute": "type",
+                "type": "GSQPopupField",
+                "dataSource": [
+                    "$$7ED2EFE09A4BA440636A72C775C3D00A83AE",
+                    "$$A9449AC18121434DEF4A153226F84997880C"
+                ],
+                "showItems": [
+                    [
+                        "id"
+                    ],
+                    [
+                        "number"
+                    ]
+                ]
+            },
+            {
+                "type": "GSQPopupField",
+                "label": "$$A9449AC18121434DEF4A153226F84997880C",
+                "dataSource": [
+                    {
+                        "name": "$$B377402B9CFE46427A199532C210242722AE",
+                        "alias": "gameMessage_message"
+                    },
+                    {
+                        "name": "$$46F125F05E61C74FE92831665515EA9B9CD9",
+                        "alias": "nvlGameMessage_message"
+                    }
+                ],
+                "valueFormula": "return GS.CONST.MESSAGE_AREAS[p.id] ? GS.CONST.MESSAGE_AREAS[p.id].name : fmtStrVar(p.id)",
+                "attribute": "id",
+                "variableButton": {
+                    "dataSource": "strings"
+                }
+            },
+            {
+                "type": "GSQStepper",
+                "label": "$$C287D490K9B01A4407SA616EF2726CA43B52",
+                "attribute": "number",
+                "domainButton": true,
+                "variableButton": {
+                    "dataSource": "numbers"
+                }
+            },
+            {
+                "type": "GSQCheckBox",
+                "label": "$$P147",
+                "attribute": "clear"
+            }
+        ],
+        "rawContent": "{\n    \"id\": \"gs.SetTargetMessage\",\n    \"group\": \"$$8C18C980KCA7CA4FCDS99EFEC6824693DD97\",\n    \"subGroup\": \"$$7F2E596F36975540830ACF8248644620D341\",\n    \"displayName\": \"$$63BE94B67D35D64B3F8B4694F9D98152E87E\",\n    \"defaultValue\": { \"id\": \"gameMessage_message\", \"numberDomain\": GS.CONST.DEFAULT_DOMAIN, \"number\": 0, \"type\": 1, \"clear\": 1 },\n    \"quickItems\": [\n        {\n            \"label\": \"$$BD058CE5KA3B8A41C6S9B32ECEC674F8EC05\",\n            \"valueFormula\": \"return GS.CONST.MESSAGE_BOX_POSITIONS[p.type];\",\n            \"attribute\": \"type\",\n            \"type\": \"GSQPopupField\",\n            \"dataSource\": GS.CONST.MESSAGE_BOX_POSITIONS,\n            \"showItems\": [[\"id\"], [\"number\"]]\n        },\n        {\n            \"type\": \"GSQPopupField\",\n            \"label\": \"$$A9449AC18121434DEF4A153226F84997880C\",\n            \"dataSource\": Object.keys(GS.CONST.MESSAGE_AREAS).map(k => GS.CONST.MESSAGE_AREAS[k]),\n            \"valueFormula\": \"return GS.CONST.MESSAGE_AREAS[p.id] ? GS.CONST.MESSAGE_AREAS[p.id].name : fmtStrVar(p.id)\",\n            \"attribute\": \"id\",\n            \"variableButton\": { \"dataSource\": \"strings\" }\n        },\n        {\n            \"type\": \"GSQStepper\",\n            \"label\": \"$$C287D490K9B01A4407SA616EF2726CA43B52\",\n            \"attribute\": \"number\",\n            \"domainButton\": true,\n            \"variableButton\": { \"dataSource\": \"numbers\" }\n        },\n        {\n            \"type\": \"GSQCheckBox\",\n            \"label\": \"$$P147\",\n            \"attribute\": \"clear\"\n        }\n    ]\n}",
+        "name": "Set Message Target",
+        "type": "event_command",
+        "parentId": "8CC0A736KF347A454AS899FE4F42878D912C",
+        "order": 16
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

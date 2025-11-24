@@ -1,0 +1,93 @@
+{
+    "uid": "F363B69BKEE13A40EFS8045ED6133E58D84B",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "parentId": "7A22C363K2908A4E47S847CEF6497E3C751F",
+        "displayName": "$$84A1021037E4744E926909817EC682C680EF",
+        "windowTitle": "$$6D8C0C09K894DA4663SB614ECBB3135CE768",
+        "type": "event_command",
+        "id": "vn.FlashCharacter",
+        "group": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "windowSize": {
+            "w": 332
+        },
+        "nodes": [
+            {
+                "name": "return GS.ECH.textForFlashPicture(p);",
+                "id": "vn.FlashCharacter"
+            }
+        ],
+        "defaultValue": {
+            "characterId": null,
+            "color": {
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "alpha": 255
+            },
+            "duration": 0,
+            "waitForCompletion": 0
+        },
+        "quickItems": [
+            {
+                "label": "$$1CCE5315K1F61A4059SBC64E0B6CECA383C3",
+                "valueFormula": "return fmtRecord('characters', p.characterId)",
+                "attribute": "characterId",
+                "identifier": "character",
+                "variableButton": {
+                    "dataSource": "strings"
+                },
+                "type": "GSQDataRecordField",
+                "dataSource": "characters"
+            },
+            {
+                "label": "$$CE4922C3K0381A4335S898CEFEBA22825F89",
+                "valueFormula": "return p.color.red + ', ' + p.color.green + ', ' + p.color.blue + ', '+p.color.alpha; ",
+                "attribute": "color",
+                "type": "GSQPopupField",
+                "lockable": false,
+                "dataAttribute": "color",
+                "dialog": {
+                    "uid": "07DDB0112342C01F",
+                    "parameters": {}
+                }
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$84A1021037E4744E926909817EC682C680EF\",\n    \"windowTitle\": \"$$6D8C0C09K894DA4663SB614ECBB3135CE768\",\n    \"type\": \"event_command\",\n    \"id\": \"vn.FlashCharacter\",\n    \"group\": \"$$1CCE5315K1F61A4059SBC64E0B6CECA383C3\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"windowSize\": {\n        \"w\": 332\n    },\n    \"nodes\": [\n        {\n            \"name\": \"return GS.ECH.textForFlashPicture(p);\",\n            \"id\": \"vn.FlashCharacter\"\n        }\n    ],\n    \"defaultValue\": { \"characterId\": GS.CONST.DEFAULT_RECORD_ID, \"color\": { \"red\": 255, \"green\": 255, \"blue\": 255, \"alpha\": 255 }, \"duration\": 0, \"waitForCompletion\": 0 },\n    \"quickItems\": [\n        GSQ.CONTROLS.CHARACTER_SELECTION,\n        GSQ.CONTROLS.COLOR,\n        GSQ.CONTROLS.DURATION, GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Flash Character",
+        "order": 7
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}

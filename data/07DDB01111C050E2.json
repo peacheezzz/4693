@@ -1,0 +1,81 @@
+{
+    "uid": "07DDB01111C050E2",
+    "isLoaded": true,
+    "lastModificationTime": 1428162370190,
+    "items": {
+        "parentId": "85446216KA82AA4A7DS8F25E541AB7EFA66A",
+        "displayName": "$$P22",
+        "windowTitle": "$$P22",
+        "type": "event_command",
+        "title": "$$P22",
+        "id": "gs.TintScreen",
+        "group": "$$0620EF3CK3406A4B70SA1ACE3750D5C17E57",
+        "subGroup": "$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7",
+        "windowSize": {
+            "w": 380
+        },
+        "nodes": [
+            {
+                "name": "return GS.ECH.textForTintScreen(p);",
+                "id": "gs.TintScreen"
+            }
+        ],
+        "defaultValue": {
+            "tone": {
+                "red": 0,
+                "green": 0,
+                "blue": 0,
+                "grey": 0
+            },
+            "duration": 0,
+            "waitForCompletion": 0
+        },
+        "quickItems": [
+            {
+                "label": "$$CB75D4C9K770FA47E2S92C2E21822CB848C7",
+                "valueFormula": "return p.tone.red + ', ' + p.tone.green + ', ' + p.tone.blue + ', '+p.tone.grey; ",
+                "attribute": "tone",
+                "type": "GSQPopupField",
+                "dataAttribute": "tone",
+                "dialog": {
+                    "uid": "07DDB01111532274",
+                    "parameters": {}
+                }
+            },
+            {
+                "label": "$$0BD2456DK1DA1A4C2DS9C03EAC7A2C6C7815",
+                "valueFormula": "return fmtDuration(fmtNumVar(p.duration))",
+                "valueTranslator": {
+                    "write": "return v / 1000 * GS.CONST.GAME_FRAME_RATE",
+                    "read": "return ROUND(v / GS.CONST.GAME_FRAME_RATE * 1000)"
+                },
+                "type": "GSQStepper",
+                "attribute": "duration",
+                "identifier": "duration",
+                "variableButton": {
+                    "dataSource": "numbers"
+                },
+                "minimum": 0,
+                "maximum": 999999999
+            },
+            {
+                "type": "GSQPopupField",
+                "attribute": "waitForCompletion",
+                "identifier": "waitForCompletion",
+                "dataSource": [
+                    "$$2EA7A7BF12D3404F62094CA6644784A9FC40",
+                    "$$97A5E676K2351A43FCSB0DFEBB5CF7A73243"
+                ],
+                "valueFormula": "return (p.waitForCompletion ? lcs('97A5E676K2351A43FCSB0DFEBB5CF7A73243') : lcs('2EA7A7BF12D3404F62094CA6644784A9FC40'))"
+            }
+        ],
+        "sections": [],
+        "rawContent": "{\n    \"parentId\": \"AFAD6CEFK59C1A4298SBABFE7AEC1B964622\",\n    \"displayName\": \"$$P22\",\n    \"windowTitle\": \"$$P22\",\n    \"type\": \"event_command\",\n    \"title\": \"$$P22\",\n    \"id\": \"gs.TintScreen\",\n    \"group\": \"$$0620EF3CK3406A4B70SA1ACE3750D5C17E57\",\n    \"subGroup\": \"$$9D7B8871KE8A7A410ES8CA3EA1F415A8BEA7\",\n    \"windowSize\": {\n        \"w\": 380\n    },\n    \"nodes\": [\n        {\n            \"name\": \"return GS.ECH.textForTintScreen(p);\",\n            \"id\": \"gs.TintScreen\"\n        }\n    ],\n    \"defaultValue\": { \"tone\": { \"red\": 0, \"green\": 0, \"blue\": 0, \"grey\": 0 }, \"duration\": 0, \"waitForCompletion\": 0 },\n    \"quickItems\": [\n        GSQ.CONTROLS.TONE,\n        GSQ.CONTROLS.DURATION, GSQ.CONTROLS.WAIT_FOR_COMPLETION\n    ],\n    \"sections\": [\n    ]\n}",
+        "name": "Tint Screen",
+        "order": 0
+    },
+    "summary": [
+        "name",
+        "type"
+    ]
+}
