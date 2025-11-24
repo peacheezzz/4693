@@ -1,13 +1,14 @@
 {
     "uid": "83EC435442C5C14ED80A5F12EC7EE2BDFB57",
     "isLoaded": true,
-    "lastModificationTime": null,
+    "lastModificationTime": 0,
     "items": {
-        "type": "vn.scene",
         "name": "scene1",
+        "type": "vn.scene",
         "parentId": "72CD309022F08845D05AC9863756F4CB7A7C",
-        "localizableStrings": {},
         "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+        "order": 0,
+        "localizableStrings": {},
         "commands": [
             {
                 "id": "vn.ChangeBackground",
@@ -592,7 +593,6 @@
             }
         ],
         "livePreviewDisabled": false,
-        "order": 0,
         "numberVariables": [
             {
                 "name": "",
@@ -613,13 +613,19 @@
                 "index": 0,
                 "scope": 0
             }
+        ],
+        "listVariables": [
+            {
+                "name": "",
+                "index": 0,
+                "scope": 0
+            }
         ]
     },
     "summary": [
         "name",
         "type",
         "parentId",
-        "o",
         "chapterUid",
         "order"
     ],
