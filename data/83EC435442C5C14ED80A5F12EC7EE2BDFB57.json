@@ -74,7 +74,7 @@
                     "sound": {
                         "folderPath": "Audio/Sounds",
                         "name": "motorcycle_sound.mp3",
-                        "volume": "49",
+                        "volume": "31",
                         "playbackRate": 100
                     },
                     "musicEffect": 0,
@@ -242,7 +242,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "八月的荒漠是似乎总是一片单调的昏黄"
+                        "defaultText": "八月的荒漠似乎总是一片单调的昏黄"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -275,7 +275,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "大地喷发着热气把视野里的影像熏蒸到扭曲，\n远处怪诞而陌生的灌木丛和群山\n这条路似乎永无终点"
+                        "defaultText": "大地喷发着热气把视野里的影像熏蒸到扭曲，\n远处怪诞而陌生的灌木丛和群山"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -308,7 +308,40 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "......实在是......让人有些生厌。"
+                        "defaultText": "这条路似乎永远没有尽头"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "C915311E6ED0E747214946E10E550EEE3273",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "......这样的感觉实在是......让人有些生厌。"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -576,6 +609,39 @@
                     },
                     "message": {
                         "lcId": null,
+                        "defaultText": "“又”？"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "8EBFF2494D29814A7219D572EBB595EDAC0D",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
                         "defaultText": "......为什么是“又”？"
                     },
                     "position": 0,
@@ -590,6 +656,576 @@
                 "uid": "14416E4051C002435478909448F03021BF3C",
                 "indent": 0,
                 "expanded": true
+            },
+            {
+                "id": "vn.ChangeBackground",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "graphic": {
+                        "name": "road.png",
+                        "folderPath": "Graphics/Backgrounds",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        }
+                    },
+                    "layer": 1,
+                    "duration": 0,
+                    "waitForCompletion": 0,
+                    "blendMode": 0,
+                    "origin": 0,
+                    "zOrder": 0,
+                    "loopVertical": 1,
+                    "loopHorizontal": 1,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0,
+                        "easing.type": 1,
+                        "animation.type": 1,
+                        "origin": 1,
+                        "zOrder": 1,
+                        "blendMode": 1,
+                        "viewport.type": 1,
+                        "loopVertical": 0,
+                        "loopHorizontal": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "52B60D84364F844F50695C94123EE1CF129E",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "vn.CharacterJoinScene",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "predefinedPositionId": 0,
+                    "expressionId": "35BDF5221C06B541CF88AB93D3688841AE63",
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "zOrder": 0,
+                    "origin": 0,
+                    "blendMode": 0,
+                    "positionType": 1,
+                    "motionBlur": {
+                        "enabled": 0,
+                        "delay": 2,
+                        "opacity": 100,
+                        "dissolveSpeed": 3
+                    },
+                    "position": {
+                        "x": 738,
+                        "y": 212,
+                        "angle": 0,
+                        "zoom": 1,
+                        "horizontalFlip": false,
+                        "data": {},
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 0
+                        }
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 0
+                    },
+                    "duration": 0,
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "duration": 1,
+                        "easing.type": 1,
+                        "animation.type": 1,
+                        "motionBlur.enabled": 1,
+                        "origin": 1,
+                        "zOrder": 1,
+                        "blendMode": 1,
+                        "viewport.type": 1
+                    },
+                    "previewBackground": {
+                        "name": "",
+                        "folderPath": ""
+                    }
+                },
+                "uid": "ACAF777628089545281BDD11A180EAAAC6DD",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "......"
+                    },
+                    "position": 0,
+                    "characterId": "49D498DE4891714BA218D745763A1A385495",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "7C2679184DB2C046062A0D21DD4E0377DEC9",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "嘶......"
+                    },
+                    "position": 0,
+                    "characterId": "49D498DE4891714BA218D745763A1A385495",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "C796CDE23D4BF6485618EB800BB3582FD949",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "有些狼狈地从地上爬起来......有些擦伤但似乎并无大碍"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "F0F89FEB1F70A34D675B40B35D56CE33E3D6",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "周围除了自己和不远处摔在地上的越野摩托之外，没有什么人类活动痕迹\n......\n但是自己为什么会在这里？"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "986FA16F052941441C5AF5C442641FED8FF7",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "老天，希望还能启动"
+                    },
+                    "position": 0,
+                    "characterId": "49D498DE4891714BA218D745763A1A385495",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "11F60D9873EDC34EF3299852ACE75F424F3B",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "先前的摔碰让摩托的外壳有些掉漆，除此之外肉眼上看没有太严重的损坏\n肌肉记忆驱使自己把车扶起来重新发动引擎"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "9A4D83D24425B54FB9499E735E87BDDB8FE0",
+                "expanded": true
+            },
+            {
+                "id": "gs.PlaySound",
+                "params": {
+                    "sound": {
+                        "folderPath": "Audio/Sounds",
+                        "name": "motorcycle_sound.mp3",
+                        "volume": "25",
+                        "playbackRate": 100
+                    },
+                    "musicEffect": 0,
+                    "loop": 1,
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "sound.volume": 0,
+                        "sound.playbackRate": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "D5C9E764275234498E3BCD97FE74063AA0F9",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "太好了......听到发动机的轰鸣声有种意外的安心......"
+                    },
+                    "position": 0,
+                    "characterId": "49D498DE4891714BA218D745763A1A385495",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "E7F3DC7E24FEF84C20096B9327D57E9CE5CA",
+                "expanded": true
+            },
+            {
+                "id": "vn.CharacterExitScene",
+                "params": {
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "duration": 30,
+                    "waitForCompletion": 1,
+                    "easing": {
+                        "type": 1,
+                        "inOut": 0
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0,
+                        "easing.type": 1,
+                        "animation.type": 1
+                    }
+                },
+                "uid": "6907A73648927342D1899D76EB6BE8251B4E",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "vn.MessageBoxVisibility",
+                "params": {
+                    "duration": 60,
+                    "waitForCompletion": true,
+                    "id": "messageBox",
+                    "visible": 0,
+                    "animation": {
+                        "type": 0,
+                        "movement": 3,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "E1DD4F52888C754E6A5951F4CFD2BD7A43E6",
+                "indent": 0
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 0,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "D2CA38C662BD7244C65B0B70EEB8343737E4",
+                    "predefinedPositionId": 0,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 180,
+                    "origin": 0,
+                    "waitForCompletion": 0,
+                    "positionType": 1,
+                    "position": {
+                        "x": 200,
+                        "y": 370,
+                        "angle": 0,
+                        "zoom": 1,
+                        "horizontalFlip": false,
+                        "data": {},
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 0
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0,
+                        "easing.type": 0,
+                        "animation.type": 0,
+                        "zOrder": 1,
+                        "blendMode": 1,
+                        "viewport.type": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "D8A5413587FD764717987B73F0A12AB9F423",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "vn.ScrollBackgroundPath",
+                "params": {
+                    "layer": 1,
+                    "path": {
+                        "previewBackground": {
+                            "name": "$live_preview_snapshot"
+                        },
+                        "data": [
+                            {
+                                "pt1": {
+                                    "x": 1816,
+                                    "y": 536
+                                },
+                                "cpt": {
+                                    "x": 964,
+                                    "y": 536
+                                },
+                                "pt2": {
+                                    "x": 96,
+                                    "y": 536
+                                }
+                            }
+                        ],
+                        "effects": {
+                            "data": []
+                        }
+                    },
+                    "loopType": 1,
+                    "duration": 180,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "fieldFlags": {
+                        "easing.type": 0
+                    }
+                },
+                "uid": "9F32027B5E5D4346EF4A067193446DEAB09D",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "gs.PlayMusic",
+                "params": {
+                    "layer": 0,
+                    "loop": 1,
+                    "music": {
+                        "folderPath": "Audio/Music",
+                        "name": "Daughter - The Right Way Around.mp3",
+                        "volume": 100,
+                        "playbackRate": 100
+                    },
+                    "fadeInDuration": 0,
+                    "playTime": {
+                        "min": 10,
+                        "max": 30
+                    },
+                    "playRange": {
+                        "start": 10,
+                        "end": 20
+                    },
+                    "playType": 0,
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "music.volume": 1,
+                        "music.playbackRate": 1,
+                        "fadeInDuration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "65A39A328C5B8140563B4548BC5EE98B1FFC",
+                "indent": 0
             }
         ],
         "livePreviewDisabled": false,

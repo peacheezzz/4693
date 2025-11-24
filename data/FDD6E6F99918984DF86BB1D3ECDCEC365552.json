@@ -1,0 +1,40 @@
+{
+    "uid": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "Marc",
+        "type": "data_record",
+        "category": "characters",
+        "id": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+        "isFolder": false,
+        "parentId": "ROOT",
+        "data": {
+            "name": {
+                "lcId": null,
+                "defaultText": "Marc"
+            },
+            "textColor": {
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "alpha": 255
+            },
+            "defaultExpressionId": "747171CC13D0F44878680BC1C094AEBC2BBB",
+            "timeTalkingToVoiceVolume": true,
+            "talkingVolume": 5,
+            "lipSyncSensitivity": 1,
+            "breathIntensity": 1,
+            "idleIntensity": 1,
+            "params": [],
+            "index": "FDD6E6F99918984DF86BB1D3ECDCEC365552"
+        },
+        "order": 2
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

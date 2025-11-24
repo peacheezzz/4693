@@ -1,13 +1,12 @@
 {
-    "uid": "747171CC13D0F44878680BC1C094AEBC2BBB",
+    "uid": "35BDF5221C06B541CF88AB93D3688841AE63",
     "isLoaded": true,
-    "lastModificationTime": 0,
+    "lastModificationTime": null,
     "items": {
-        "name": "idle",
+        "name": "sweat",
         "type": "data_record",
-        "order": 0,
         "category": "characterExpressions",
-        "id": "747171CC13D0F44878680BC1C094AEBC2BBB",
+        "id": "35BDF5221C06B541CF88AB93D3688841AE63",
         "isFolder": false,
         "parentId": "64CCF81D5A8710427299AD891B42112F6AB8",
         "data": {
@@ -15,12 +14,12 @@
                 "start": 0.06,
                 "end": 240
             },
-            "name": "idle",
+            "name": "sweat",
             "idleSpeed": 500,
             "idle": [
                 {
                     "resource": {
-                        "name": "marc_idle_1.png",
+                        "name": "marc_sweat.png",
                         "folderPath": "Graphics/Characters/marc",
                         "hue": 0,
                         "opacity": 255,
@@ -30,7 +29,7 @@
                 },
                 {
                     "resource": {
-                        "name": "marc_idle_2.png",
+                        "name": "marc_sweat_2.png",
                         "folderPath": "Graphics/Characters/marc",
                         "hue": 0,
                         "opacity": 255,
@@ -40,27 +39,7 @@
                 },
                 {
                     "resource": {
-                        "name": "marc_idle_1.png",
-                        "folderPath": "Graphics/Characters/marc",
-                        "hue": 0,
-                        "opacity": 255,
-                        "blending": 0,
-                        "tone": null
-                    }
-                },
-                {
-                    "resource": {
-                        "name": "marc_idle_1.png",
-                        "folderPath": "Graphics/Characters/marc",
-                        "hue": 0,
-                        "opacity": 255,
-                        "blending": 0,
-                        "tone": null
-                    }
-                },
-                {
-                    "resource": {
-                        "name": "marc_idle_1.png",
+                        "name": "marc_sweat.png",
                         "folderPath": "Graphics/Characters/marc",
                         "hue": 0,
                         "opacity": 255,
@@ -71,8 +50,9 @@
             ],
             "talkingSpeed": 100,
             "talking": [],
-            "index": "747171CC13D0F44878680BC1C094AEBC2BBB"
-        }
+            "index": "35BDF5221C06B541CF88AB93D3688841AE63"
+        },
+        "order": 1
     },
     "summary": [
         "name",

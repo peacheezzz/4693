@@ -97,6 +97,18 @@
             "Graphics/Characters/kid/kidvale_blink3": [
                 ".png"
             ],
+            "Graphics/Characters/marc/marc_idle_1": [
+                ".png"
+            ],
+            "Graphics/Characters/marc/marc_idle_2": [
+                ".png"
+            ],
+            "Graphics/Characters/marc/marc_sweat": [
+                ".png"
+            ],
+            "Graphics/Characters/marc/marc_sweat_2": [
+                ".png"
+            ],
             "Graphics/Characters/marc/marc_test": [
                 ".png"
             ],

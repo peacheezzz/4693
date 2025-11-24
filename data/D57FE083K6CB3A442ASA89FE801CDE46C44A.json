@@ -19,7 +19,14 @@
             "thumb": {
                 "name": ""
             },
-            "index": "D57FE083K6CB3A442ASA89FE801CDE46C44A"
+            "index": "D57FE083K6CB3A442ASA89FE801CDE46C44A",
+            "relationData": {
+                "chapter": {
+                    "uid": "72CD309022F08845D05AC9863756F4CB7A7C",
+                    "name": "Chapter1"
+                }
+            },
+            "slot": 1
         },
         "localizableStrings": {}
     },
