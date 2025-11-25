@@ -62,7 +62,7 @@
             "battleView": 0,
             "titleMusic": {
                 "folderPath": "Audio/Music",
-                "name": "Daughter - The Right Way Around.mp3",
+                "name": "İbrahim Azat - Mendil El Hak.mp3",
                 "volume": 100,
                 "playbackRate": 100
             },
@@ -408,7 +408,7 @@
             "gameDataPath": 1,
             "languageMusic": {
                 "folderPath": "Audio/Music",
-                "name": "Daughter - The Right Way Around.mp3",
+                "name": "İbrahim Azat - Mendil El Hak.mp3",
                 "volume": 100,
                 "playbackRate": 100
             }
