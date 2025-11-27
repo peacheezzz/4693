@@ -1,0 +1,40 @@
+{
+    "uid": "4A5E028011614540518873E4AA92D7C96628",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "kid",
+        "type": "data_record",
+        "category": "characters",
+        "id": "4A5E028011614540518873E4AA92D7C96628",
+        "isFolder": false,
+        "parentId": "ROOT",
+        "data": {
+            "name": {
+                "lcId": null,
+                "defaultText": "kid"
+            },
+            "textColor": {
+                "red": 255,
+                "green": 255,
+                "blue": 255,
+                "alpha": 255
+            },
+            "defaultExpressionId": "602F45D70BD5C44F5A8B4DA524D74CA94B2B",
+            "timeTalkingToVoiceVolume": true,
+            "talkingVolume": 5,
+            "lipSyncSensitivity": 1,
+            "breathIntensity": 1,
+            "idleIntensity": 1,
+            "params": [],
+            "index": "4A5E028011614540518873E4AA92D7C96628"
+        },
+        "order": 1
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

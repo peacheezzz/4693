@@ -79,10 +79,31 @@
             "Graphics/Backgrounds/allBlack": [
                 ".png"
             ],
+            "Graphics/Backgrounds/motel": [
+                ".png"
+            ],
+            "Graphics/Backgrounds/motel2": [
+                ".png"
+            ],
+            "Graphics/Backgrounds/motel_cafe": [
+                ".png"
+            ],
+            "Graphics/Backgrounds/motel_light": [
+                ".png"
+            ],
+            "Graphics/Backgrounds/motel_light1": [
+                ".png"
+            ],
+            "Graphics/Backgrounds/motel_light2": [
+                ".png"
+            ],
             "Graphics/Backgrounds/road": [
                 ".png"
             ],
             "Graphics/Backgrounds/roadtrip2": [
+                ".png"
+            ],
+            "Graphics/Characters/Animation/kidvale_motel_blink": [
                 ".png"
             ],
             "Graphics/Characters/Animation/riding_4693": [
@@ -98,6 +119,12 @@
                 ".png"
             ],
             "Graphics/Characters/kid/kidvale_blink3": [
+                ".png"
+            ],
+            "Graphics/Characters/kid/kidvale_motel_blink1": [
+                ".png"
+            ],
+            "Graphics/Characters/kid/kidvale_motel_blink2": [
                 ".png"
             ],
             "Graphics/Characters/marc/marc_idle_1": [
@@ -125,6 +152,9 @@
                 ".png"
             ],
             "Graphics/Pictures/UI/bg-generic": [
+                ".png"
+            ],
+            "Graphics/Pictures/UI/cursor": [
                 ".png"
             ],
             "Graphics/Pictures/UI/diamond-large-off": [

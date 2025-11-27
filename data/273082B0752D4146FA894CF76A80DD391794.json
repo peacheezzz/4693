@@ -1,0 +1,23 @@
+{
+    "uid": "273082B0752D4146FA894CF76A80DD391794",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "bg",
+        "type": "data_record",
+        "category": "animations",
+        "isFolder": true,
+        "parentId": "ROOT",
+        "data": {
+            "name": "bg",
+            "isFolder": true
+        },
+        "order": 3
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

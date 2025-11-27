@@ -1,0 +1,49 @@
+{
+    "uid": "4D1EC73246D5714F106966B3A4A90654B1BA",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "motel_light",
+        "type": "data_record",
+        "category": "animations",
+        "id": "4D1EC73246D5714F106966B3A4A90654B1BA",
+        "isFolder": false,
+        "parentId": "273082B0752D4146FA894CF76A80DD391794",
+        "data": {
+            "frameRange": {
+                "start": 4,
+                "end": 1
+            },
+            "name": "motel_light",
+            "graphic": {
+                "name": "motel_light.png",
+                "folderPath": "Graphics/Backgrounds",
+                "hue": 0,
+                "opacity": 255,
+                "blending": 0,
+                "tone": {
+                    "red": 0,
+                    "green": 0,
+                    "blue": 0
+                }
+            },
+            "framesX": 4,
+            "framesY": 1,
+            "useRepetitionFrameRange": false,
+            "duration": 90,
+            "repeat": true,
+            "index": "4D1EC73246D5714F106966B3A4A90654B1BA",
+            "repetitionFrameRange": {
+                "start": 1,
+                "end": 200
+            }
+        },
+        "order": 0
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

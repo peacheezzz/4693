@@ -300,9 +300,16 @@
                 }
             },
             "cursor": {
-                "name": null,
-                "hx": 0,
-                "hy": 0
+                "folderPath": "Graphics/Pictures/UI",
+                "name": "cursor.png",
+                "hue": 0,
+                "opacity": 255,
+                "blending": 0,
+                "tone": {
+                    "red": 0,
+                    "green": 0,
+                    "blue": 0
+                }
             },
             "titleScreen": {
                 "folderPath": "Graphics/Backgrounds",
