@@ -5,7 +5,7 @@
     "items": {
         "name": "scene1",
         "type": "vn.scene",
-        "parentId": "9649FD3431C8E746AF8AA847CECEB2C4FF38",
+        "parentId": "DAB123513E37B6456C6881A496397720D16E",
         "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
         "order": 0,
         "localizableStrings": {},
@@ -30,7 +30,7 @@
                         }
                     },
                     "layer": 1,
-                    "duration": 0,
+                    "duration": 0.06,
                     "waitForCompletion": 0,
                     "blendMode": 0,
                     "origin": 0,
@@ -50,7 +50,7 @@
                         }
                     },
                     "fieldFlags": {
-                        "duration": 1,
+                        "duration": 0,
                         "easing.type": 1,
                         "animation.type": 1,
                         "origin": 1,
@@ -4583,13 +4583,39 @@
                 "expanded": true
             },
             {
+                "id": "gs.ErasePicture",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "duration": 30,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "9319D1D33581F644948949A7C24D8A15801C",
+                "indent": 0
+            },
+            {
                 "id": "vn.ChangeBackground",
                 "params": {
                     "viewport": {
                         "type": "scene"
                     },
                     "graphic": {
-                        "name": "motel2.png",
+                        "name": "allBlack.png",
                         "folderPath": "Graphics/Backgrounds",
                         "hue": 0,
                         "opacity": 255,
@@ -4632,43 +4658,21 @@
                 "indent": 0
             },
             {
-                "id": "vn.CallScene",
+                "id": "vn.ChangeScene",
                 "params": {
                     "scene": {
                         "uid": "500132F52025B648EB7905E1175607FAB8BE",
                         "name": "scene2"
                     },
+                    "savePrevious": 1,
+                    "erasePictures": 0,
+                    "eraseTexts": 0,
+                    "eraseVideos": 0,
                     "previewBackground": {
                         "name": "$live_preview_snapshot"
                     }
                 },
-                "uid": "485A2FC86782C0461D1BEEF7356AC569F295",
-                "indent": 0
-            },
-            {
-                "id": "gs.ErasePicture",
-                "params": {
-                    "numberDomain": "com.degica.vnm.default",
-                    "number": 1,
-                    "duration": 12,
-                    "waitForCompletion": 1,
-                    "easing": {
-                        "type": 0,
-                        "inOut": 1
-                    },
-                    "animation": {
-                        "type": 1,
-                        "movement": 0,
-                        "mask": {
-                            "graphic": null,
-                            "vague": 30
-                        }
-                    },
-                    "fieldFlags": {
-                        "duration": 0
-                    }
-                },
-                "uid": "D1FB8AC77734D04A5418FE376F543D29D79E",
+                "uid": "DDE1ABB915B4334B7A1A5303BED1934EBFE2",
                 "indent": 0
             }
         ],

@@ -3029,7 +3029,7 @@
         },
         "72CD309022F08845D05AC9863756F4CB7A7C": {
             "items": {
-                "name": "Chapter1",
+                "name": "第一章",
                 "type": "vn.chapter",
                 "order": 1
             }
@@ -3038,7 +3038,7 @@
             "items": {
                 "name": "scene1",
                 "type": "vn.scene",
-                "parentId": "9649FD3431C8E746AF8AA847CECEB2C4FF38",
+                "parentId": "DAB123513E37B6456C6881A496397720D16E",
                 "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
                 "order": 0
             }
@@ -3236,18 +3236,27 @@
             "items": {
                 "name": "scene2",
                 "type": "vn.scene",
-                "parentId": "9649FD3431C8E746AF8AA847CECEB2C4FF38",
+                "parentId": "83EC435442C5C14ED80A5F12EC7EE2BDFB57",
                 "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
-                "order": 1
+                "order": 0
             }
         },
-        "9649FD3431C8E746AF8AA847CECEB2C4FF38": {
+        "DAB123513E37B6456C6881A496397720D16E": {
             "items": {
                 "name": "第一章",
                 "type": "vn.scene",
                 "parentId": "72CD309022F08845D05AC9863756F4CB7A7C",
                 "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
-                "order": 2
+                "order": 1
+            }
+        },
+        "FAD2FC49411C84465C4AE777CAE2DB8E47D3": {
+            "items": {
+                "name": "scene3",
+                "type": "vn.scene",
+                "parentId": "DAB123513E37B6456C6881A496397720D16E",
+                "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+                "order": 1
             }
         }
     }

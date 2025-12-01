@@ -1,20 +1,15 @@
 {
     "uid": "500132F52025B648EB7905E1175607FAB8BE",
     "isLoaded": true,
-    "lastModificationTime": null,
+    "lastModificationTime": 0,
     "items": {
-        "type": "vn.scene",
         "name": "scene2",
-        "parentId": "9649FD3431C8E746AF8AA847CECEB2C4FF38",
-        "localizableStrings": {},
+        "type": "vn.scene",
+        "parentId": "83EC435442C5C14ED80A5F12EC7EE2BDFB57",
         "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+        "order": 0,
+        "localizableStrings": {},
         "commands": [
-            {
-                "id": "vn.ReturnToPreviousScene",
-                "params": {},
-                "uid": "1E86F24E10B9C14B1C6A78E379415EC80372",
-                "indent": 0
-            },
             {
                 "id": "vn.ChangeBackground",
                 "params": {
@@ -1019,10 +1014,27 @@
                 },
                 "uid": "A510FFCB33A5E24E138A668522CB1BF24CD5",
                 "indent": 0
+            },
+            {
+                "id": "vn.ChangeScene",
+                "params": {
+                    "scene": {
+                        "uid": "FAD2FC49411C84465C4AE777CAE2DB8E47D3",
+                        "name": "scene3"
+                    },
+                    "savePrevious": 0,
+                    "erasePictures": 0,
+                    "eraseTexts": 0,
+                    "eraseVideos": 0,
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "88B4F7E97E33F4450E1B64E4B4BC16208CB9",
+                "indent": 0
             }
         ],
         "livePreviewDisabled": false,
-        "order": 1,
         "numberVariables": [
             {
                 "name": "",
@@ -1035,7 +1047,6 @@
         "name",
         "type",
         "parentId",
-        "o",
         "chapterUid",
         "order"
     ],

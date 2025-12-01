@@ -1,0 +1,61 @@
+{
+    "uid": "DAB123513E37B6456C6881A496397720D16E",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "type": "vn.scene",
+        "name": "第一章",
+        "parentId": "72CD309022F08845D05AC9863756F4CB7A7C",
+        "localizableStrings": {},
+        "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+        "commands": [
+            {
+                "id": "vn.ChangeScene",
+                "params": {
+                    "scene": {
+                        "uid": "83EC435442C5C14ED80A5F12EC7EE2BDFB57",
+                        "name": "scene1"
+                    },
+                    "savePrevious": 1,
+                    "erasePictures": 0,
+                    "eraseTexts": 0,
+                    "eraseVideos": 0,
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "5C68F81F3C5DD54A2E7833002370247F73CC",
+                "indent": 0
+            },
+            {
+                "id": "vn.ChangeScene",
+                "params": {
+                    "scene": {
+                        "uid": "FAD2FC49411C84465C4AE777CAE2DB8E47D3",
+                        "name": "scene3"
+                    },
+                    "savePrevious": 0,
+                    "erasePictures": 0,
+                    "eraseTexts": 0,
+                    "eraseVideos": 0,
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "26C7BD6C1D6A1148EC0B7B59AF5B8BBCD8F2",
+                "indent": 0
+            }
+        ],
+        "livePreviewDisabled": false,
+        "order": 1
+    },
+    "summary": [
+        "name",
+        "type",
+        "parentId",
+        "o",
+        "chapterUid",
+        "order"
+    ],
+    "externalItems": []
+}
