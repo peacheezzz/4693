@@ -1,0 +1,43 @@
+{
+    "uid": "9E393CEB0CAC254AC81862043A605F7DB207",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "think",
+        "type": "data_record",
+        "category": "characterExpressions",
+        "id": "9E393CEB0CAC254AC81862043A605F7DB207",
+        "isFolder": false,
+        "parentId": "0015F9254E14D54655598944235C47E4532A",
+        "data": {
+            "idleTime": {
+                "start": 0,
+                "end": 0
+            },
+            "name": "think",
+            "idleSpeed": 100,
+            "idle": [
+                {
+                    "resource": {
+                        "name": "kidvale_think.png",
+                        "folderPath": "Graphics/Characters/kid",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": null
+                    }
+                }
+            ],
+            "talkingSpeed": 100,
+            "talking": [],
+            "index": "9E393CEB0CAC254AC81862043A605F7DB207"
+        },
+        "order": 3
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

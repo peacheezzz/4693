@@ -1,0 +1,23 @@
+{
+    "uid": "F8F639C09501424D3C98AF63BED96352A3D4",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "motel_party",
+        "type": "data_record",
+        "category": "animations",
+        "isFolder": true,
+        "parentId": "17F6DB5B5F453440D848BA88C88641758EFE",
+        "data": {
+            "name": "motel_party",
+            "isFolder": true
+        },
+        "order": 2
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

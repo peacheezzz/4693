@@ -1,0 +1,46 @@
+{
+    "uid": "9306FE2B2235F741BC8847977E75FC22DDB7",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "party_04",
+        "type": "data_record",
+        "category": "animations",
+        "id": "9306FE2B2235F741BC8847977E75FC22DDB7",
+        "isFolder": false,
+        "data": {
+            "frameRange": {
+                "start": 1,
+                "end": 2
+            },
+            "name": "party_04",
+            "graphic": {
+                "name": "cg_party_04.png",
+                "folderPath": "Graphics/animation",
+                "hue": 0,
+                "opacity": 255,
+                "blending": 0,
+                "tone": {
+                    "red": 0,
+                    "green": 0,
+                    "blue": 0
+                }
+            },
+            "framesX": 2,
+            "framesY": 1,
+            "useRepetitionFrameRange": false,
+            "duration": 33,
+            "repeat": true,
+            "index": "9306FE2B2235F741BC8847977E75FC22DDB7"
+        },
+        "localizableStrings": {},
+        "order": 4,
+        "parentId": "F8F639C09501424D3C98AF63BED96352A3D4"
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

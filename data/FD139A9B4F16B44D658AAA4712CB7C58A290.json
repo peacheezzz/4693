@@ -1,0 +1,45 @@
+{
+    "uid": "FD139A9B4F16B44D658AAA4712CB7C58A290",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "riding_4693",
+        "type": "data_record",
+        "order": 1,
+        "category": "animations",
+        "id": "FD139A9B4F16B44D658AAA4712CB7C58A290",
+        "isFolder": false,
+        "parentId": "17F6DB5B5F453440D848BA88C88641758EFE",
+        "data": {
+            "frameRange": {
+                "start": 1,
+                "end": 2
+            },
+            "name": "riding_4693",
+            "graphic": {
+                "name": "riding_4693.png",
+                "folderPath": "Graphics/Characters/Animation",
+                "hue": 0,
+                "opacity": 255,
+                "blending": 0,
+                "tone": {
+                    "red": 0,
+                    "green": 0,
+                    "blue": 0
+                }
+            },
+            "framesX": 2,
+            "framesY": 1,
+            "useRepetitionFrameRange": false,
+            "duration": 30,
+            "repeat": true,
+            "index": "FD139A9B4F16B44D658AAA4712CB7C58A290"
+        }
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

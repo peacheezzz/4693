@@ -6,6 +6,12 @@
             "Audio/Music/Daughter - The Right Way Around": [
                 ".mp3"
             ],
+            "Audio/Music/sleepyeyes - So Cold in Koreatown": [
+                ".mp3"
+            ],
+            "Audio/Music/vintage radio": [
+                ".mp3"
+            ],
             "Audio/Music/İbrahim Azat - Mendil El Hak": [
                 ".mp3"
             ],
@@ -76,6 +82,30 @@
             "fonts": [
                 ".css"
             ],
+            "Graphics/animation/cg_party_01": [
+                ".png"
+            ],
+            "Graphics/animation/cg_party_02": [
+                ".png"
+            ],
+            "Graphics/animation/cg_party_03": [
+                ".png"
+            ],
+            "Graphics/animation/cg_party_03_2": [
+                ".png"
+            ],
+            "Graphics/animation/cg_party_04": [
+                ".png"
+            ],
+            "Graphics/animation/cg_party_05": [
+                ".png"
+            ],
+            "Graphics/animation/cg_party_06": [
+                ".png"
+            ],
+            "Graphics/animation/cg_party_07": [
+                ".png"
+            ],
             "Graphics/Backgrounds/allBlack": [
                 ".png"
             ],
@@ -103,6 +133,9 @@
             "Graphics/Backgrounds/roadtrip2": [
                 ".png"
             ],
+            "Graphics/cg/cg_road": [
+                ".png"
+            ],
             "Graphics/Characters/Animation/kidvale_motel_blink": [
                 ".png"
             ],
@@ -121,10 +154,16 @@
             "Graphics/Characters/kid/kidvale_blink3": [
                 ".png"
             ],
+            "Graphics/Characters/kid/kidvale_laugh": [
+                ".png"
+            ],
             "Graphics/Characters/kid/kidvale_motel_blink1": [
                 ".png"
             ],
             "Graphics/Characters/kid/kidvale_motel_blink2": [
+                ".png"
+            ],
+            "Graphics/Characters/kid/kidvale_think": [
                 ".png"
             ],
             "Graphics/Characters/marc/marc_idle_1": [

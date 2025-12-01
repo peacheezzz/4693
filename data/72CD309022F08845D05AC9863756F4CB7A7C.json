@@ -1,10 +1,11 @@
 {
     "uid": "72CD309022F08845D05AC9863756F4CB7A7C",
     "isLoaded": true,
-    "lastModificationTime": null,
+    "lastModificationTime": 0,
     "items": {
-        "type": "vn.chapter",
         "name": "Chapter1",
+        "type": "vn.chapter",
+        "order": 1,
         "commands": [
             {
                 "id": "vn.Chapter",
@@ -14,8 +15,7 @@
                 },
                 "indent": 0
             }
-        ],
-        "order": 1
+        ]
     },
     "summary": [
         "name",

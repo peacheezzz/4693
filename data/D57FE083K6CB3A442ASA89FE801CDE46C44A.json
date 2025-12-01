@@ -3,7 +3,7 @@
     "isLoaded": true,
     "lastModificationTime": 0,
     "items": {
-        "name": "Unnamed",
+        "name": "roadtrip",
         "type": "data_record",
         "order": 0,
         "category": "cgGallery",
@@ -11,10 +11,19 @@
         "isFolder": false,
         "parentId": "ROOT",
         "data": {
-            "name": "Unnamed",
+            "name": "roadtrip",
             "listed": true,
             "graphic": {
-                "name": ""
+                "folderPath": "Graphics/cg",
+                "name": "cg_road.png",
+                "hue": 0,
+                "opacity": 255,
+                "blending": 0,
+                "tone": {
+                    "red": 0,
+                    "green": 0,
+                    "blue": 0
+                }
             },
             "thumb": {
                 "name": ""

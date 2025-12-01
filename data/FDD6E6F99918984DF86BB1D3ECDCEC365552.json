@@ -1,10 +1,11 @@
 {
     "uid": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
     "isLoaded": true,
-    "lastModificationTime": null,
+    "lastModificationTime": 0,
     "items": {
-        "name": "Marc",
+        "name": "马克",
         "type": "data_record",
+        "order": 3,
         "category": "characters",
         "id": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
         "isFolder": false,
@@ -12,7 +13,7 @@
         "data": {
             "name": {
                 "lcId": null,
-                "defaultText": "Marc"
+                "defaultText": "马克"
             },
             "textColor": {
                 "red": 255,
@@ -28,8 +29,7 @@
             "idleIntensity": 1,
             "params": [],
             "index": "FDD6E6F99918984DF86BB1D3ECDCEC365552"
-        },
-        "order": 2
+        }
     },
     "summary": [
         "name",

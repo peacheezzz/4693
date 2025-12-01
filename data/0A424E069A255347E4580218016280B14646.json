@@ -1,0 +1,43 @@
+{
+    "uid": "0A424E069A255347E4580218016280B14646",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "name": "laugh",
+        "type": "data_record",
+        "category": "characterExpressions",
+        "id": "0A424E069A255347E4580218016280B14646",
+        "isFolder": false,
+        "parentId": "0015F9254E14D54655598944235C47E4532A",
+        "data": {
+            "idleTime": {
+                "start": 0,
+                "end": 0
+            },
+            "name": "laugh",
+            "idleSpeed": 100,
+            "idle": [
+                {
+                    "resource": {
+                        "name": "kidvale_laugh.png",
+                        "folderPath": "Graphics/Characters/kid",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": null
+                    }
+                }
+            ],
+            "talkingSpeed": 100,
+            "talking": [],
+            "index": "0A424E069A255347E4580218016280B14646"
+        },
+        "order": 0
+    },
+    "summary": [
+        "name",
+        "type",
+        "order"
+    ],
+    "externalItems": []
+}

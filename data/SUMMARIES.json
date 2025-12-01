@@ -1065,7 +1065,7 @@
         },
         "D57FE083K6CB3A442ASA89FE801CDE46C44A": {
             "items": {
-                "name": "Unnamed",
+                "name": "roadtrip",
                 "type": "data_record",
                 "order": 0
             }
@@ -3038,7 +3038,7 @@
             "items": {
                 "name": "scene1",
                 "type": "vn.scene",
-                "parentId": "72CD309022F08845D05AC9863756F4CB7A7C",
+                "parentId": "9649FD3431C8E746AF8AA847CECEB2C4FF38",
                 "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
                 "order": 0
             }
@@ -3103,7 +3103,7 @@
             "items": {
                 "name": "idle",
                 "type": "data_record",
-                "order": 0
+                "order": 1
             }
         },
         "35BDF5221C06B541CF88AB93D3688841AE63": {
@@ -3115,7 +3115,7 @@
         },
         "FDD6E6F99918984DF86BB1D3ECDCEC365552": {
             "items": {
-                "name": "Marc",
+                "name": "马克",
                 "type": "data_record",
                 "order": 3
             }
@@ -3138,14 +3138,116 @@
             "items": {
                 "name": "motel",
                 "type": "data_record",
-                "order": 1
+                "order": 2
             }
         },
         "4A5E028011614540518873E4AA92D7C96628": {
             "items": {
-                "name": "kid",
+                "name": "男孩",
                 "type": "data_record",
                 "order": 1
+            }
+        },
+        "9E393CEB0CAC254AC81862043A605F7DB207": {
+            "items": {
+                "name": "think",
+                "type": "data_record",
+                "order": 3
+            }
+        },
+        "0A424E069A255347E4580218016280B14646": {
+            "items": {
+                "name": "laugh",
+                "type": "data_record",
+                "order": 0
+            }
+        },
+        "FD139A9B4F16B44D658AAA4712CB7C58A290": {
+            "items": {
+                "name": "riding_4693",
+                "type": "data_record",
+                "order": 1
+            }
+        },
+        "F8F639C09501424D3C98AF63BED96352A3D4": {
+            "items": {
+                "name": "motel_party",
+                "type": "data_record",
+                "order": 2
+            }
+        },
+        "986FA1EC298C624A317AA313CF681A7591D4": {
+            "items": {
+                "name": "party_01",
+                "type": "data_record",
+                "order": 0
+            }
+        },
+        "803850661F02D64AFA49A30027B1B5EBBF91": {
+            "items": {
+                "name": "party_02",
+                "type": "data_record",
+                "order": 1
+            }
+        },
+        "0D0477C495BA414F5E1B00B63642F0CC7164": {
+            "items": {
+                "name": "party_03",
+                "type": "data_record",
+                "order": 2
+            }
+        },
+        "9306FE2B2235F741BC8847977E75FC22DDB7": {
+            "items": {
+                "name": "party_04",
+                "type": "data_record",
+                "order": 4
+            }
+        },
+        "4E892C6B50E7B545529BBFC4E1646086FF06": {
+            "items": {
+                "name": "party_03_2",
+                "type": "data_record",
+                "order": 3
+            }
+        },
+        "FDBB1BF03195734CD53AFF427972335640BE": {
+            "items": {
+                "name": "party_05",
+                "type": "data_record",
+                "order": 5
+            }
+        },
+        "BE153FAA21109445176B57A6A9A7334618A9": {
+            "items": {
+                "name": "party_06",
+                "type": "data_record",
+                "order": 6
+            }
+        },
+        "919E24A014AEB146BB9B6620E2409D75C035": {
+            "items": {
+                "name": "party_07",
+                "type": "data_record",
+                "order": 7
+            }
+        },
+        "500132F52025B648EB7905E1175607FAB8BE": {
+            "items": {
+                "name": "scene2",
+                "type": "vn.scene",
+                "parentId": "9649FD3431C8E746AF8AA847CECEB2C4FF38",
+                "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+                "order": 1
+            }
+        },
+        "9649FD3431C8E746AF8AA847CECEB2C4FF38": {
+            "items": {
+                "name": "第一章",
+                "type": "vn.scene",
+                "parentId": "72CD309022F08845D05AC9863756F4CB7A7C",
+                "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+                "order": 2
             }
         }
     }

@@ -5,7 +5,7 @@
     "items": {
         "name": "scene1",
         "type": "vn.scene",
-        "parentId": "72CD309022F08845D05AC9863756F4CB7A7C",
+        "parentId": "9649FD3431C8E746AF8AA847CECEB2C4FF38",
         "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
         "order": 0,
         "localizableStrings": {},
@@ -31,7 +31,7 @@
                     },
                     "layer": 1,
                     "duration": 0,
-                    "waitForCompletion": 1,
+                    "waitForCompletion": 0,
                     "blendMode": 0,
                     "origin": 0,
                     "zOrder": 0,
@@ -165,7 +165,7 @@
                 },
                 "uid": "B357C08B5E42144C1C38DF786C11C7B6A96E",
                 "indent": 0,
-                "expanded": true
+                "expanded": false
             },
             {
                 "id": "gs.ShowMessage",
@@ -363,7 +363,7 @@
                     "sound": {
                         "folderPath": "Audio/Sounds",
                         "name": "motorcycle_sound.mp3",
-                        "volume": "31",
+                        "volume": "41",
                         "playbackRate": 100
                     },
                     "musicEffect": 0,
@@ -1274,7 +1274,7 @@
                     "sound": {
                         "folderPath": "Audio/Sounds",
                         "name": "motorcycle_sound.mp3",
-                        "volume": "25",
+                        "volume": "45",
                         "playbackRate": 100
                     },
                     "musicEffect": 0,
@@ -1419,10 +1419,10 @@
                     "music": {
                         "folderPath": "Audio/Music",
                         "name": "Daughter - The Right Way Around.mp3",
-                        "volume": 100,
+                        "volume": "87",
                         "playbackRate": 100
                     },
-                    "fadeInDuration": 0,
+                    "fadeInDuration": 12,
                     "playTime": {
                         "min": 10,
                         "max": 30
@@ -1434,9 +1434,9 @@
                     "playType": 0,
                     "waitForCompletion": 0,
                     "fieldFlags": {
-                        "music.volume": 1,
+                        "music.volume": 0,
                         "music.playbackRate": 1,
-                        "fadeInDuration": 1
+                        "fadeInDuration": 0
                     },
                     "previewBackground": {
                         "name": "$live_preview_snapshot"
@@ -1980,7 +1980,7 @@
                             "grey": 0
                         }
                     },
-                    "layer": 1,
+                    "layer": 2,
                     "duration": 12,
                     "waitForCompletion": 1,
                     "blendMode": 0,
@@ -2310,14 +2310,14 @@
                             "grey": 0
                         }
                     },
-                    "layer": 1,
+                    "layer": 2,
                     "duration": 12,
                     "waitForCompletion": 0,
                     "blendMode": 0,
                     "origin": 0,
                     "zOrder": 0,
-                    "loopVertical": 0,
-                    "loopHorizontal": 0,
+                    "loopVertical": 1,
+                    "loopHorizontal": 1,
                     "easing": {
                         "type": 0,
                         "inOut": 1
@@ -2331,14 +2331,23 @@
                         }
                     },
                     "fieldFlags": {
-                        "duration": 0
+                        "duration": 0,
+                        "easing.type": 1,
+                        "animation.type": 1,
+                        "origin": 1,
+                        "zOrder": 1,
+                        "blendMode": 1,
+                        "viewport.type": 1,
+                        "loopVertical": 0,
+                        "loopHorizontal": 0
                     },
                     "previewBackground": {
                         "name": "$live_preview_snapshot"
                     }
                 },
                 "uid": "378C3740190C4640334B80D2FECF59BF8D50",
-                "indent": 0
+                "indent": 0,
+                "expanded": false
             },
             {
                 "id": "gs.PlayPictureAnimation",
@@ -2395,6 +2404,52 @@
                     }
                 },
                 "uid": "F479A27386801449582B3A2592329E1E1925",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "vn.ScrollBackgroundPath",
+                "params": {
+                    "layer": 2,
+                    "path": {
+                        "previewBackground": {
+                            "name": "$live_preview_snapshot"
+                        },
+                        "data": [
+                            {
+                                "pt1": {
+                                    "x": 1816,
+                                    "y": 536
+                                },
+                                "cpt": {
+                                    "x": 964,
+                                    "y": 536
+                                },
+                                "pt2": {
+                                    "x": 96,
+                                    "y": 536
+                                }
+                            }
+                        ],
+                        "effects": {
+                            "data": []
+                        }
+                    },
+                    "loopType": 1,
+                    "duration": 180,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "fieldFlags": {
+                        "easing.type": 0
+                    }
+                },
+                "uid": "F713F5D18D7B8542352894A30BE039A5A849",
                 "indent": 0,
                 "expanded": false
             },
@@ -2491,7 +2546,7 @@
                 "id": "gs.ShowMessage",
                 "params": {
                     "waitForCompletion": 1,
-                    "duration": 15,
+                    "duration": 60,
                     "expressionId": null,
                     "custom": {
                         "object": {
@@ -2511,7 +2566,7 @@
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
                     "partial": 0,
                     "fieldFlags": {
-                        "duration": 1
+                        "duration": 0
                     },
                     "expressions": [],
                     "animations": []
@@ -2601,7 +2656,7 @@
                             "grey": 0
                         }
                     },
-                    "layer": 2,
+                    "layer": 3,
                     "duration": 12,
                     "waitForCompletion": 1,
                     "blendMode": 0,
@@ -2727,26 +2782,64 @@
                 "expanded": false
             },
             {
-                "id": "vn.ZoomBackground",
+                "id": "gs.PlayPictureAnimation",
                 "params": {
-                    "layer": 1,
-                    "duration": 42,
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "4D1EC73246D5714F106966B3A4A90654B1BA",
+                    "predefinedPositionId": 0,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 0.06,
+                    "origin": 0,
                     "waitForCompletion": 1,
-                    "zooming": {
-                        "x": 110,
-                        "y": 110
+                    "positionType": 1,
+                    "position": {
+                        "x": 186,
+                        "y": 250,
+                        "angle": 0,
+                        "zoom": 0,
+                        "horizontalFlip": false,
+                        "data": {
+                            "zoom": 0.9739388593060557
+                        },
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 0
+                        }
                     },
                     "easing": {
-                        "type": 5,
+                        "type": 0,
                         "inOut": 1
                     },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
                     "fieldFlags": {
-                        "easing.type": 0
+                        "duration": 0,
+                        "easing.type": 1,
+                        "animation.type": 1,
+                        "zOrder": 1,
+                        "blendMode": 1,
+                        "viewport.type": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
                     }
                 },
-                "uid": "9D58840B9C2B7844FA4BF9113D0E20797B64",
+                "uid": "A68F5D0212ABE347F55BCCE686E9629A482D",
                 "indent": 0,
-                "expanded": true
+                "expanded": false
             },
             {
                 "id": "gs.ShowMessage",
@@ -2936,6 +3029,32 @@
                 "indent": 0
             },
             {
+                "id": "gs.ErasePicture",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "duration": 0.06,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "12EE555A340AE2484E48E885DE333F7998E2",
+                "indent": 0
+            },
+            {
                 "id": "vn.ChangeBackground",
                 "params": {
                     "viewport": {
@@ -2954,7 +3073,7 @@
                             "grey": 0
                         }
                     },
-                    "layer": 1,
+                    "layer": 4,
                     "duration": 12,
                     "waitForCompletion": 0,
                     "blendMode": 0,
@@ -3029,8 +3148,8 @@
                         "type": 0,
                         "inOut": 0
                     },
-                    "duration": 0.06,
-                    "waitForCompletion": 0,
+                    "duration": 18,
+                    "waitForCompletion": 1,
                     "fieldFlags": {
                         "duration": 0
                     },
@@ -3040,6 +3159,41 @@
                 },
                 "uid": "90EA1C2F7A70A24ACA09D216A32B09863BE5",
                 "indent": 0
+            },
+            {
+                "id": "gs.PlayMusic",
+                "params": {
+                    "layer": 0,
+                    "loop": 1,
+                    "music": {
+                        "folderPath": "Audio/Music",
+                        "name": "vintage radio.mp3",
+                        "volume": "80",
+                        "playbackRate": 100
+                    },
+                    "fadeInDuration": 30,
+                    "playTime": {
+                        "min": 10,
+                        "max": 30
+                    },
+                    "playRange": {
+                        "start": 10,
+                        "end": 20
+                    },
+                    "playType": 0,
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "music.volume": 0,
+                        "music.playbackRate": 1,
+                        "fadeInDuration": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "3C0669C55A663141187BF6632F8216039C11",
+                "indent": 0,
+                "expanded": false
             },
             {
                 "id": "gs.ShowMessage",
@@ -3072,6 +3226,39 @@
                 },
                 "indent": 0,
                 "uid": "4344E6FE3240F541C128B9B694DAD1ADC1F3",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "收音机里传出音质糟糕的乐声，粘稠的音乐包裹着整个餐厅"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "4A1C74638385D341646A16D4BEF744C18531",
                 "expanded": true
             },
             {
@@ -3158,7 +3345,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "湛蓝到接近晴朗清晨天边泛起的鱼肚白，像弹珠一样，\n闪烁着通常只有矿物结晶才能泛起的冷调光泽\n好像能透过瞳孔直接观察到他大脑皮层神经中枢的电流交换，\n又被从窗户照耀进来的夕阳衬得闪着精光看不清其中任何情绪"
+                        "defaultText": "湛蓝到接近晴朗清晨天边泛起的鱼肚白，像弹珠一样，\n闪烁着通常只有矿物结晶才能泛起的冷调光泽"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -3171,6 +3358,39 @@
                 },
                 "indent": 0,
                 "uid": "F1A9566F999777419C5B17533D2B65347985",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "好像能透过瞳孔直接观察到他大脑皮层神经中枢的电流交换，\n又被从窗户照耀进来的夕阳衬得闪着精光看不清其中任何情绪"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "BF57034C25F3D248F2186B8137DD68A3419B",
                 "expanded": true
             },
             {
@@ -3224,7 +3444,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "你好呀，Marc"
+                        "defaultText": "你好呀，马克"
                     },
                     "position": 0,
                     "characterId": "4A5E028011614540518873E4AA92D7C96628",
@@ -3257,7 +3477,544 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "盯得你有些发毛"
+                        "defaultText": "马克？是说我吗？\n我们认识吗？"
+                    },
+                    "position": 0,
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "FD6588B66532864F878B78A4D12AD3DFDB44",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "我们当然认识\n你想要点什么吗？咖啡还是点心？"
+                    },
+                    "position": 0,
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "AFEBC722601B6948611A7CC74330C4443433",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "你好，我没什么需要的......只是想进来问下时间\n你知道这是哪里现在是什么时候吗？我似乎有点迷路了…"
+                    },
+                    "position": 0,
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "5EDC0AEC069D9846604B54A107B62BA56E43",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "这里就是这里，时间就是现在，就像我们就是我们呀"
+                    },
+                    "position": 0,
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "C0674F436A34504BED2ABDA82FFB5D0E3438",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "马克看了看墙上停滞的甚至时针分针已经脱落的钟表，和男孩不符合他年龄有些故弄玄虚的话，\n感觉有点好笑"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "674D65FF6614D3441C4BFEE8DEBCE24CE7D1",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "好吧，谢谢你，虽然没帮上什么忙"
+                    },
+                    "position": 0,
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "9A76F6E248CB754C249B2CF4681FD044A753",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "vn.CharacterExitScene",
+                "params": {
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "duration": 0.06,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 1,
+                        "inOut": 0
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "5BDFC5A98B9A6146C34BB58417378E033933",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "马克起身准备要走，男孩突然站立起来钻到身前\n小小的身形挡住了有些狭窄的走道"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "A33A338A59EBD2455C7B2EE2B2AFE6DB7E00",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "vn.CharacterJoinScene",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "predefinedPositionId": 0,
+                    "expressionId": "9E393CEB0CAC254AC81862043A605F7DB207",
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "zOrder": 0,
+                    "origin": 0,
+                    "blendMode": 0,
+                    "positionType": 1,
+                    "motionBlur": {
+                        "enabled": 0,
+                        "delay": 2,
+                        "opacity": 100,
+                        "dissolveSpeed": 3
+                    },
+                    "position": {
+                        "x": 1072,
+                        "y": 500,
+                        "angle": 0,
+                        "zoom": 1,
+                        "horizontalFlip": false,
+                        "data": {
+                            "x": 521,
+                            "y": 250,
+                            "width": 232,
+                            "height": 577,
+                            "zoom": 1,
+                            "angle": 0,
+                            "horizontalFlip": false
+                        },
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 0
+                        }
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 0
+                    },
+                    "duration": 3,
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "duration": 0
+                    },
+                    "previewBackground": {
+                        "name": "",
+                        "folderPath": ""
+                    }
+                },
+                "uid": "0635D530408AB14FBF4BB4366132764B7936",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "男孩突然看起来很不开心"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "83EC97016234914A5918147915F8BA15237C",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "为什么要这么着急离开呢，你不喜欢这里吗，或者说你不喜欢我吗？"
+                    },
+                    "position": 0,
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "2EC6C3DF1A1C224B0C0BF9C2D1CC877E8B83",
+                "expanded": true
+            },
+            {
+                "id": "vn.CharacterJoinScene",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "predefinedPositionId": 0,
+                    "expressionId": "35BDF5221C06B541CF88AB93D3688841AE63",
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "zOrder": 0,
+                    "origin": 0,
+                    "blendMode": 0,
+                    "positionType": 1,
+                    "motionBlur": {
+                        "enabled": 0,
+                        "delay": 2,
+                        "opacity": 100,
+                        "dissolveSpeed": 3
+                    },
+                    "position": {
+                        "x": 468,
+                        "y": 212,
+                        "angle": 0,
+                        "zoom": 1,
+                        "horizontalFlip": false,
+                        "data": {
+                            "x": 521,
+                            "y": 250,
+                            "width": 232,
+                            "height": 577,
+                            "zoom": 1,
+                            "angle": 0,
+                            "horizontalFlip": false
+                        },
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 0
+                        }
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 0
+                    },
+                    "duration": 3,
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "duration": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "645A585E50D33243DE2974D8574B2C0E9683",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "不，不，只是我有些迷路了......虽然想不起来，但我应该还有事情要去完成，不能耽搁太久……"
+                    },
+                    "position": 0,
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "BE58B9D17511A245255BD218336A922C0306",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": "19DBD19A7FDAC6428A1AB0C222255FA4D580",
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "那我们一起出发吧！你看起来很迷茫又根本不知道自己要去找什么\n这附近可都是我的主场，我可以帮助你！"
+                    },
+                    "position": 0,
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": [],
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "indent": 0,
+                "uid": "933D5B6061AC2246247A9B6779500D8B4DF2",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "马克有些无奈，他并不觉得这个还没有他胸口高叽叽喳喳的小孩能帮到什么"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -3269,8 +4026,650 @@
                     "animations": []
                 },
                 "indent": 0,
-                "uid": "FD6588B66532864F878B78A4D12AD3DFDB44",
+                "uid": "1943AD05345F1640DF590C76B552A33A04DC",
                 "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "男孩一直拽着马克的袖子，似乎是很不想让他离开"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "D6F91BE91C0DD747E47919B865A59D933B8F",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": "19DBD19A7FDAC6428A1AB0C222255FA4D580",
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "带着我一起吧！你难道放心让我这个小孩子一个人待在这里吗？\n我还是未成年哎？！很危险哎！"
+                    },
+                    "position": 0,
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": [],
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "indent": 0,
+                "uid": "07C617AD4355E548DB8B09C4416E7007460D",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "好了好了......！那我们出去遛个弯儿，找找附近有没有你熟悉的人\n虽然大概率还是会回到这里......"
+                    },
+                    "position": 0,
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "F1EB503D66A92549274B15B229C21241ED6C",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": "0A424E069A255347E4580218016280B14646",
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "好哎！"
+                    },
+                    "position": 0,
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": [],
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "indent": 0,
+                "uid": "FB88008386E1144DC33945F06DEA0D049C2F",
+                "expanded": true
+            },
+            {
+                "id": "vn.CharacterExitScene",
+                "params": {
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "duration": 3,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 1,
+                        "inOut": 0
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "6F6299D357ED584BF10BC302755C3CA69EB3",
+                "indent": 0
+            },
+            {
+                "id": "vn.CharacterExitScene",
+                "params": {
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "duration": 3,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 1,
+                        "inOut": 0
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "EE47DE9A8F98B8454D59C2377C7953292C9D",
+                "indent": 0
+            },
+            {
+                "id": "gs.PlayMusic",
+                "params": {
+                    "layer": 0,
+                    "loop": 1,
+                    "music": {
+                        "folderPath": "Audio/Music",
+                        "name": "Daughter - The Right Way Around.mp3",
+                        "volume": "75",
+                        "playbackRate": 100
+                    },
+                    "fadeInDuration": 30,
+                    "playTime": {
+                        "min": 10,
+                        "max": 30
+                    },
+                    "playRange": {
+                        "start": 10,
+                        "end": 20
+                    },
+                    "playType": 0,
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "music.volume": 0,
+                        "music.playbackRate": 1,
+                        "fadeInDuration": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "C9F1C68C8EFB544F581A83B2B9609A439EF5",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "vn.ChangeBackground",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "graphic": {
+                        "name": "road.png",
+                        "folderPath": "Graphics/Backgrounds",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        }
+                    },
+                    "layer": 4,
+                    "duration": 12,
+                    "waitForCompletion": 0,
+                    "blendMode": 0,
+                    "origin": 0,
+                    "zOrder": 0,
+                    "loopVertical": 1,
+                    "loopHorizontal": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0,
+                        "easing.type": 1,
+                        "animation.type": 1,
+                        "origin": 1,
+                        "zOrder": 1,
+                        "blendMode": 1,
+                        "viewport.type": 1,
+                        "loopVertical": 0,
+                        "loopHorizontal": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "6E293D218F39F84F4839E7A74A464B7E872B",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "FD139A9B4F16B44D658AAA4712CB7C58A290",
+                    "predefinedPositionId": 0,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 0,
+                    "origin": 0,
+                    "waitForCompletion": 0,
+                    "positionType": 1,
+                    "position": {
+                        "x": 218,
+                        "y": 346,
+                        "angle": 0,
+                        "zoom": 1,
+                        "horizontalFlip": false,
+                        "data": {},
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 0
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "87834B98772D7543B15BFEB76FB6AF005C50",
+                "indent": 0
+            },
+            {
+                "id": "vn.ScrollBackgroundPath",
+                "params": {
+                    "layer": 4,
+                    "path": {
+                        "previewBackground": {
+                            "name": "$live_preview_snapshot"
+                        },
+                        "data": [
+                            {
+                                "pt1": {
+                                    "x": 1816,
+                                    "y": 536
+                                },
+                                "cpt": {
+                                    "x": 964,
+                                    "y": 536
+                                },
+                                "pt2": {
+                                    "x": 96,
+                                    "y": 536
+                                }
+                            }
+                        ],
+                        "effects": {
+                            "data": []
+                        }
+                    },
+                    "loopType": 1,
+                    "duration": 180,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "fieldFlags": {
+                        "easing.type": 0
+                    }
+                },
+                "uid": "5E693C3A39FCC04C803AD0D4E76C3DFD3F72",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "gs.ErasePicture",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "duration": 0,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 1
+                    }
+                },
+                "uid": "B41629DE01941648248B55312020A63380D7",
+                "indent": 0
+            },
+            {
+                "id": "vn.MessageBoxVisibility",
+                "params": {
+                    "duration": 30,
+                    "waitForCompletion": true,
+                    "id": "messageBox",
+                    "visible": 0,
+                    "animation": {
+                        "type": 0,
+                        "movement": 3,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "fieldFlags": {
+                        "duration": 1
+                    }
+                },
+                "uid": "E4A0332068601446003938E23B490AA4964C",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowPicture",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "size": {
+                        "type": 0,
+                        "width": 100,
+                        "height": 100
+                    },
+                    "visual": {
+                        "type": 0,
+                        "quad": {
+                            "color": {
+                                "red": 255,
+                                "green": 255,
+                                "blue": 255,
+                                "alpha": 255
+                            }
+                        },
+                        "frame": {
+                            "thickness": 16,
+                            "cornerSize": 16
+                        },
+                        "threePartImage": {
+                            "orientation": 0
+                        }
+                    },
+                    "predefinedPositionId": 0,
+                    "number": 1,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 30,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "origin": 1,
+                        "duration": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "graphic": {
+                        "name": "cg_road.png",
+                        "folderPath": "Graphics/cg",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        }
+                    }
+                },
+                "uid": "244F7D82895EF444462894C831A0B5B92B3C",
+                "indent": 0
+            },
+            {
+                "id": "vn.UnlockCG",
+                "params": {
+                    "cgId": "D57FE083K6CB3A442ASA89FE801CDE46C44A"
+                },
+                "uid": "D3433D3E229CE3407B0AF1D235F2FF296676",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": "19DBD19A7FDAC6428A1AB0C222255FA4D580",
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "公路旅行！"
+                    },
+                    "position": 0,
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": [],
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "indent": 0,
+                "uid": "BC718A964247E94CD10846E47E05FD1B562A",
+                "expanded": true
+            },
+            {
+                "id": "vn.ChangeBackground",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "graphic": {
+                        "name": "motel2.png",
+                        "folderPath": "Graphics/Backgrounds",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        }
+                    },
+                    "layer": 4,
+                    "duration": 18,
+                    "waitForCompletion": 0,
+                    "blendMode": 0,
+                    "origin": 0,
+                    "zOrder": 0,
+                    "loopVertical": 0,
+                    "loopHorizontal": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "DD5BDB70474CF345F12AD508599742A710C7",
+                "indent": 0
+            },
+            {
+                "id": "vn.CallScene",
+                "params": {
+                    "scene": {
+                        "uid": "500132F52025B648EB7905E1175607FAB8BE",
+                        "name": "scene2"
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "485A2FC86782C0461D1BEEF7356AC569F295",
+                "indent": 0
+            },
+            {
+                "id": "gs.ErasePicture",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "duration": 12,
+                    "waitForCompletion": 1,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "D1FB8AC77734D04A5418FE376F543D29D79E",
+                "indent": 0
             }
         ],
         "livePreviewDisabled": false,

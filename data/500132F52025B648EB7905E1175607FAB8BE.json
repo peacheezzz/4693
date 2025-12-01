@@ -1,0 +1,1043 @@
+{
+    "uid": "500132F52025B648EB7905E1175607FAB8BE",
+    "isLoaded": true,
+    "lastModificationTime": null,
+    "items": {
+        "type": "vn.scene",
+        "name": "scene2",
+        "parentId": "9649FD3431C8E746AF8AA847CECEB2C4FF38",
+        "localizableStrings": {},
+        "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+        "commands": [
+            {
+                "id": "vn.ReturnToPreviousScene",
+                "params": {},
+                "uid": "1E86F24E10B9C14B1C6A78E379415EC80372",
+                "indent": 0
+            },
+            {
+                "id": "vn.ChangeBackground",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "graphic": {
+                        "name": "motel2.png",
+                        "folderPath": "Graphics/Backgrounds",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        }
+                    },
+                    "layer": 4,
+                    "duration": 18,
+                    "waitForCompletion": 0,
+                    "blendMode": 0,
+                    "origin": 0,
+                    "zOrder": 0,
+                    "loopVertical": 0,
+                    "loopHorizontal": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "45494CE63C8F3840781832230EDF634B7116",
+                "indent": 0
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "4D1EC73246D5714F106966B3A4A90654B1BA",
+                    "predefinedPositionId": 0,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 0.06,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 1,
+                    "position": {
+                        "x": 186,
+                        "y": 250,
+                        "angle": 0,
+                        "zoom": 0,
+                        "horizontalFlip": false,
+                        "data": {
+                            "zoom": 0.9739388593060557
+                        },
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 0
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0,
+                        "easing.type": 1,
+                        "animation.type": 1,
+                        "zOrder": 1,
+                        "blendMode": 1,
+                        "viewport.type": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "A1AB0C751F6F3647CE2A7A617E8854CB87EC",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "gs.PlayMusic",
+                "params": {
+                    "layer": 0,
+                    "loop": 1,
+                    "music": {
+                        "folderPath": "Audio/Music",
+                        "name": "sleepyeyes - So Cold in Koreatown.mp3",
+                        "volume": 100,
+                        "playbackRate": 100
+                    },
+                    "fadeInDuration": 0,
+                    "playTime": {
+                        "min": 10,
+                        "max": 30
+                    },
+                    "playRange": {
+                        "start": 10,
+                        "end": 20
+                    },
+                    "playType": 0,
+                    "waitForCompletion": 0,
+                    "fieldFlags": {
+                        "music.volume": 1,
+                        "music.playbackRate": 1,
+                        "fadeInDuration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "B53FF9777616D848CD6A7A43EAE9DEA4164B",
+                "indent": 0
+            },
+            {
+                "id": "vn.MessageBoxVisibility",
+                "params": {
+                    "duration": 30,
+                    "waitForCompletion": true,
+                    "id": "messageBox",
+                    "visible": 1,
+                    "animation": {
+                        "type": 0,
+                        "movement": 3,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "fieldFlags": {
+                        "duration": 1,
+                        "easing.type": 1,
+                        "animation.type": 1
+                    }
+                },
+                "uid": "E8D4CBC0896B644E508AE1E2B4A7FA958C0A",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "这次你听到了旅馆里传出的音乐声"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "23C15AEE12EB4843722A6CB45C6F8D17D6DB",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "靠近看看"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "AA60195740FDE54983480F44DAF4F813238B",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ErasePicture",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "duration": 0.06,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "458CA0347A7D954A82192BC2A9DF75EC4467",
+                "indent": 0
+            },
+            {
+                "id": "vn.ChangeBackground",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "graphic": {
+                        "name": "allBlack.png",
+                        "folderPath": "Graphics/Backgrounds",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        }
+                    },
+                    "layer": 4,
+                    "duration": 18,
+                    "waitForCompletion": 0,
+                    "blendMode": 0,
+                    "origin": 0,
+                    "zOrder": 0,
+                    "loopVertical": 0,
+                    "loopHorizontal": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "C276F3D9275C074E845A16184AAD42C66C08",
+                "indent": 0
+            },
+            {
+                "id": "vn.MessageBoxVisibility",
+                "params": {
+                    "duration": 30,
+                    "waitForCompletion": true,
+                    "id": "messageBox",
+                    "visible": 0,
+                    "animation": {
+                        "type": 0,
+                        "movement": 3,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "fieldFlags": {
+                        "duration": 1
+                    }
+                },
+                "uid": "08DFD16A0ED4034B32696632E4D3CA198C04",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttesttesttesttesttesttesttest"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "541279FD11ECA145F67B1B803473C1350565",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttest"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "14AF21C30600D14C378A98E8E9C0B3676B2E",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "986FA1EC298C624A317AA313CF681A7591D4",
+                    "predefinedPositionId": 8,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 18,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "DBE99F696CCE00411B5B4CD9FE8867B72B20",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttest"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "CC326F9F8B94064D2079F867FE9048F5EA14",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "803850661F02D64AFA49A30027B1B5EBBF91",
+                    "predefinedPositionId": 8,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 18,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "FFAD8EAE825C5040DF597B05821A4D30BCE3",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttesttesttesttesttesttesttesttesttest"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "067E286C487FF6431049D275DAB282CCC4E3",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttesttesttestte"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "BDC089456A267146831ADA05C0D0D9E58FBF",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "0D0477C495BA414F5E1B00B63642F0CC7164",
+                    "predefinedPositionId": 8,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 18,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "D0791179499EE247D789367161479F103ADF",
+                "indent": 0
+            },
+            {
+                "id": "gs.WaitCommand",
+                "params": {
+                    "time": 90
+                },
+                "uid": "095E8091711459489759ABC7C40BADD9504A",
+                "indent": 0
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "9306FE2B2235F741BC8847977E75FC22DDB7",
+                    "predefinedPositionId": 8,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 18,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "6B1283E583EA044DA56A77437E7368C233E2",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttesttesttesttesttesttesttesttesttest"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "2A03C9A61552D340D67960D929BB5C5597C3",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "FDBB1BF03195734CD53AFF427972335640BE",
+                    "predefinedPositionId": 8,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 18,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "C93F459C845AC14C7D2B20B208784DDDFAA3",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttesttesttesttesttesttesttesttesttest"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "86303CED783A0342BF5B68F663E91927CEDA",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttesttest"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "6D85CF8F42B83943D8394A19AABDECF2F013",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "BE153FAA21109445176B57A6A9A7334618A9",
+                    "predefinedPositionId": 8,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 6,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "FF90B6208469D945A68BAAC73AFB3FD746C2",
+                "indent": 0
+            },
+            {
+                "id": "gs.WaitCommand",
+                "params": {
+                    "time": 90
+                },
+                "uid": "D62D8AE4519DC04C9579BB41005C18301BC5",
+                "indent": 0
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "919E24A014AEB146BB9B6620E2409D75C035",
+                    "predefinedPositionId": 8,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 18,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "1CA543305EB517458B4834D2277AA9E91E25",
+                "indent": 0
+            },
+            {
+                "id": "gs.WaitCommand",
+                "params": {
+                    "time": 30
+                },
+                "uid": "3E8F9BDE4F6399416F787BD3A072C0583D7D",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttesttest"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "09FB722315501447A86B67A601F02C2A2B4E",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "testtesttesttesttesttesttesttesttesttesttesttesttestt\nesttesttesttesttesttesttesttesttesttesttest"
+                    },
+                    "position": 0,
+                    "characterId": 0,
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "45A6AE3C86FC744A5E1898762B86F309E721",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "4E892C6B50E7B545529BBFC4E1646086FF06",
+                    "predefinedPositionId": 8,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 18,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    }
+                },
+                "uid": "A510FFCB33A5E24E138A668522CB1BF24CD5",
+                "indent": 0
+            }
+        ],
+        "livePreviewDisabled": false,
+        "order": 1,
+        "numberVariables": [
+            {
+                "name": "",
+                "index": 0,
+                "scope": 0
+            }
+        ]
+    },
+    "summary": [
+        "name",
+        "type",
+        "parentId",
+        "o",
+        "chapterUid",
+        "order"
+    ],
+    "externalItems": []
+}

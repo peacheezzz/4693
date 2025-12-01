@@ -1,10 +1,11 @@
 {
     "uid": "4A5E028011614540518873E4AA92D7C96628",
     "isLoaded": true,
-    "lastModificationTime": null,
+    "lastModificationTime": 0,
     "items": {
-        "name": "kid",
+        "name": "男孩",
         "type": "data_record",
+        "order": 1,
         "category": "characters",
         "id": "4A5E028011614540518873E4AA92D7C96628",
         "isFolder": false,
@@ -12,7 +13,7 @@
         "data": {
             "name": {
                 "lcId": null,
-                "defaultText": "kid"
+                "defaultText": "男孩"
             },
             "textColor": {
                 "red": 255,
@@ -20,7 +21,7 @@
                 "blue": 255,
                 "alpha": 255
             },
-            "defaultExpressionId": "602F45D70BD5C44F5A8B4DA524D74CA94B2B",
+            "defaultExpressionId": "19DBD19A7FDAC6428A1AB0C222255FA4D580",
             "timeTalkingToVoiceVolume": true,
             "talkingVolume": 5,
             "lipSyncSensitivity": 1,
@@ -28,8 +29,7 @@
             "idleIntensity": 1,
             "params": [],
             "index": "4A5E028011614540518873E4AA92D7C96628"
-        },
-        "order": 1
+        }
     },
     "summary": [
         "name",
