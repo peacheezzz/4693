@@ -208,7 +208,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "这一次你透过窗户隐约看到了一个趴在玻璃上的小男孩\n小男孩儿把五官全部挤在玻璃上蹭着，冲你吐舌头，在玻璃上留下一串不太卫生的水渍"
+                        "defaultText": "这一次你透过窗户隐约看到了一个趴在玻璃上的小男孩\n\n小男孩儿把五官全部挤在玻璃上蹭着，冲你吐舌头，在玻璃上留下一串不太卫生的水渍"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -337,7 +337,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "噗......谁家的小孩啊\n咖啡店好像门是开的，进去看看好了"
+                        "defaultText": "噗......谁家的小孩啊\n突然出现的小孩驱散了怪异感\n咖啡店好像门是开的，进去看看好了"
                     },
                     "position": 0,
                     "characterId": "49D498DE4891714BA218D745763A1A385495",
@@ -628,7 +628,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "刚刚做鬼脸的男孩静静地坐在餐桌旁\n一言不发地看着你"
+                        "defaultText": "穿着蓝黄条纹T恤的，留着齐肩卷发的蓝眼睛小孩安静地坐在卡座里\n一言不发地看着你"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -859,7 +859,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "我们当然认识\n你想要点什么吗？咖啡还是点心？"
+                        "defaultText": "对呀！你不记得我了吗？\n没关系，我认得你。"
                     },
                     "position": 0,
                     "characterId": "4A5E028011614540518873E4AA92D7C96628",
@@ -871,8 +871,268 @@
                     "animations": []
                 },
                 "indent": 0,
-                "uid": "76EDB38849B1054F681A7794061350373CD3",
+                "uid": "E95A297D99985847D58A04E173B82128C87D",
                 "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "……"
+                    },
+                    "position": 0,
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "60B855B28F43C242B998DE66676D60ABDD64",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "你要来点什么，咖啡？还是新鲜出炉的焦糖布丁？\n这一批布丁火候正好，如果你想要的话我还可以为你再炙烤一下焦糖脆皮哦！"
+                    },
+                    "position": 0,
+                    "characterId": "4A5E028011614540518873E4AA92D7C96628",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "7521307F34AB1845A7391C337010897867F3",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": ""
+                    },
+                    "position": 0,
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": [],
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "indent": 0,
+                "uid": "FC61B4467509E84E687BDF7658B0393BF544",
+                "expanded": true
+            },
+            {
+                "id": "vn.Choice",
+                "params": {
+                    "action": {
+                        "type": 0,
+                        "bindValue": 0,
+                        "bindValueVariable": {
+                            "scope": 0,
+                            "index": 0
+                        },
+                        "commonEventId": 0,
+                        "label": "这里是哪里",
+                        "switch": {
+                            "scope": 1,
+                            "index": 0
+                        },
+                        "scene": null
+                    },
+                    "text": {
+                        "lcId": null,
+                        "defaultText": "这里是哪里"
+                    },
+                    "label": "",
+                    "enabled": 1,
+                    "positionType": 1,
+                    "box": {
+                        "x": 288,
+                        "y": 764,
+                        "angle": 0,
+                        "zoom": 1,
+                        "data": {},
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 160
+                        },
+                        "size": {
+                            "width": 580,
+                            "height": 60
+                        }
+                    },
+                    "defaultChoice": 0,
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "6A8AAAB75E96F34FA2588463451184CCF2F1",
+                "indent": 0
+            },
+            {
+                "id": "vn.Choice",
+                "params": {
+                    "action": {
+                        "type": 0,
+                        "bindValue": 0,
+                        "bindValueVariable": {
+                            "scope": 0,
+                            "index": 0
+                        },
+                        "commonEventId": 0,
+                        "label": "布丁......？",
+                        "switch": {
+                            "scope": 1,
+                            "index": 0
+                        },
+                        "scene": null
+                    },
+                    "text": {
+                        "lcId": null,
+                        "defaultText": "布丁......？"
+                    },
+                    "label": "",
+                    "enabled": 1,
+                    "positionType": 1,
+                    "box": {
+                        "x": 1108,
+                        "y": 764,
+                        "angle": 0,
+                        "zoom": 1,
+                        "data": {},
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 160
+                        },
+                        "size": {
+                            "width": 580,
+                            "height": 60
+                        }
+                    },
+                    "defaultChoice": 0,
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "19F6F98145EC4340794B7CF62163F773B9E1",
+                "indent": 0
+            },
+            {
+                "id": "vn.ShowChoices",
+                "params": {},
+                "uid": "80F9C3612D830841B04973959B5A7BCC88D7",
+                "indent": 0
+            },
+            {
+                "id": "gs.Label",
+                "params": {
+                    "name": "布丁......？"
+                },
+                "uid": "EFBA5B0556A7304CD38AF9A1BFC167E85621",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "你接过男孩手里挥舞得几乎比他手臂长的喷枪，和撒了一层砂糖粒的布丁\n火舌喷出瞬间的噪声和颤动几乎和摩托引擎点火时一样让人肾上腺素飙升"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "53CAA7D566A3414F671872F3C0112A747A63",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.Label",
+                "params": {
+                    "name": "这里是哪里"
+                },
+                "uid": "7820A3C83284704118686EE7EFF334B7D371",
+                "indent": 0
             },
             {
                 "id": "gs.ShowMessage",
@@ -961,7 +1221,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "马克看了看墙上停滞的甚至时针分针已经脱落的钟表，和男孩不符合他年龄有些故弄玄虚的话，\n感觉有点好笑"
+                        "defaultText": "马克看了看墙上停滞的甚至时针分针已经脱落的钟表，\n和男孩手上拿着的明显不是他这个年纪应该摆弄的喷枪，\n\n感觉有点好笑"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -997,7 +1257,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "好吧，谢谢你，虽然没帮上什么忙"
+                        "defaultText": "好吧，谢谢你，虽然没帮上什么忙\n你别玩儿那个，很危险"
                     },
                     "position": 0,
                     "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
@@ -1327,7 +1587,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "那我们一起出发吧！你看起来很迷茫又根本不知道自己要去找什么\n这附近可都是我的主场，我可以帮助你！"
+                        "defaultText": "会有什么事呢，会比我们现在一起分享一个布丁更快乐更值得去做吗"
                     },
                     "position": 0,
                     "characterId": "4A5E028011614540518873E4AA92D7C96628",
@@ -1363,7 +1623,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "马克有些无奈，他并不觉得这个还没有他胸口高叽叽喳喳的小孩能帮到什么"
+                        "defaultText": "马克盯着小孩儿手里的焦糖布丁，他很执着得捧着它\n他的眼睛和焦糖脆壳一起在霓虹灯下闪着诱人的光泽"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -1396,7 +1656,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "男孩一直拽着马克的袖子，似乎是很不想让他离开"
+                        "defaultText": "像蛇在诱惑夏娃吃下那棵分辨善恶树上的果"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -1409,6 +1669,39 @@
                 },
                 "indent": 0,
                 "uid": "0F3F53E42F75E84F2C3972E4DFA39B0B3542",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "不了，我想它更适合你\n我走了，祝你今天过得开心！"
+                    },
+                    "position": 0,
+                    "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "2DAB82AF48D3864DAB4896A7B96044330569",
                 "expanded": true
             },
             {
@@ -1429,7 +1722,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "带着我一起吧！你难道放心让我这个小孩子一个人待在这里吗？\n我还是未成年哎？！很危险哎！"
+                        "defaultText": "那我们一起出发吧！你看起来很迷茫，根本不知道自己要去找什么\n这附近可都是我的主场，我可以帮助你！"
                     },
                     "position": 0,
                     "characterId": "4A5E028011614540518873E4AA92D7C96628",
@@ -1465,7 +1758,40 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "好了好了......！那我们出去遛个弯儿，找找附近有没有你熟悉的人\n虽然大概率还是会回到这里......"
+                        "defaultText": "马克有些无奈，他并不觉得这个还没有他胸口高的小东西能帮到你什么\n他一直摆弄着喷枪，蓝色的火舌突突地从枪口喷出"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "04E7D7FA490C04400318A879F91C451F73BD",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "好吧好吧，我带你出去遛个弯儿，一会儿我会把你送回来，就不要一直缠着我啦"
                     },
                     "position": 0,
                     "characterId": "FDD6E6F99918984DF86BB1D3ECDCEC365552",
@@ -1477,7 +1803,7 @@
                     "animations": []
                 },
                 "indent": 0,
-                "uid": "2DAB82AF48D3864DAB4896A7B96044330569",
+                "uid": "D9A3F5435ECC2143811974676AC9F3D5F0B1",
                 "expanded": true
             },
             {
@@ -1514,6 +1840,42 @@
                 },
                 "indent": 0,
                 "uid": "0D0DA69550B812423B3AA251F07B040EC342",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": "0A424E069A255347E4580218016280B14646",
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "小孩激动地跳出卡座窜到你身上，身板小小的，手脚并用扒在你身子上，\n根本没在听马克后面说了什么"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": [],
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "indent": 0,
+                "uid": "F5E2589A122AF8452A39E88333BF7BD7BD28",
                 "expanded": true
             },
             {
@@ -1567,7 +1929,21 @@
                 "indent": 0
             }
         ],
-        "livePreviewDisabled": false
+        "livePreviewDisabled": false,
+        "booleanVariables": [
+            {
+                "name": "",
+                "index": 0,
+                "scope": 0
+            }
+        ],
+        "stringVariables": [
+            {
+                "name": "",
+                "index": 0,
+                "scope": 0
+            }
+        ]
     },
     "summary": [
         "name",

@@ -531,7 +531,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "八月的荒漠似乎总是一片单调的昏黄"
+                        "defaultText": "八月的荒漠总是一片单调的昏黄"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -630,7 +630,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "......这样的感觉实在是......让人有些生厌。"
+                        "defaultText": "......这样的感觉实在是......让人有些生厌"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -832,7 +832,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "直到感觉到脸上传来灼热的刺痛和逐渐平息的尖锐嗡鸣声，\n才意识到这又是一次不太体面的摔车"
+                        "defaultText": "脸上传来灼热的刺痛，耳朵里的尖锐嗡鸣声逐渐平息\n\n这又是一次不太体面的摔车"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -844,105 +844,6 @@
                     "animations": []
                 },
                 "uid": "1DFEFC0B4379C24FDF7BF2D8DD4B96C7255F",
-                "indent": 0,
-                "expanded": true
-            },
-            {
-                "id": "gs.ShowMessage",
-                "params": {
-                    "waitForCompletion": 1,
-                    "duration": 15,
-                    "expressionId": null,
-                    "custom": {
-                        "object": {
-                            "x": 0,
-                            "y": 0,
-                            "size": {
-                                "width": 300,
-                                "height": 100
-                            }
-                        }
-                    },
-                    "message": {
-                        "lcId": null,
-                        "defaultText": "......"
-                    },
-                    "position": 0,
-                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
-                    "partial": 0,
-                    "fieldFlags": {
-                        "duration": 1
-                    },
-                    "expressions": [],
-                    "animations": []
-                },
-                "uid": "FF7109333D67A349649BA615C5CAC372A6CF",
-                "indent": 0,
-                "expanded": true
-            },
-            {
-                "id": "gs.ShowMessage",
-                "params": {
-                    "waitForCompletion": 1,
-                    "duration": 15,
-                    "expressionId": null,
-                    "custom": {
-                        "object": {
-                            "x": 0,
-                            "y": 0,
-                            "size": {
-                                "width": 300,
-                                "height": 100
-                            }
-                        }
-                    },
-                    "message": {
-                        "lcId": null,
-                        "defaultText": "“又”？"
-                    },
-                    "position": 0,
-                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
-                    "partial": 0,
-                    "fieldFlags": {
-                        "duration": 1
-                    },
-                    "expressions": [],
-                    "animations": []
-                },
-                "uid": "8EBFF2494D29814A7219D572EBB595EDAC0D",
-                "indent": 0,
-                "expanded": true
-            },
-            {
-                "id": "gs.ShowMessage",
-                "params": {
-                    "waitForCompletion": 1,
-                    "duration": 15,
-                    "expressionId": null,
-                    "custom": {
-                        "object": {
-                            "x": 0,
-                            "y": 0,
-                            "size": {
-                                "width": 300,
-                                "height": 100
-                            }
-                        }
-                    },
-                    "message": {
-                        "lcId": null,
-                        "defaultText": "......为什么是“又”？"
-                    },
-                    "position": 0,
-                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
-                    "partial": 0,
-                    "fieldFlags": {
-                        "duration": 1
-                    },
-                    "expressions": [],
-                    "animations": []
-                },
-                "uid": "14416E4051C002435478909448F03021BF3C",
                 "indent": 0,
                 "expanded": true
             },
@@ -1088,73 +989,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "......"
-                    },
-                    "position": 0,
-                    "characterId": "49D498DE4891714BA218D745763A1A385495",
-                    "partial": 0,
-                    "fieldFlags": {
-                        "duration": 1
-                    },
-                    "expressions": [],
-                    "animations": []
-                },
-                "uid": "7C2679184DB2C046062A0D21DD4E0377DEC9",
-                "indent": 0,
-                "expanded": true
-            },
-            {
-                "id": "gs.ShowMessage",
-                "params": {
-                    "waitForCompletion": 1,
-                    "duration": 15,
-                    "expressionId": null,
-                    "custom": {
-                        "object": {
-                            "x": 0,
-                            "y": 0,
-                            "size": {
-                                "width": 300,
-                                "height": 100
-                            }
-                        }
-                    },
-                    "message": {
-                        "lcId": null,
-                        "defaultText": "嘶......"
-                    },
-                    "position": 0,
-                    "characterId": "49D498DE4891714BA218D745763A1A385495",
-                    "partial": 0,
-                    "fieldFlags": {
-                        "duration": 1
-                    },
-                    "expressions": [],
-                    "animations": []
-                },
-                "indent": 0,
-                "uid": "C796CDE23D4BF6485618EB800BB3582FD949",
-                "expanded": true
-            },
-            {
-                "id": "gs.ShowMessage",
-                "params": {
-                    "waitForCompletion": 1,
-                    "duration": 15,
-                    "expressionId": null,
-                    "custom": {
-                        "object": {
-                            "x": 0,
-                            "y": 0,
-                            "size": {
-                                "width": 300,
-                                "height": 100
-                            }
-                        }
-                    },
-                    "message": {
-                        "lcId": null,
-                        "defaultText": "有些狼狈地从地上爬起来......有些擦伤但似乎并无大碍"
+                        "defaultText": "有些狼狈地从地上爬起来......除了有些擦伤之外似乎并无大碍"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -1165,7 +1000,7 @@
                     "expressions": [],
                     "animations": []
                 },
-                "uid": "F0F89FEB1F70A34D675B40B35D56CE33E3D6",
+                "uid": "FF7109333D67A349649BA615C5CAC372A6CF",
                 "indent": 0,
                 "expanded": true
             },
@@ -1187,7 +1022,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "周围除了自己和不远处摔在地上的摩托之外，没有什么人类活动痕迹\n......\n但是自己为什么会在这里？"
+                        "defaultText": "血液由于体位变化重新从大脑涌向四肢\n肾上腺素水平回稳之后，随着理智一起回归的是钝痛"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -1220,10 +1055,10 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "老天，希望还能启动"
+                        "defaultText": "熟悉的钝痛……"
                     },
                     "position": 0,
-                    "characterId": "49D498DE4891714BA218D745763A1A385495",
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
                     "partial": 0,
                     "fieldFlags": {
                         "duration": 1
@@ -1231,7 +1066,7 @@
                     "expressions": [],
                     "animations": []
                 },
-                "uid": "11F60D9873EDC34EF3299852ACE75F424F3B",
+                "uid": "8EBFF2494D29814A7219D572EBB595EDAC0D",
                 "indent": 0,
                 "expanded": true
             },
@@ -1253,7 +1088,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "先前的摔碰让摩托的外壳有些掉漆，除此之外肉眼上看没有太严重的损坏\n肌肉记忆驱使自己把车扶起来重新发动引擎"
+                        "defaultText": "嘶......"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -1265,7 +1100,238 @@
                     "animations": []
                 },
                 "indent": 0,
-                "uid": "9A4D83D24425B54FB9499E735E87BDDB8FE0",
+                "uid": "C796CDE23D4BF6485618EB800BB3582FD949",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "为什么会这么熟悉？"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "14416E4051C002435478909448F03021BF3C",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "......"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "7C2679184DB2C046062A0D21DD4E0377DEC9",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "周围除了你和不远处摔在地上的摩托之外，没有其他人类活动痕迹\n你什么都不记得——除了很清晰的知道这是你的车"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "uid": "5046F2F831E1E140D1488073CACD340CFF06",
+                "indent": 0,
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "你熟悉它胜过熟悉自己的身体\n骑行技巧被你训练成由脊髓控制的原始反射"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "61FD271E2F1D754E6A28539270F6748FFC26",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "你把车扶了起来，在后视镜里你看到自己的脸"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "40DE6F281829944BBC6A97C2C2C05BD21751",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "被沙尘吹得灰蒙蒙，脱水很严重\n眼色素很浓郁，黑洞一样吸收了全部光"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "B4D2A4808EAA1142351AF4F7802236CD0D8C",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "你为什么看起来这么疲惫又茫然？"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "2BA0E4F61D66274C6E485E81909A68412440",
                 "expanded": true
             },
             {
@@ -1309,7 +1375,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "太好了......\n再次听到引擎的轰鸣声有种莫名的安心"
+                        "defaultText": "肌肉记忆驱使你发动引擎\n再次听到轰鸣声让你莫名的安心"
                     },
                     "position": 0,
                     "characterId": "49D498DE4891714BA218D745763A1A385495",
@@ -1342,7 +1408,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "四周除了荒芜还是荒芜\n你决定往前骑行一段，看看能不能找到其他线索\n除此之外也没有更好的办法了"
+                        "defaultText": "四周除了荒芜还是荒芜\n你决定往前骑行一段，看看能不能找到其他线索\n\n除此之外也没有更好的办法了"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -1884,7 +1950,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "公路笔直到没有任何转弯和岔路，尽头几乎融入地平线，什么也看不清\n如果不是风携着热浪和风沙一直扑上他的脸，几乎要觉得没有在移动"
+                        "defaultText": "公路笔直到没有任何转弯和岔路，尽头几乎融入地平线，什么也看不清\n如果不是风携着热浪和风沙一直扑上你的脸，几乎觉得没有在移动"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
@@ -1917,7 +1983,7 @@
                     },
                     "message": {
                         "lcId": null,
-                        "defaultText": "先是几分钟......十几分钟......或许有半个小时\n远处的地平线逐渐出现一栋建筑的轮廓\n\n好像是家汽车旅馆"
+                        "defaultText": "几分钟......十几分钟......或许有半个小时\n远处的地平线逐渐出现一栋建筑的轮廓\n\n好像是家汽车旅馆"
                     },
                     "position": 0,
                     "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
