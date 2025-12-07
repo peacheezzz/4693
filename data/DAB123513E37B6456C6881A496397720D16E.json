@@ -1,13 +1,14 @@
 {
     "uid": "DAB123513E37B6456C6881A496397720D16E",
     "isLoaded": true,
-    "lastModificationTime": null,
+    "lastModificationTime": 0,
     "items": {
-        "type": "vn.scene",
         "name": "第一章",
+        "type": "vn.scene",
         "parentId": "72CD309022F08845D05AC9863756F4CB7A7C",
-        "localizableStrings": {},
         "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+        "order": 1,
+        "localizableStrings": {},
         "commands": [
             {
                 "id": "vn.ChangeScene",
@@ -25,17 +26,18 @@
                     }
                 },
                 "uid": "5C68F81F3C5DD54A2E7833002370247F73CC",
-                "indent": 0
+                "indent": 0,
+                "expanded": false
             },
             {
                 "id": "vn.ChangeScene",
                 "params": {
                     "scene": {
-                        "uid": "FAD2FC49411C84465C4AE777CAE2DB8E47D3",
-                        "name": "scene3"
+                        "uid": "500132F52025B648EB7905E1175607FAB8BE",
+                        "name": "scene2"
                     },
-                    "savePrevious": 0,
-                    "erasePictures": 0,
+                    "savePrevious": 1,
+                    "erasePictures": 1,
                     "eraseTexts": 0,
                     "eraseVideos": 0,
                     "previewBackground": {
@@ -43,17 +45,23 @@
                     }
                 },
                 "uid": "26C7BD6C1D6A1148EC0B7B59AF5B8BBCD8F2",
-                "indent": 0
+                "indent": 0,
+                "expanded": false
             }
         ],
         "livePreviewDisabled": false,
-        "order": 1
+        "booleanVariables": [
+            {
+                "name": "",
+                "index": 0,
+                "scope": 0
+            }
+        ]
     },
     "summary": [
         "name",
         "type",
         "parentId",
-        "o",
         "chapterUid",
         "order"
     ],

@@ -1,0 +1,452 @@
+{
+    "uid": "248D06FF615E7143F89A3F63FB36F087FF36",
+    "isLoaded": true,
+    "lastModificationTime": 0,
+    "items": {
+        "name": "继续前进",
+        "type": "vn.scene",
+        "parentId": "83EC435442C5C14ED80A5F12EC7EE2BDFB57",
+        "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+        "order": 0,
+        "localizableStrings": {},
+        "commands": [
+            {
+                "id": "vn.ChangeBackground",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "graphic": {
+                        "name": "road.png",
+                        "folderPath": "Graphics/Backgrounds",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        }
+                    },
+                    "layer": 5,
+                    "duration": 12,
+                    "waitForCompletion": 0,
+                    "blendMode": 0,
+                    "origin": 0,
+                    "zOrder": 0,
+                    "loopVertical": 1,
+                    "loopHorizontal": 1,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0,
+                        "easing.type": 1,
+                        "animation.type": 1,
+                        "origin": 1,
+                        "zOrder": 1,
+                        "blendMode": 1,
+                        "viewport.type": 1,
+                        "loopVertical": 0,
+                        "loopHorizontal": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "AA6268F96DEE53454F7ADA62C2E0444C818D",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "gs.PlayPictureAnimation",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "viewport": {
+                        "type": "ui"
+                    },
+                    "animationId": "D2CA38C662BD7244C65B0B70EEB8343737E4",
+                    "predefinedPositionId": 0,
+                    "blendMode": 0,
+                    "zOrder": 0,
+                    "duration": 30,
+                    "origin": 0,
+                    "waitForCompletion": 1,
+                    "positionType": 1,
+                    "position": {
+                        "x": 200,
+                        "y": 370,
+                        "angle": 0,
+                        "zoom": 1,
+                        "horizontalFlip": false,
+                        "data": {},
+                        "color": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "alpha": 0
+                        }
+                    },
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0,
+                        "easing.type": 0,
+                        "animation.type": 0,
+                        "zOrder": 1,
+                        "blendMode": 1,
+                        "viewport.type": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "53561966732A06457618A3D147F5B4476459",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "vn.ScrollBackgroundPath",
+                "params": {
+                    "layer": 5,
+                    "path": {
+                        "previewBackground": {
+                            "name": "$live_preview_snapshot"
+                        },
+                        "data": [
+                            {
+                                "pt1": {
+                                    "x": 1816,
+                                    "y": 536
+                                },
+                                "cpt": {
+                                    "x": 964,
+                                    "y": 536
+                                },
+                                "pt2": {
+                                    "x": 96,
+                                    "y": 536
+                                }
+                            }
+                        ],
+                        "effects": {
+                            "data": []
+                        }
+                    },
+                    "loopType": 1,
+                    "duration": 180,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    },
+                    "fieldFlags": {
+                        "easing.type": 0
+                    }
+                },
+                "uid": "D9E6A63F1628614BCB9A45F88F4609A35609",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "gs.PlaySound",
+                "params": {
+                    "sound": {
+                        "folderPath": "Audio/Sounds",
+                        "name": "motorcycle_sound.mp3",
+                        "volume": "25",
+                        "playbackRate": 100
+                    },
+                    "musicEffect": 0,
+                    "loop": 1,
+                    "waitForCompletion": 1,
+                    "fieldFlags": {
+                        "sound.volume": 0,
+                        "sound.playbackRate": 1
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "F51C42D8755624477B6AB9A5EC965070FCC5",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "像之前那样一直开着......一样的引擎嗡鸣声\n一切都变得很奇怪"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "AE267CC176B299480F08B0554D2B5A35C189",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "群山，远处的灌木丛，还有这个闪着夸张荧光黄霓虹招牌的小楼"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "FBB46F223FDC7842C7490B8572EDA2667B7B",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 60,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "重复，重复，重复……"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 0
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "A12CACA43B5314421D7BB3575A4485F6CC1B",
+                "expanded": true
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "是连锁店吗？总不能是空间时间在这条路上折叠了吧？\n你为自己的想法感到好笑，说不定失忆之前你是个科幻电影迷"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "DCFC2BBA47BE49428C182EB60D97F0EE0B63",
+                "expanded": true
+            },
+            {
+                "id": "gs.ErasePicture",
+                "params": {
+                    "numberDomain": "com.degica.vnm.default",
+                    "number": 1,
+                    "duration": 0.06,
+                    "waitForCompletion": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 2,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0,
+                        "easing.type": 0,
+                        "animation.type": 0
+                    }
+                },
+                "uid": "1CDB51DA2143B14E793B84A195DF5B13EB0B",
+                "indent": 0,
+                "expanded": false
+            },
+            {
+                "id": "vn.ChangeBackground",
+                "params": {
+                    "viewport": {
+                        "type": "scene"
+                    },
+                    "graphic": {
+                        "name": "motel2.png",
+                        "folderPath": "Graphics/Backgrounds",
+                        "hue": 0,
+                        "opacity": 255,
+                        "blending": 0,
+                        "tone": {
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0,
+                            "grey": 0
+                        }
+                    },
+                    "layer": 5,
+                    "duration": 12,
+                    "waitForCompletion": 1,
+                    "blendMode": 0,
+                    "origin": 0,
+                    "zOrder": 0,
+                    "loopVertical": 0,
+                    "loopHorizontal": 0,
+                    "easing": {
+                        "type": 0,
+                        "inOut": 1
+                    },
+                    "animation": {
+                        "type": 1,
+                        "movement": 0,
+                        "mask": {
+                            "graphic": null,
+                            "vague": 30
+                        }
+                    },
+                    "fieldFlags": {
+                        "duration": 0
+                    },
+                    "previewBackground": {
+                        "name": "$live_preview_snapshot"
+                    }
+                },
+                "uid": "EB2568868473014A9D18DA48F57D9281B029",
+                "indent": 0
+            },
+            {
+                "id": "gs.ShowMessage",
+                "params": {
+                    "waitForCompletion": 1,
+                    "duration": 15,
+                    "expressionId": null,
+                    "custom": {
+                        "object": {
+                            "x": 0,
+                            "y": 0,
+                            "size": {
+                                "width": 300,
+                                "height": 100
+                            }
+                        }
+                    },
+                    "message": {
+                        "lcId": null,
+                        "defaultText": "在第九次遇到这个旅馆的时候，你又一次停了下来"
+                    },
+                    "position": 0,
+                    "characterId": "BA77A09EK7F14A4C2BSA11BE8CC099F00810",
+                    "partial": 0,
+                    "fieldFlags": {
+                        "duration": 1
+                    },
+                    "expressions": [],
+                    "animations": []
+                },
+                "indent": 0,
+                "uid": "03B46EDB61A76744C82B1AA5444B76159638",
+                "expanded": true
+            }
+        ],
+        "livePreviewDisabled": false
+    },
+    "summary": [
+        "name",
+        "type",
+        "parentId",
+        "chapterUid",
+        "order"
+    ],
+    "externalItems": []
+}

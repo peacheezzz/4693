@@ -5,9 +5,9 @@
     "items": {
         "name": "scene2",
         "type": "vn.scene",
-        "parentId": "83EC435442C5C14ED80A5F12EC7EE2BDFB57",
+        "parentId": "DAB123513E37B6456C6881A496397720D16E",
         "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
-        "order": 0,
+        "order": 2,
         "localizableStrings": {},
         "commands": [
             {

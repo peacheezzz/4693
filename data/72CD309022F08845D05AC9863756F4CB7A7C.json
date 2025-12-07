@@ -13,7 +13,8 @@
                     "name": "第一章",
                     "description": ""
                 },
-                "indent": 0
+                "indent": 0,
+                "expanded": false
             }
         ]
     },

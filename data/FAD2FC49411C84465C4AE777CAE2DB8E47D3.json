@@ -1,12 +1,13 @@
 {
     "uid": "FAD2FC49411C84465C4AE777CAE2DB8E47D3",
     "isLoaded": true,
-    "lastModificationTime": null,
+    "lastModificationTime": 0,
     "items": {
-        "type": "vn.scene",
         "name": "scene3",
+        "type": "vn.scene",
         "parentId": "DAB123513E37B6456C6881A496397720D16E",
         "chapterUid": "72CD309022F08845D05AC9863756F4CB7A7C",
+        "order": 2,
         "commands": [
             {
                 "id": "gs.ShowMessage",
@@ -42,14 +43,12 @@
                 "expanded": true
             }
         ],
-        "livePreviewDisabled": false,
-        "order": 1
+        "livePreviewDisabled": false
     },
     "summary": [
         "name",
         "type",
         "parentId",
-        "o",
         "chapterUid",
         "order"
     ],
